@@ -1,38 +1,137 @@
-.App {
-  text-align: center;
+.cvd-subtitle {
+    color: #6c757d;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.cvd-label {
+    margin-bottom: 0;
+    color: #343a40;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.cvd-map-image {
+    max-width: 100%
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.twentytwenty-bar {
+    height: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+@media (min-width: 1200px) {
+    .twentytwenty-wrapper {
+        max-width: 1140px;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.twentytwenty-handle:before, .twentytwenty-handle:after {
+    content: " ";
+    display: block;
+    width: 3px;
+    background: #000;
+    height: 9999px;
+    position: absolute;
+    left: 50%;
+    margin-left: -1.5px;
+    z-index: 30;
+    -webkit-box-shadow: 0px 0px 12px rgba(51, 51, 51, 0.5);
+    -moz-box-shadow: 0px 0px 12px rgba(51, 51, 51, 0.5);
+    box-shadow: 0px 0px 12px rgba(51, 51, 51, 0.5);
 }
+
+.twentytwenty-left-arrow, .twentytwenty-right-arrow {
+    width: 0;
+    height: 0;
+    border: 6px inset transparent;
+    position: absolute;
+    top: 50%;
+    margin-top: -6px;
+}
+
+.twentytwenty-handle {
+    height: 38px;
+    width: 38px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -19.5px;
+    margin-top: -19.5px;
+    border: 3px solid #000;
+    -webkit-border-radius: 1000px;
+    -moz-border-radius: 1000px;
+    border-radius: 1000px;
+    -webkit-box-shadow: 0px 0px 12px rgba(51, 51, 51, 0.5);
+    -moz-box-shadow: 0px 0px 12px rgba(51, 51, 51, 0.5);
+    box-shadow: 0px 0px 12px rgba(51, 51, 51, 0.5);
+    z-index: 40;
+}
+
+.twentytwenty-handle:before {
+    bottom: 50%;
+    margin-bottom: 22px;
+    -webkit-box-shadow: 0 3px 0 #000, 0px 0px 12px rgba(51, 51, 51, 0.5);
+    -moz-box-shadow: 0 3px 0 #000, 0px 0px 12px rgba(51, 51, 51, 0.5);
+    box-shadow: 0 3px 0 #000, 0px 0px 12px rgba(51, 51, 51, 0.5);
+}
+
+.twentytwenty-handle:after {
+    top: 50%;
+    margin-top: 22px;
+    -webkit-box-shadow: 0 -3px 0 #000, 0px 0px 12px rgba(51, 51, 51, 0.5);
+    -moz-box-shadow: 0 -3px 0 #000, 0px 0px 12px rgba(51, 51, 51, 0.5);
+    box-shadow: 0 -3px 0 #000, 0px 0px 12px rgba(51, 51, 51, 0.5);
+}
+
+.twentytwenty-left-arrow {
+    border-right: 6px solid #000;
+    left: 50%;
+    margin-left: -17px;
+}
+
+.twentytwenty-right-arrow {
+    border-left: 6px solid #000;
+    right: 50%;
+    margin-right: -17px;
+}
+
+[class^="react-date-picker__inputGroup"] {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.react-date-picker {
+    z-index: 40;
+    display: flex;
+}
+
+.react-date-picker__wrapper {
+    padding: 4px;
+    border-radius: 4px;
+    border-color: hsl(0,0%,80%);
+}
+
+.react-date-picker--error .react-date-picker__wrapper, .react-date-picker--error .react-date-picker__button  {
+    border-color: red;
+    color: red;
+}
+
+.react-date-picker__inputGroup, .react-date-picker__inputGroup input{
+    color: #343a40;
+}
+.react-date-picker__button {
+    color: hsl(0, 0%, 62%);
+}
+
+button:disabled.react-calendar__month-view__days__day {
+    color: rgba(170, 170, 170, .75);
+}
+button.react-calendar__month-view__days__day--weekend {
+    color: inherit;
+}
+
