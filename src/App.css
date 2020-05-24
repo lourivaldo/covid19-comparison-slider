@@ -16,13 +16,13 @@
 }
 
 @media (min-width: 1200px) {
-    .twentytwenty-wrapper {
-        max-width: 1140px;
+    .slider .twentytwenty-wrapper {
+        /*max-width: 1140px;*/
         width: 100%;
-        padding-right: 15px;
-        padding-left: 15px;
-        margin-right: auto;
-        margin-left: auto;
+        /*padding-right: 15px;*/
+        /*padding-left: 15px;*/
+        /*margin-right: auto;*/
+        /*margin-left: auto;*/
     }
 }
 
@@ -106,8 +106,11 @@
     user-select: none;
 }
 .react-date-picker {
-    z-index: 40;
     display: flex;
+}
+
+.react-date-picker--open {
+    z-index: 40;
 }
 
 .react-date-picker__wrapper {
@@ -135,3 +138,49 @@ button.react-calendar__month-view__days__day--weekend {
     color: inherit;
 }
 
+/* Scrool top buttom */
+#toTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 18px;
+    right: 18px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #9c020d;
+    /*background-color: #dc3545;*/
+    color: white;
+    cursor: pointer;
+    border-radius: 100%;
+    width: 46px;
+    height: 46px;
+}
+
+#toTopBtn svg {
+    position: relative;
+}
+
+#toTopBtn:hover {
+    background-color: #555;
+}
+
+.section {
+    background: white;
+    padding-top: .5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    border-radius: .28571429rem;
+    box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+}
+
+@media (min-width: 960px) {
+    .section {
+        max-width: 1140px;
+        width: 100%;
+        /*padding-right: 15px;*/
+        /*padding-left: 15px;*/
+        margin-right: auto;
+        margin-left: auto;
+    }
+}

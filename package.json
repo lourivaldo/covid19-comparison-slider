@@ -11,6 +11,8 @@
     "@testing-library/user-event": "^7.2.1",
     "bootstrap": "^4.5.0",
     "date-fns": "^2.14.0",
+    "imagemin-cli": "^5.1.0",
+    "jquery": "^3.5.1",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-calendar": "^3.1.0",
@@ -23,9 +25,10 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "node images-injector.js && react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "images": "node_modules/.bin/imagemin public/img/nordeste/* --out-dir=public/img/nordeste/build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -41,5 +44,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "imagemin-pngquant": "^8.0.0"
   }
 }
