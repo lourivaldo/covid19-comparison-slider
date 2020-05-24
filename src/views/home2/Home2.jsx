@@ -227,19 +227,28 @@ const images = [
 
 export default class Home2 extends Component {
 
-    defaultBeforeDate = '01/04/2020';
-    defaultAfterDate = '23/05/2020';
-
-    state = {
-        beforeDateHover: parse("01/04/2020", 'dd/MM/yyyy', new Date()),
-        beforeDate: parse("01/04/2020", 'dd/MM/yyyy', new Date()),
-        afterDate: parse("23/05/2020", 'dd/MM/yyyy', new Date()),
-
-        beforeDateCurrent: parse("01/04/2020", 'dd/MM/yyyy', new Date()),
-        afterDateCurrent: parse("23/05/2020", 'dd/MM/yyyy', new Date()),
-    };
+    defaultBeforeDate = null;
+    defaultAfterDate = null;
 
     timeout = 0;
+    timeoutDateInterval = 0;
+
+    constructor(props) {
+        super(props);
+
+        this.defaultBeforeDate = format(this.getMinDate(), 'dd/MM/yyyy');
+        this.defaultAfterDate = format(this.getMaxDate(), 'dd/MM/yyyy');
+
+        this.state = {
+            beforeDateHover: this.getMinDate(),
+
+            beforeDate: this.getMinDate(),
+            afterDate: this.getMaxDate(),
+
+            beforeDateCurrent: this.getMinDate(),
+            afterDateCurrent: this.getMaxDate(),
+        };
+    }
 
     getMinDate = () => {
         const dates = images.map(i => parse(i.date, 'dd/MM/yyyy', new Date()));
@@ -252,9 +261,19 @@ export default class Home2 extends Component {
     }
 
     dateExists = (date) => {
-        console.log('dateExists')
         const dateFormatted = format(date, 'dd/MM/yyyy');
         return images.find((img) => img.date === dateFormatted) || null;
+    }
+
+    validInterval() {
+        if (this.state.beforeDateCurrent < this.state.afterDateCurrent) return true;
+
+        clearTimeout(this.timeoutDateInterval);
+        this.timeoutDateInterval = setTimeout(() => {
+            if (!this.state.beforeDateCurrent < this.state.afterDateCurrent) this.showDateErrorMessage(null, 'Intervalo de datas inválido');
+        }, 1500);
+
+        return false
     }
 
     validDate(date) {
@@ -328,8 +347,8 @@ export default class Home2 extends Component {
         return images.find((img) => img.date === dateFormatted).img;
     }
 
-    showDateErrorMessage(date) {
-        toast.error("A data informada não é válida", {
+    showDateErrorMessage(date, message) {
+        toast.error(message || "A data informada não é válida", {
             position: "top-right",
             autoClose: 5000,
             hideProgressBar: true,
@@ -361,7 +380,7 @@ export default class Home2 extends Component {
                                         <label className="cvd-label">Antes</label>
                                         <div>
                                             <DatePicker
-                                                className={`${this.dateExists(this.state.beforeDate) ? '' : 'react-date-picker--error'}`}
+                                                className={`${this.dateExists(this.state.beforeDate) && this.validInterval() ? '' : 'react-date-picker--error'}`}
                                                 calendarType="US"
                                                 minDate={this.getMinDate()}
                                                 maxDate={this.getMaxDate()}
@@ -379,7 +398,7 @@ export default class Home2 extends Component {
                                         <label className="cvd-label">Depois</label>
                                         <div>
                                             <DatePicker
-                                                className={`${this.dateExists(this.state.afterDate) ? '' : 'react-date-picker--error'}`}
+                                                className={`${this.dateExists(this.state.afterDate) && this.validInterval() ? '' : 'react-date-picker--error'}`}
                                                 calendarType="US"
                                                 minDate={this.getMinDate()}
                                                 maxDate={this.getMaxDate()}
@@ -419,8 +438,6 @@ export default class Home2 extends Component {
                         <img className="" src="img/pernambuco/COVID19_PE_TEM_LEGENDA-2.png" />
                     </div>
                 </div>
-
-                <ToastContainer />
 
             </div>
         )

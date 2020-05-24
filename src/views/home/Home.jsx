@@ -327,23 +327,27 @@ const images = [
 
 export default class Home extends Component {
 
-    defaultBeforeDate = '01/04/2020';
-    defaultAfterDate = '01/04/2020';
-
-    state = {
-        beforeDateHover: parse("01/04/2020", 'dd/MM/yyyy', new Date()),
-        beforeDate: parse("01/04/2020", 'dd/MM/yyyy', new Date()),
-        afterDate: parse("10/04/2020", 'dd/MM/yyyy', new Date()),
-
-        beforeDateCurrent: parse("01/04/2020", 'dd/MM/yyyy', new Date()),
-        afterDateCurrent: parse("10/04/2020", 'dd/MM/yyyy', new Date()),
-    };
+    defaultBeforeDate = null;
+    defaultAfterDate = null;
 
     timeout = 0;
+    timeoutDateInterval = 0;
 
     constructor(props) {
         super(props);
-        this.defaultBeforeDate = this.getMinDate();
+
+        this.defaultBeforeDate = format(this.getMinDate(), 'dd/MM/yyyy');
+        this.defaultAfterDate = format(this.getMaxDate(), 'dd/MM/yyyy');
+
+        this.state = {
+            beforeDateHover: this.getMinDate(),
+
+            beforeDate: this.getMinDate(),
+            afterDate: this.getMaxDate(),
+
+            beforeDateCurrent: this.getMinDate(),
+            afterDateCurrent: this.getMaxDate(),
+        };
     }
 
     getMinDate = () => {
@@ -357,13 +361,19 @@ export default class Home extends Component {
     }
 
     dateExists = (date) => {
-        console.log('dateExists')
         const dateFormatted = format(date, 'dd/MM/yyyy');
         return images.find((img) => img.date === dateFormatted) || null;
     }
 
     validInterval() {
-        return this.state.beforeDateCurrent < this.state.afterDateCurrent;
+        if (this.state.beforeDateCurrent < this.state.afterDateCurrent) return true;
+        console.log('validInterval')
+        clearTimeout(this.timeoutDateInterval);
+        this.timeoutDateInterval = setTimeout(() => {
+            if (!this.state.beforeDateCurrent < this.state.afterDateCurrent) this.showDateErrorMessage(null, 'Intervalo de datas inválido');
+        }, 1500);
+
+        return false
     }
 
     validDate(date) {
@@ -437,8 +447,8 @@ export default class Home extends Component {
         return images.find((img) => img.date === dateFormatted).img;
     }
 
-    showDateErrorMessage(date) {
-        toast.error("A data informada não é válida", {
+    showDateErrorMessage(date, message) {
+        toast.error(message || "A data informada não é válida", {
             position: "top-right",
             autoClose: 5000,
             hideProgressBar: true,
@@ -530,8 +540,6 @@ export default class Home extends Component {
                         </div>
                     </div>
                 </div>
-
-                <ToastContainer />
 
             </div>
         )

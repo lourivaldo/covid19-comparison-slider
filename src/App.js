@@ -51,6 +51,8 @@ class App extends React.Component {
                 <button onClick={this.topFunction} id="toTopBtn" title="Go to top">
                     <FontAwesomeIcon icon={faChevronUp} size={"lg"}/>
                 </button>
+
+                <ToastContainer />
             </div>
         );
     }
