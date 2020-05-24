@@ -8,32 +8,29 @@ import {compareAsc, compareDesc, format, parse} from "date-fns";
 import {toast, ToastContainer} from "react-toastify";
 
 const images = [
-    {date: "01/04/2020", img: "img/confirmados/01.04.png"},
-    {date: "05/04/2020", img: "img/confirmados/05.04.png"},
-    {date: "05/05/2020", img: "img/confirmados/05.05.png"},
-    {date: "10/04/2020", img: "img/confirmados/10.04.png"},
-    {date: "10/05/2020", img: "img/confirmados/10.05.png"},
-    {date: "15/04/2020", img: "img/confirmados/15.04.png"},
-    {date: "15/05/2020", img: "img/confirmados/15.05.png"},
-    {date: "20/04/2020", img: "img/confirmados/20.04.png"},
-    {date: "20/05/2020", img: "img/confirmados/20.05.png"},
-    {date: "25/04/2020", img: "img/confirmados/25.04.png"},
-    {date: "30/04/2020", img: "img/confirmados/30.04.png"},
+    {date: "05/04/2020", img: "img/rmr/aglomerados confirmados 05.04 (1).png"},
+    {date: "15/04/2020", img: "img/rmr/aglomerados confirmados 15.04 (1).png"},
+    {date: "20/04/2020", img: "img/rmr/aglomerados confirmados 20.04 (1).png"},
+    {date: "25/04/2020", img: "img/rmr/aglomerados confirmados 25.04 (1).png"},
+    {date: "05/05/2020", img: "img/rmr/aglomerados confirmados 05.05 (1).png"},
+    {date: "10/05/2020", img: "img/rmr/aglomerados confirmados 10.05 (1).png"},
+    {date: "15/05/2020", img: "img/rmr/aglomerados confirmados 15.05 (1).png"},
+    {date: "20/05/2020", img: "img/rmr/aglomerados confirmados 20.05 (1).png"},
 ];
 
-export default class Slider extends Component {
+export default class Slider2 extends Component {
 
 
-    defaultBeforeDate = '01/04/2020';
+    defaultBeforeDate = '05/04/2020';
     defaultAfterDate = '20/05/2020';
 
     state = {
-        beforeDateHover: parse("01/04/2020", 'dd/MM/yyyy', new Date()),
+        beforeDateHover: parse("05/04/2020", 'dd/MM/yyyy', new Date()),
 
-        beforeDate: parse("01/04/2020", 'dd/MM/yyyy', new Date()),
+        beforeDate: parse("05/04/2020", 'dd/MM/yyyy', new Date()),
         afterDate: parse("20/05/2020", 'dd/MM/yyyy', new Date()),
 
-        beforeDateCurrent: parse("01/04/2020", 'dd/MM/yyyy', new Date()),
+        beforeDateCurrent: parse("05/04/2020", 'dd/MM/yyyy', new Date()),
         afterDateCurrent: parse("20/05/2020", 'dd/MM/yyyy', new Date()),
     };
 
@@ -140,10 +137,10 @@ export default class Slider extends Component {
 
     render() {
         return (
-            <div className="slider section" id="section-4">
+            <div className="slider section" id="section-3">
 
                 <div className="container-lg">
-                    <h4 className="my-4 text-center">Distribuição Espaço-temporal dos casos confirmados do Coronavírus Covid-19 no Recife</h4>
+                    <h4 className="my-4 text-center">Distribuição Espaço-temporal dos casos confirmados do Coronavírus Covid-19 na Região Metropolitana do Recife</h4>
 
                     <form className="">
                         <div className="form-row justify-content-between">

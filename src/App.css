@@ -1,3 +1,7 @@
+h4 {
+    color: rgba(0, 0, 0, 0.68);
+}
+
 .cvd-subtitle {
     color: #6c757d;
 }
@@ -17,12 +21,7 @@
 
 @media (min-width: 1200px) {
     .slider .twentytwenty-wrapper {
-        /*max-width: 1140px;*/
         width: 100%;
-        /*padding-right: 15px;*/
-        /*padding-left: 15px;*/
-        /*margin-right: auto;*/
-        /*margin-left: auto;*/
     }
 }
 
@@ -149,20 +148,17 @@ button.react-calendar__month-view__days__day--weekend {
     border: none;
     outline: none;
     background-color: #9c020d;
-    /*background-color: #dc3545;*/
     color: white;
     cursor: pointer;
     border-radius: 100%;
     width: 46px;
     height: 46px;
 }
-
+/*
+node_modules/.bin/imagemin public/img/bg-covid19.jpg --plugin.pngquant.quality=65-80 --plugin.pngquant.speed=1 --plugin.pngquant.floyd=1 --out-dir=public/img/bg-covid19-2.jpg
+*/
 #toTopBtn svg {
     position: relative;
-}
-
-#toTopBtn:hover {
-    background-color: #555;
 }
 
 .section {

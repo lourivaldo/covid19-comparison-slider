@@ -8,8 +8,9 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './App.css';
 import Home from "./views/home/Home";
-
+import Home2 from "./views/home2/Home2";
 import Slider from "./views/slider/Slider";
+import Slider2 from "./views/slider2/Slider2";
 import Header from "./views/header/Header";
 import $ from "jquery";
 import Footer from "./views/footer/Footer";
@@ -43,6 +44,8 @@ class App extends React.Component {
             <div className="App">
                 <Header />
                 <Home />
+                <Home2 />
+                <Slider2 />
                 <Slider />
                 <Footer />
                 <button onClick={this.topFunction} id="toTopBtn" title="Go to top">

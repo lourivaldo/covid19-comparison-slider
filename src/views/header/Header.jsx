@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import './Header.scss'
 import {parse, format} from "date-fns";
+import ReactHtmlParser, { processNodes, convertNodeToElement, htmlparser2 } from 'react-html-parser';
 import $ from 'jquery';
 
 export default class Header extends Component {
@@ -19,22 +20,29 @@ export default class Header extends Component {
         const maps = [
             {
                 id: 1,
-                title: "Distribuição Espaço-temporal dos casos confirmados do Coronavirus Covid-19 na Cidade do Recife",
-                img: "img/confirmados/30.04.png",
-                updatedAt: new Date(),
+                title: `Distribuição Espaço-temporal dos casos <strong>confirmados</strong> do Coronavírus Covid-19 no <strong>Nordeste do Brasil</strong>`,
+                // title: 'Distribuição Espaço-temporal dos casos confirmados do Coronavírus Covid-19 no Nordeste do Brasil',
+                img: "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200522.png",
+                updatedAt: new Date(2020, 4, 22),
             },
             {
                 id: 2,
-                title: "Distribuição Espaço-temporal dos casos confirmados do Coronavirus Covid-19 no Estado de Pernambuco",
-                img: "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200522.png",
-                updatedAt: new Date(),
+                title: "Distribuição Espaço-temporal dos casos <strong>confirmados</strong> do Coronavírus Covid-19 no <strong>Estado de Pernambuco</strong>",
+                img: "img/pernambuco/COVID19_PE_TEM_200523.png",
+                updatedAt: new Date(2020, 4, 23),
             },
             {
                 id: 3,
-                title: "Distribuição Espaço-temporal dos casos confirmados do Coronavirus Covid-19 na Região Metropolitana do Recife",
+                title: "Distribuição Espaço-temporal dos casos <strong>confirmados</strong> do Coronavírus Covid-19 na <strong>Região Metropolitana do Recife</strong>",
+                img: "img/rmr/aglomerados confirmados 25.04 (1).png",
+                updatedAt: new Date(2020, 4, 20),
+            },
+            {
+                id: 4,
+                title: "Distribuição Espaço-temporal dos casos <strong>confirmados</strong> do Coronavírus Covid-19 na <strong>Cidade do Recife</strong>",
                 img: "img/confirmados/30.04.png",
-                updatedAt: new Date(),
-            }
+                updatedAt: new Date(2020, 4, 20),
+            },
         ];
 
         return (
@@ -44,8 +52,7 @@ export default class Header extends Component {
                     <div className="masthead-content">
                         <div className="container text-center text-white">
                             <h1 className="masthead-heading mb-0">Evolução espaço-temporal</h1>
-                            <h2 className="masthead-subheading mb-0">dos casos confirmados do</h2>
-                            <h2 className="masthead-subheading mb-0">Coronavírus Covid-19</h2>
+                            <h2 className="masthead-subheading mb-0">do Coronavírus Covid-19</h2>
                         </div>
                     </div>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none" width="100%">
@@ -59,12 +66,12 @@ export default class Header extends Component {
                         {maps.map((map) => (
                             <div className="col-sm-6 col-md-4 col-lg-3 mt-4" key={map.id}>
                                 <div className="card" onClick={() => this.scrollTo(map.id)}>
-                                    <div className="card-img-top">
+                                    <div className={`card-img-top ${map.id === 2 ? 'card-img-top-lg' : '' }`}>
                                         <img className="card-img-top-img" src={map.img}/>
                                     </div>
                                     <div className="card-block">
                                         <div className="card-text">
-                                            {map.title}
+                                            {ReactHtmlParser(map.title)}
                                         </div>
                                     </div>
                                     <div className="card-footer">

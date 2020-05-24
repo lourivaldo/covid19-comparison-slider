@@ -6,345 +6,240 @@ import {faCalendarAlt, faUndoAlt} from "@fortawesome/free-solid-svg-icons";
 import TwentyTwenty from "react-twentytwenty";
 import {compareAsc, compareDesc, format, parse} from "date-fns";
 import {toast, ToastContainer} from "react-toastify";
-import "./Home.css";
+import "./Home2.scss";
 
 const images = [
-    /** map-images:start */
- {
-  "date": "06/03/2020",
-  "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200306.png"
- },
- {
-  "date": "07/03/2020",
-  "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200307.png"
- },
- {
-  "date": "08/03/2020",
-  "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200308.png"
- },
- {
-  "date": "09/03/2020",
-  "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200309.png"
- },
- {
-  "date": "10/03/2020",
-  "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200310.png"
- },
- {
-  "date": "11/03/2020",
-  "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200311.png"
- },
- {
-  "date": "12/03/2020",
-  "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200312.png"
- },
- {
-  "date": "13/03/2020",
-  "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200313.png"
- },
- {
-  "date": "14/03/2020",
-  "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200314.png"
- },
- {
-  "date": "15/03/2020",
-  "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200315.png"
- },
- {
-  "date": "16/03/2020",
-  "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200316.png"
- },
- {
-  "date": "17/03/2020",
-  "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200317.png"
- },
- {
-  "date": "18/03/2020",
-  "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200318.png"
- },
- {
-  "date": "19/03/2020",
-  "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200319.png"
- },
- {
-  "date": "20/03/2020",
-  "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200320.png"
- },
- {
-  "date": "21/03/2020",
-  "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200321.png"
- },
- {
-  "date": "22/03/2020",
-  "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200322.png"
- },
- {
-  "date": "23/03/2020",
-  "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200323.png"
- },
- {
-  "date": "24/03/2020",
-  "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200324.png"
- },
- {
-  "date": "25/03/2020",
-  "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200325.png"
- },
- {
-  "date": "26/03/2020",
-  "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200326.png"
- },
- {
-  "date": "27/03/2020",
-  "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200327.png"
- },
- {
-  "date": "28/03/2020",
-  "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200328.png"
- },
- {
-  "date": "29/03/2020",
-  "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200329.png"
- },
- {
-  "date": "30/03/2020",
-  "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200330.png"
- },
- {
-  "date": "31/03/2020",
-  "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200331.png"
- },
+    /** map-images-2:start */
  {
   "date": "01/04/2020",
-  "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200401.png"
+  "img": "img/pernambuco/COVID19_PE_TEM_200401.png"
  },
  {
   "date": "02/04/2020",
-  "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200402.png"
+  "img": "img/pernambuco/COVID19_PE_TEM_200402.png"
  },
  {
   "date": "03/04/2020",
-  "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200403.png"
+  "img": "img/pernambuco/COVID19_PE_TEM_200403.png"
  },
  {
   "date": "04/04/2020",
-  "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200404.png"
+  "img": "img/pernambuco/COVID19_PE_TEM_200404.png"
  },
  {
   "date": "05/04/2020",
-  "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200405.png"
+  "img": "img/pernambuco/COVID19_PE_TEM_200405.png"
  },
  {
   "date": "06/04/2020",
-  "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200406.png"
+  "img": "img/pernambuco/COVID19_PE_TEM_200406.png"
  },
  {
   "date": "07/04/2020",
-  "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200407.png"
+  "img": "img/pernambuco/COVID19_PE_TEM_200407.png"
  },
  {
   "date": "08/04/2020",
-  "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200408.png"
+  "img": "img/pernambuco/COVID19_PE_TEM_200408.png"
  },
  {
   "date": "09/04/2020",
-  "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200409.png"
+  "img": "img/pernambuco/COVID19_PE_TEM_200409.png"
  },
  {
   "date": "10/04/2020",
-  "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200410.png"
+  "img": "img/pernambuco/COVID19_PE_TEM_200410.png"
  },
  {
   "date": "11/04/2020",
-  "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200411.png"
+  "img": "img/pernambuco/COVID19_PE_TEM_200411.png"
  },
  {
   "date": "12/04/2020",
-  "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200412.png"
+  "img": "img/pernambuco/COVID19_PE_TEM_200412.png"
  },
  {
   "date": "13/04/2020",
-  "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200413.png"
+  "img": "img/pernambuco/COVID19_PE_TEM_200413.png"
  },
  {
   "date": "14/04/2020",
-  "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200414.png"
+  "img": "img/pernambuco/COVID19_PE_TEM_200414.png"
  },
  {
   "date": "15/04/2020",
-  "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200415.png"
+  "img": "img/pernambuco/COVID19_PE_TEM_200415.png"
  },
  {
   "date": "16/04/2020",
-  "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200416.png"
+  "img": "img/pernambuco/COVID19_PE_TEM_200416.png"
  },
  {
   "date": "17/04/2020",
-  "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200417.png"
+  "img": "img/pernambuco/COVID19_PE_TEM_200417.png"
  },
  {
   "date": "18/04/2020",
-  "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200418.png"
+  "img": "img/pernambuco/COVID19_PE_TEM_200418.png"
  },
  {
   "date": "19/04/2020",
-  "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200419.png"
+  "img": "img/pernambuco/COVID19_PE_TEM_200419.png"
  },
  {
   "date": "20/04/2020",
-  "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200420.png"
+  "img": "img/pernambuco/COVID19_PE_TEM_200420.png"
  },
  {
   "date": "21/04/2020",
-  "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200421.png"
+  "img": "img/pernambuco/COVID19_PE_TEM_200421.png"
  },
  {
   "date": "22/04/2020",
-  "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200422.png"
+  "img": "img/pernambuco/COVID19_PE_TEM_200422.png"
  },
  {
   "date": "23/04/2020",
-  "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200423.png"
+  "img": "img/pernambuco/COVID19_PE_TEM_200423.png"
  },
  {
   "date": "24/04/2020",
-  "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200424.png"
+  "img": "img/pernambuco/COVID19_PE_TEM_200424.png"
  },
  {
   "date": "25/04/2020",
-  "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200425.png"
+  "img": "img/pernambuco/COVID19_PE_TEM_200425.png"
  },
  {
   "date": "26/04/2020",
-  "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200426.png"
+  "img": "img/pernambuco/COVID19_PE_TEM_200426.png"
  },
  {
   "date": "27/04/2020",
-  "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200427.png"
+  "img": "img/pernambuco/COVID19_PE_TEM_200427.png"
  },
  {
   "date": "28/04/2020",
-  "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200428.png"
+  "img": "img/pernambuco/COVID19_PE_TEM_200428.png"
  },
  {
   "date": "29/04/2020",
-  "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200429.png"
+  "img": "img/pernambuco/COVID19_PE_TEM_200429.png"
  },
  {
   "date": "30/04/2020",
-  "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200430.png"
+  "img": "img/pernambuco/COVID19_PE_TEM_200430.png"
  },
  {
   "date": "01/05/2020",
-  "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200501.png"
+  "img": "img/pernambuco/COVID19_PE_TEM_200501.png"
  },
  {
   "date": "02/05/2020",
-  "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200502.png"
+  "img": "img/pernambuco/COVID19_PE_TEM_200502.png"
  },
  {
   "date": "03/05/2020",
-  "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200503.png"
+  "img": "img/pernambuco/COVID19_PE_TEM_200503.png"
  },
  {
   "date": "04/05/2020",
-  "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200504.png"
+  "img": "img/pernambuco/COVID19_PE_TEM_200504.png"
  },
  {
   "date": "05/05/2020",
-  "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200505.png"
+  "img": "img/pernambuco/COVID19_PE_TEM_200505.png"
  },
  {
   "date": "06/05/2020",
-  "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200506.png"
+  "img": "img/pernambuco/COVID19_PE_TEM_200506.png"
  },
  {
   "date": "07/05/2020",
-  "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200507.png"
+  "img": "img/pernambuco/COVID19_PE_TEM_200507.png"
  },
  {
   "date": "08/05/2020",
-  "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200508.png"
+  "img": "img/pernambuco/COVID19_PE_TEM_200508.png"
  },
  {
   "date": "09/05/2020",
-  "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200509.png"
+  "img": "img/pernambuco/COVID19_PE_TEM_200509.png"
  },
  {
   "date": "10/05/2020",
-  "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200510.png"
+  "img": "img/pernambuco/COVID19_PE_TEM_200510.png"
  },
  {
   "date": "11/05/2020",
-  "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200511.png"
+  "img": "img/pernambuco/COVID19_PE_TEM_200511.png"
  },
  {
   "date": "12/05/2020",
-  "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200512.png"
+  "img": "img/pernambuco/COVID19_PE_TEM_200512.png"
  },
  {
   "date": "13/05/2020",
-  "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200513.png"
+  "img": "img/pernambuco/COVID19_PE_TEM_200513.png"
  },
  {
   "date": "14/05/2020",
-  "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200514.png"
+  "img": "img/pernambuco/COVID19_PE_TEM_200514.png"
  },
  {
   "date": "15/05/2020",
-  "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200515.png"
+  "img": "img/pernambuco/COVID19_PE_TEM_200515.png"
  },
  {
   "date": "16/05/2020",
-  "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200516.png"
+  "img": "img/pernambuco/COVID19_PE_TEM_200516.png"
  },
  {
   "date": "17/05/2020",
-  "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200517.png"
+  "img": "img/pernambuco/COVID19_PE_TEM_200517.png"
  },
  {
   "date": "18/05/2020",
-  "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200518.png"
+  "img": "img/pernambuco/COVID19_PE_TEM_200518.png"
  },
  {
   "date": "19/05/2020",
-  "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200519.png"
+  "img": "img/pernambuco/COVID19_PE_TEM_200519.png"
  },
  {
   "date": "20/05/2020",
-  "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200520.png"
+  "img": "img/pernambuco/COVID19_PE_TEM_200520.png"
  },
  {
   "date": "21/05/2020",
-  "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200521.png"
+  "img": "img/pernambuco/COVID19_PE_TEM_200521.png"
  },
  {
   "date": "22/05/2020",
-  "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200522.png"
+  "img": "img/pernambuco/COVID19_PE_TEM_200522.png"
+ },
+ {
+  "date": "23/05/2020",
+  "img": "img/pernambuco/COVID19_PE_TEM_200523.png"
  }
-/** map-images:end */
+/** map-images-2:end */
 ];
 
-export default class Home extends Component {
+export default class Home2 extends Component {
 
     defaultBeforeDate = '01/04/2020';
-    defaultAfterDate = '01/04/2020';
+    defaultAfterDate = '23/05/2020';
 
     state = {
         beforeDateHover: parse("01/04/2020", 'dd/MM/yyyy', new Date()),
         beforeDate: parse("01/04/2020", 'dd/MM/yyyy', new Date()),
-        afterDate: parse("10/04/2020", 'dd/MM/yyyy', new Date()),
+        afterDate: parse("23/05/2020", 'dd/MM/yyyy', new Date()),
 
         beforeDateCurrent: parse("01/04/2020", 'dd/MM/yyyy', new Date()),
-        afterDateCurrent: parse("10/04/2020", 'dd/MM/yyyy', new Date()),
+        afterDateCurrent: parse("23/05/2020", 'dd/MM/yyyy', new Date()),
     };
 
     timeout = 0;
-
-    constructor(props) {
-        super(props);
-        this.defaultBeforeDate = this.getMinDate();
-    }
 
     getMinDate = () => {
         const dates = images.map(i => parse(i.date, 'dd/MM/yyyy', new Date()));
@@ -360,10 +255,6 @@ export default class Home extends Component {
         console.log('dateExists')
         const dateFormatted = format(date, 'dd/MM/yyyy');
         return images.find((img) => img.date === dateFormatted) || null;
-    }
-
-    validInterval() {
-        return this.state.beforeDateCurrent < this.state.afterDateCurrent;
     }
 
     validDate(date) {
@@ -452,13 +343,14 @@ export default class Home extends Component {
     render() {
 
         return (
-            <div className="home section" id="section-1">
+            <div className="home-2 section" id="section-2">
 
                 <div className="container-lg">
-                    <h4 className="my-4 text-center">Distribuição Espaço-temporal dos casos confirmados do Coronavírus Covid-19 no Nordeste do Brasil</h4>
+                    <h4 className="my-4 text-center">Distribuição Espaço-temporal dos casos confirmados do Coronavírus Covid-19 no Estado de Pernambuco</h4>
                 </div>
 
                 <div className="cvd-map-container">
+
                     <div className="w-100">
 
                         <div className="w-100 container-lg">
@@ -469,7 +361,7 @@ export default class Home extends Component {
                                         <label className="cvd-label">Antes</label>
                                         <div>
                                             <DatePicker
-                                                className={`${this.dateExists(this.state.beforeDate) && this.validInterval() ? '' : 'react-date-picker--error'}`}
+                                                className={`${this.dateExists(this.state.beforeDate) ? '' : 'react-date-picker--error'}`}
                                                 calendarType="US"
                                                 minDate={this.getMinDate()}
                                                 maxDate={this.getMaxDate()}
@@ -487,7 +379,7 @@ export default class Home extends Component {
                                         <label className="cvd-label">Depois</label>
                                         <div>
                                             <DatePicker
-                                                className={`${this.dateExists(this.state.afterDate) && this.validInterval() ? '' : 'react-date-picker--error'}`}
+                                                className={`${this.dateExists(this.state.afterDate) ? '' : 'react-date-picker--error'}`}
                                                 calendarType="US"
                                                 minDate={this.getMinDate()}
                                                 maxDate={this.getMaxDate()}
@@ -522,12 +414,9 @@ export default class Home extends Component {
                         </div>
                     </div>
 
-                    <div className="-flex-shrink-1 cvd-caption">
-                        <div className="d-flex flex-wrap justify-content-start justify-content-sm-between flex-xl-column">
-                            <img className="-img-fluid -float-left" src="img/nordeste/BRASIL - NORDESTE - TEMPORAL_LEGENDA-1.png" />
-                            <img className="-img-fluid -float-left d-sm-none d-lg-inline-block" src="img/nordeste/BRASIL - NORDESTE - TEMPORAL_LEGENDA-2.png" />
-                            <img className="-img-fluid -float-left" src="img/nordeste/BRASIL - NORDESTE - TEMPORAL_LEGENDA-3.png" />
-                        </div>
+                    <div className="cvd-caption d-flex flex-wrap justify-content-between">
+                        <img className="" src="img/pernambuco/COVID19_PE_TEM_LEGENDA-1.png" />
+                        <img className="" src="img/pernambuco/COVID19_PE_TEM_LEGENDA-2.png" />
                     </div>
                 </div>
 
