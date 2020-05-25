@@ -5,23 +5,12 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faCalendarAlt, faUndoAlt} from "@fortawesome/free-solid-svg-icons";
 import TwentyTwenty from "react-twentytwenty";
 import {compareAsc, compareDesc, format, parse} from "date-fns";
-import {toast, ToastContainer} from "react-toastify";
+import {toast} from "react-toastify";
 
-const images = [
-    {date: "01/04/2020", img: "img/recife/01.04.png"},
-    {date: "05/04/2020", img: "img/recife/05.04.png"},
-    {date: "05/05/2020", img: "img/recife/05.05.png"},
-    {date: "10/04/2020", img: "img/recife/10.04.png"},
-    {date: "10/05/2020", img: "img/recife/10.05.png"},
-    {date: "15/04/2020", img: "img/recife/15.04.png"},
-    {date: "15/05/2020", img: "img/recife/15.05.png"},
-    {date: "20/04/2020", img: "img/recife/20.04.png"},
-    {date: "20/05/2020", img: "img/recife/20.05.png"},
-    {date: "25/04/2020", img: "img/recife/25.04.png"},
-    {date: "30/04/2020", img: "img/recife/30.04.png"},
-];
 
 export default class Slider extends Component {
+
+    config = null;
 
     defaultBeforeDate = null;
     defaultAfterDate = null;
@@ -31,6 +20,8 @@ export default class Slider extends Component {
 
     constructor(props) {
         super(props);
+
+        this.config = props.config;
 
         this.defaultBeforeDate = format(this.getMinDate(), 'dd/MM/yyyy');
         this.defaultAfterDate = format(this.getMaxDate(), 'dd/MM/yyyy');
@@ -47,19 +38,19 @@ export default class Slider extends Component {
     }
 
     getMinDate = () => {
-        const dates = images.map(i => parse(i.date, 'dd/MM/yyyy', new Date()));
+        const dates = this.config.images.map(i => parse(i.date, 'dd/MM/yyyy', new Date()));
         return dates.sort(compareAsc)[0]
     }
 
     getMaxDate = () => {
-        const dates = images.map(i => parse(i.date, 'dd/MM/yyyy', new Date()));
+        const dates = this.config.images.map(i => parse(i.date, 'dd/MM/yyyy', new Date()));
         return dates.sort(compareDesc)[0]
     }
 
     dateExists = (date) => {
         console.log('dateExists')
         const dateFormatted = format(date, 'dd/MM/yyyy');
-        return images.find((img) => img.date === dateFormatted) || null;
+        return this.config.images.find((img) => img.date === dateFormatted) || null;
     }
 
     validInterval() {
@@ -126,7 +117,7 @@ export default class Slider extends Component {
     };
 
     mapOptions() {
-        return images.map(img => {
+        return this.config.images.map(img => {
             return {value: img.img, label: img.date, isDisabled: false};
         })
     }
@@ -141,13 +132,13 @@ export default class Slider extends Component {
 
     getImage = (date) => {
         const dateFormatted = format(date, 'dd/MM/yyyy');
-        return images.find((img) => img.date === dateFormatted).img;
+        return this.config.images.find((img) => img.date === dateFormatted).img;
     }
 
     showDateErrorMessage(date, message) {
         toast.error(message || "A data informada não é válida", {
             position: "top-right",
-            autoClose: 5000,
+            autoClose: 3000,
             hideProgressBar: true,
             closeOnClick: true,
             pauseOnHover: true,
@@ -158,10 +149,10 @@ export default class Slider extends Component {
 
     render() {
         return (
-            <div className="slider section" id="section-4">
+            <div className="slider section" id={`section-${this.config.id}`}>
 
                 <div className="container-lg">
-                    <h4 className="my-4 text-center">Distribuição Espaço-temporal dos casos confirmados do Coronavírus Covid-19 no Recife</h4>
+                    <h4 className="my-4 text-center">{this.config.title}</h4>
 
                     <form className="">
                         <div className="form-row justify-content-between">
@@ -169,6 +160,7 @@ export default class Slider extends Component {
                                 <label className="cvd-label">Antes</label>
                                 <div>
                                     <DatePicker
+                                        minDetail="year"
                                         className={`${this.dateExists(this.state.beforeDate) && this.validInterval() ? '' : 'react-date-picker--error'}`}
                                         calendarType="US"
                                         minDate={this.getMinDate()}
@@ -188,6 +180,7 @@ export default class Slider extends Component {
                                 <label className="cvd-label">Depois</label>
                                 <div>
                                     <DatePicker
+                                        minDetail="year"
                                         className={`${this.dateExists(this.state.afterDate) && this.validInterval() ? '' : 'react-date-picker--error'}`}
                                         calendarType="US"
                                         minDate={this.getMinDate()}
@@ -207,7 +200,8 @@ export default class Slider extends Component {
 
                 <div className="twentytwenty-wrapper my-2">
                     <TwentyTwenty
-                        defaultPosition={0.35}
+                        // defaultPosition={0.35}
+                        defaultPosition={this.config.defaultPosition}
                         left={<img className="cvd-map-image" src={this.getImage(this.state.beforeDateCurrent)} alt="Imagem antes" />}
                         right={<img className="cvd-map-image" src={this.getImage(this.state.afterDateCurrent)} alt="Imagem depois" />}
                         slider={
