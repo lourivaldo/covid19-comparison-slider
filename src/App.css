@@ -1,3 +1,12 @@
+html {
+    /*scroll-behavior: smooth;*/
+    /*overflow-x: hidden;*/
+}
+
+body {
+    /*overflow-x: hidden;*/
+}
+
 h4 {
     color: rgba(0, 0, 0, 0.68);
 }
@@ -123,6 +132,18 @@ h4 {
     color: red;
 }
 
+.react-calendar__month-view__days__day--weekend {
+    color: black;
+}
+
+.react-calendar__tile--active {
+    background: #9c020d;
+    color: white;
+}
+.react-calendar__tile--active:enabled:hover, .react-calendar__tile--active:enabled:focus {
+    background: #7a020d;
+}
+
 .react-date-picker__inputGroup, .react-date-picker__inputGroup input{
     color: #343a40;
 }
@@ -132,9 +153,6 @@ h4 {
 
 button:disabled.react-calendar__month-view__days__day {
     color: rgba(170, 170, 170, .75);
-}
-button.react-calendar__month-view__days__day--weekend {
-    color: inherit;
 }
 
 /* Scrool top buttom */

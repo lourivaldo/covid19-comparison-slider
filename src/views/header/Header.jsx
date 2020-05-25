@@ -3,6 +3,9 @@ import './Header.scss'
 import {parse, format} from "date-fns";
 import ReactHtmlParser, { processNodes, convertNodeToElement, htmlparser2 } from 'react-html-parser';
 import $ from 'jquery';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export default class Header extends Component {
 
@@ -15,6 +18,74 @@ export default class Header extends Component {
         }
     }
 
+    dimensions = {
+        width: null,
+        height: null,
+    };
+    settings = {
+        // nextArrow: '<button class="any-class-name-you-want-next">Next</button>',
+        // prevArrow: '<button class="any-class-name-you-want-previous">Previous</button>',
+        accessibility: true,
+        // arrows: false,
+        arrows: true,
+        dots: true,
+        speed: 300,
+        infinite: false,
+        slidesToScroll: 1,
+        slidesToShow: 3,
+        // centerMode: true,
+        centerMode: false,
+        variableWidth: false,
+        // variableWidth: true,
+
+        // autoplay: true,
+        // autoplaySpeed: 2000,
+        responsive: [
+            {
+                breakpoint: 9999,
+                settings: "unslick",
+            },
+            {
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 2,
+                    // slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    };
+
+    // createSlick() {
+    //     $('.cvd-cards').unslick && $('.cvd-cards').unslick();
+    //
+    //     $('.cvd-cards').slick(this.settings);
+    //
+    //     this.forceUpdate();
+    // }
+    //
+    // componentDidMount() {
+    //     // this.createSlick();
+    //     //
+    //     // window.onresize = () => {
+    //     //     const width = $(window).width();
+    //     //     const height = $(window).height();
+    //     //
+    //     //     if (this.dimensions.width >= 992 && width < 992) {
+    //     //         this.createSlick();
+    //     //     }
+    //     //
+    //     //     this.dimensions.width = width;
+    //     //     this.dimensions.height = height;
+    //     // };
+    // }
+
     render() {
 
         const maps = [
@@ -22,25 +93,25 @@ export default class Header extends Component {
                 id: 1,
                 title: `Distribuição Espaço-temporal dos casos <strong>confirmados</strong> do Coronavírus Covid-19 no <strong>Nordeste do Brasil</strong>`,
                 // title: 'Distribuição Espaço-temporal dos casos confirmados do Coronavírus Covid-19 no Nordeste do Brasil',
-                img: "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200522.png",
+                img: "img/thumbs/thumb-4.png",
                 updatedAt: new Date(2020, 4, 22),
             },
             {
                 id: 2,
                 title: "Distribuição Espaço-temporal dos casos <strong>confirmados</strong> do Coronavírus Covid-19 no <strong>Estado de Pernambuco</strong>",
-                img: "img/pernambuco/COVID19_PE_TEM_200523.png",
+                img: "img/thumbs/thumb-3.png",
                 updatedAt: new Date(2020, 4, 23),
             },
             {
                 id: 3,
                 title: "Distribuição Espaço-temporal dos casos <strong>confirmados</strong> do Coronavírus Covid-19 na <strong>Região Metropolitana do Recife</strong>",
-                img: "img/rmr/aglomerados confirmados 25.04 (1).png",
+                img: "img/thumbs/thumb-2.png",
                 updatedAt: new Date(2020, 4, 20),
             },
             {
                 id: 4,
                 title: "Distribuição Espaço-temporal dos casos <strong>confirmados</strong> do Coronavírus Covid-19 na <strong>Cidade do Recife</strong>",
-                img: "img/confirmados/30.04.png",
+                img: "img/thumbs/thumb-1.png",
                 updatedAt: new Date(2020, 4, 20),
             },
         ];
@@ -62,11 +133,14 @@ export default class Header extends Component {
 
                 <div className="container cvd-maps-list">
 
-                    <div className="row justify-content-center my-5">
+                    <Slider {...this.settings} className="row">
+                    {/*<div className="row -d-flex -align-items-stretch cvd-cards">*/}
                         {maps.map((map) => (
-                            <div className="col-sm-6 col-md-4 col-lg-3 mt-4" key={map.id}>
+                            // <div className="col-sm-6 col-md-4 col-lg-3 mt-4" key={map.id}>
+                            <div className="col-lg-3" key={map.id}>
+                            {/*<div className="cvd-card" key={map.id}>*/}
                                 <div className="card" onClick={() => this.scrollTo(map.id)}>
-                                    <div className={`card-img-top ${map.id === 2 ? 'card-img-top-lg' : '' }`}>
+                                    <div className={`card-img-top ${map.id === 2 ? '-card-img-top-lg' : '' }`}>
                                         <img className="card-img-top-img" src={map.img}/>
                                     </div>
                                     <div className="card-block">
@@ -83,7 +157,8 @@ export default class Header extends Component {
                             )
                         )}
 
-                    </div>
+                    {/*</div>*/}
+                    </Slider>
                 </div>
 
             </div>
