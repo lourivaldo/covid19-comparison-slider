@@ -7,35 +7,37 @@ body {
     /*overflow-x: hidden;*/
 }
 
-h4 {
+.App {
+
+  h4 {
     color: rgba(0, 0, 0, 0.68);
-}
+  }
 
-.cvd-subtitle {
+  .cvd-subtitle {
     color: #6c757d;
-}
+  }
 
-.cvd-label {
+  .cvd-label {
     margin-bottom: 0;
     color: #343a40;
-}
+  }
 
-.cvd-map-image {
+  .cvd-map-image {
     max-width: 100%
-}
+  }
 
-.twentytwenty-bar {
+  .twentytwenty-bar {
     height: 100%;
-}
+  }
 
-@media (min-width: 1200px) {
+  @media (min-width: 1200px) {
     .slider .twentytwenty-wrapper {
-        width: 100%;
+      width: 100%;
     }
-}
+  }
 
 
-.twentytwenty-handle:before, .twentytwenty-handle:after {
+  .twentytwenty-handle:before, .twentytwenty-handle:after {
     content: " ";
     display: block;
     width: 3px;
@@ -48,18 +50,18 @@ h4 {
     -webkit-box-shadow: 0px 0px 12px rgba(51, 51, 51, 0.5);
     -moz-box-shadow: 0px 0px 12px rgba(51, 51, 51, 0.5);
     box-shadow: 0px 0px 12px rgba(51, 51, 51, 0.5);
-}
+  }
 
-.twentytwenty-left-arrow, .twentytwenty-right-arrow {
+  .twentytwenty-left-arrow, .twentytwenty-right-arrow {
     width: 0;
     height: 0;
     border: 6px inset transparent;
     position: absolute;
     top: 50%;
     margin-top: -6px;
-}
+  }
 
-.twentytwenty-handle {
+  .twentytwenty-handle {
     height: 38px;
     width: 38px;
     position: absolute;
@@ -75,108 +77,108 @@ h4 {
     -moz-box-shadow: 0px 0px 12px rgba(51, 51, 51, 0.5);
     box-shadow: 0px 0px 12px rgba(51, 51, 51, 0.5);
     z-index: 40;
-}
+  }
 
-.twentytwenty-handle:before {
+  .twentytwenty-handle:before {
     bottom: 50%;
     margin-bottom: 22px;
     -webkit-box-shadow: 0 3px 0 #000, 0px 0px 12px rgba(51, 51, 51, 0.5);
     -moz-box-shadow: 0 3px 0 #000, 0px 0px 12px rgba(51, 51, 51, 0.5);
     box-shadow: 0 3px 0 #000, 0px 0px 12px rgba(51, 51, 51, 0.5);
-}
+  }
 
-.twentytwenty-handle:after {
+  .twentytwenty-handle:after {
     top: 50%;
     margin-top: 22px;
     -webkit-box-shadow: 0 -3px 0 #000, 0px 0px 12px rgba(51, 51, 51, 0.5);
     -moz-box-shadow: 0 -3px 0 #000, 0px 0px 12px rgba(51, 51, 51, 0.5);
     box-shadow: 0 -3px 0 #000, 0px 0px 12px rgba(51, 51, 51, 0.5);
-}
+  }
 
-.twentytwenty-left-arrow {
+  .twentytwenty-left-arrow {
     border-right: 6px solid #000;
     left: 50%;
     margin-left: -17px;
-}
+  }
 
-.twentytwenty-right-arrow {
+  .twentytwenty-right-arrow {
     border-left: 6px solid #000;
     right: 50%;
     margin-right: -17px;
-}
+  }
 
-[class^="react-date-picker__inputGroup"] {
+  [class^="react-date-picker__inputGroup"] {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
--khtml-user-select: none;
--moz-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-}
-.react-date-picker {
+  }
+  .react-date-picker {
     display: flex;
-}
+  }
 
-.react-date-picker--open {
+  .react-date-picker--open {
     z-index: 40;
-}
+  }
 
-.react-date-picker__wrapper {
+  .react-date-picker__wrapper {
     padding: 4px;
     border-radius: 4px;
     border-color: hsl(0,0%,80%);
-}
+  }
 
-.react-date-picker--error .react-date-picker__wrapper, .react-date-picker--error .react-date-picker__button  {
+  .react-date-picker--error .react-date-picker__wrapper, .react-date-picker--error .react-date-picker__button  {
     border-color: red;
     color: red;
-}
+  }
 
-.react-calendar__month-view__days__day--weekend {
+  .react-calendar__month-view__days__day--weekend {
     color: black;
-}
+  }
 
-.react-calendar__tile--active {
+  .react-calendar__tile--active {
     background: #9c020d;
     color: white;
-}
-.react-calendar__tile--active:enabled:hover, .react-calendar__tile--active:enabled:focus {
+  }
+  .react-calendar__tile--active:enabled:hover, .react-calendar__tile--active:enabled:focus {
     background: #7a020d;
-}
+  }
 
-.react-date-picker__inputGroup, .react-date-picker__inputGroup input{
+  .react-date-picker__inputGroup, .react-date-picker__inputGroup input{
     color: #343a40;
-}
-.react-date-picker__button {
+  }
+  .react-date-picker__button {
     color: hsl(0, 0%, 62%);
-}
-.react-calendar__tile--now {
+  }
+  .react-calendar__tile--now {
     background: #fed5d5;
-}
-.react-calendar__tile--now:enabled:hover, .react-calendar__tile--now:enabled:focus {
+  }
+  .react-calendar__tile--now:enabled:hover, .react-calendar__tile--now:enabled:focus {
     background: #e6bebe;
-}
+  }
 
-.react-calendar__tile--hasActive {
+  .react-calendar__tile--hasActive:enabled {
     background: #7a020d;
     color: white;
-}
+  }
 
-.react-calendar__tile--hasActive:enabled:hover, .react-calendar__tile--hasActive:enabled:focus {
+  .react-calendar__tile--hasActive:enabled:hover, .react-calendar__tile--hasActive:enabled:focus {
     background: #e6bebe;
     color: black;
-}
+  }
 
-.react-date-picker__button:focus {
+  .react-date-picker__button:focus {
     outline:5px auto #e6bebe !important;
-}
+  }
 
-button:disabled.react-calendar__month-view__days__day {
+  button:disabled.react-calendar__month-view__days__day {
     color: rgba(170, 170, 170, .75);
-}
+  }
 
-/* Scrool top buttom */
-#toTopBtn {
+  /* Scrool top buttom */
+  #toTopBtn {
     display: none;
     position: fixed;
     bottom: 18px;
@@ -191,30 +193,32 @@ button:disabled.react-calendar__month-view__days__day {
     border-radius: 100%;
     width: 46px;
     height: 46px;
-}
-/*
-node_modules/.bin/imagemin public/img/bg-covid19.jpg --plugin.pngquant.quality=65-80 --plugin.pngquant.speed=1 --plugin.pngquant.floyd=1 --out-dir=public/img/bg-covid19-2.jpg
-*/
-#toTopBtn svg {
+  }
+  /*
+  node_modules/.bin/imagemin public/img/bg-covid19.jpg --plugin.pngquant.quality=65-80 --plugin.pngquant.speed=1 --plugin.pngquant.floyd=1 --out-dir=public/img/bg-covid19-2.jpg
+  */
+  #toTopBtn svg {
     position: relative;
-}
+  }
 
-.section {
+  .section {
     background: white;
     padding-top: .5rem;
     margin-top: 3rem;
     margin-bottom: 3rem;
     border-radius: .28571429rem;
     box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
-}
+  }
 
-@media (min-width: 960px) {
+  @media (min-width: 960px) {
     .section {
-        max-width: 1140px;
-        width: 100%;
-        /*padding-right: 15px;*/
-        /*padding-left: 15px;*/
-        margin-right: auto;
-        margin-left: auto;
+      max-width: 1140px;
+      width: 100%;
+      /*padding-right: 15px;*/
+      /*padding-left: 15px;*/
+      margin-right: auto;
+      margin-left: auto;
     }
+  }
+
 }

@@ -68,7 +68,7 @@ export default class Header extends Component {
                 <header className="masthead">
                     <div className="masthead-content">
                         <div className="container text-center text-white">
-                            <h1 className="masthead-heading mb-0">Evolução espaço-temporal</h1>
+                            <h1 className="masthead-heading mb-0" id="page-title">Evolução espaço-temporal</h1>
                             <h2 className="masthead-subheading mb-0">do Coronavírus Covid-19</h2>
                         </div>
                     </div>

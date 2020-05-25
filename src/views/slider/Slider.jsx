@@ -1,4 +1,3 @@
-// React Hooks
 import React, { Component } from 'react'
 import DatePicker from "react-date-picker";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
@@ -6,7 +5,6 @@ import {faCalendarAlt, faUndoAlt} from "@fortawesome/free-solid-svg-icons";
 import TwentyTwenty from "react-twentytwenty";
 import {compareAsc, compareDesc, format, parse} from "date-fns";
 import {toast} from "react-toastify";
-
 
 export default class Slider extends Component {
 
@@ -48,14 +46,12 @@ export default class Slider extends Component {
     }
 
     dateExists = (date) => {
-        console.log('dateExists')
         const dateFormatted = format(date, 'dd/MM/yyyy');
         return this.config.images.find((img) => img.date === dateFormatted) || null;
     }
 
     validInterval() {
         if (this.state.beforeDateCurrent < this.state.afterDateCurrent) return true;
-        console.log('validInterval')
         clearTimeout(this.timeoutDateInterval);
         this.timeoutDateInterval = setTimeout(() => {
             if (!this.state.beforeDateCurrent < this.state.afterDateCurrent) this.showDateErrorMessage(null, 'Intervalo de datas inválido');
@@ -76,42 +72,26 @@ export default class Slider extends Component {
     handleChangeBefore = beforeDate => {
 
         if (!beforeDate) {
-            beforeDate = parse(this.defaultBeforeDate, 'dd/MM/yyyy', new Date())
-            this.setState(
-                { beforeDateHover: beforeDate },
-                () => console.log(`Option selected:`, this.state.beforeDate)
-            );
-            // this.forceUpdate();
+            beforeDate = parse(this.defaultBeforeDate, 'dd/MM/yyyy', new Date());
+            this.setState({beforeDateHover: beforeDate});
         }
 
-        this.setState(
-            { beforeDate },
-            () => console.log(`Option selected:`, this.state.beforeDate)
-        );
+        this.setState({beforeDate});
 
         if (!this.validDate(beforeDate)) return;
 
-        this.setState(
-            { beforeDateCurrent: beforeDate },
-            () => console.log(`Option selected:`, this.state.beforeDate)
-        );
+        this.setState({beforeDateCurrent: beforeDate});
     };
 
     handleChangeAfter = afterDate => {
 
         if (!afterDate) afterDate = parse(this.defaultAfterDate, 'dd/MM/yyyy', new Date());
 
-        this.setState(
-            {afterDate},
-            () => console.log(`Option selected:`, this.state.afterDate)
-        );
+        this.setState({afterDate});
 
         if (!this.validDate(afterDate)) return;
 
-        this.setState(
-            {afterDateCurrent: afterDate},
-            () => console.log(`Option selected:`, this.state.afterDate)
-        );
+        this.setState({afterDateCurrent: afterDate});
 
         this.forceUpdate();
     };
@@ -120,10 +100,6 @@ export default class Slider extends Component {
         return this.config.images.map(img => {
             return {value: img.img, label: img.date, isDisabled: false};
         })
-    }
-
-    handleDateChangeRaw = (e) => {
-        e.preventDefault();
     }
 
     tileDisabled = ({date, view }) => {
@@ -160,7 +136,7 @@ export default class Slider extends Component {
                                 <label className="cvd-label">Antes</label>
                                 <div>
                                     <DatePicker
-                                        minDetail="year"
+                                        minDetail="month"
                                         className={`${this.dateExists(this.state.beforeDate) && this.validInterval() ? '' : 'react-date-picker--error'}`}
                                         calendarType="US"
                                         minDate={this.getMinDate()}
@@ -180,7 +156,7 @@ export default class Slider extends Component {
                                 <label className="cvd-label">Depois</label>
                                 <div>
                                     <DatePicker
-                                        minDetail="year"
+                                        minDetail="month"
                                         className={`${this.dateExists(this.state.afterDate) && this.validInterval() ? '' : 'react-date-picker--error'}`}
                                         calendarType="US"
                                         minDate={this.getMinDate()}
@@ -200,7 +176,6 @@ export default class Slider extends Component {
 
                 <div className="twentytwenty-wrapper my-2">
                     <TwentyTwenty
-                        // defaultPosition={0.35}
                         defaultPosition={this.config.defaultPosition}
                         left={<img className="cvd-map-image" src={this.getImage(this.state.beforeDateCurrent)} alt="Imagem antes" />}
                         right={<img className="cvd-map-image" src={this.getImage(this.state.afterDateCurrent)} alt="Imagem depois" />}

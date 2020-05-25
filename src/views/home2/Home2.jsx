@@ -1,4 +1,3 @@
-// React Hooks
 import React, { Component } from 'react'
 import DatePicker from "react-date-picker";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
@@ -75,42 +74,26 @@ export default class Home2 extends Component {
     handleChangeBefore = beforeDate => {
 
         if (!beforeDate) {
-            beforeDate = parse(this.defaultBeforeDate, 'dd/MM/yyyy', new Date())
-            this.setState(
-                { beforeDateHover: beforeDate },
-                () => console.log(`Option selected:`, this.state.beforeDate)
-            );
-            // this.forceUpdate();
+            beforeDate = parse(this.defaultBeforeDate, 'dd/MM/yyyy', new Date());
+            this.setState({beforeDateHover: beforeDate});
         }
 
-        this.setState(
-            { beforeDate },
-            () => console.log(`Option selected:`, this.state.beforeDate)
-        );
+        this.setState({beforeDate});
 
         if (!this.validDate(beforeDate)) return;
 
-        this.setState(
-            { beforeDateCurrent: beforeDate },
-            () => console.log(`Option selected:`, this.state.beforeDate)
-        );
+        this.setState({beforeDateCurrent: beforeDate});
     };
 
     handleChangeAfter = afterDate => {
 
         if (!afterDate) afterDate = parse(this.defaultAfterDate, 'dd/MM/yyyy', new Date());
 
-        this.setState(
-            {afterDate},
-            () => console.log(`Option selected:`, this.state.afterDate)
-        );
+        this.setState({afterDate});
 
         if (!this.validDate(afterDate)) return;
 
-        this.setState(
-            {afterDateCurrent: afterDate},
-            () => console.log(`Option selected:`, this.state.afterDate)
-        );
+        this.setState({afterDateCurrent: afterDate});
 
         this.forceUpdate();
     };
@@ -119,10 +102,6 @@ export default class Home2 extends Component {
         return this.config.images.map(img => {
             return {value: img.img, label: img.date, isDisabled: false};
         })
-    }
-
-    handleDateChangeRaw = (e) => {
-        e.preventDefault();
     }
 
     tileDisabled = ({date, view }) => {
@@ -167,7 +146,7 @@ export default class Home2 extends Component {
                                         <label className="cvd-label">Antes</label>
                                         <div>
                                             <DatePicker
-                                                minDetail="year"
+                                                minDetail="month"
                                                 className={`${this.dateExists(this.state.beforeDate) && this.validInterval() ? '' : 'react-date-picker--error'}`}
                                                 calendarType="US"
                                                 minDate={this.getMinDate()}
@@ -186,7 +165,7 @@ export default class Home2 extends Component {
                                         <label className="cvd-label">Depois</label>
                                         <div>
                                             <DatePicker
-                                                minDetail="year"
+                                                minDetail="month"
                                                 className={`${this.dateExists(this.state.afterDate) && this.validInterval() ? '' : 'react-date-picker--error'}`}
                                                 calendarType="US"
                                                 minDate={this.getMinDate()}

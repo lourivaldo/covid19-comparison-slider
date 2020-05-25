@@ -1,4 +1,3 @@
-// React Hooks
 import React, { Component } from 'react'
 import DatePicker from "react-date-picker";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
@@ -54,7 +53,6 @@ export default class Home extends Component {
 
     validInterval() {
         if (this.state.beforeDateCurrent < this.state.afterDateCurrent) return true;
-        console.log('validInterval')
         clearTimeout(this.timeoutDateInterval);
         this.timeoutDateInterval = setTimeout(() => {
             if (!this.state.beforeDateCurrent < this.state.afterDateCurrent) this.showDateErrorMessage(null, 'Intervalo de datas inválido');
@@ -76,40 +74,25 @@ export default class Home extends Component {
 
         if (!beforeDate) {
             beforeDate = parse(this.defaultBeforeDate, 'dd/MM/yyyy', new Date())
-            this.setState(
-                { beforeDateHover: beforeDate },
-                () => console.log(`Option selected:`, this.state.beforeDate)
-            );
+            this.setState({beforeDateHover: beforeDate});
         }
 
-        this.setState(
-            { beforeDate },
-            () => console.log(`Option selected:`, this.state.beforeDate)
-        );
+        this.setState({beforeDate});
 
         if (!this.validDate(beforeDate)) return;
 
-        this.setState(
-            { beforeDateCurrent: beforeDate },
-            () => console.log(`Option selected:`, this.state.beforeDate)
-        );
+        this.setState({beforeDateCurrent: beforeDate});
     };
 
     handleChangeAfter = afterDate => {
 
         if (!afterDate) afterDate = parse(this.defaultAfterDate, 'dd/MM/yyyy', new Date());
 
-        this.setState(
-            {afterDate},
-            () => console.log(`Option selected:`, this.state.afterDate)
-        );
+        this.setState({afterDate});
 
         if (!this.validDate(afterDate)) return;
 
-        this.setState(
-            {afterDateCurrent: afterDate},
-            () => console.log(`Option selected:`, this.state.afterDate)
-        );
+        this.setState({afterDateCurrent: afterDate});
 
         this.forceUpdate();
     };
@@ -161,7 +144,7 @@ export default class Home extends Component {
                                         <label className="cvd-label">Antes</label>
                                         <div>
                                             <DatePicker
-                                                minDetail="year"
+                                                minDetail="month"
                                                 className={`${this.dateExists(this.state.beforeDate) && this.validInterval() ? '' : 'react-date-picker--error'}`}
                                                 calendarType="US"
                                                 minDate={this.getMinDate()}
@@ -180,7 +163,7 @@ export default class Home extends Component {
                                         <label className="cvd-label">Depois</label>
                                         <div>
                                             <DatePicker
-                                                minDetail="year"
+                                                minDetail="month"
                                                 className={`${this.dateExists(this.state.afterDate) && this.validInterval() ? '' : 'react-date-picker--error'}`}
                                                 calendarType="US"
                                                 minDate={this.getMinDate()}
