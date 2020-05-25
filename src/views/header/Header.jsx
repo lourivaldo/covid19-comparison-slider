@@ -94,13 +94,13 @@ export default class Header extends Component {
                 title: `Distribuição Espaço-temporal dos casos <strong>confirmados</strong> do Coronavírus Covid-19 no <strong>Nordeste do Brasil</strong>`,
                 // title: 'Distribuição Espaço-temporal dos casos confirmados do Coronavírus Covid-19 no Nordeste do Brasil',
                 img: "img/thumbs/thumb-4.png",
-                updatedAt: new Date(2020, 4, 22),
+                updatedAt: new Date(2020, 4, 24),
             },
             {
                 id: 2,
                 title: "Distribuição Espaço-temporal dos casos <strong>confirmados</strong> do Coronavírus Covid-19 no <strong>Estado de Pernambuco</strong>",
                 img: "img/thumbs/thumb-3.png",
-                updatedAt: new Date(2020, 4, 23),
+                updatedAt: new Date(2020, 4, 24),
             },
             {
                 id: 3,

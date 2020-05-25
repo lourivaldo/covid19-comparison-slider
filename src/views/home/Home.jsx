@@ -321,6 +321,14 @@ const images = [
  {
   "date": "22/05/2020",
   "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200522.png"
+ },
+ {
+  "date": "23/05/2020",
+  "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200523.png"
+ },
+ {
+  "date": "24/05/2020",
+  "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200524.png"
  }
 /** map-images:end */
 ];

@@ -69,4 +69,9 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 ```
 imagemin --plugin.pngquant.quality={0.5,0.7} public/img/thumbs/* --out-dir=public/img/thumbs/build
+
+node_modules/.bin/imagemin public/img/nordeste/* --out-dir=public/img/nordeste
+node_modules/.bin/imagemin public/img/rmr/* --out-dir=public/img/rmr
+node_modules/.bin/imagemin public/img/pernambuco/* --out-dir=public/img/pernambuco
+node_modules/.bin/imagemin public/img/recife/* --out-dir=public/img/recife
 ```

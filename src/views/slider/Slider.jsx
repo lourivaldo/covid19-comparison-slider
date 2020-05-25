@@ -8,17 +8,17 @@ import {compareAsc, compareDesc, format, parse} from "date-fns";
 import {toast, ToastContainer} from "react-toastify";
 
 const images = [
-    {date: "01/04/2020", img: "img/confirmados/01.04.png"},
-    {date: "05/04/2020", img: "img/confirmados/05.04.png"},
-    {date: "05/05/2020", img: "img/confirmados/05.05.png"},
-    {date: "10/04/2020", img: "img/confirmados/10.04.png"},
-    {date: "10/05/2020", img: "img/confirmados/10.05.png"},
-    {date: "15/04/2020", img: "img/confirmados/15.04.png"},
-    {date: "15/05/2020", img: "img/confirmados/15.05.png"},
-    {date: "20/04/2020", img: "img/confirmados/20.04.png"},
-    {date: "20/05/2020", img: "img/confirmados/20.05.png"},
-    {date: "25/04/2020", img: "img/confirmados/25.04.png"},
-    {date: "30/04/2020", img: "img/confirmados/30.04.png"},
+    {date: "01/04/2020", img: "img/recife/01.04.png"},
+    {date: "05/04/2020", img: "img/recife/05.04.png"},
+    {date: "05/05/2020", img: "img/recife/05.05.png"},
+    {date: "10/04/2020", img: "img/recife/10.04.png"},
+    {date: "10/05/2020", img: "img/recife/10.05.png"},
+    {date: "15/04/2020", img: "img/recife/15.04.png"},
+    {date: "15/05/2020", img: "img/recife/15.05.png"},
+    {date: "20/04/2020", img: "img/recife/20.04.png"},
+    {date: "20/05/2020", img: "img/recife/20.05.png"},
+    {date: "25/04/2020", img: "img/recife/25.04.png"},
+    {date: "30/04/2020", img: "img/recife/30.04.png"},
 ];
 
 export default class Slider extends Component {

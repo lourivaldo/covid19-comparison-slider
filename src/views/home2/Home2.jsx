@@ -221,6 +221,10 @@ const images = [
  {
   "date": "23/05/2020",
   "img": "img/pernambuco/COVID19_PE_TEM_200523.png"
+ },
+ {
+  "date": "24/05/2020",
+  "img": "img/pernambuco/COVID19_PE_TEM_200524.png"
  }
 /** map-images-2:end */
 ];

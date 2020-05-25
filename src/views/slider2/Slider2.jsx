@@ -9,13 +9,13 @@ import {toast, ToastContainer} from "react-toastify";
 
 const images = [
     {date: "05/04/2020", img: "img/rmr/aglomerados confirmados 05.04 (1).png"},
-    {date: "15/04/2020", img: "img/rmr/aglomerados confirmados 15.04 (1).png"},
-    {date: "20/04/2020", img: "img/rmr/aglomerados confirmados 20.04 (1).png"},
-    {date: "25/04/2020", img: "img/rmr/aglomerados confirmados 25.04 (1).png"},
     {date: "05/05/2020", img: "img/rmr/aglomerados confirmados 05.05 (1).png"},
     {date: "10/05/2020", img: "img/rmr/aglomerados confirmados 10.05 (1).png"},
+    {date: "15/04/2020", img: "img/rmr/aglomerados confirmados 15.04 (1).png"},
     {date: "15/05/2020", img: "img/rmr/aglomerados confirmados 15.05 (1).png"},
+    {date: "20/04/2020", img: "img/rmr/aglomerados confirmados 20.04 (1).png"},
     {date: "20/05/2020", img: "img/rmr/aglomerados confirmados 20.05 (1).png"},
+    {date: "25/04/2020", img: "img/rmr/aglomerados confirmados 25.04 (1).png"},
 ];
 
 export default class Slider2 extends Component {
