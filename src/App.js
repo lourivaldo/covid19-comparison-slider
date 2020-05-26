@@ -597,120 +597,60 @@ class App extends React.Component {
                     "img": "img/rmr/aglomerados confirmados 01.04.png"
                 },
                 {
-                    "date": "01/05/2020",
-                    "img": "img/rmr/aglomerados confirmados 01.05.png"
-                },
-                {
                     "date": "02/04/2020",
                     "img": "img/rmr/aglomerados confirmados 02.04.png"
-                },
-                {
-                    "date": "02/05/2020",
-                    "img": "img/rmr/aglomerados confirmados 02.05.png"
                 },
                 {
                     "date": "03/04/2020",
                     "img": "img/rmr/aglomerados confirmados 03.04.png"
                 },
                 {
-                    "date": "03/05/2020",
-                    "img": "img/rmr/aglomerados confirmados 03.05.png"
-                },
-                {
                     "date": "04/04/2020",
                     "img": "img/rmr/aglomerados confirmados 04.04.png"
-                },
-                {
-                    "date": "04/05/2020",
-                    "img": "img/rmr/aglomerados confirmados 04.05.png"
                 },
                 {
                     "date": "05/04/2020",
                     "img": "img/rmr/aglomerados confirmados 05.04.png"
                 },
                 {
-                    "date": "05/05/2020",
-                    "img": "img/rmr/aglomerados confirmados 05.05 (1).png"
-                },
-                {
                     "date": "06/04/2020",
                     "img": "img/rmr/aglomerados confirmados 06.04.png"
-                },
-                {
-                    "date": "06/05/2020",
-                    "img": "img/rmr/aglomerados confirmados 06.05.png"
                 },
                 {
                     "date": "07/04/2020",
                     "img": "img/rmr/aglomerados confirmados 07.04.png"
                 },
                 {
-                    "date": "07/05/2020",
-                    "img": "img/rmr/aglomerados confirmados 07.05.png"
-                },
-                {
                     "date": "08/04/2020",
                     "img": "img/rmr/aglomerados confirmados 08.04.png"
-                },
-                {
-                    "date": "08/05/2020",
-                    "img": "img/rmr/aglomerados confirmados 08.05.png"
                 },
                 {
                     "date": "09/04/2020",
                     "img": "img/rmr/aglomerados confirmados 09.04.png"
                 },
                 {
-                    "date": "09/05/2020",
-                    "img": "img/rmr/aglomerados confirmados 09.05.png"
-                },
-                {
                     "date": "10/04/2020",
                     "img": "img/rmr/aglomerados confirmados 10.04.png"
-                },
-                {
-                    "date": "10/05/2020",
-                    "img": "img/rmr/aglomerados confirmados 10.05 (1).png"
                 },
                 {
                     "date": "11/04/2020",
                     "img": "img/rmr/aglomerados confirmados 11.04.png"
                 },
                 {
-                    "date": "11/05/2020",
-                    "img": "img/rmr/aglomerados confirmados 11.05.png"
-                },
-                {
                     "date": "12/04/2020",
                     "img": "img/rmr/aglomerados confirmados 12.04.png"
-                },
-                {
-                    "date": "12/05/2020",
-                    "img": "img/rmr/aglomerados confirmados 12.05.png"
                 },
                 {
                     "date": "13/04/2020",
                     "img": "img/rmr/aglomerados confirmados 13.04.png"
                 },
                 {
-                    "date": "13/05/2020",
-                    "img": "img/rmr/aglomerados confirmados 13.05.png"
-                },
-                {
                     "date": "14/04/2020",
                     "img": "img/rmr/aglomerados confirmados 14.04.png"
                 },
                 {
-                    "date": "14/05/2020",
-                    "img": "img/rmr/aglomerados confirmados 14.05.png"
-                },
-                {
                     "date": "15/04/2020",
                     "img": "img/rmr/aglomerados confirmados 15.04.png"
-                },
-                {
-                    "date": "15/05/2020",
-                    "img": "img/rmr/aglomerados confirmados 15.05 (1).png"
                 },
                 {
                     "date": "16/04/2020",
@@ -731,10 +671,6 @@ class App extends React.Component {
                 {
                     "date": "20/04/2020",
                     "img": "img/rmr/aglomerados confirmados 20.04 .png"
-                },
-                {
-                    "date": "20/05/2020",
-                    "img": "img/rmr/aglomerados confirmados 20.05 (1).png"
                 },
                 {
                     "date": "21/04/2020",
@@ -775,6 +711,70 @@ class App extends React.Component {
                 {
                     "date": "30/04/2020",
                     "img": "img/rmr/aglomerados confirmados 30.04.png"
+                },
+                {
+                    "date": "01/05/2020",
+                    "img": "img/rmr/aglomerados confirmados 01.05.png"
+                },
+                {
+                    "date": "02/05/2020",
+                    "img": "img/rmr/aglomerados confirmados 02.05.png"
+                },
+                {
+                    "date": "03/05/2020",
+                    "img": "img/rmr/aglomerados confirmados 03.05.png"
+                },
+                {
+                    "date": "04/05/2020",
+                    "img": "img/rmr/aglomerados confirmados 04.05.png"
+                },
+                {
+                    "date": "05/05/2020",
+                    "img": "img/rmr/aglomerados confirmados 05.05 (1).png"
+                },
+                {
+                    "date": "06/05/2020",
+                    "img": "img/rmr/aglomerados confirmados 06.05.png"
+                },
+                {
+                    "date": "07/05/2020",
+                    "img": "img/rmr/aglomerados confirmados 07.05.png"
+                },
+                {
+                    "date": "08/05/2020",
+                    "img": "img/rmr/aglomerados confirmados 08.05.png"
+                },
+                {
+                    "date": "09/05/2020",
+                    "img": "img/rmr/aglomerados confirmados 09.05.png"
+                },
+                {
+                    "date": "10/05/2020",
+                    "img": "img/rmr/aglomerados confirmados 10.05 (1).png"
+                },
+                {
+                    "date": "11/05/2020",
+                    "img": "img/rmr/aglomerados confirmados 11.05.png"
+                },
+                {
+                    "date": "12/05/2020",
+                    "img": "img/rmr/aglomerados confirmados 12.05.png"
+                },
+                {
+                    "date": "13/05/2020",
+                    "img": "img/rmr/aglomerados confirmados 13.05.png"
+                },
+                {
+                    "date": "14/05/2020",
+                    "img": "img/rmr/aglomerados confirmados 14.05.png"
+                },
+                {
+                    "date": "15/05/2020",
+                    "img": "img/rmr/aglomerados confirmados 15.05 (1).png"
+                },
+                {
+                    "date": "20/05/2020",
+                    "img": "img/rmr/aglomerados confirmados 20.05 (1).png"
                 }
                 /** inject-images:end(rmr) */
             ]
@@ -793,44 +793,212 @@ class App extends React.Component {
                     "img": "img/recife/01.04.png"
                 },
                 {
+                    "date": "02/04/2020",
+                    "img": "img/recife/02.04.png"
+                },
+                {
+                    "date": "04/04/2020",
+                    "img": "img/recife/04.04.png"
+                },
+                {
                     "date": "05/04/2020",
                     "img": "img/recife/05.04.png"
                 },
                 {
-                    "date": "05/05/2020",
-                    "img": "img/recife/05.05.png"
+                    "date": "06/04/2020",
+                    "img": "img/recife/06.04.png"
+                },
+                {
+                    "date": "07/04/2020",
+                    "img": "img/recife/07.04.png"
+                },
+                {
+                    "date": "08/04/2020",
+                    "img": "img/recife/08.04.png"
+                },
+                {
+                    "date": "09/04/2020",
+                    "img": "img/recife/09.04.png"
                 },
                 {
                     "date": "10/04/2020",
                     "img": "img/recife/10.04.png"
                 },
                 {
-                    "date": "10/05/2020",
-                    "img": "img/recife/10.05.png"
+                    "date": "11/04/2020",
+                    "img": "img/recife/11.04.png"
+                },
+                {
+                    "date": "12/04/2020",
+                    "img": "img/recife/12.04.png"
+                },
+                {
+                    "date": "13/04/2020",
+                    "img": "img/recife/13.04.png"
+                },
+                {
+                    "date": "14/04/2020",
+                    "img": "img/recife/14.04.png"
                 },
                 {
                     "date": "15/04/2020",
                     "img": "img/recife/15.04.png"
                 },
                 {
-                    "date": "15/05/2020",
-                    "img": "img/recife/15.05.png"
+                    "date": "16/04/2020",
+                    "img": "img/recife/16.04.png"
+                },
+                {
+                    "date": "17/04/2020",
+                    "img": "img/recife/17.04.png"
+                },
+                {
+                    "date": "18/04/2020",
+                    "img": "img/recife/18.04.png"
+                },
+                {
+                    "date": "19/04/2020",
+                    "img": "img/recife/19.04.png"
                 },
                 {
                     "date": "20/04/2020",
                     "img": "img/recife/20.04.png"
                 },
                 {
-                    "date": "20/05/2020",
-                    "img": "img/recife/20.05.png"
+                    "date": "21/04/2020",
+                    "img": "img/recife/21.04.png"
+                },
+                {
+                    "date": "22/04/2020",
+                    "img": "img/recife/22.04.png"
+                },
+                {
+                    "date": "23/04/2020",
+                    "img": "img/recife/23.04.png"
+                },
+                {
+                    "date": "24/04/2020",
+                    "img": "img/recife/24.04.png"
                 },
                 {
                     "date": "25/04/2020",
                     "img": "img/recife/25.04.png"
                 },
                 {
+                    "date": "26/04/2020",
+                    "img": "img/recife/26.04.png"
+                },
+                {
+                    "date": "27/04/2020",
+                    "img": "img/recife/27.04.png"
+                },
+                {
+                    "date": "28/04/2020",
+                    "img": "img/recife/28.04.png"
+                },
+                {
+                    "date": "29/04/2020",
+                    "img": "img/recife/29.04.png"
+                },
+                {
                     "date": "30/04/2020",
                     "img": "img/recife/30.04.png"
+                },
+                {
+                    "date": "01/05/2020",
+                    "img": "img/recife/01.05.png"
+                },
+                {
+                    "date": "02/05/2020",
+                    "img": "img/recife/02.05.png"
+                },
+                {
+                    "date": "03/05/2020",
+                    "img": "img/recife/03.05.png"
+                },
+                {
+                    "date": "04/05/2020",
+                    "img": "img/recife/04.05.png"
+                },
+                {
+                    "date": "05/05/2020",
+                    "img": "img/recife/05.05.png"
+                },
+                {
+                    "date": "06/05/2020",
+                    "img": "img/recife/06.05.png"
+                },
+                {
+                    "date": "07/05/2020",
+                    "img": "img/recife/07.05.png"
+                },
+                {
+                    "date": "08/05/2020",
+                    "img": "img/recife/08.05.png"
+                },
+                {
+                    "date": "09/05/2020",
+                    "img": "img/recife/09.05.png"
+                },
+                {
+                    "date": "10/05/2020",
+                    "img": "img/recife/10.05.png"
+                },
+                {
+                    "date": "11/05/2020",
+                    "img": "img/recife/11.05.png"
+                },
+                {
+                    "date": "12/05/2020",
+                    "img": "img/recife/12.05.png"
+                },
+                {
+                    "date": "13/05/2020",
+                    "img": "img/recife/13.05.png"
+                },
+                {
+                    "date": "14/05/2020",
+                    "img": "img/recife/14.05.png"
+                },
+                {
+                    "date": "15/05/2020",
+                    "img": "img/recife/15.05.png"
+                },
+                {
+                    "date": "16/05/2020",
+                    "img": "img/recife/16.05.png"
+                },
+                {
+                    "date": "17/05/2020",
+                    "img": "img/recife/17.05.png"
+                },
+                {
+                    "date": "18/05/2020",
+                    "img": "img/recife/18.05.png"
+                },
+                {
+                    "date": "19/05/2020",
+                    "img": "img/recife/19.05.png"
+                },
+                {
+                    "date": "20/05/2020",
+                    "img": "img/recife/20.05.png"
+                },
+                {
+                    "date": "21/05/2020",
+                    "img": "img/recife/21.05.png"
+                },
+                {
+                    "date": "22/05/2020",
+                    "img": "img/recife/22.05.png"
+                },
+                {
+                    "date": "23/05/2020",
+                    "img": "img/recife/23.05.png"
+                },
+                {
+                    "date": "24/05/2020",
+                    "img": "img/recife/24.05.png"
                 }
                 /** inject-images:end(recife) */
             ]

@@ -2,6 +2,7 @@ const fs = require('fs');
 const _ = require('lodash');
 const path = require('path');
 const {parse, format} = require('date-fns');
+const {flow, map, sortBy, filter} = require('lodash/fp');
 
 const inject = (config) => {
 
@@ -9,7 +10,7 @@ const inject = (config) => {
 
     const files = fs.readdirSync(path.join(__dirname, 'public', 'img', folder));
 
-    const imageFiles = files.map(file => {
+    const mapFun = file => {
 
         if (!pattern.test(file)) return false;
 
@@ -19,7 +20,13 @@ const inject = (config) => {
             date: format(date, 'dd/MM/yyyy'),
             img: `img/${folder}/${file}`,
         }
-    }).filter(e => e);
+    };
+
+    const imageFiles = flow(
+        map(mapFun),
+        filter(f => f),
+        sortBy((f) => parse(f.date, 'dd/MM/yyyy', new Date())),
+    )(files);
 
     const filePath = path.join(__dirname, 'src', 'App.js');
 
