@@ -11,7 +11,7 @@ header.masthead {
     scroll-behavior: smooth;
     position: relative;
     overflow: hidden;
-    padding-top: calc(4rem + 72px);
+    padding-top: calc(2rem + 72px);
     padding-bottom: 14rem;
     background-image: url("/img/bg-covid-1.jpg");
     background-repeat: no-repeat;
@@ -25,6 +25,13 @@ header.masthead {
     position: relative;
   }
 
+  header.masthead .masthead-content .masthead-topheading {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #fff !important;
+    margin-bottom: .5rem !important;
+  }
+
   header.masthead .masthead-content .masthead-heading {
     font-size: 3.5rem;
     text-transform: uppercase;
@@ -36,8 +43,11 @@ header.masthead {
 
   @media (min-width: 992px) {
     header.masthead {
-      padding-top: calc(10rem + 55px);
-      padding-bottom: 14rem;
+      padding-top: calc(6.5rem + 55px);
+      padding-bottom: 15rem;
+    }
+    header.masthead .masthead-content .masthead-topheading {
+      font-size: 1.6rem;
     }
     header.masthead .masthead-content .masthead-heading {
       font-size: 4.5rem;

@@ -1,4 +1,5 @@
 const fs = require('fs');
+const _ = require('lodash');
 const path = require('path');
 const {parse, format} = require('date-fns');
 
@@ -23,7 +24,7 @@ const inject = (config) => {
     const filePath = path.join(__dirname, 'src', 'App.js');
 
     let fileContent = fs.readFileSync(filePath).toString();
-    const content = JSON.stringify(imageFiles,null,"\t")
+    const content = JSON.stringify(_.uniqBy(imageFiles, 'date'),null,"\t")
                         .replace(/^\[/, '')
                         .replace(/\]$/, '');
 
