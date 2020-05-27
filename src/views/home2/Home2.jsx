@@ -128,10 +128,10 @@ export default class Home2 extends Component {
     render() {
 
         return (
-            <div className="home-2 section" id="section-2">
+            <div className="home-2 section" id={`section-${this.config.id}`}>
 
                 <div className="container-lg">
-                    <h4 className="my-4 text-center">Distribuição Espaço-temporal dos casos confirmados do Coronavírus Covid-19 no Estado de Pernambuco</h4>
+                    <h4 className="my-4 text-center">{this.config.title}</h4>
                 </div>
 
                 <div className="cvd-map-container">
