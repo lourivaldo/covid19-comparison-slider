@@ -201,7 +201,7 @@ export default class Home2 extends Component {
                         </div>
                     </div>
 
-                    <div className="cvd-caption d-flex flex-wrap justify-content-between">
+                    <div className="cvd-caption d-flex flex-wrap justify-content-center justify-content-md-between">
                         <img className="" src="img/pernambuco/COVID19_PE_TEM_LEGENDA-1.png" alt="Legenda"/>
                         <img className="" src="img/pernambuco/COVID19_PE_TEM_LEGENDA-2.png" alt="Legenda"/>
                     </div>

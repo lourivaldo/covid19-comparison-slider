@@ -1,7 +1,7 @@
 header {
   svg {
     position: absolute;
-    bottom: 0;
+    bottom: -0.02vw;
     width: 100%;
     height: 8vw;
   }
@@ -13,7 +13,7 @@ header.masthead {
     overflow: hidden;
     padding-top: calc(2rem + 72px);
     padding-bottom: 14rem;
-    background-image: url("/img/bg-covid-1.jpg");
+    background-image: url('https://www.irrd.org/geotemporal/img/bg-covid-1.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
