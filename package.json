@@ -29,7 +29,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "node images-injector.js && react-scripts build",
+    "build": "node images-injector.js && react-scripts build && PUBLIC_URL=https://www.irrd.org/geotemporal node inject-version.js",
     "build:prod": "node images-injector.js && PUBLIC_URL=https://www.irrd.org/geotemporal react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",

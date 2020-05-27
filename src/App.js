@@ -11,14 +11,15 @@ import Footer from "./views/footer/Footer";
 import Home from "./views/home/Home";
 import Home2 from "./views/home2/Home2";
 import Slider from "./views/slider/Slider";
+import Flourish from "./views/flourish/Flourish";
 
 class App extends React.Component {
 
     maps = [
         {
             id: 1,
-            titleHtml: `Distribuição Espaço-temporal dos casos <strong>confirmados</strong> do Coronavírus COVID-19 no <strong>Nordeste do Brasil</strong>`,
-            title: `Distribuição Espaço-temporal dos casos confirmados do Coronavírus COVID-19 no Nordeste do Brasil`,
+            titleHtml: `Distribuição Espaço-temporal dos casos <strong>confirmados</strong> do COVID-19 no <strong>Nordeste do Brasil</strong>`,
+            title: `Distribuição Espaço-temporal dos casos confirmados do COVID-19 no Nordeste do Brasil`,
             img: "img/thumbs/thumb-4.png",
             updatedAt: null,
             defaultPosition: 0.5,
@@ -347,14 +348,18 @@ class App extends React.Component {
                 {
                     "date": "25/05/2020",
                     "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200525.png"
+                },
+                {
+                    "date": "26/05/2020",
+                    "img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200526.png"
                 }
                 /** inject-images:end(nordeste) */
             ]
         },
         {
             id: 2,
-            titleHtml: "Distribuição Espaço-temporal dos casos <strong>confirmados</strong> do Coronavírus COVID-19 no <strong>Estado de Pernambuco</strong>",
-            title: "Distribuição Espaço-temporal dos casos confirmados do Coronavírus COVID-19 no Estado de Pernambuco",
+            titleHtml: "Distribuição Espaço-temporal dos casos <strong>confirmados</strong> do COVID-19 no <strong>Estado de Pernambuco</strong>",
+            title: "Distribuição Espaço-temporal dos casos confirmados do COVID-19 no Estado de Pernambuco",
             img: "img/thumbs/thumb-3.png",
             updatedAt: null,
             defaultPosition: 0.5,
@@ -579,14 +584,18 @@ class App extends React.Component {
                 {
                     "date": "25/05/2020",
                     "img": "img/pernambuco/COVID19_PE_TEM_200525.png"
+                },
+                {
+                    "date": "26/05/2020",
+                    "img": "img/pernambuco/COVID19_PE_TEM_200526.png"
                 }
                 /** inject-images:end(pernambuco) */
             ]
         },
         {
             id: 3,
-            titleHtml: "Distribuição Espaço-temporal dos casos <strong>confirmados</strong> do Coronavírus COVID-19 na <strong>Região Metropolitana do Recife</strong>",
-            title: "Distribuição Espaço-temporal dos casos confirmados do Coronavírus COVID-19 na Região Metropolitana do Recife",
+            titleHtml: "Distribuição Espaço-temporal dos casos <strong>confirmados</strong> do COVID-19 na <strong>Região Metropolitana do Recife</strong>",
+            title: "Distribuição Espaço-temporal dos casos confirmados do COVID-19 na Região Metropolitana do Recife",
             img: "img/thumbs/thumb-2.png",
             updatedAt: null,
             defaultPosition: 0.35,
@@ -773,16 +782,52 @@ class App extends React.Component {
                     "img": "img/rmr/aglomerados confirmados 15.05 (1).png"
                 },
                 {
+                    "date": "16/05/2020",
+                    "img": "img/rmr/aglomerados confirmados 16.05app.png"
+                },
+                {
+                    "date": "17/05/2020",
+                    "img": "img/rmr/aglomerados confirmados 17.05app.png"
+                },
+                {
+                    "date": "18/05/2020",
+                    "img": "img/rmr/aglomerados confirmados 18.05app.png"
+                },
+                {
+                    "date": "19/05/2020",
+                    "img": "img/rmr/aglomerados confirmados 19.05app.png"
+                },
+                {
                     "date": "20/05/2020",
                     "img": "img/rmr/aglomerados confirmados 20.05 (1).png"
+                },
+                {
+                    "date": "21/05/2020",
+                    "img": "img/rmr/aglomerados confirmados 21.05app.png"
+                },
+                {
+                    "date": "22/05/2020",
+                    "img": "img/rmr/aglomerados confirmados 22.05app.png"
+                },
+                {
+                    "date": "23/05/2020",
+                    "img": "img/rmr/aglomerados confirmados 23.05app.png"
+                },
+                {
+                    "date": "24/05/2020",
+                    "img": "img/rmr/aglomerados confirmados 24.05app.png"
+                },
+                {
+                    "date": "25/05/2020",
+                    "img": "img/rmr/aglomerados confirmados 25.05app.png"
                 }
                 /** inject-images:end(rmr) */
             ]
         },
         {
             id: 4,
-            titleHtml: "Distribuição Espaço-temporal dos casos <strong>confirmados</strong> do Coronavírus COVID-19 na <strong>Cidade do Recife</strong>",
-            title: "Distribuição Espaço-temporal dos casos confirmados do Coronavírus COVID-19 na Cidade do Recife",
+            titleHtml: "Distribuição Espaço-temporal dos casos <strong>confirmados</strong> do COVID-19 na <strong>Cidade do Recife</strong>",
+            title: "Distribuição Espaço-temporal dos casos confirmados do COVID-19 na Cidade do Recife",
             img: "img/thumbs/thumb-1.png",
             updatedAt: null,
             defaultPosition: 0.35,
@@ -999,6 +1044,10 @@ class App extends React.Component {
                 {
                     "date": "24/05/2020",
                     "img": "img/recife/24.05.png"
+                },
+                {
+                    "date": "25/05/2020",
+                    "img": "img/recife/25.05b.png"
                 }
                 /** inject-images:end(recife) */
             ]
@@ -1046,6 +1095,8 @@ class App extends React.Component {
         return (
             <div className="App">
                 <Header configs={this.maps}/>
+
+                <Flourish></Flourish>
 
                 <Home config={this.maps[0]}/>
                 <Home2 config={this.maps[1]}/>

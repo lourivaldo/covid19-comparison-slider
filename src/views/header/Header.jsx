@@ -70,7 +70,7 @@ export default class Header extends Component {
                         <div className="container text-center text-white" id="page-title">
                             <h4 className="masthead-topheading mb-0">Instituto para Redução de Riscos e Desastres de Pernambuco</h4>
                             <h1 className="masthead-heading mb-0">Evolução espaço-temporal</h1>
-                            <h2 className="masthead-subheading mb-0">do Coronavírus COVID-19</h2>
+                            <h2 className="masthead-subheading mb-0">do COVID-19</h2>
                         </div>
                     </div>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none" width="100%">
