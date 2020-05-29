@@ -7,7 +7,6 @@
 // // Initialize the Firebase app in the service worker by passing in the
 // // messagingSenderId.
 // const firebaseConfig = {
-//     apiKey: "AIzaSyBhTcVjOpB1cmbg3RvL1QdNBjFuR7HHJ1Q",
 //     authDomain: "covid-19-276522.firebaseapp.com",
 //     databaseURL: "https://covid-19-276522.firebaseio.com",
 //     projectId: "covid-19-276522",
