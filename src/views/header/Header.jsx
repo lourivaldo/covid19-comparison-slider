@@ -6,6 +6,8 @@ import $ from 'jquery';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faInstagram, faTwitter} from '@fortawesome/free-brands-svg-icons';
 
 export default class Header extends Component {
 
@@ -64,6 +66,25 @@ export default class Header extends Component {
 
         return (
             <div className="header">
+                <nav className="navbar">
+                    <div className="container">
+                        <a className="navbar-brand" href="https://www.irrd.org/covid-19">IRRD</a>
+
+                        <ul className="navbar-nav">
+                            <li className="nav-item">
+                                <a className="nav-link" href="https://twitter.com/IRRDPE" title="Follow on Twitter">
+                                    <FontAwesomeIcon icon={faTwitter} size={"lg"}/>
+                                </a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" href="https://www.instagram.com/irrdpe" title="Follow on Instagram">
+                                    <FontAwesomeIcon icon={faInstagram} size={"lg"}/>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </nav>
 
                 <header className="masthead">
                     <div className="masthead-content">

@@ -353,6 +353,14 @@ class App extends React.Component {
 	{
 		"date": "26/05/2020",
 		"img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200526.png"
+	},
+	{
+		"date": "27/05/2020",
+		"img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200527.png"
+	},
+	{
+		"date": "28/05/2020",
+		"img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200528.png"
 	}
 /** inject-images:end(nordeste) */
             ]
@@ -589,6 +597,14 @@ class App extends React.Component {
 	{
 		"date": "26/05/2020",
 		"img": "img/pernambuco/COVID19_PE_TEM_200526.png"
+	},
+	{
+		"date": "27/05/2020",
+		"img": "img/pernambuco/COVID19_PE_TEM_200527.png"
+	},
+	{
+		"date": "28/05/2020",
+		"img": "img/pernambuco/COVID19_PE_TEM_200528.png"
 	}
 /** inject-images:end(pernambuco) */
             ]
@@ -821,6 +837,14 @@ class App extends React.Component {
 	{
 		"date": "25/05/2020",
 		"img": "img/rmr/aglomerados confirmados 25.05app.png"
+	},
+	{
+		"date": "26/05/2020",
+		"img": "img/rmr/aglomerados confirmados 26.05app.png"
+	},
+	{
+		"date": "27/05/2020",
+		"img": "img/rmr/aglomerados confirmados 27.05app.png"
 	}
 /** inject-images:end(rmr) */
             ]
@@ -1049,6 +1073,14 @@ class App extends React.Component {
 	{
 		"date": "25/05/2020",
 		"img": "img/recife/25.05b.png"
+	},
+	{
+		"date": "26/05/2020",
+		"img": "img/recife/26.05b.png"
+	},
+	{
+		"date": "27/05/2020",
+		"img": "img/recife/27.05b.png"
 	}
 /** inject-images:end(recife) */
             ]

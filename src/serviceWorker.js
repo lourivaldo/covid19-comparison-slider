@@ -32,7 +32,7 @@ export function register(config) {
     }
 
     window.addEventListener('load', () => {
-      const swUrl = `${process.env.PUBLIC_URL}/service-worker.js?date=${(new Date()).getTime()}`;
+      const swUrl = `${process.env.PUBLIC_URL}/service-worker.js`;
 
       if (isLocalhost) {
         // This is running on localhost. Let's check if a service worker still exists or not.
@@ -73,6 +73,12 @@ function registerValidSW(swUrl, config) {
                 'New content is available and will be used when all ' +
                   'tabs for this page are closed. See https://bit.ly/CRA-PWA.'
               );
+                /**
+                 * 
+                 */
+              // installingWorker.postMessage('skipWaiting'); // vai nao kkk
+              // installingWorker.postMessage('SKIP_WAITING'); // vai nao kkk
+              // installingWorker.postMessage({type: 'SKIP_WAITING'}); // vai nao kkk
 
               // Execute callback
               if (config && config.onUpdate) {
