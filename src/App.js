@@ -375,235 +375,235 @@ class App extends React.Component {
             images: [
                 /** inject-images:start(pernambuco) */
 	{
-		"date": "01/04/2020",
+		"date": "31/03/2020",
 		"img": "img/pernambuco/COVID19_PE_TEM_200401.png"
 	},
 	{
-		"date": "02/04/2020",
+		"date": "01/04/2020",
 		"img": "img/pernambuco/COVID19_PE_TEM_200402.png"
 	},
 	{
-		"date": "03/04/2020",
+		"date": "02/04/2020",
 		"img": "img/pernambuco/COVID19_PE_TEM_200403.png"
 	},
 	{
-		"date": "04/04/2020",
+		"date": "03/04/2020",
 		"img": "img/pernambuco/COVID19_PE_TEM_200404.png"
 	},
 	{
-		"date": "05/04/2020",
+		"date": "04/04/2020",
 		"img": "img/pernambuco/COVID19_PE_TEM_200405.png"
 	},
 	{
-		"date": "06/04/2020",
+		"date": "05/04/2020",
 		"img": "img/pernambuco/COVID19_PE_TEM_200406.png"
 	},
 	{
-		"date": "07/04/2020",
+		"date": "06/04/2020",
 		"img": "img/pernambuco/COVID19_PE_TEM_200407.png"
 	},
 	{
-		"date": "08/04/2020",
+		"date": "07/04/2020",
 		"img": "img/pernambuco/COVID19_PE_TEM_200408.png"
 	},
 	{
-		"date": "09/04/2020",
+		"date": "08/04/2020",
 		"img": "img/pernambuco/COVID19_PE_TEM_200409.png"
 	},
 	{
-		"date": "10/04/2020",
+		"date": "09/04/2020",
 		"img": "img/pernambuco/COVID19_PE_TEM_200410.png"
 	},
 	{
-		"date": "11/04/2020",
+		"date": "10/04/2020",
 		"img": "img/pernambuco/COVID19_PE_TEM_200411.png"
 	},
 	{
-		"date": "12/04/2020",
+		"date": "11/04/2020",
 		"img": "img/pernambuco/COVID19_PE_TEM_200412.png"
 	},
 	{
-		"date": "13/04/2020",
+		"date": "12/04/2020",
 		"img": "img/pernambuco/COVID19_PE_TEM_200413.png"
 	},
 	{
-		"date": "14/04/2020",
+		"date": "13/04/2020",
 		"img": "img/pernambuco/COVID19_PE_TEM_200414.png"
 	},
 	{
-		"date": "15/04/2020",
+		"date": "14/04/2020",
 		"img": "img/pernambuco/COVID19_PE_TEM_200415.png"
 	},
 	{
-		"date": "16/04/2020",
+		"date": "15/04/2020",
 		"img": "img/pernambuco/COVID19_PE_TEM_200416.png"
 	},
 	{
-		"date": "17/04/2020",
+		"date": "16/04/2020",
 		"img": "img/pernambuco/COVID19_PE_TEM_200417.png"
 	},
 	{
-		"date": "18/04/2020",
+		"date": "17/04/2020",
 		"img": "img/pernambuco/COVID19_PE_TEM_200418.png"
 	},
 	{
-		"date": "19/04/2020",
+		"date": "18/04/2020",
 		"img": "img/pernambuco/COVID19_PE_TEM_200419.png"
 	},
 	{
-		"date": "20/04/2020",
+		"date": "19/04/2020",
 		"img": "img/pernambuco/COVID19_PE_TEM_200420.png"
 	},
 	{
-		"date": "21/04/2020",
+		"date": "20/04/2020",
 		"img": "img/pernambuco/COVID19_PE_TEM_200421.png"
 	},
 	{
-		"date": "22/04/2020",
+		"date": "21/04/2020",
 		"img": "img/pernambuco/COVID19_PE_TEM_200422.png"
 	},
 	{
-		"date": "23/04/2020",
+		"date": "22/04/2020",
 		"img": "img/pernambuco/COVID19_PE_TEM_200423.png"
 	},
 	{
-		"date": "24/04/2020",
+		"date": "23/04/2020",
 		"img": "img/pernambuco/COVID19_PE_TEM_200424.png"
 	},
 	{
-		"date": "25/04/2020",
+		"date": "24/04/2020",
 		"img": "img/pernambuco/COVID19_PE_TEM_200425.png"
 	},
 	{
-		"date": "26/04/2020",
+		"date": "25/04/2020",
 		"img": "img/pernambuco/COVID19_PE_TEM_200426.png"
 	},
 	{
-		"date": "27/04/2020",
+		"date": "26/04/2020",
 		"img": "img/pernambuco/COVID19_PE_TEM_200427.png"
 	},
 	{
-		"date": "28/04/2020",
+		"date": "27/04/2020",
 		"img": "img/pernambuco/COVID19_PE_TEM_200428.png"
 	},
 	{
-		"date": "29/04/2020",
+		"date": "28/04/2020",
 		"img": "img/pernambuco/COVID19_PE_TEM_200429.png"
 	},
 	{
-		"date": "30/04/2020",
+		"date": "29/04/2020",
 		"img": "img/pernambuco/COVID19_PE_TEM_200430.png"
 	},
 	{
-		"date": "01/05/2020",
+		"date": "30/04/2020",
 		"img": "img/pernambuco/COVID19_PE_TEM_200501.png"
 	},
 	{
-		"date": "02/05/2020",
+		"date": "01/05/2020",
 		"img": "img/pernambuco/COVID19_PE_TEM_200502.png"
 	},
 	{
-		"date": "03/05/2020",
+		"date": "02/05/2020",
 		"img": "img/pernambuco/COVID19_PE_TEM_200503.png"
 	},
 	{
-		"date": "04/05/2020",
+		"date": "03/05/2020",
 		"img": "img/pernambuco/COVID19_PE_TEM_200504.png"
 	},
 	{
-		"date": "05/05/2020",
+		"date": "04/05/2020",
 		"img": "img/pernambuco/COVID19_PE_TEM_200505.png"
 	},
 	{
-		"date": "06/05/2020",
+		"date": "05/05/2020",
 		"img": "img/pernambuco/COVID19_PE_TEM_200506.png"
 	},
 	{
-		"date": "07/05/2020",
+		"date": "06/05/2020",
 		"img": "img/pernambuco/COVID19_PE_TEM_200507.png"
 	},
 	{
-		"date": "08/05/2020",
+		"date": "07/05/2020",
 		"img": "img/pernambuco/COVID19_PE_TEM_200508.png"
 	},
 	{
-		"date": "09/05/2020",
+		"date": "08/05/2020",
 		"img": "img/pernambuco/COVID19_PE_TEM_200509.png"
 	},
 	{
-		"date": "10/05/2020",
+		"date": "09/05/2020",
 		"img": "img/pernambuco/COVID19_PE_TEM_200510.png"
 	},
 	{
-		"date": "11/05/2020",
+		"date": "10/05/2020",
 		"img": "img/pernambuco/COVID19_PE_TEM_200511.png"
 	},
 	{
-		"date": "12/05/2020",
+		"date": "11/05/2020",
 		"img": "img/pernambuco/COVID19_PE_TEM_200512.png"
 	},
 	{
-		"date": "13/05/2020",
+		"date": "12/05/2020",
 		"img": "img/pernambuco/COVID19_PE_TEM_200513.png"
 	},
 	{
-		"date": "14/05/2020",
+		"date": "13/05/2020",
 		"img": "img/pernambuco/COVID19_PE_TEM_200514.png"
 	},
 	{
-		"date": "15/05/2020",
+		"date": "14/05/2020",
 		"img": "img/pernambuco/COVID19_PE_TEM_200515.png"
 	},
 	{
-		"date": "16/05/2020",
+		"date": "15/05/2020",
 		"img": "img/pernambuco/COVID19_PE_TEM_200516.png"
 	},
 	{
-		"date": "17/05/2020",
+		"date": "16/05/2020",
 		"img": "img/pernambuco/COVID19_PE_TEM_200517.png"
 	},
 	{
-		"date": "18/05/2020",
+		"date": "17/05/2020",
 		"img": "img/pernambuco/COVID19_PE_TEM_200518.png"
 	},
 	{
-		"date": "19/05/2020",
+		"date": "18/05/2020",
 		"img": "img/pernambuco/COVID19_PE_TEM_200519.png"
 	},
 	{
-		"date": "20/05/2020",
+		"date": "19/05/2020",
 		"img": "img/pernambuco/COVID19_PE_TEM_200520.png"
 	},
 	{
-		"date": "21/05/2020",
+		"date": "20/05/2020",
 		"img": "img/pernambuco/COVID19_PE_TEM_200521.png"
 	},
 	{
-		"date": "22/05/2020",
+		"date": "21/05/2020",
 		"img": "img/pernambuco/COVID19_PE_TEM_200522.png"
 	},
 	{
-		"date": "23/05/2020",
+		"date": "22/05/2020",
 		"img": "img/pernambuco/COVID19_PE_TEM_200523.png"
 	},
 	{
-		"date": "24/05/2020",
+		"date": "23/05/2020",
 		"img": "img/pernambuco/COVID19_PE_TEM_200524.png"
 	},
 	{
-		"date": "25/05/2020",
+		"date": "24/05/2020",
 		"img": "img/pernambuco/COVID19_PE_TEM_200525.png"
 	},
 	{
-		"date": "26/05/2020",
+		"date": "25/05/2020",
 		"img": "img/pernambuco/COVID19_PE_TEM_200526.png"
 	},
 	{
-		"date": "27/05/2020",
+		"date": "26/05/2020",
 		"img": "img/pernambuco/COVID19_PE_TEM_200527.png"
 	},
 	{
-		"date": "28/05/2020",
+		"date": "27/05/2020",
 		"img": "img/pernambuco/COVID19_PE_TEM_200528.png"
 	}
 /** inject-images:end(pernambuco) */
