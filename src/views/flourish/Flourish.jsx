@@ -8,9 +8,8 @@ export default class Flourish extends Component {
         return (
             <div className="section section-flourish">
                 <div className="container">
-                    <div className="flourish-embed flourish-bar-chart-race"
-                         data-src="visualisation/2620993"
-                         data-url="https://flo.uri.sh/visualisation/2620993/embed"></div>
+                    <div className="flourish-embed flourish-bar-chart-race" data-src="visualisation/2637633"
+                         data-url="https://flo.uri.sh/visualisation/2637633/embed"></div>
                 </div>
             </div>
         )
