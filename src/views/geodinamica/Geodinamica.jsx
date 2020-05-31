@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {faExpand} from '@fortawesome/free-solid-svg-icons'
+import {faExpand, faExternalLinkAlt} from '@fortawesome/free-solid-svg-icons'
 import "./Geodinamica.scss";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
@@ -40,10 +40,6 @@ export default class Geodinamica extends Component {
         else {
             console.log('exit fullscreen');
         }
-        // force to reload iframe once to prevent the iframe source didn't care about trying to resize the window
-        // comment this line and you will see
-        // var iframe = document.querySelector('#geodinamica');
-        // iframe.src = iframe.src;
     }
 
     bindEvents() {
@@ -53,19 +49,39 @@ export default class Geodinamica extends Component {
         document.addEventListener('MSFullscreenChange', this.fullscreenChange);
     }
 
+    componentDidMount() {
+
+    }
+
+    play = () => {
+        try {
+            const vid = window.document.getElementById("webmapVideo");
+            vid.autoplay = true;
+            vid.load();
+        } catch (e) {
+
+        }
+    }
+
     render() {
 
         this.bindEvents();
 
         return (
             <div className="section section-geodinamica">
-                <button className="btn" onClick={this.fullscreen} title="Tela inteira">
-                    <FontAwesomeIcon icon={faExpand} size={"lg"}/>
-                </button>
+                <a href="https://www.irrd.org/geodinamica/index.html" target="_blank">
 
-                <div className="embed-responsive embed-responsive-16by9">
-                    <iframe id="geodinamica" className="embed-responsive-item" src="https://www.irrd.org/geodinamica/index.html" allowFullScreen ></iframe>
-                </div>
+                    <FontAwesomeIcon icon={faExternalLinkAlt} size={"lg"}/>
+                    <div className="embed-overlays"></div>
+
+                    <div id="webmapVideo" className="embed-responsive embed-responsive-16by9">
+                        <video className="embed-responsive-item" width="100%" autoPlay loop controls onLoad={this.play}>
+                            <source src="video/webmap.webm" type="video/webm"/>
+                            <source src="video/webmap.mp4" type="video/mp4"/>
+                            Construa seu mapa acesse: https://www.irrd.org/geodinamica
+                        </video>
+                    </div>
+                </a>
             </div>
         )
     }

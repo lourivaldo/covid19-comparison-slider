@@ -2,6 +2,36 @@
 .section-geodinamica {
   padding: 0 !important;
   position: relative;
+  overflow: hidden;
+
+  svg {
+    position: absolute;
+    left: calc(50% - 2rem);
+    top: calc(50% - 2rem);
+    opacity: 0;
+    font-size: 4rem;
+    color: #e2e2e2;
+    z-index: 11;
+  }
+
+  &:hover svg, &:focus svg {
+    opacity: 1!important;
+  }
+
+  .embed-overlays {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    opacity: 0;
+    background-color: #000000;
+  }
+
+  &:hover .embed-overlays, &:focus .embed-overlays {
+    opacity: .5;
+  }
 
   button {
     position: absolute;

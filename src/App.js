@@ -18,12 +18,413 @@ class App extends React.Component {
 
     maps = [
         {
+            id: 5,
+            titleHtml: "Distribuição Espaço-temporal dos casos <strong>confirmados</strong> do COVID-19 no <strong>Brasil</strong>",
+            title: "Distribuição Espaço-temporal dos casos confirmados do COVID-19 no Brasil",
+            img: "img/thumbs/thumb-5.png",
+            updatedAt: null,
+            defaultPosition: 0.5,
+            captions:[
+                {img_url: 'img/brasil/COVID19-BRASIL-MUNICÍPIOS_LEGENDA-1.png', description: 'Legenda Distribuição Espaço-temporal dos casos confirmados do COVID-19 no Brasil'},
+                {img_url: 'img/brasil/COVID19-BRASIL-MUNICÍPIOS_LEGENDA-2.png', description: 'Legenda Distribuição Espaço-temporal dos casos confirmados do COVID-19 no Brasil'}
+            ],
+            images: [
+                /** inject-images:start(brasil) */
+	{
+		"date": "25/02/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200225.png"
+	},
+	{
+		"date": "26/02/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200226.png"
+	},
+	{
+		"date": "27/02/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200227.png"
+	},
+	{
+		"date": "28/02/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200228.png"
+	},
+	{
+		"date": "29/02/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200229.png"
+	},
+	{
+		"date": "01/03/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200301.png"
+	},
+	{
+		"date": "02/03/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200302.png"
+	},
+	{
+		"date": "03/03/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200303.png"
+	},
+	{
+		"date": "04/03/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200304.png"
+	},
+	{
+		"date": "05/03/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200305.png"
+	},
+	{
+		"date": "06/03/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200306.png"
+	},
+	{
+		"date": "07/03/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200307.png"
+	},
+	{
+		"date": "08/03/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200308.png"
+	},
+	{
+		"date": "09/03/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200309.png"
+	},
+	{
+		"date": "10/03/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200310.png"
+	},
+	{
+		"date": "11/03/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200311.png"
+	},
+	{
+		"date": "12/03/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200312.png"
+	},
+	{
+		"date": "13/03/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200313.png"
+	},
+	{
+		"date": "14/03/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200314.png"
+	},
+	{
+		"date": "15/03/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200315.png"
+	},
+	{
+		"date": "16/03/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200316.png"
+	},
+	{
+		"date": "17/03/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200317.png"
+	},
+	{
+		"date": "18/03/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200318.png"
+	},
+	{
+		"date": "19/03/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200319.png"
+	},
+	{
+		"date": "20/03/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200320.png"
+	},
+	{
+		"date": "21/03/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200321.png"
+	},
+	{
+		"date": "22/03/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200322.png"
+	},
+	{
+		"date": "23/03/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200323.png"
+	},
+	{
+		"date": "24/03/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200324.png"
+	},
+	{
+		"date": "25/03/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200325.png"
+	},
+	{
+		"date": "26/03/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200326.png"
+	},
+	{
+		"date": "27/03/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200327.png"
+	},
+	{
+		"date": "28/03/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200328.png"
+	},
+	{
+		"date": "29/03/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200329.png"
+	},
+	{
+		"date": "30/03/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200330.png"
+	},
+	{
+		"date": "31/03/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200331.png"
+	},
+	{
+		"date": "01/04/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200401.png"
+	},
+	{
+		"date": "02/04/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200402.png"
+	},
+	{
+		"date": "03/04/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200403.png"
+	},
+	{
+		"date": "04/04/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200404.png"
+	},
+	{
+		"date": "05/04/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200405.png"
+	},
+	{
+		"date": "06/04/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200406.png"
+	},
+	{
+		"date": "07/04/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200407.png"
+	},
+	{
+		"date": "08/04/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200408.png"
+	},
+	{
+		"date": "09/04/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200409.png"
+	},
+	{
+		"date": "10/04/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200410.png"
+	},
+	{
+		"date": "11/04/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200411.png"
+	},
+	{
+		"date": "12/04/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200412.png"
+	},
+	{
+		"date": "13/04/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200413.png"
+	},
+	{
+		"date": "14/04/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200414.png"
+	},
+	{
+		"date": "15/04/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200415.png"
+	},
+	{
+		"date": "16/04/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200416.png"
+	},
+	{
+		"date": "17/04/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200417.png"
+	},
+	{
+		"date": "18/04/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200418.png"
+	},
+	{
+		"date": "19/04/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200419.png"
+	},
+	{
+		"date": "20/04/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200420.png"
+	},
+	{
+		"date": "21/04/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200421.png"
+	},
+	{
+		"date": "22/04/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200422.png"
+	},
+	{
+		"date": "23/04/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200423.png"
+	},
+	{
+		"date": "24/04/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200424.png"
+	},
+	{
+		"date": "25/04/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200425.png"
+	},
+	{
+		"date": "26/04/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200426.png"
+	},
+	{
+		"date": "27/04/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200427.png"
+	},
+	{
+		"date": "28/04/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200428.png"
+	},
+	{
+		"date": "29/04/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200429.png"
+	},
+	{
+		"date": "30/04/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200430.png"
+	},
+	{
+		"date": "01/05/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200501.png"
+	},
+	{
+		"date": "02/05/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200502.png"
+	},
+	{
+		"date": "03/05/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200503.png"
+	},
+	{
+		"date": "04/05/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200504.png"
+	},
+	{
+		"date": "05/05/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200505.png"
+	},
+	{
+		"date": "06/05/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200506.png"
+	},
+	{
+		"date": "07/05/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200507.png"
+	},
+	{
+		"date": "08/05/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200508.png"
+	},
+	{
+		"date": "09/05/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200509.png"
+	},
+	{
+		"date": "10/05/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200510.png"
+	},
+	{
+		"date": "11/05/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200511.png"
+	},
+	{
+		"date": "12/05/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200512.png"
+	},
+	{
+		"date": "13/05/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200513.png"
+	},
+	{
+		"date": "14/05/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200514.png"
+	},
+	{
+		"date": "15/05/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200515.png"
+	},
+	{
+		"date": "16/05/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200516.png"
+	},
+	{
+		"date": "17/05/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200517.png"
+	},
+	{
+		"date": "18/05/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200518.png"
+	},
+	{
+		"date": "19/05/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200519.png"
+	},
+	{
+		"date": "20/05/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200520.png"
+	},
+	{
+		"date": "21/05/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200521.png"
+	},
+	{
+		"date": "22/05/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200522.png"
+	},
+	{
+		"date": "23/05/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200523.png"
+	},
+	{
+		"date": "24/05/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200524.png"
+	},
+	{
+		"date": "25/05/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200525.png"
+	},
+	{
+		"date": "26/05/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200526.png"
+	},
+	{
+		"date": "27/05/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200527.png"
+	},
+	{
+		"date": "28/05/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200528.png"
+	},
+	{
+		"date": "29/05/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200529.png"
+	},
+	{
+		"date": "30/05/2020",
+		"img": "img/brasil/COVID19-BRASIL-MUNICÍPIOS_200530.png"
+	}
+/** inject-images:end(brasil) */
+            ]
+        },
+        {
             id: 1,
             titleHtml: `Distribuição Espaço-temporal dos casos <strong>confirmados</strong> do COVID-19 no <strong>Nordeste do Brasil</strong>`,
             title: `Distribuição Espaço-temporal dos casos confirmados do COVID-19 no Nordeste do Brasil`,
             img: "img/thumbs/thumb-4.png",
             updatedAt: null,
             defaultPosition: 0.5,
+            captions:[],
             images: [
                 /** inject-images:start(nordeste) */
 	{
@@ -365,6 +766,10 @@ class App extends React.Component {
 	{
 		"date": "29/05/2020",
 		"img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200529.png"
+	},
+	{
+		"date": "30/05/2020",
+		"img": "img/nordeste/BRASIL_NORDESTE_TEMPORAL_200530.png"
 	}
 /** inject-images:end(nordeste) */
             ]
@@ -376,6 +781,10 @@ class App extends React.Component {
             img: "img/thumbs/thumb-3.png",
             updatedAt: null,
             defaultPosition: 0.5,
+            captions:[
+                {img_url: 'img/pernambuco/COVID19_PE_TEM_LEGENDA-1.png', description: 'Legenda Distribuição Espaço-temporal dos casos confirmados do COVID-19 no Estado de Pernambuco'},
+                {img_url: 'img/pernambuco/COVID19_PE_TEM_LEGENDA-2.png', description: 'Legenda Distribuição Espaço-temporal dos casos confirmados do COVID-19 no Estado de Pernambuco'},
+            ],
             images: [
                 /** inject-images:start(pernambuco) */
 	{
@@ -613,6 +1022,10 @@ class App extends React.Component {
 	{
 		"date": "28/05/2020",
 		"img": "img/pernambuco/COVID19_PE_TEM_200529.png"
+	},
+	{
+		"date": "29/05/2020",
+		"img": "img/pernambuco/COVID19_PE_TEM_200530.png"
 	}
 /** inject-images:end(pernambuco) */
             ]
@@ -624,6 +1037,7 @@ class App extends React.Component {
             img: "img/thumbs/thumb-2.png",
             updatedAt: null,
             defaultPosition: 0.35,
+            captions:[],
             images: [
                 /** inject-images:start(rmr) */
 	{
@@ -857,6 +1271,10 @@ class App extends React.Component {
 	{
 		"date": "28/05/2020",
 		"img": "img/rmr/aglomerados confirmados 28.05app.png"
+	},
+	{
+		"date": "29/05/2020",
+		"img": "img/rmr/aglomerados confirmados 29.05app.png"
 	}
 /** inject-images:end(rmr) */
             ]
@@ -868,6 +1286,7 @@ class App extends React.Component {
             img: "img/thumbs/thumb-1.png",
             updatedAt: null,
             defaultPosition: 0.35,
+            captions:[],
             images: [
                 /** inject-images:start(recife) */
 	{
@@ -1097,6 +1516,10 @@ class App extends React.Component {
 	{
 		"date": "28/05/2020",
 		"img": "img/recife/28.05b.png"
+	},
+	{
+		"date": "29/05/2020",
+		"img": "img/recife/29.05.png"
 	}
 /** inject-images:end(recife) */
             ]
@@ -1149,10 +1572,11 @@ class App extends React.Component {
 
                 <Geodinamica></Geodinamica>
 
-                <Home config={this.maps[0]}/>
-                <Home2 config={this.maps[1]}/>
-                <Slider config={this.maps[2]}/>
+                <Home2 config={this.maps[0]}/>
+                <Home config={this.maps[1]}/>
+                <Home2 config={this.maps[2]}/>
                 <Slider config={this.maps[3]}/>
+                <Slider config={this.maps[4]}/>
 
                 <button onClick={this.topFunction} id="toTopBtn" title="Go to top">
                     <FontAwesomeIcon icon={faChevronUp} size={"lg"}/>

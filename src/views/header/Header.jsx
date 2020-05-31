@@ -23,16 +23,40 @@ export default class Header extends Component {
         speed: 300,
         infinite: false,
         slidesToScroll: 1,
-        slidesToShow: 3,
+        slidesToShow: 5,
         centerMode: false,
         variableWidth: false,
         responsive: [
             {
-                breakpoint: 9999,
-                settings: "unslick",
+                breakpoint: 1500,
+                settings: {
+                    slidesToShow: 4,
+                    // slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 3,
+                    // slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 1000,
+                settings: {
+                    slidesToShow: 3,
+                    // slidesToScroll: 1
+                }
             },
             {
                 breakpoint: 991,
+                settings: {
+                    slidesToShow: 3,
+                    // slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 750,
                 settings: {
                     slidesToShow: 2,
                     // slidesToScroll: 1
@@ -103,7 +127,7 @@ export default class Header extends Component {
 
                     <Slider {...this.settings} className="row">
                         {this.configs.map((map) => (
-                            <div className="col-lg-3" key={map.id}>
+                            <div className="col-12 card-container" key={map.id}>
                                 <div className="card" onClick={() => this.scrollTo(map.id)}>
                                     <div className="card-img-top">
                                         <img className="card-img-top-img" src={map.img} alt={map.title}/>
@@ -114,7 +138,7 @@ export default class Header extends Component {
                                         </div>
                                     </div>
                                     <div className="card-footer">
-                                        <small>Atualizado em {format(map.updatedAt, 'dd/MM/yy')}</small>
+                                        <small>Atualizado em <span>{format(map.updatedAt, 'dd/MM/yy')}</span></small>
                                         <button onClick={() => this.scrollTo(map.id)} className="btn btn-primary float-right btn-sm">ver</button>
                                     </div>
                                 </div>

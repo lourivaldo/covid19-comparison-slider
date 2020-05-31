@@ -202,8 +202,11 @@ export default class Home2 extends Component {
                     </div>
 
                     <div className="cvd-caption d-flex flex-wrap justify-content-center justify-content-md-between">
-                        <img className="" src="img/pernambuco/COVID19_PE_TEM_LEGENDA-1.png" alt="Legenda"/>
-                        <img className="" src="img/pernambuco/COVID19_PE_TEM_LEGENDA-2.png" alt="Legenda"/>
+                        {this.config.captions.map(((caption, i) => {
+                            return (
+                                <img className="" src={caption.img_url} alt={caption.description} key={i}/>
+                            )
+                        }))}
                     </div>
                 </div>
 
