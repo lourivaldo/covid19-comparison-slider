@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {faExpand, faExternalLinkAlt} from '@fortawesome/free-solid-svg-icons'
+import {faExternalLinkAlt} from '@fortawesome/free-solid-svg-icons'
 import "./Geodinamica.scss";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
@@ -50,17 +50,19 @@ export default class Geodinamica extends Component {
     }
 
     componentDidMount() {
-
+        this.play();
     }
 
     play = () => {
-        try {
-            const vid = window.document.getElementById("webmapVideo");
-            vid.autoplay = true;
-            vid.load();
-        } catch (e) {
-
-        }
+        setTimeout(() => {
+            try {
+                const vid = window.document.getElementById("webmapVideo");
+                if (vid.load) vid.load();
+                if (vid.play) vid.play();
+            } catch (e) {
+                console.log(e)
+            }
+        }, 1500)
     }
 
     render() {
@@ -69,13 +71,13 @@ export default class Geodinamica extends Component {
 
         return (
             <div className="section section-geodinamica">
-                <a href="https://www.irrd.org/geodinamica/index.html" target="_blank">
+                <a href="https://www.irrd.org/geodinamica/index.html" target="_blank" rel="noopener noreferrer">
 
                     <FontAwesomeIcon icon={faExternalLinkAlt} size={"lg"}/>
                     <div className="embed-overlays"></div>
 
                     <div id="webmapVideo" className="embed-responsive embed-responsive-16by9">
-                        <video className="embed-responsive-item" width="100%" autoPlay loop controls onLoad={this.play}>
+                        <video className="embed-responsive-item" width="100%" autoPlay loop>
                             <source src="video/webmap.webm" type="video/webm"/>
                             <source src="video/webmap.mp4" type="video/mp4"/>
                             Construa seu mapa acesse: https://www.irrd.org/geodinamica
