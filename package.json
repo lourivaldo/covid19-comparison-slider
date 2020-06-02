@@ -13,8 +13,10 @@
     "bootstrap": "^4.5.0",
     "date-fns": "^2.14.0",
     "firebase": "^7.14.5",
+    "googleapis": "^39.2.0",
     "imagemin": "^7.0.1",
     "imagemin-cli": "^5.1.0",
+    "imagemin-pngquant": "^8.0.0",
     "jquery": "^3.5.1",
     "lodash": "^4.17.15",
     "node-sass": "^4.14.1",
@@ -32,15 +34,16 @@
     "simple-git": "^2.5.0",
     "slick-carousel": "^1.8.1",
     "slugify": "^1.4.0",
-    "imagemin-pngquant": "^8.0.0"
+    "uuid": "^8.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "node images-optimize.js && node images-injector.js && react-scripts build && PUBLIC_URL=https://www.irrd.org/geotemporal node inject-version.js",
-    "build:prod": "node images-optimize.js && node images-injector.js && PUBLIC_URL=https://www.irrd.org/geotemporal react-scripts build",
+    "build": "react-scripts build",
+    "build:prod": "PUBLIC_URL=https://www.irrd.org/geotemporal react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "images": "node images-optimize.js"
+    "images": "node images-download.js && node images-optimize.js && node images-inject.js",
+    "deploy": "echo 'deploy'"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -57,6 +60,5 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-  }
+  "devDependencies": {}
 }

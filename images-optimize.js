@@ -26,8 +26,12 @@ const renameFiles = async (folder) => {
 
     for (const file of files) {
 
+        const newFileName = slugify(file, {lower: true})
+            .replace(/_/g, '-')
+            .replace(/[\(\)]/g, '-');
+
         const filePath = path.join(folder, file);
-        const newFilePath = path.join(folder, slugify(file, {lower: true}).replace(/_/g, '-'));
+        const newFilePath = path.join(folder, newFileName);
 
         if (filePath !== newFilePath) {
             console.log('Renaming ', filePath, "\t --> ", newFilePath);
