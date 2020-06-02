@@ -73,12 +73,6 @@ function registerValidSW(swUrl, config) {
                 'New content is available and will be used when all ' +
                   'tabs for this page are closed. See https://bit.ly/CRA-PWA.'
               );
-                /**
-                 * 
-                 */
-              // installingWorker.postMessage('skipWaiting'); // vai nao kkk
-              // installingWorker.postMessage('SKIP_WAITING'); // vai nao kkk
-              // installingWorker.postMessage({type: 'SKIP_WAITING'}); // vai nao kkk
 
               // Execute callback
               if (config && config.onUpdate) {
