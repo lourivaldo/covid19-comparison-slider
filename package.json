@@ -13,6 +13,7 @@
     "bootstrap": "^4.5.0",
     "date-fns": "^2.14.0",
     "firebase": "^7.14.5",
+    "imagemin": "^7.0.1",
     "imagemin-cli": "^5.1.0",
     "jquery": "^3.5.1",
     "lodash": "^4.17.15",
@@ -27,15 +28,19 @@
     "react-slick": "^0.26.1",
     "react-toastify": "^6.0.5",
     "react-twentytwenty": "^1.2.1",
-    "slick-carousel": "^1.8.1"
+    "remove-accents": "^0.4.2",
+    "simple-git": "^2.5.0",
+    "slick-carousel": "^1.8.1",
+    "slugify": "^1.4.0",
+    "imagemin-pngquant": "^8.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "node images-injector.js && react-scripts build && PUBLIC_URL=https://www.irrd.org/geotemporal node inject-version.js",
-    "build:prod": "node images-injector.js && PUBLIC_URL=https://www.irrd.org/geotemporal react-scripts build",
+    "build": "node images-optimize.js && node images-injector.js && react-scripts build && PUBLIC_URL=https://www.irrd.org/geotemporal node inject-version.js",
+    "build:prod": "node images-optimize.js && node images-injector.js && PUBLIC_URL=https://www.irrd.org/geotemporal react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "images": "node_modules/.bin/imagemin public/img/nordeste/* --out-dir=public/img/nordeste/build"
+    "images": "node images-optimize.js"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -53,6 +58,5 @@
     ]
   },
   "devDependencies": {
-    "imagemin-pngquant": "^8.0.0"
   }
 }

@@ -201,9 +201,9 @@ export default class Home extends Component {
 
                     <div className="-flex-shrink-1 cvd-caption">
                         <div className="d-flex flex-wrap justify-content-start justify-content-sm-between flex-xl-column">
-                            <img className="-img-fluid -float-left" src="img/nordeste/BRASIL - NORDESTE - TEMPORAL_LEGENDA-1.png" alt="Legenda" />
-                            <img className="-img-fluid -float-left d-sm-none d-lg-inline-block" src="img/nordeste/BRASIL - NORDESTE - TEMPORAL_LEGENDA-2.png" alt="Legenda" />
-                            <img className="-img-fluid -float-left" src="img/nordeste/BRASIL - NORDESTE - TEMPORAL_LEGENDA-3.png" alt="Legenda" />
+                            <img className="-img-fluid -float-left" src="img/nordeste/brasil-nordeste-temporal-legenda-1.png" alt="Legenda" />
+                            <img className="-img-fluid -float-left d-sm-none d-lg-inline-block" src="img/nordeste/brasil-nordeste-temporal-legenda-2.png" alt="Legenda" />
+                            <img className="-img-fluid -float-left" src="img/nordeste/brasil-nordeste-temporal-legenda-3.png" alt="Legenda" />
                         </div>
                     </div>
                 </div>
