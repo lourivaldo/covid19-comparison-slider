@@ -77,7 +77,7 @@ export default class Geodinamica extends Component {
                     <div className="embed-overlays"></div>
 
                     <div id="webmapVideo" className="embed-responsive embed-responsive-16by9">
-                        <video className="embed-responsive-item" width="100%" autoPlay loop>
+                        <video className="embed-responsive-item" width="100%" autoPlay loop muted>
                             <source src="video/webmap.webm" type="video/webm"/>
                             <source src="video/webmap.mp4" type="video/mp4"/>
                             Construa seu mapa acesse: https://www.irrd.org/geodinamica
