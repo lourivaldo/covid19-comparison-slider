@@ -174,7 +174,7 @@ async function getFile(auth, fileId) {
                 resolve(filePath);
             })
             .on('error', err => {
-                // console.error('Error downloading file.');
+                console.error('Error downloading file.');
                 reject(err);
             })
             .on('data', d => {

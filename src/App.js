@@ -1202,7 +1202,7 @@ class App extends React.Component {
 	},
 	{
 		"date": "05/05/2020",
-		"img": "img/rmr/aglomerados-confirmados-05.05--1-.png"
+		"img": "img/rmr/aglomerados-confirmados-05.05-1-.png"
 	},
 	{
 		"date": "06/05/2020",
@@ -1222,7 +1222,7 @@ class App extends React.Component {
 	},
 	{
 		"date": "10/05/2020",
-		"img": "img/rmr/aglomerados-confirmados-10.05--1-.png"
+		"img": "img/rmr/aglomerados-confirmados-10.05-1-.png"
 	},
 	{
 		"date": "11/05/2020",
@@ -1242,7 +1242,7 @@ class App extends React.Component {
 	},
 	{
 		"date": "15/05/2020",
-		"img": "img/rmr/aglomerados-confirmados-15.05--1-.png"
+		"img": "img/rmr/aglomerados-confirmados-15.05-1-.png"
 	},
 	{
 		"date": "16/05/2020",
@@ -1262,7 +1262,7 @@ class App extends React.Component {
 	},
 	{
 		"date": "20/05/2020",
-		"img": "img/rmr/aglomerados-confirmados-20.05--1-.png"
+		"img": "img/rmr/aglomerados-confirmados-20.05-1-.png"
 	},
 	{
 		"date": "21/05/2020",
@@ -1303,6 +1303,10 @@ class App extends React.Component {
 	{
 		"date": "30/05/2020",
 		"img": "img/rmr/aglomerados-confirmados-30.05app.png"
+	},
+	{
+		"date": "31/05/2020",
+		"img": "img/rmr/aglomerados-confirmados-31.05app.png"
 	}
 /** inject-images:end(rmr) */
             ]
