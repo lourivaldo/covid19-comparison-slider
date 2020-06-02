@@ -114,7 +114,7 @@ async function listMyFilesAndFolders(auth, folderId) {
 }
 
 function filterNew(files) {
-    const date = subHours(new Date(), 24);
+    const date = subHours(new Date(), 16);
     return files.filter(f => isAfter(new Date(f.modifiedTime), date));
 }
 
