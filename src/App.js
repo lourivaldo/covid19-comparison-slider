@@ -816,18 +816,6 @@ class App extends React.Component {
 		"img": "img/pernambuco/covid19-pe-tem-200401.png"
 	},
 	{
-		"date": "29/05/2020",
-		"img": "img/pernambuco/covid19-pe-tem-200530.png"
-	},
-	{
-		"date": "30/05/2020",
-		"img": "img/pernambuco/covid19-pe-tem-200531.png"
-	},
-	{
-		"date": "31/05/2020",
-		"img": "img/pernambuco/covid19-pe-tem-200601.png"
-	},
-	{
 		"date": "01/06/2020",
 		"img": "img/pernambuco/covid19-pe-tem-200602.png"
 	}
