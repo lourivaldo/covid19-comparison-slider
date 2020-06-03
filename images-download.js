@@ -3,6 +3,7 @@ const path = require('path');
 const { v4: uuidv4 } = require('uuid');
 const slugify = require('slugify');
 const {format, subDays, isAfter, subHours} = require('date-fns');
+const { ptBR } = require('date-fns/locale');
 const fs = require('fs');
 const readline = require('readline');
 const {google} = require('googleapis');
@@ -114,7 +115,7 @@ async function listMyFilesAndFolders(auth, folderId) {
 }
 
 function filterNew(files) {
-    const date = subHours(new Date(), 16);
+    const date = subHours(new Date(), 28);
     return files.filter(f => isAfter(new Date(f.modifiedTime), date));
 }
 
@@ -133,7 +134,14 @@ async function listFiles(auth) {
         const folderName = slugify(folder.name.toLowerCase());
 
         if (folderName === 'rmr') {
-            const beforeMonthFolder = format(subDays(new Date(), 2), 'MM');
+            const beforeMonthFolder = format(subDays(new Date(), 3), 'MM');
+            const rmrFolders = await listMyFilesAndFolders(auth, folderId);
+            const found = rmrFolders.find(rmrFolder => rmrFolder.name === beforeMonthFolder);
+            if (found) folderId = found.id;
+        }
+
+        if (folderName === 'recife') {
+            const beforeMonthFolder = format(subDays(new Date(), 3), 'MMMM', {locale: ptBR});
             const rmrFolders = await listMyFilesAndFolders(auth, folderId);
             const found = rmrFolders.find(rmrFolder => rmrFolder.name === beforeMonthFolder);
             if (found) folderId = found.id;
