@@ -133,6 +133,8 @@ async function listFiles(auth) {
         let folderId = folder.id;
         const folderName = slugify(folder.name.toLowerCase());
 
+        if (folderName === 'pernambuco') continue;// Ate ajustar mapas
+
         if (folderName === 'rmr') {
             const beforeMonthFolder = format(subDays(new Date(), 2), 'MM');
             const rmrFolders = await listMyFilesAndFolders(auth, folderId);
