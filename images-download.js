@@ -134,10 +134,16 @@ async function listFiles(auth) {
         const folderName = slugify(folder.name.toLowerCase());
 
         if (folderName === 'rmr') {
-            const beforeMonthFolder = format(subDays(new Date(), 3), 'MM');
+            const beforeMonthFolder = format(subDays(new Date(), 2), 'MM');
             const rmrFolders = await listMyFilesAndFolders(auth, folderId);
             const found = rmrFolders.find(rmrFolder => rmrFolder.name === beforeMonthFolder);
             if (found) folderId = found.id;
+            else {
+                const beforeMonthFolder = format(subDays(new Date(), 3), 'MM');
+                const rmrFolders = await listMyFilesAndFolders(auth, folderId);
+                const found = rmrFolders.find(rmrFolder => rmrFolder.name === beforeMonthFolder);
+                if (found) folderId = found.id;
+            }
         }
 
         if (folderName === 'recife') {
