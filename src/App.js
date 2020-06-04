@@ -11,7 +11,7 @@ import Footer from "./views/footer/Footer";
 import Home from "./views/home/Home";
 import Home2 from "./views/home2/Home2";
 import Slider from "./views/slider/Slider";
-import Flourish from "./views/flourish/Flourish";
+import ChartRace from "./views/chart-race/ChartRace";
 import Geodinamica from "./views/geodinamica/Geodinamica";
 
 class App extends React.Component {
@@ -1648,7 +1648,8 @@ class App extends React.Component {
             <div className="App">
                 <Header configs={this.maps}/>
 
-                <Flourish></Flourish>
+                <ChartRace id="2637633"></ChartRace>
+                <ChartRace id="2709431"></ChartRace>
 
                 <Geodinamica></Geodinamica>
 
