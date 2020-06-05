@@ -1351,6 +1351,10 @@ class App extends React.Component {
 	{
 		"date": "02/06/2020",
 		"img": "img/rmr/aglomerados-confirmados-02.06app.png"
+	},
+	{
+		"date": "03/06/2020",
+		"img": "img/rmr/aglomerados-confirmados-03.06app.png"
 	}
 /** inject-images:end(rmr) */
             ]
