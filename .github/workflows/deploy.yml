@@ -35,4 +35,4 @@ jobs:
           source: "build/www.irrd.org-temporal.build.zip"
           target: "/var/www/html/covid19"
       - name: Deploy
-        run: echo 'Deploy'
+        run: echo 'Deploy 1'
