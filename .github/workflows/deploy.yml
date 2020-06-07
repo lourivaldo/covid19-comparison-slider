@@ -32,7 +32,7 @@ jobs:
           username: ${{ secrets.SSH_USERNAME }}
           password: ${{ secrets.SSH_PASSWORD }}
 #          key: ${{ secrets.SSH_KEY }}
-          source: "build/www.irrd.org-temporal.build.zip"
+          source: "www.irrd.org-temporal.build.zip"
           target: "/home/irrd/irrd.org/geotemporal/video"
       - name: Deploy
-        run: echo 'Deploy 1'
+        run: echo 'Deploy 12'
