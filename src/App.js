@@ -1648,6 +1648,10 @@ class App extends React.Component {
 	{
 		"date": "04/06/2020",
 		"img": "img/recife/04.06b.png"
+	},
+	{
+		"date": "05/06/2020",
+		"img": "img/recife/05.06b.png"
 	}
 /** inject-images:end(recife) */
             ]
