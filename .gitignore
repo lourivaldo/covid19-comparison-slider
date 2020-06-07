@@ -29,3 +29,5 @@ credentials.json
 google-credentials.json
 token.json
 google-token.json
+
+deploy.sh

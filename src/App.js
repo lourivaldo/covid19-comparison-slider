@@ -1367,6 +1367,10 @@ class App extends React.Component {
 	{
 		"date": "03/06/2020",
 		"img": "img/rmr/aglomerados-confirmados-03.06app.png"
+	},
+	{
+		"date": "04/06/2020",
+		"img": "img/rmr/aglomerados-confirmados-04.06app.png"
 	}
 /** inject-images:end(rmr) */
             ]
@@ -1632,6 +1636,10 @@ class App extends React.Component {
 	{
 		"date": "03/06/2020",
 		"img": "img/recife/03.06b.png"
+	},
+	{
+		"date": "04/06/2020",
+		"img": "img/recife/04.06b.png"
 	}
 /** inject-images:end(recife) */
             ]

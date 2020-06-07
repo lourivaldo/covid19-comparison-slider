@@ -133,7 +133,45 @@ async function listFiles(auth) {
         let folderId = folder.id;
         const folderName = slugify(folder.name.toLowerCase());
 
-        if (folderName === 'pernambuco') continue;// Ate ajustar mapas
+        // if (folderName === 'pernambuco') continue;// Ate ajustar mapas
+        if (folderName === 'brasil') {
+            const beforeMonthFolder = format(subDays(new Date(), 2), 'MM');
+            const rmrFolders = await listMyFilesAndFolders(auth, folderId);
+            const found = rmrFolders.find(rmrFolder => rmrFolder.name === beforeMonthFolder);
+            if (found) folderId = found.id;
+            else {
+                const beforeMonthFolder = format(subDays(new Date(), 3), 'MM');
+                const rmrFolders = await listMyFilesAndFolders(auth, folderId);
+                const found = rmrFolders.find(rmrFolder => rmrFolder.name === beforeMonthFolder);
+                if (found) folderId = found.id;
+            }
+        }
+
+        if (folderName === 'nordeste') {
+            const beforeMonthFolder = format(subDays(new Date(), 2), 'MM');
+            const rmrFolders = await listMyFilesAndFolders(auth, folderId);
+            const found = rmrFolders.find(rmrFolder => rmrFolder.name === beforeMonthFolder);
+            if (found) folderId = found.id;
+            else {
+                const beforeMonthFolder = format(subDays(new Date(), 3), 'MM');
+                const rmrFolders = await listMyFilesAndFolders(auth, folderId);
+                const found = rmrFolders.find(rmrFolder => rmrFolder.name === beforeMonthFolder);
+                if (found) folderId = found.id;
+            }
+        }
+
+        if (folderName === 'pernambuco') {
+            const beforeMonthFolder = format(subDays(new Date(), 2), 'MM');
+            const rmrFolders = await listMyFilesAndFolders(auth, folderId);
+            const found = rmrFolders.find(rmrFolder => rmrFolder.name === beforeMonthFolder);
+            if (found) folderId = found.id;
+            else {
+                const beforeMonthFolder = format(subDays(new Date(), 3), 'MM');
+                const rmrFolders = await listMyFilesAndFolders(auth, folderId);
+                const found = rmrFolders.find(rmrFolder => rmrFolder.name === beforeMonthFolder);
+                if (found) folderId = found.id;
+            }
+        }
 
         if (folderName === 'rmr') {
             const beforeMonthFolder = format(subDays(new Date(), 2), 'MM');
@@ -149,12 +187,12 @@ async function listFiles(auth) {
         }
 
         if (folderName === 'recife') {
-            const beforeMonthFolder = format(subDays(new Date(), 2), 'MMMM', {locale: ptBR});
+            const beforeMonthFolder = format(subDays(new Date(), 2), 'MM');
             const rmrFolders = await listMyFilesAndFolders(auth, folderId);
             const found = rmrFolders.find(rmrFolder => rmrFolder.name === beforeMonthFolder);
             if (found) folderId = found.id;
             else {
-                const beforeMonthFolder = format(subDays(new Date(), 3), 'MMMM', {locale: ptBR});
+                const beforeMonthFolder = format(subDays(new Date(), 3), 'MM');
                 const rmrFolders = await listMyFilesAndFolders(auth, folderId);
                 const found = rmrFolders.find(rmrFolder => rmrFolder.name === beforeMonthFolder);
                 if (found) folderId = found.id;
