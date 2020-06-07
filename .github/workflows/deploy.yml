@@ -25,7 +25,8 @@ jobs:
         run: echo 'Images'
       - name: Build page
         run: |
-          echo "::set-env BUILD_FILE=www.irrd.org-temporal.build.${GITHUB_SHA::8}.zip"
+          echo "::set-env BUILD_FILE=temporal-build-${GITHUB_SHA::8}.zip"
+          echo $BUILD_FILE
           npm run build:prod
           cd build
           zip -r $BUILD_FILE *
