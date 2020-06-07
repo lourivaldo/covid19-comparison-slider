@@ -32,6 +32,7 @@ jobs:
 #          password: ${{ secrets.SSH_PASSWORD }}
 #          port: ${{ secrets.SSH_PORT }}
           key: ${{ secrets.SSH_KEY_DEVELOP }}
+          use_insecure_cipher: true
           source: "build/www.irrd.org-temporal.build.zip"
           target: "/var/www/html/covid19"
       - name: Deploy
