@@ -437,6 +437,10 @@ class App extends React.Component {
 	{
 		"date": "05/06/2020",
 		"img": "img/brasil/covid19-brasil-municipios-200605-3.png"
+	},
+	{
+		"date": "06/06/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200606.png"
 	}
 /** inject-images:end(brasil) */
             ]
@@ -818,6 +822,10 @@ class App extends React.Component {
 	{
 		"date": "05/06/2020",
 		"img": "img/nordeste/brasil-nordeste-temporal-200605.png"
+	},
+	{
+		"date": "06/06/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200606.png"
 	}
 /** inject-images:end(nordeste) */
             ]
