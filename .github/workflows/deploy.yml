@@ -30,7 +30,7 @@ jobs:
           host: ${{ secrets.SSH_HOST_DEVELOP }}
           username: ${{ secrets.SSH_USERNAME_DEVELOP }}
 #          password: ${{ secrets.SSH_PASSWORD }}
-          port: ${{ secrets.SSH_PORT }}
+#          port: ${{ secrets.SSH_PORT }}
           key: ${{ secrets.SSH_KEY_DEVELOP }}
           source: "build/www.irrd.org-temporal.build.zip"
           target: "/var/www/html/covid19"
