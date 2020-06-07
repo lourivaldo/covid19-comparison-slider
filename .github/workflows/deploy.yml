@@ -25,14 +25,14 @@ jobs:
         run: echo 'Images'
       - name: Build page
         run: |
-          echo '::set-env name=BUILD_FILE::temporal-build-${GITHUB_SHA::8}.zip'
-          echo $BUILD_FILE
-          echo $BUILD_FILE
+          echo '::set-env name=BUILD_FILE::temporal-build-.zip' \
+          echo $BUILD_FILE \
+          echo $BUILD_FILE \
           npm run build:prod
       - name: Generate zip
         run: |
-          cd build
-          zip -r $BUILD_FILE *
+          cd build \
+          zip -r $BUILD_FILE * \
           mv $BUILD_FILE ..
 #      - name: Copy build .zip to irrd geotemporal
 #        uses: appleboy/scp-action@master
