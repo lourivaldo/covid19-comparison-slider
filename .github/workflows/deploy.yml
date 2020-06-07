@@ -15,16 +15,19 @@ jobs:
         node-version: [12.x]
     steps:
       - uses: actions/checkout@v1
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
-        with:
-          node-version: ${{ matrix.node-version }}
-      - name: Install Packages
-        run: npm install
-      - name: Download Images
-        run: echo 'Images'
       - name: Build page
-        run: echo '::set-env name=BUILD_FILE::temporal-build-.zip' && echo $BUILD_FILE && npm run build:prod
+      run: echo '::set-env name=BUILD_FILE::temporal-build-.zip' && echo $BUILD_FILE
+#      - name: Use Node.js ${{ matrix.node-version }}
+#        uses: actions/setup-node@v1
+#        with:
+#          node-version: ${{ matrix.node-version }}
+#      - name: Install Packages
+#        run: npm install
+#      - name: Download Images
+#        run: echo 'Images'
+#      - name: Build page
+#        run: echo '::set-env name=BUILD_FILE::temporal-build-.zip' && echo $BUILD_FILE && npm run build:prod
+#        run: echo '::set-env name=BUILD_FILE::temporal-build-.zip' && echo $BUILD_FILE && npm run build:prod
 #      - name: Generate zip
 #        run: |
 #          cd build \
