@@ -24,7 +24,12 @@ jobs:
       - name: Download Images
         run: echo 'Images'
       - name: Build page
-        run: echo "::set-env BUILD_FILE=www.irrd.org-temporal.build.${GITHUB_SHA::8}.zip" && echo $BUILD_FILE && npm run build:prod && cd build && zip -r www.irrd.org-temporal.build.${GITHUB_SHA::8}.zip * && mv www.irrd.org-temporal.build.${GITHUB_SHA::8}.zip ..
+        run: |
+          echo "::set-env BUILD_FILE=www.irrd.org-temporal.build.${GITHUB_SHA::8}.zip"
+          npm run build:prod
+          cd build
+          zip -r $BUILD_FILE *
+          mv $BUILD_FILE ..
       - name: Copy build .zip to irrd geotemporal
         uses: appleboy/scp-action@master
         with:
@@ -32,7 +37,7 @@ jobs:
           username: ${{ secrets.SSH_USERNAME }}
           password: ${{ secrets.SSH_PASSWORD }}
           port: ${{ secrets.SSH_PORT }}
-          source: www.irrd.org-temporal.build.zip
+          source: $BUILD_FILE
           target: "/home/irrd/deploys"
       - name: Deploy
         uses: appleboy/ssh-action@master
@@ -41,4 +46,4 @@ jobs:
           username: ${{ secrets.SSH_USERNAME }}
           password: ${{ secrets.SSH_PASSWORD }}
           port: ${{ secrets.SSH_PORT }}
-          script: unzip /home/irrd/deploys/www.irrd.org-temporal.build.${GITHUB_SHA::8}.zip -d /home/irrd/irrd.org/geotemporal
+          script: unzip /home/irrd/deploys/$BUILD_FILE -d /home/irrd/irrd.org/geotemporal
