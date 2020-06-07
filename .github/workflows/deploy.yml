@@ -16,7 +16,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Build page
-        run: echo '::set-env name=BUILD_FILE::temporal-build-.zip' && echo $BUILD_FILE
+        run: echo ::set-env name=BUILD_FILE::temporal-build-.zip
 #      - name: Use Node.js ${{ matrix.node-version }}
 #        uses: actions/setup-node@v1
 #        with:
