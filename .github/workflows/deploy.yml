@@ -31,7 +31,14 @@ jobs:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USERNAME }}
           password: ${{ secrets.SSH_PASSWORD }}
+          port: ${{ secrets.SSH_PORT }}
           source: "www.irrd.org-temporal.build.zip"
           target: "/home/irrd/deploys"
       - name: Deploy
-        run: echo 'Deploy 12'
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USERNAME }}
+          password: ${{ secrets.SSH_PASSWORD }}
+          port: ${{ secrets.SSH_PORT }}
+          script: unzip www.irrd.org-temporal.build.zip -d /home/irrd/irrd.org/geotemporal/teste
