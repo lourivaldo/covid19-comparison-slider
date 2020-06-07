@@ -27,10 +27,11 @@ jobs:
       - name: Copy build .zip to www.irrd.org/geotemporal
         uses: appleboy/scp-action@master
         with:
-          host: ${{ secrets.SSH_HOST_DEVELOP }}
-          username: ${{ secrets.SSH_USERNAME_DEVELOP }}
-          key: ${{ secrets.SSH_KEY }}
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USERNAME }}
+          password: ${{ secrets.SSH_PASSWORD }}
+#          key: ${{ secrets.SSH_KEY }}
           source: "build/www.irrd.org-temporal.build.zip"
-          target: "/var/www/html/covid19"
+          target: "/home/irrd/irrd.org/geotemporal/video"
       - name: Deploy
         run: echo 'Deploy 1'
