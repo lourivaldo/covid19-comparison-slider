@@ -3,6 +3,9 @@ on:
   push:
     branches:
       - master
+#on:
+#  schedule:
+#    - cron: "*/5 * * * *"
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -20,6 +23,6 @@ jobs:
       - name: Download Images
         run: echo 'Images'
       - name: Build page
-        run: npm run build:prod
+        run: npm run build:prod && cd build && zip -r www.irrd.org-temporal.build.${GITHUB_SHA::8}.zip *
       - name: Deploy to www.irrd.org/geotemporal
         run: echo 'Images'
