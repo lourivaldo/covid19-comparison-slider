@@ -24,7 +24,7 @@ jobs:
       - name: Download Images
         run: echo 'Images'
       - name: Build page
-        run: npm run build:prod && cd build && zip -r www.irrd.org-temporal.build.zip * && mv www.irrd.org-temporal.build.${GITHUB_SHA::8}.zip ..
+        run: npm run build:prod && cd build && zip -r www.irrd.org-temporal.build.${GITHUB_SHA::8}.zip * && mv www.irrd.org-temporal.build.${GITHUB_SHA::8}.zip ..
       - name: Copy build .zip to irrd geotemporal
         uses: appleboy/scp-action@master
         with:
