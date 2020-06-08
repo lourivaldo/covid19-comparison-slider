@@ -58,3 +58,17 @@ jobs:
           script: |
             unzip -o /home/irrd/deploys/${{ env.BUILD_FILE }} -d /home/irrd/irrd.org/geotemporal
             find /home/irrd/deploys/temporal-* -mtime +1 -exec rm {} \;
+
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [12.x]
+    steps:
+      - uses: actions/checkout@v1
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Test Front-end
+        run: echo "Execute puppeteer"
