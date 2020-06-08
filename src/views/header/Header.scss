@@ -333,7 +333,12 @@ header.masthead {
     border-top: 1px solid rgba(0, 0, 0, .05) !important;
     background: #fff;
     .btn {
+      font-weight: bold;
       margin: 4px 0;
+
+      svg {
+        margin-left: 1px;
+      }
     }
   }
 

@@ -8,6 +8,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faInstagram, faTwitter} from '@fortawesome/free-brands-svg-icons';
+import {faChevronRight, faExternalLinkAlt} from "@fortawesome/free-solid-svg-icons";
 
 export default class Header extends Component {
 
@@ -128,7 +129,7 @@ export default class Header extends Component {
                     <Slider {...this.settings} className="row">
                         {this.configs.map((map) => (
                             <div className="col-12 card-container" key={map.id}>
-                                <div className="card" onClick={() => this.scrollTo(map.id)}>
+                                <div className="card" onClick={() => this.scrollTo(`${map.id}-`)}>
                                     <div className="card-img-top">
                                         <img className="card-img-top-img" src={map.img} alt={map.title}/>
                                     </div>
@@ -140,23 +141,23 @@ export default class Header extends Component {
                                     <div className="card-actions">
                                         <div className="row">
                                             <div className="col-12">
-                                                <button onClick={() => this.scrollTo(`${map.id}-`)} className={"btn btn-primary btn-block btn-sm "}>
-                                                    ver confirmados
+                                                <button onClick={() => this.scrollTo(`${map.id}-`)} className={"btn btn-outline-danger btn-block btn-sm"}>
+                                                    confirmados <FontAwesomeIcon icon={faChevronRight} size={"sm"}/>
                                                 </button>
                                             </div>
                                             <div className="col-12">
-                                                <button onClick={() => this.scrollTo(`${map.id}-recovered`)} className={"btn btn-success btn-block btn-sm " + (map.imagesRecovered.length ? '' : 'btn-disabled')}>
-                                                    ver recuperados
+                                                <button onClick={() => this.scrollTo(`${map.id}-recovered`)} className={"btn btn-outline-success btn-block btn-sm " + (map.imagesRecovered.length ? '' : 'btn-disabled')}>
+                                                    recuperados <FontAwesomeIcon icon={faChevronRight} size={"sm"}/>
                                                 </button>
                                             </div>
                                             <div className="col-12">
-                                                <button onClick={() => this.scrollTo(`${map.id}-actives`)} className={"btn btn-primary btn-block btn-sm " + (map.imagesActives.length ? '' : 'btn-disabled')}>
-                                                    ver ativos
+                                                <button onClick={() => this.scrollTo(`${map.id}-actives`)} className={"btn btn-outline-warning btn-block btn-sm " + (map.imagesActives.length ? '' : 'btn-disabled')}>
+                                                    ativos <FontAwesomeIcon icon={faChevronRight} size={"sm"}/>
                                                 </button>
                                             </div>
                                             {/*<div className="col-12">*/}
-                                            {/*    <button onClick={() => this.scrollTo(`${map.id}-deaths`)} className={"btn btn-danger btn-block btn-sm " + (map.imagesDeaths.length ? '' : 'btn-disabled')}>*/}
-                                            {/*        ver óbitos*/}
+                                            {/*    <button onClick={() => this.scrollTo(`${map.id}-deaths`)} className={"btn btn-outline-danger btn-block btn-sm " + (map.imagesDeaths.length ? '' : 'btn-disabled')}>*/}
+                                            {/*        óbitos <FontAwesomeIcon icon={faChevronRight} size={"sm"}/>*/}
                                             {/*    </button>*/}
                                             {/*</div>*/}
                                         </div>
