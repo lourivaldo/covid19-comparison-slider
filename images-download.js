@@ -41,11 +41,19 @@ function authorize(credentials, callback) {
         client_id, client_secret, redirect_uris[0]);
 
     // Check if we have previously stored a token.
-    fs.readFile(TOKEN_PATH, (err, token) => {
-        if (err) return getAccessToken(oAuth2Client, callback);
+
+    if (process.env.GOOGLE_TOKEN) {
+        console.log(process.env);
+        const token = process.env.GOOGLE_TOKEN;
         oAuth2Client.setCredentials(JSON.parse(token));
         callback(oAuth2Client);
-    });
+    } else {
+        fs.readFile(TOKEN_PATH, (err, token) => {
+            if (err) return getAccessToken(oAuth2Client, callback);
+            oAuth2Client.setCredentials(JSON.parse(token));
+            callback(oAuth2Client);
+        });
+    }
 }
 
 /**
