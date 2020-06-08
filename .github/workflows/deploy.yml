@@ -28,7 +28,7 @@ jobs:
         run: |
           echo '${{ secrets.GOOGLE_TOKEN }}' > google-token.json
           echo '${{ secrets.GOOGLE_CREDENTIALS }}' > google-credentials.json
-          npm run images:download
+          npm run images
           git status
 #      - name: Build page
 #        run: |
