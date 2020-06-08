@@ -9,7 +9,7 @@ on:
     - cron: "0 8,9,10,12 * * *"
 
 env:
-  BUILD_FILE: temporal-build-${{ github.sha }}-${{ github.action }}.zip
+  BUILD_FILE: temporal-build-${{ github.sha }}-${{ github.run_id }}.zip
 
 jobs:
   deploy:
