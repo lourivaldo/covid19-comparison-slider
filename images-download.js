@@ -40,21 +40,11 @@ function authorize(credentials, callback) {
     const oAuth2Client = new google.auth.OAuth2(
         client_id, client_secret, redirect_uris[0]);
 
-    process.stdout.write(process.env.GOOGLE_TOKEN); // throw new Error('sdfd');
-
-    // Check if we have previously stored a token.
-    const token = process.env.GOOGLE_TOKEN;
-
-    if (token) {
+    fs.readFile(TOKEN_PATH, (err, token) => {
+        if (err) return getAccessToken(oAuth2Client, callback);
         oAuth2Client.setCredentials(JSON.parse(token));
         callback(oAuth2Client);
-    } else {
-        fs.readFile(TOKEN_PATH, (err, token) => {
-            if (err) return getAccessToken(oAuth2Client, callback);
-            oAuth2Client.setCredentials(JSON.parse(token));
-            callback(oAuth2Client);
-        });
-    }
+    });
 }
 
 /**
