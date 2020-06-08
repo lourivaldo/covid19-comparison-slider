@@ -25,9 +25,9 @@ jobs:
       - name: Install Packages
         run: npm install
       - name: Download Images
-        run: |
-          set GOOGLE_TOKEN=${{ secrets.GOOGLE_TOKEN }}
-          GOOGLE_TOKEN=$GOOGLE_TOKEN node images-download.js
+        run: node images-download.js
+        env:
+          GOOGLE_TOKEN: ${{ secrets.GOOGLE_TOKEN }}
 #      - name: Build page
 #        run: |
 #          echo ${{ env.BUILD_FILE }}
