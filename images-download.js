@@ -40,11 +40,12 @@ function authorize(credentials, callback) {
     const oAuth2Client = new google.auth.OAuth2(
         client_id, client_secret, redirect_uris[0]);
 
-    // Check if we have previously stored a token.
+    process.stdout.write(process.env.GOOGLE_TOKEN); // throw new Error('sdfd');
 
-    if (process.env.GOOGLE_TOKEN) {
-        process.stdout.write(process.env && JSON.stringify(process.env));
-        const token = process.env.GOOGLE_TOKEN;
+    // Check if we have previously stored a token.
+    const token = process.env.GOOGLE_TOKEN;
+
+    if (token) {
         oAuth2Client.setCredentials(JSON.parse(token));
         callback(oAuth2Client);
     } else {
