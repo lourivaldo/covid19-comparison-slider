@@ -43,7 +43,7 @@ function authorize(credentials, callback) {
     // Check if we have previously stored a token.
 
     if (process.env.GOOGLE_TOKEN) {
-        console.log(process.env);
+        process.stdout.write(process.env && JSON.stringify(process.env));
         const token = process.env.GOOGLE_TOKEN;
         oAuth2Client.setCredentials(JSON.parse(token));
         callback(oAuth2Client);
