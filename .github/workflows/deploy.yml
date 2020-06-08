@@ -9,7 +9,7 @@ on:
     - cron: "0 8,9,10,12 * * *"
 
 env:
-  BUILD_FILE: temporal-build-${{ github.sha }}.zip
+  BUILD_FILE: temporal-build-${{ github.sha }}-${{ steps.current-time.outputs.time }}.zip
 
 jobs:
   deploy:
@@ -23,6 +23,8 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
+      - name: Debug
+        run: echo ${{ env.BUILD_FILE }}
       - name: Install Packages
         run: npm install
       - name: Download Images
