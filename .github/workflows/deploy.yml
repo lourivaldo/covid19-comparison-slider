@@ -4,8 +4,8 @@ on:
   push:
     branches:
       - master
-#  schedule:
-#    - cron: "*/5 * * * *"
+  schedule:
+    - cron: "*/5 * * * *"
 
 env:
   BUILD_FILE: temporal-build-${{ github.sha }}.zip

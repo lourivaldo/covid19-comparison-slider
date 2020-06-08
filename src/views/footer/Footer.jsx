@@ -109,7 +109,7 @@ export default class Footer extends Component {
 
                 <div className="copyright">
                     <div className="container">
-                        Copyright © 2020. Todos os direitos reservados.
+                        Copyright © 2020. Todos os direitos reservados. v1.1
                     </div>
                 </div>
             </footer>
