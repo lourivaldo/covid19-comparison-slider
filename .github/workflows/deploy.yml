@@ -60,6 +60,7 @@ jobs:
             find /home/irrd/deploys/temporal-* -mtime +1 -exec rm {} \;
 
   test:
+    needs: deploy
     runs-on: ubuntu-latest
     strategy:
       matrix:
