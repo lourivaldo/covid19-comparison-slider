@@ -19,14 +19,17 @@ class App extends React.Component {
     maps = [
         {
             id: 5,
-            titleHtml: "Distribuição Espaço-temporal dos casos <strong>confirmados</strong> do COVID-19 no <strong>Brasil</strong>",
-            title: "Distribuição Espaço-temporal dos casos confirmados do COVID-19 no Brasil",
+            titleHtml: "Distribuição Espaço-temporal dos casos do COVID-19 no <strong>Brasil</strong>",
+            title: `Distribuição Espaço-temporal dos casos confirmados do COVID-19 no Brasil`,
+            titleRecovered: `Distribuição Espaço-temporal dos casos recuperados do COVID-19 Brasil`,
+            titleDeaths: `Distribuição Espaço-temporal dos óbitos do COVID-19 no Brasil`,
+            titleActives: `Distribuição Espaço-temporal dos casos ativos do COVID-19 no Brasil`,
             img: "img/thumbs/thumb-5.png",
             updatedAt: null,
             defaultPosition: 0.5,
             captions:[
-                {img_url: 'img/brasil/covid19-brasil-municipios-legenda-1.png', description: 'Legenda Distribuição Espaço-temporal dos casos confirmados do COVID-19 no Brasil'},
-                {img_url: 'img/brasil/covid19-brasil-municipios-legenda-2.png', description: 'Legenda Distribuição Espaço-temporal dos casos confirmados do COVID-19 no Brasil'}
+                {img_url: 'img/brasil/covid19-brasil-municipios-legenda-1.png', description: 'Legenda Distribuição Espaço-temporal dos casos do COVID-19 no Brasil'},
+                {img_url: 'img/brasil/covid19-brasil-municipios-legenda-2.png', description: 'Legenda Distribuição Espaço-temporal dos casos do COVID-19 no Brasil'}
             ],
             images: [
                 /** inject-images:start(brasil) */
@@ -441,14 +444,33 @@ class App extends React.Component {
 	{
 		"date": "06/06/2020",
 		"img": "img/brasil/covid19-brasil-municipios-200606.png"
+	},
+	{
+		"date": "07/06/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200607.png"
 	}
 /** inject-images:end(brasil) */
-            ]
+            ],
+            imagesRecovered: [
+                /** inject-images:start(brasil-recuperados) */
+                /** inject-images:end(brasil-recuperados) */
+            ],
+            imagesDeaths: [
+                /** inject-images:start(brasil-obitos) */
+                /** inject-images:end(brasil-obitos) */
+            ],
+            imagesActives: [
+                /** inject-images:start(brasil-ativos) */
+                /** inject-images:end(brasil-ativos) */
+            ],
         },
         {
             id: 1,
-            titleHtml: `Distribuição Espaço-temporal dos casos <strong>confirmados</strong> do COVID-19 no <strong>Nordeste do Brasil</strong>`,
+            titleHtml: `Distribuição Espaço-temporal dos casos do COVID-19 no <strong>Nordeste do Brasil</strong>`,
             title: `Distribuição Espaço-temporal dos casos confirmados do COVID-19 no Nordeste do Brasil`,
+            titleRecovered: `Distribuição Espaço-temporal dos casos recuperados do COVID-19 no Nordeste do Brasil`,
+            titleDeaths: `Distribuição Espaço-temporal dos óbitos do COVID-19 no Nordeste do Brasil`,
+            titleActives: `Distribuição Espaço-temporal dos casos ativos do COVID-19 no Nordeste do Brasil`,
             img: "img/thumbs/thumb-4.png",
             updatedAt: null,
             defaultPosition: 0.5,
@@ -826,20 +848,39 @@ class App extends React.Component {
 	{
 		"date": "06/06/2020",
 		"img": "img/nordeste/brasil-nordeste-temporal-200606.png"
+	},
+	{
+		"date": "07/06/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200607.png"
 	}
 /** inject-images:end(nordeste) */
-            ]
+            ],
+            imagesRecovered: [
+                /** inject-images:start(nordeste-recuperados) */
+                /** inject-images:end(nordeste-recuperados) */
+            ],
+            imagesDeaths: [
+                /** inject-images:start(nordeste-obitos) */
+                /** inject-images:end(nordeste-obitos) */
+            ],
+            imagesActives: [
+                /** inject-images:start(nordeste-ativos) */
+                /** inject-images:end(nordeste-ativos) */
+            ],
         },
         {
             id: 2,
-            titleHtml: "Distribuição Espaço-temporal dos casos <strong>confirmados</strong> do COVID-19 no <strong>Estado de Pernambuco</strong>",
-            title: "Distribuição Espaço-temporal dos casos confirmados do COVID-19 no Estado de Pernambuco",
+            titleHtml: "Distribuição Espaço-temporal dos casos do COVID-19 no <strong>Estado de Pernambuco</strong>",
+            title: `Distribuição Espaço-temporal dos casos confirmados do COVID-19 no Estado de Pernambuco`,
+            titleRecovered: `Distribuição Espaço-temporal dos casos recuperados do COVID-19 no Estado de Pernambuco`,
+            titleDeaths: `Distribuição Espaço-temporal dos óbitos do COVID-19 no Estado de Pernambuco`,
+            titleActives: `Distribuição Espaço-temporal dos casos ativos do COVID-19 no Estado de Pernambuco`,
             img: "img/thumbs/thumb-3.png",
             updatedAt: null,
             defaultPosition: 0.5,
             captions:[
-                {img_url: 'img/pernambuco/covid19-pe-tem-legenda-1.png', description: 'Legenda Distribuição Espaço-temporal dos casos confirmados do COVID-19 no Estado de Pernambuco'},
-                {img_url: 'img/pernambuco/covid19-pe-tem-legenda-2.png', description: 'Legenda Distribuição Espaço-temporal dos casos confirmados do COVID-19 no Estado de Pernambuco'},
+                {img_url: 'img/pernambuco/covid19-pe-tem-legenda-1.png', description: 'Legenda Distribuição Espaço-temporal dos casos do COVID-19 no Estado de Pernambuco'},
+                {img_url: 'img/pernambuco/covid19-pe-tem-legenda-2.png', description: 'Legenda Distribuição Espaço-temporal dos casos do COVID-19 no Estado de Pernambuco'},
             ],
             images: [
                 /** inject-images:start(pernambuco) */
@@ -1110,14 +1151,33 @@ class App extends React.Component {
 	{
 		"date": "05/06/2020",
 		"img": "img/pernambuco/covid19-pe-tem-200606.png"
+	},
+	{
+		"date": "06/06/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200607.png"
 	}
 /** inject-images:end(pernambuco) */
-            ]
+            ],
+            imagesRecovered: [
+                /** inject-images:start(pernambuco-recuperados) */
+                /** inject-images:end(pernambuco-recuperados) */
+            ],
+            imagesDeaths: [
+                /** inject-images:start(pernambuco-obitos) */
+                /** inject-images:end(pernambuco-obitos) */
+            ],
+            imagesActives: [
+                /** inject-images:start(pernambuco-ativos) */
+                /** inject-images:end(pernambuco-ativos) */
+            ],
         },
         {
             id: 3,
-            titleHtml: "Distribuição Espaço-temporal dos casos <strong>confirmados</strong> do COVID-19 na <strong>Região Metropolitana do Recife</strong>",
-            title: "Distribuição Espaço-temporal dos casos confirmados do COVID-19 na Região Metropolitana do Recife",
+            titleHtml: "Distribuição Espaço-temporal dos casos do COVID-19 na <strong>Região Metropolitana do Recife</strong>",
+            title: `Distribuição Espaço-temporal dos casos confirmados do COVID-19 na Região Metropolitana do Recife`,
+            titleRecovered: `Distribuição Espaço-temporal dos casos recuperados do COVID-19 na Região Metropolitana do Recife`,
+            titleDeaths: `Distribuição Espaço-temporal dos óbitos do COVID-19 na Região Metropolitana do Recife`,
+            titleActives: `Distribuição Espaço-temporal dos casos ativos do COVID-19 na Região Metropolitana do Recife`,
             img: "img/thumbs/thumb-2.png",
             updatedAt: null,
             defaultPosition: 0.35,
@@ -1383,14 +1443,37 @@ class App extends React.Component {
 	{
 		"date": "04/06/2020",
 		"img": "img/rmr/aglomerados-confirmados-04.06app.png"
+	},
+	{
+		"date": "05/06/2020",
+		"img": "img/rmr/aglomerados-confirmados-05.06app.png"
+	},
+	{
+		"date": "06/06/2020",
+		"img": "img/rmr/aglomerados-confirmados-06.06app.png"
 	}
 /** inject-images:end(rmr) */
-            ]
+            ],
+            imagesRecovered: [
+                /** inject-images:start(rmr-recuperados) */
+                /** inject-images:end(rmr-recuperados) */
+            ],
+            imagesDeaths: [
+                /** inject-images:start(rmr-obitos) */
+                /** inject-images:end(rmr-obitos) */
+            ],
+            imagesActives: [
+                /** inject-images:start(rmr-ativos) */
+                /** inject-images:end(rmr-ativos) */
+            ],
         },
         {
             id: 4,
-            titleHtml: "Distribuição Espaço-temporal dos casos <strong>confirmados</strong> do COVID-19 na <strong>Cidade do Recife</strong>",
-            title: "Distribuição Espaço-temporal dos casos confirmados do COVID-19 na Cidade do Recife",
+            titleHtml: "Distribuição Espaço-temporal dos casos do COVID-19 na <strong>Cidade do Recife</strong>",
+            title: `Distribuição Espaço-temporal dos casos confirmados do COVID-19 na Cidade do Recife`,
+            titleRecovered: `Distribuição Espaço-temporal dos casos recuperados do COVID-19 na Cidade do Recife`,
+            titleDeaths: `Distribuição Espaço-temporal dos óbitos do COVID-19 na Cidade do Recife`,
+            titleActives: `Distribuição Espaço-temporal dos casos ativos do COVID-19 na Cidade do Recife`,
             img: "img/thumbs/thumb-1.png",
             updatedAt: null,
             defaultPosition: 0.35,
@@ -1654,11 +1737,67 @@ class App extends React.Component {
 		"img": "img/recife/04.06b.png"
 	},
 	{
-		"date": "05/06/2020",
-		"img": "img/recife/05.06b.png"
+		"date": "06/06/2020",
+		"img": "img/recife/06.06b.png"
 	}
 /** inject-images:end(recife) */
-            ]
+            ],
+            imagesRecovered: [
+                /** inject-images:start(recife-recuperados) */
+	{
+		"date": "01/05/2020",
+		"img": "img/recife-recuperados/01.05-rectot.png"
+	},
+	{
+		"date": "29/05/2020",
+		"img": "img/recife-recuperados/29.05-rectot.png"
+	},
+	{
+		"date": "30/05/2020",
+		"img": "img/recife-recuperados/30.05-rectot.png"
+	},
+	{
+		"date": "31/05/2020",
+		"img": "img/recife-recuperados/31.05-rectot.png"
+	},
+	{
+		"date": "01/06/2020",
+		"img": "img/recife-recuperados/01.06-rectot.png"
+	},
+	{
+		"date": "02/06/2020",
+		"img": "img/recife-recuperados/02.06-rectot.png"
+	},
+	{
+		"date": "03/06/2020",
+		"img": "img/recife-recuperados/03.06-rectot.png"
+	},
+	{
+		"date": "04/06/2020",
+		"img": "img/recife-recuperados/04.06-rectot.png"
+	},
+	{
+		"date": "05/06/2020",
+		"img": "img/recife-recuperados/05.06-rectot.png"
+	},
+	{
+		"date": "06/06/2020",
+		"img": "img/recife-recuperados/06.06-rectot.png"
+	}
+/** inject-images:end(recife-recuperados) */
+            ],
+            imagesDeaths: [
+                /** inject-images:start(recife-obitos) */
+                /** inject-images:end(recife-obitos) */
+            ],
+            imagesActives: [
+                /** inject-images:start(recife-ativos) */
+	{
+		"date": "06/06/2020",
+		"img": "img/recife-ativos/06.06ativos-total.png"
+	}
+/** inject-images:end(recife-ativos) */
+            ],
         },
     ];
 
@@ -1679,7 +1818,7 @@ class App extends React.Component {
     scrollFunction = () => {
         var mybutton = document.getElementById("toTopBtn");
 
-        if (document.body.scrollTop > 120 || document.documentElement.scrollTop > 120) {
+        if (document.body.scrollTop > 650 || document.documentElement.scrollTop > 650) {
             mybutton.style.display = "block";
         } else {
             mybutton.style.display = "none";
@@ -1698,6 +1837,35 @@ class App extends React.Component {
         };
     }
 
+    getConfig(mapConfig, type = '') {
+
+        let images = mapConfig.images;
+        let title = mapConfig.title;
+
+        switch (type) {
+            case 'recovered':
+                images = mapConfig.imagesRecovered;
+                title = mapConfig.titleRecovered;
+                break;
+            case 'deaths':
+                images = mapConfig.imagesDeaths;
+                title = mapConfig.titleDeaths;
+                break;
+            case 'actives':
+                images = mapConfig.imagesActives;
+                title = mapConfig.titleActives;
+                break;
+        }
+
+        return {
+            id: `${mapConfig.id}-${type}`,
+            title,
+            images,
+            captions: mapConfig.captions,
+            defaultPosition: mapConfig.defaultPosition,
+        };
+    }
+
     render() {
 
         return (
@@ -1709,11 +1877,13 @@ class App extends React.Component {
 
                 <Geodinamica></Geodinamica>
 
-                <Home2 config={this.maps[0]}/>
-                <Home config={this.maps[1]}/>
-                <Home2 config={this.maps[2]}/>
-                <Slider config={this.maps[3]}/>
-                <Slider config={this.maps[4]}/>
+                <Home2 config={this.getConfig(this.maps[0])}/>
+                <Home config={this.getConfig(this.maps[1])}/>
+                <Home2 config={this.getConfig(this.maps[2])}/>
+                <Slider config={this.getConfig(this.maps[3])}/>
+                <Slider config={this.getConfig(this.maps[4])}/>
+                <Slider config={this.getConfig(this.maps[4],'recovered')}/>
+                <Slider config={this.getConfig(this.maps[4],'actives')}/>
 
                 <button onClick={this.topFunction} id="toTopBtn" title="Go to top">
                     <FontAwesomeIcon icon={faChevronUp} size={"lg"}/>

@@ -20,15 +20,19 @@ const filterByFolder = async (files, folder) => {
     return files.filter((file) => file && file.toString().indexOf(folder) !== -1)
 };
 
+function renameFileName(name) {
+    return slugify(name, {lower: true})
+        .replace(/_/g, '-')
+        .replace(/[\(\)]/g, '-');
+}
+
 const renameFiles = async (folder) => {
 
     const files = fs.readdirSync(folder);
 
     for (const file of files) {
 
-        const newFileName = slugify(file, {lower: true})
-            .replace(/_/g, '-')
-            .replace(/[\(\)]/g, '-');
+        const newFileName = renameFileName(file);
 
         const filePath = path.join(folder, file);
         const newFilePath = path.join(folder, newFileName);

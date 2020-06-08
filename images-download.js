@@ -1,8 +1,9 @@
+const simpleGit = require('simple-git/promise');
 const os = require('os');
 const path = require('path');
 const { v4: uuidv4 } = require('uuid');
 const slugify = require('slugify');
-const {format, subDays, isAfter, subHours} = require('date-fns');
+const {format, subDays, isAfter, subHours, parseISO} = require('date-fns');
 const { ptBR } = require('date-fns/locale');
 const fs = require('fs');
 const readline = require('readline');
@@ -86,7 +87,7 @@ async function listMyFilesAndFolders(auth, folderId) {
         drive.files.list({
             pageSize: 1000,
             q: `'${folderId}' in parents and trashed = false`,
-            fields: 'nextPageToken, files(id, name, modifiedTime, parents)',
+            fields: 'nextPageToken, files(id, name, modifiedTime, mimeType, parents)',
         }, (err, res) => {
 
             const newFiles = [];
@@ -97,11 +98,15 @@ async function listMyFilesAndFolders(auth, folderId) {
             if (files.length) {
 
                 files.map((file) => {
+                    // console.log(file)
                     // console.log(`${file.name} (${file.id}) (${file.modifiedTime})`);
                     newFiles.push({
                         id: file.id,
                         name: file.name,
                         modifiedTime: file.modifiedTime,
+                        parentFolderId: folderId,
+                        isFolder: file.mimeType === 'application/vnd.google-apps.folder',
+                        isFile: file.mimeType !== 'application/vnd.google-apps.folder',
                     });
                 });
             } else {
@@ -113,9 +118,29 @@ async function listMyFilesAndFolders(auth, folderId) {
     });
 }
 
-function filterNew(files) {
-    const date = subHours(new Date(), 28);
-    return files.filter(f => isAfter(new Date(f.modifiedTime), date));
+async function getFolderByMonth(auth, parentFolderId) {
+
+    const beforeMonthFolder = format(subDays(new Date(), 2), 'MM');
+    const rmrFolders = await listMyFilesAndFolders(auth, parentFolderId);
+    const found = rmrFolders.find(rmrFolder => rmrFolder.name === beforeMonthFolder);
+
+    if (found) return found.id;
+    else {
+        const beforeMonthFolder = format(subDays(new Date(), 3), 'MM');
+        const rmrFolders = await listMyFilesAndFolders(auth, parentFolderId);
+        const found = rmrFolders.find(rmrFolder => rmrFolder.name === beforeMonthFolder);
+        if (found) return found.id;
+    }
+
+    return null;
+}
+
+function canEnterOnFolder(folderName) {
+    return ['confirmados', 'recuperados', 'ativos'].indexOf(folderName) !== -1;
+}
+
+function canDownloadFolderFiles(folderName) {
+    return /^\d\d$/.test(folderName);
 }
 
 /**
@@ -124,90 +149,122 @@ function filterNew(files) {
  */
 async function listFiles(auth) {
 
-    const folderId = '1NHLuHIiAleLc7oLlOnS6YWfOKD87ToLa'; // Main
-    const folders = await listMyFilesAndFolders(auth, folderId);
+    const mainFolderId = '1NHLuHIiAleLc7oLlOnS6YWfOKD87ToLa'; // Main folder
+    const mainFolders = await listMyFilesAndFolders(auth, mainFolderId);
 
-    for (const folder of folders) {
+    let foundFiles = [];
+
+    for (const folder of mainFolders) {
 
         let folderId = folder.id;
         const folderName = slugify(folder.name.toLowerCase());
+        console.log('------------- ', folderName)
 
-        // if (folderName === 'pernambuco') continue;// Ate ajustar mapas
-        if (folderName === 'brasil') {
-            const beforeMonthFolder = format(subDays(new Date(), 2), 'MM');
-            const rmrFolders = await listMyFilesAndFolders(auth, folderId);
-            const found = rmrFolders.find(rmrFolder => rmrFolder.name === beforeMonthFolder);
-            if (found) folderId = found.id;
-            else {
-                const beforeMonthFolder = format(subDays(new Date(), 3), 'MM');
-                const rmrFolders = await listMyFilesAndFolders(auth, folderId);
-                const found = rmrFolders.find(rmrFolder => rmrFolder.name === beforeMonthFolder);
-                if (found) folderId = found.id;
+        // if (folderName !== 'recife') continue;// teste
+        // if (['brasil-gauss'].indexOf(folderName) !== -1) continue;// skip folders
+        // if (['pernambuco'].indexOf(folderName) !== -1) continue;// skip folders
+
+        const allContent = await listMyFilesAndFolders(auth, folderId);
+
+        for (const c of allContent) {
+
+            if (c.isFolder && canEnterOnFolder(c.name)) { // para confirmados,recuperados ...
+
+                const allInnerContent = await listMyFilesAndFolders(auth, c.id); // pegar pastas meses 05,06,07... de dentro de confirmados,recuperados ...
+
+                for (const ic of allInnerContent) { //
+                    if (ic.isFolder && canDownloadFolderFiles(ic.name)) { // pastas meses 05,06,07...
+
+                        const allInnerContent = await listMyFilesAndFolders(auth, ic.id); // para arquivos de mapas
+
+                        for (const ic of allInnerContent) {
+                            if (ic.isFile) {
+                                ic.fromFolder = folderName;
+                                ic.typeFolder = c.name;
+                                foundFiles.push(ic);
+                            }
+                        }
+                    }
+                }
+
+            } else if (c.isFolder && canDownloadFolderFiles(c.name)) { // pastas meses 05,06,07...
+
+                const allInnerContent = await listMyFilesAndFolders(auth, c.id); // para arquivos de mapas
+
+                for (const ic of allInnerContent) {
+                    if (ic.isFile) {
+                        ic.fromFolder = folderName;
+                        ic.typeFolder = 'confirmados';
+                        foundFiles.push(ic);
+                    }
+                }
             }
         }
 
-        if (folderName === 'nordeste') {
-            const beforeMonthFolder = format(subDays(new Date(), 2), 'MM');
-            const rmrFolders = await listMyFilesAndFolders(auth, folderId);
-            const found = rmrFolders.find(rmrFolder => rmrFolder.name === beforeMonthFolder);
-            if (found) folderId = found.id;
-            else {
-                const beforeMonthFolder = format(subDays(new Date(), 3), 'MM');
-                const rmrFolders = await listMyFilesAndFolders(auth, folderId);
-                const found = rmrFolders.find(rmrFolder => rmrFolder.name === beforeMonthFolder);
-                if (found) folderId = found.id;
-            }
+    }
+
+    await downloadFiles(auth, foundFiles);
+}
+
+function filterNew(files) {
+    const date = subHours(new Date(), 28);
+    return files.filter(f => isAfter(new Date(f.modifiedTime), date));
+}
+
+function renameFileName(name) {
+    return slugify(name, {lower: true})
+        .replace(/_/g, '-')
+        .replace(/[\(\)]/g, '-');
+}
+
+async function canDownload(file, filePath) {
+    const minDate = subHours(new Date(), 28);
+
+    let remoteModifiedTime = new Date(file.modifiedTime);
+    let localModifiedTime = null;
+
+    if (!fs.existsSync(filePath)) return true;
+
+    try {
+        const git = simpleGit();
+        const log = await git.log({file: filePath});
+        // console.log(remoteModifiedTime, log.latest.date)
+
+        localModifiedTime = parseISO(log.latest.date);
+
+        return isAfter(remoteModifiedTime, localModifiedTime); // newer version
+
+    } catch (e) {}
+
+    return false;
+}
+
+async function downloadFiles(auth, files) {
+
+    for (const file of filterNew(files)) {
+
+        // console.log(file.fromFolder, ' | ', file.typeFolder, ' | ', file.name);
+
+        const destinationFile = file.typeFolder === 'confirmados' ?
+            path.join(__dirname, 'public', 'img', file.fromFolder, renameFileName(file.name)) :
+            path.join(__dirname, 'public', 'img', `${file.fromFolder}-${file.typeFolder}`, renameFileName(file.name));
+
+        const destinationFolder = file.typeFolder === 'confirmados' ?
+            path.join(__dirname, 'public', 'img', file.fromFolder) :
+            path.join(__dirname, 'public', 'img', `${file.fromFolder}-${file.typeFolder}`);
+
+        if (!await canDownload(file, destinationFile)) continue;
+
+        console.log(`Downloading ${destinationFile}`);
+
+        const downloadedFile = await getFile(auth, file.id);
+
+        if (!fs.existsSync(destinationFolder)){
+            fs.mkdirSync(destinationFolder);
         }
 
-        if (folderName === 'pernambuco') {
-            const beforeMonthFolder = format(subDays(new Date(), 2), 'MM');
-            const rmrFolders = await listMyFilesAndFolders(auth, folderId);
-            const found = rmrFolders.find(rmrFolder => rmrFolder.name === beforeMonthFolder);
-            if (found) folderId = found.id;
-            else {
-                const beforeMonthFolder = format(subDays(new Date(), 3), 'MM');
-                const rmrFolders = await listMyFilesAndFolders(auth, folderId);
-                const found = rmrFolders.find(rmrFolder => rmrFolder.name === beforeMonthFolder);
-                if (found) folderId = found.id;
-            }
-        }
-
-        if (folderName === 'rmr') {
-            const beforeMonthFolder = format(subDays(new Date(), 2), 'MM');
-            const rmrFolders = await listMyFilesAndFolders(auth, folderId);
-            const found = rmrFolders.find(rmrFolder => rmrFolder.name === beforeMonthFolder);
-            if (found) folderId = found.id;
-            else {
-                const beforeMonthFolder = format(subDays(new Date(), 3), 'MM');
-                const rmrFolders = await listMyFilesAndFolders(auth, folderId);
-                const found = rmrFolders.find(rmrFolder => rmrFolder.name === beforeMonthFolder);
-                if (found) folderId = found.id;
-            }
-        }
-
-        if (folderName === 'recife') {
-            const beforeMonthFolder = format(subDays(new Date(), 2), 'MM');
-            const rmrFolders = await listMyFilesAndFolders(auth, folderId);
-            const found = rmrFolders.find(rmrFolder => rmrFolder.name === beforeMonthFolder);
-            if (found) folderId = found.id;
-            else {
-                const beforeMonthFolder = format(subDays(new Date(), 3), 'MM');
-                const rmrFolders = await listMyFilesAndFolders(auth, folderId);
-                const found = rmrFolders.find(rmrFolder => rmrFolder.name === beforeMonthFolder);
-                if (found) folderId = found.id;
-            }
-        }
-
-        const files = filterNew(await listMyFilesAndFolders(auth, folderId));
-
-        for (const file of files) {
-
-            const downloadedFile = await getFile(auth, file.id);
-            const destinationFile = path.join(__dirname, 'public', 'img', folderName, file.name);
-
-            fs.copyFileSync(downloadedFile, destinationFile);
-            console.log(`Download ${destinationFile}`);
-        }
+        fs.copyFileSync(downloadedFile, destinationFile);
+        console.log(`Create file ${destinationFile}`);
     }
 }
 

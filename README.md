@@ -70,6 +70,8 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 ```
 imagemin --plugin.pngquant.quality={0.5,0.7} public/img/thumbs/* --out-dir=public/img/thumbs/build
 
+imagemin --plugin.pngquant.quality={0.5,0.7} /var/www/covid19-comparison-slider/public/img/bg-covid-red.jpg --out-dir=/var/www/covid19-comparison-slider/public/img/bg-covid-red2.jpg
+
 node_modules/.bin/imagemin public/img/brasil/* --out-dir=public/img/brasil
 node_modules/.bin/imagemin public/img/nordeste/* --out-dir=public/img/nordeste
 node_modules/.bin/imagemin public/img/rmr/* --out-dir=public/img/rmr

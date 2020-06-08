@@ -56,14 +56,14 @@ export default class Header extends Component {
                 }
             },
             {
-                breakpoint: 750,
+                breakpoint: 768,
                 settings: {
                     slidesToShow: 2,
                     // slidesToScroll: 1
                 }
             },
             {
-                breakpoint: 576,
+                breakpoint: 400,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1
@@ -137,9 +137,32 @@ export default class Header extends Component {
                                             {ReactHtmlParser(map.titleHtml)}
                                         </div>
                                     </div>
-                                    <div className="card-footer">
-                                        <small>Atualizado em <span>{format(map.updatedAt, 'dd/MM/yy')}</span></small>
-                                        <button onClick={() => this.scrollTo(map.id)} className="btn btn-primary float-right btn-sm">ver</button>
+                                    <div className="card-actions">
+                                        <div className="row">
+                                            <div className="col-12">
+                                                <button onClick={() => this.scrollTo(map.id)} className="btn btn-primary btn-block btn-sm">
+                                                    ver confirmados
+                                                </button>
+                                            </div>
+                                            <div className="col-12">
+                                                <button onClick={() => this.scrollTo(map.id)} className="btn btn-success btn-block btn-sm">
+                                                    ver recuperados
+                                                </button>
+                                            </div>
+                                            <div className="col-12">
+                                                <button onClick={() => this.scrollTo(map.id)} className="btn btn-primary btn-block btn-sm">
+                                                    ver ativos
+                                                </button>
+                                            </div>
+                                            {/*<div className="col-12">*/}
+                                            {/*    <button onClick={() => this.scrollTo(map.id)} className="btn btn-danger btn-block btn-sm" disabled>*/}
+                                            {/*        ver óbitos*/}
+                                            {/*    </button>*/}
+                                            {/*</div>*/}
+                                        </div>
+                                        <div className="card-footer">
+                                            <small>Atualizado em <span>{format(map.updatedAt, 'dd/MM/yy')}</span></small>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
