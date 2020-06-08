@@ -1,12 +1,13 @@
 name: Deployment
 
-on:
-  push:
-    branches:
-      - master
-  schedule:
-    - cron: "0 7,8,9,10,12 * * *"
-#    - cron: "*/5 * * * *"
+#on:
+#  push:
+#    branches:
+#      - master
+#  schedule:
+##    - cron: "0 7,8,9,10,12 * * *"
+#    - cron: "0 7,8,9,10 * * *"
+##    - cron: "*/5 * * * *"
 
 env:
   BUILD_FILE: temporal-build-${{ github.sha }}-${{ github.run_id }}.zip
