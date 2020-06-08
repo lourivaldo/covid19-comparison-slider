@@ -5,8 +5,8 @@ on:
     branches:
       - master
   schedule:
-#    - cron: "*/5 * * * *"
     - cron: "0 8,9,10,12 * * *"
+#    - cron: "*/5 * * * *"
 
 env:
   BUILD_FILE: temporal-build-${{ github.sha }}-${{ github.run_id }}.zip
@@ -55,4 +55,6 @@ jobs:
           username: ${{ secrets.SSH_USERNAME }}
           password: ${{ secrets.SSH_PASSWORD }}
           port: ${{ secrets.SSH_PORT }}
-          script: unzip -o /home/irrd/deploys/${{ env.BUILD_FILE }} -d /home/irrd/irrd.org/geotemporal
+          script: |
+            unzip -o /home/irrd/deploys/${{ env.BUILD_FILE }} -d /home/irrd/irrd.org/geotemporal
+            find /home/irrd/deploys/temporal-* -mtime +1 -exec rm {} \;
