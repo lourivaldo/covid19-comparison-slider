@@ -18,8 +18,6 @@ jobs:
         node-version: [12.x]
     steps:
       - uses: actions/checkout@v1
-      - name: Build page
-        run: echo ${{ env.BUILD_FILE }}
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
@@ -29,10 +27,15 @@ jobs:
       - name: Download Images
         run: echo 'Images'
       - name: Build page
-        run: echo ${{ env.BUILD_FILE }} && npm run build:prod
+        run: |
+          echo ${{ env.BUILD_FILE }}
+          npm run build:prod
       - name: Generate zip
-        run: cd build && zip -r ${{ env.BUILD_FILE }} * && mv ${{ env.BUILD_FILE }} ..
-      - name: Copy build .zip to irrd geotemporal
+        run: |
+          cd build
+          zip -r ${{ env.BUILD_FILE }} *
+          mv ${{ env.BUILD_FILE }} ..
+      - name: Copy build .zip to server
         uses: appleboy/scp-action@master
         with:
           host: ${{ secrets.SSH_HOST }}
@@ -48,4 +51,4 @@ jobs:
           username: ${{ secrets.SSH_USERNAME }}
           password: ${{ secrets.SSH_PASSWORD }}
           port: ${{ secrets.SSH_PORT }}
-          script: unzip /home/irrd/deploys/${{ env.BUILD_FILE }} -d /home/irrd/irrd.org/geotemporal
+          script: unzip -o /home/irrd/deploys/${{ env.BUILD_FILE }} -d /home/irrd/irrd.org/geotemporal
