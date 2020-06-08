@@ -28,7 +28,7 @@ jobs:
         run: |
           echo $GOOGLE_TOKEN >> google-token.json
           echo $GOOGLE_CREDENTIALS >> google-credentials.json
-          node images-download.js
+#          node images-download.js
       - name: Build page
         run: |
           echo ${{ env.BUILD_FILE }}
