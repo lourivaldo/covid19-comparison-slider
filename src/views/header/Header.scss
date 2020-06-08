@@ -152,6 +152,10 @@ header.masthead {
 
   .card-container {
     padding: 5px;
+
+    .btn-disabled {
+      visibility: hidden;
+    }
   }
 
   @media (min-width: 768px) {

@@ -140,22 +140,22 @@ export default class Header extends Component {
                                     <div className="card-actions">
                                         <div className="row">
                                             <div className="col-12">
-                                                <button onClick={() => this.scrollTo(map.id)} className="btn btn-primary btn-block btn-sm">
+                                                <button onClick={() => this.scrollTo(`${map.id}-`)} className={"btn btn-primary btn-block btn-sm "}>
                                                     ver confirmados
                                                 </button>
                                             </div>
                                             <div className="col-12">
-                                                <button onClick={() => this.scrollTo(map.id)} className="btn btn-success btn-block btn-sm">
+                                                <button onClick={() => this.scrollTo(`${map.id}-recovered`)} className={"btn btn-success btn-block btn-sm " + (map.imagesRecovered.length ? '' : 'btn-disabled')}>
                                                     ver recuperados
                                                 </button>
                                             </div>
                                             <div className="col-12">
-                                                <button onClick={() => this.scrollTo(map.id)} className="btn btn-primary btn-block btn-sm">
+                                                <button onClick={() => this.scrollTo(`${map.id}-actives`)} className={"btn btn-primary btn-block btn-sm " + (map.imagesActives.length ? '' : 'btn-disabled')}>
                                                     ver ativos
                                                 </button>
                                             </div>
                                             {/*<div className="col-12">*/}
-                                            {/*    <button onClick={() => this.scrollTo(map.id)} className="btn btn-danger btn-block btn-sm" disabled>*/}
+                                            {/*    <button onClick={() => this.scrollTo(`${map.id}-deaths`)} className={"btn btn-danger btn-block btn-sm " + (map.imagesDeaths.length ? '' : 'btn-disabled')}>*/}
                                             {/*        ver óbitos*/}
                                             {/*    </button>*/}
                                             {/*</div>*/}

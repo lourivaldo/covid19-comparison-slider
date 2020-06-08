@@ -41,6 +41,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "build:prod": "PUBLIC_URL=https://www.irrd.org/geotemporal react-scripts build",
+    "build:develop": "PUBLIC_URL=http://covid19.lourivaldo.com react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "images": "node images-download.js && node images-optimize.js && node images-inject.js",

@@ -54,7 +54,7 @@ export default class Slider extends Component {
         if (this.state.beforeDateCurrent < this.state.afterDateCurrent) return true;
         clearTimeout(this.timeoutDateInterval);
         this.timeoutDateInterval = setTimeout(() => {
-            if (!this.state.beforeDateCurrent < this.state.afterDateCurrent) this.showDateErrorMessage(null, 'Intervalo de datas inválido');
+            if (!this.state.beforeDateCurrent < this.state.afterDateCurrent && this.defaultBeforeDate !== this.defaultAfterDate) this.showDateErrorMessage(null, 'Intervalo de datas inválido');
         }, 1500);
 
         return false
