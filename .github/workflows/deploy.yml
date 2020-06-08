@@ -7,6 +7,9 @@ on:
 #on:
 #  schedule:
 #    - cron: "*/5 * * * *"
+env:
+  BUILD_FILE: temporal-build-.zip
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -16,7 +19,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Build page
-        run: echo ::set-env name=BUILD_FILE::temporal-build-.zip
+        run: echo ${{ env.BUILD_FILE }}
 #      - name: Use Node.js ${{ matrix.node-version }}
 #        uses: actions/setup-node@v1
 #        with:
