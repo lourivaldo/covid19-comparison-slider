@@ -169,7 +169,7 @@ async function listFiles(auth) {
         for (const c of allContent) {
 
             if (c.isFolder && canEnterOnFolder(c.name)) { // para confirmados,recuperados ...
-                console.log('ENTROu 1')
+
                 const allInnerContent = await listMyFilesAndFolders(auth, c.id); // pegar pastas meses 05,06,07... de dentro de confirmados,recuperados ...
 
                 for (const ic of allInnerContent) { //
@@ -190,8 +190,6 @@ async function listFiles(auth) {
             } else if (c.isFolder && canDownloadFolderFiles(c.name)) { // pastas meses 05,06,07...
 
                 const allInnerContent = await listMyFilesAndFolders(auth, c.id); // para arquivos de mapas
-                // console.log('ENTROu 2')
-                // console.log(allInnerContent)
 
                 for (const ic of allInnerContent) {
                     if (ic.isFile) {
