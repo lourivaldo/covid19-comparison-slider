@@ -78,7 +78,8 @@ export default class Header extends Component {
         this.configs = props.configs;
     }
 
-    scrollTo = (id) => {
+    scrollTo = (e, id) => {
+        e.stopPropagation();
         try {
             $('html, body').animate({
                 scrollTop: $("#section-" + id).offset().top
@@ -161,7 +162,7 @@ export default class Header extends Component {
                     <Slider {...this.settings} className="row">
                         {this.configs.map((map) => (
                             <div className="col-12 card-container" key={map.id}>
-                                <div className="card" onClick={() => this.scrollTo(`${map.id}-`)}>
+                                <div className="card" onClick={(e) => this.scrollTo(e, `${map.id}-`)}>
                                     <div className="card-img-top">
                                         <img className="card-img-top-img" src={map.img} alt={map.title}/>
                                     </div>
@@ -173,22 +174,22 @@ export default class Header extends Component {
                                     <div className="card-actions">
                                         <div className="row">
                                             <div className="col-12">
-                                                <button onClick={() => this.scrollTo(`${map.id}-`)} className={"btn btn-outline-danger btn-block btn-sm"}>
+                                                <button onClick={(e) => this.scrollTo(e, `${map.id}-`)} className={"btn btn-outline-danger btn-block btn-sm"}>
                                                     confirmados <FontAwesomeIcon icon={faChevronRight} size={"sm"}/>
                                                 </button>
                                             </div>
                                             <div className="col-12">
-                                                <button onClick={() => this.scrollTo(`${map.id}-recovered`)} className={"btn btn-outline-success btn-block btn-sm " + (map.imagesRecovered.length ? '' : 'btn-disabled')}>
+                                                <button onClick={(e) => this.scrollTo(e, `${map.id}-recovered`)} className={"btn btn-outline-success btn-block btn-sm " + (map.imagesRecovered.length ? '' : 'btn-disabled')}>
                                                     recuperados <FontAwesomeIcon icon={faChevronRight} size={"sm"}/>
                                                 </button>
                                             </div>
                                             <div className="col-12">
-                                                <button onClick={() => this.scrollTo(`${map.id}-actives`)} className={"btn btn-outline-warning btn-block btn-sm " + (map.imagesActives.length ? '' : 'btn-disabled')}>
+                                                <button onClick={(e) => this.scrollTo(e, `${map.id}-actives`)} className={"btn btn-outline-warning btn-block btn-sm " + (map.imagesActives.length ? '' : 'btn-disabled')}>
                                                     ativos <FontAwesomeIcon icon={faChevronRight} size={"sm"}/>
                                                 </button>
                                             </div>
                                             {/*<div className="col-12">*/}
-                                            {/*    <button onClick={() => this.scrollTo(`${map.id}-deaths`)} className={"btn btn-outline-danger btn-block btn-sm " + (map.imagesDeaths.length ? '' : 'btn-disabled')}>*/}
+                                            {/*    <button onClick={(e) => this.scrollTo(e, `${map.id}-deaths`)} className={"btn btn-outline-danger btn-block btn-sm " + (map.imagesDeaths.length ? '' : 'btn-disabled')}>*/}
                                             {/*        óbitos <FontAwesomeIcon icon={faChevronRight} size={"sm"}/>*/}
                                             {/*    </button>*/}
                                             {/*</div>*/}
