@@ -8,7 +8,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faInstagram, faTwitter} from '@fortawesome/free-brands-svg-icons';
-import {faChevronRight, faExternalLinkAlt} from "@fortawesome/free-solid-svg-icons";
+import {faChevronRight} from "@fortawesome/free-solid-svg-icons";
 
 export default class Header extends Component {
 
@@ -112,6 +112,38 @@ export default class Header extends Component {
                 </nav>
 
                 <header className="masthead">
+                    <div id="particle-container">
+                        <div className="particle"></div>
+                        <div className="particle"></div>
+                        <div className="particle"></div>
+                        <div className="particle"></div>
+                        <div className="particle"></div>
+                        <div className="particle"></div>
+                        <div className="particle"></div>
+                        <div className="particle"></div>
+                        <div className="particle"></div>
+                        <div className="particle"></div>
+                        <div className="particle"></div>
+                        <div className="particle"></div>
+                        <div className="particle"></div>
+                        <div className="particle"></div>
+                        <div className="particle"></div>
+                        <div className="particle"></div>
+                        <div className="particle"></div>
+                        <div className="particle"></div>
+                        <div className="particle"></div>
+                        <div className="particle"></div>
+                        <div className="particle"></div>
+                        <div className="particle"></div>
+                        <div className="particle"></div>
+                        <div className="particle"></div>
+                        <div className="particle"></div>
+                        <div className="particle"></div>
+                        <div className="particle"></div>
+                        <div className="particle"></div>
+                        <div className="particle"></div>
+                        <div className="particle"></div>
+                    </div>
                     <div className="masthead-content">
                         <div className="container text-center text-white" id="page-title">
                             <h4 className="masthead-topheading mb-0">Instituto para Redução de Riscos e Desastres de Pernambuco</h4>
