@@ -1871,8 +1871,8 @@ class App extends React.Component {
 
     getConfig(mapConfig, type = '') {
 
-        let images = mapConfig.images;
-        let title = mapConfig.title;
+        let images;
+        let title;
 
         switch (type) {
             case 'recovered':
@@ -1887,6 +1887,9 @@ class App extends React.Component {
                 images = mapConfig.imagesActives;
                 title = mapConfig.titleActives;
                 break;
+            default:
+                images = mapConfig.images;
+                title = mapConfig.title;
         }
 
         return {
