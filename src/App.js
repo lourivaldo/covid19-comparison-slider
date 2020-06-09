@@ -448,6 +448,10 @@ class App extends React.Component {
 	{
 		"date": "07/06/2020",
 		"img": "img/brasil/covid19-brasil-municipios-200607.png"
+	},
+	{
+		"date": "08/06/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200608.png"
 	}
 /** inject-images:end(brasil) */
             ],
@@ -852,6 +856,10 @@ class App extends React.Component {
 	{
 		"date": "07/06/2020",
 		"img": "img/nordeste/brasil-nordeste-temporal-200607.png"
+	},
+	{
+		"date": "08/06/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200608.png"
 	}
 /** inject-images:end(nordeste) */
             ],
@@ -1155,6 +1163,10 @@ class App extends React.Component {
 	{
 		"date": "06/06/2020",
 		"img": "img/pernambuco/covid19-pe-tem-200607.png"
+	},
+	{
+		"date": "07/06/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200608.png"
 	}
 /** inject-images:end(pernambuco) */
             ],
@@ -1451,6 +1463,10 @@ class App extends React.Component {
 	{
 		"date": "06/06/2020",
 		"img": "img/rmr/aglomerados-confirmados-06.06app.png"
+	},
+	{
+		"date": "07/06/2020",
+		"img": "img/rmr/aglomerados-confirmados-07.06app.png"
 	}
 /** inject-images:end(rmr) */
             ],
@@ -1737,8 +1753,16 @@ class App extends React.Component {
 		"img": "img/recife/04.06b.png"
 	},
 	{
+		"date": "05/06/2020",
+		"img": "img/recife/05.06b.png"
+	},
+	{
 		"date": "06/06/2020",
-		"img": "img/recife/06.06b.png"
+		"img": "img/recife/06.06ativos-total.png"
+	},
+	{
+		"date": "07/06/2020",
+		"img": "img/recife/07.06-rectot.png"
 	}
 /** inject-images:end(recife) */
             ],
@@ -1783,6 +1807,10 @@ class App extends React.Component {
 	{
 		"date": "06/06/2020",
 		"img": "img/recife-recuperados/06.06-rectot.png"
+	},
+	{
+		"date": "07/06/2020",
+		"img": "img/recife-recuperados/07.06-rectot.png"
 	}
 /** inject-images:end(recife-recuperados) */
             ],
@@ -1795,6 +1823,10 @@ class App extends React.Component {
 	{
 		"date": "06/06/2020",
 		"img": "img/recife-ativos/06.06ativos-total.png"
+	},
+	{
+		"date": "07/06/2020",
+		"img": "img/recife-ativos/07.06ativos-total.png"
 	}
 /** inject-images:end(recife-ativos) */
             ],

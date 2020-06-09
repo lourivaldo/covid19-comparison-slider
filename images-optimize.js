@@ -23,7 +23,8 @@ const filterByFolder = async (files, folder) => {
 function renameFileName(name) {
     return slugify(name, {lower: true})
         .replace(/_/g, '-')
-        .replace(/[\(\)]/g, '-');
+        .replace(/[\(\)]/g, '-')
+        .replace(/--/g, '-');
 }
 
 const renameFiles = async (folder) => {
