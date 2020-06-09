@@ -276,6 +276,8 @@ async function downloadFiles(auth, files) {
         fs.copyFileSync(downloadedFile, destinationFile);
         console.log(`Downloaded ${destinationFile}`);
     }
+
+    console.log('downloadFiles end')
 }
 
 async function getFile(auth, fileId) {
