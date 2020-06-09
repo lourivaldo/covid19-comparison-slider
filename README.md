@@ -77,4 +77,8 @@ node_modules/.bin/imagemin public/img/nordeste/* --out-dir=public/img/nordeste
 node_modules/.bin/imagemin public/img/rmr/* --out-dir=public/img/rmr
 node_modules/.bin/imagemin public/img/pernambuco/* --out-dir=public/img/pernambuco
 node_modules/.bin/imagemin public/img/recife/* --out-dir=public/img/recife
+
+node_modules/.bin/imagemin public/img/recife/* --out-dir=public/img/recife
+node_modules/.bin/imagemin public/img/recife-ativos/* --out-dir=public/img/recife-ativos
+node_modules/.bin/imagemin public/img/recife-recuperados/* --out-dir=public/img/recife-recuperados
 ```

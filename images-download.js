@@ -160,7 +160,7 @@ async function listFiles(auth) {
         const folderName = slugify(folder.name.toLowerCase());
         console.log('------------- ', folderName)
 
-        // if (folderName !== 'recife') continue;// teste
+        // if (folderName === 'recife') continue;// teste
         // if (['brasil-gauss'].indexOf(folderName) !== -1) continue;// skip folders
         // if (['pernambuco'].indexOf(folderName) !== -1) continue;// skip folders
 
@@ -202,7 +202,7 @@ async function listFiles(auth) {
         }
 
     }
-
+    console.log('downloadFiles')
     await downloadFiles(auth, foundFiles);
 }
 
@@ -214,7 +214,8 @@ function filterNew(files) {
 function renameFileName(name) {
     return slugify(name, {lower: true})
         .replace(/_/g, '-')
-        .replace(/[\(\)]/g, '-');
+        .replace(/[\(\)]/g, '-')
+        .replace(/--/g, '-');
 }
 
 async function canDownload(file, filePath) {
@@ -223,14 +224,20 @@ async function canDownload(file, filePath) {
     let remoteModifiedTime = new Date(file.modifiedTime);
     let localModifiedTime = null;
 
-    if (!fs.existsSync(filePath)) return true;
+    try {
+        fs.accessSync(filePath, fs.constants.F_OK);
+    } catch (e) {
+        return true;
+        // console.log(e)
+    }
 
     try {
         const git = simpleGit();
         const log = await git.log({file: filePath});
-        // console.log(remoteModifiedTime, log.latest.date)
 
         localModifiedTime = parseISO(log.latest.date);
+
+        // console.log(remoteModifiedTime, localModifiedTime, isAfter(remoteModifiedTime, localModifiedTime))
 
         return isAfter(remoteModifiedTime, localModifiedTime); // newer version
 
@@ -241,7 +248,7 @@ async function canDownload(file, filePath) {
 
 async function downloadFiles(auth, files) {
 
-    for (const file of filterNew(files)) {
+    for (const file of files) {
 
         // console.log(file.fromFolder, ' | ', file.typeFolder, ' | ', file.name);
 
@@ -253,6 +260,7 @@ async function downloadFiles(auth, files) {
             path.join(__dirname, 'public', 'img', file.fromFolder) :
             path.join(__dirname, 'public', 'img', `${file.fromFolder}-${file.typeFolder}`);
 
+        // console.log('destinationFile ', destinationFile)
         if (!await canDownload(file, destinationFile)) continue;
 
         console.log(`Downloading ${destinationFile}`);
@@ -264,8 +272,10 @@ async function downloadFiles(auth, files) {
         }
 
         fs.copyFileSync(downloadedFile, destinationFile);
-        console.log(`Create file ${destinationFile}`);
+        console.log(`Downloaded ${destinationFile}`);
     }
+
+    console.log('downloadFiles end')
 }
 
 async function getFile(auth, fileId) {
