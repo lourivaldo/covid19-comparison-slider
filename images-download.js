@@ -204,6 +204,7 @@ async function listFiles(auth) {
     }
     console.log('downloadFiles')
     await downloadFiles(auth, foundFiles);
+    console.log('downloadFiles end')
 }
 
 function filterNew(files) {
@@ -218,30 +219,35 @@ function renameFileName(name) {
         .replace(/--/g, '-');
 }
 
+const git = simpleGit();
+
 async function canDownload(file, filePath) {
     const minDate = subHours(new Date(), 28);
 
     let remoteModifiedTime = new Date(file.modifiedTime);
     let localModifiedTime = null;
 
+    // console.time("accessSync");
     try {
         fs.accessSync(filePath, fs.constants.F_OK);
     } catch (e) {
-        return true;
-        // console.log(e)
+        // return true;
     }
+    // console.timeEnd("accessSync");
 
+    console.time("simpleGit");
     try {
-        const git = simpleGit();
+
         const log = await git.log({file: filePath});
 
         localModifiedTime = parseISO(log.latest.date);
 
         // console.log(remoteModifiedTime, localModifiedTime, isAfter(remoteModifiedTime, localModifiedTime))
 
-        return isAfter(remoteModifiedTime, localModifiedTime); // newer version
+        // return isAfter(remoteModifiedTime, localModifiedTime); // newer version
 
     } catch (e) {}
+    console.timeEnd("simpleGit");
 
     return false;
 }
@@ -274,8 +280,6 @@ async function downloadFiles(auth, files) {
         fs.copyFileSync(downloadedFile, destinationFile);
         console.log(`Downloaded ${destinationFile}`);
     }
-
-    console.log('downloadFiles end')
 }
 
 async function getFile(auth, fileId) {
