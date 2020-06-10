@@ -1,0 +1,1927 @@
+export const mapsConfig = [
+    {
+        id: 5,
+        titleHtml: "Distribuição Espaço-temporal dos casos do COVID-19 no <strong>Brasil</strong>",
+        title: `Distribuição Espaço-temporal dos casos confirmados do COVID-19 no Brasil`,
+        titleRecovered: `Distribuição Espaço-temporal dos casos recuperados do COVID-19 Brasil`,
+        titleDeaths: `Distribuição Espaço-temporal dos óbitos do COVID-19 no Brasil`,
+        titleActives: `Distribuição Espaço-temporal dos casos ativos do COVID-19 no Brasil`,
+        img: "img/thumbs/thumb-5.png",
+        updatedAt: null,
+        defaultPosition: 0.5,
+        captions:[
+            {img_url: 'img/brasil/covid19-brasil-municipios-legenda-1.png', description: 'Legenda Distribuição Espaço-temporal dos casos do COVID-19 no Brasil'},
+            {img_url: 'img/brasil/covid19-brasil-municipios-legenda-2.png', description: 'Legenda Distribuição Espaço-temporal dos casos do COVID-19 no Brasil'}
+        ],
+        images: [
+            /** inject-images:start(brasil) */
+	{
+		"date": "25/02/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200225.png"
+	},
+	{
+		"date": "26/02/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200226.png"
+	},
+	{
+		"date": "27/02/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200227.png"
+	},
+	{
+		"date": "28/02/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200228.png"
+	},
+	{
+		"date": "29/02/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200229.png"
+	},
+	{
+		"date": "01/03/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200301.png"
+	},
+	{
+		"date": "02/03/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200302.png"
+	},
+	{
+		"date": "03/03/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200303.png"
+	},
+	{
+		"date": "04/03/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200304.png"
+	},
+	{
+		"date": "05/03/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200305.png"
+	},
+	{
+		"date": "06/03/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200306.png"
+	},
+	{
+		"date": "07/03/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200307.png"
+	},
+	{
+		"date": "08/03/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200308.png"
+	},
+	{
+		"date": "09/03/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200309.png"
+	},
+	{
+		"date": "10/03/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200310.png"
+	},
+	{
+		"date": "11/03/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200311.png"
+	},
+	{
+		"date": "12/03/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200312.png"
+	},
+	{
+		"date": "13/03/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200313.png"
+	},
+	{
+		"date": "14/03/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200314.png"
+	},
+	{
+		"date": "15/03/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200315.png"
+	},
+	{
+		"date": "16/03/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200316.png"
+	},
+	{
+		"date": "17/03/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200317.png"
+	},
+	{
+		"date": "18/03/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200318.png"
+	},
+	{
+		"date": "19/03/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200319.png"
+	},
+	{
+		"date": "20/03/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200320.png"
+	},
+	{
+		"date": "21/03/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200321.png"
+	},
+	{
+		"date": "22/03/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200322.png"
+	},
+	{
+		"date": "23/03/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200323.png"
+	},
+	{
+		"date": "24/03/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200324.png"
+	},
+	{
+		"date": "25/03/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200325.png"
+	},
+	{
+		"date": "26/03/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200326.png"
+	},
+	{
+		"date": "27/03/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200327.png"
+	},
+	{
+		"date": "28/03/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200328.png"
+	},
+	{
+		"date": "29/03/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200329.png"
+	},
+	{
+		"date": "30/03/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200330.png"
+	},
+	{
+		"date": "31/03/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200331.png"
+	},
+	{
+		"date": "01/04/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200401.png"
+	},
+	{
+		"date": "02/04/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200402.png"
+	},
+	{
+		"date": "03/04/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200403.png"
+	},
+	{
+		"date": "04/04/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200404.png"
+	},
+	{
+		"date": "05/04/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200405.png"
+	},
+	{
+		"date": "06/04/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200406.png"
+	},
+	{
+		"date": "07/04/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200407.png"
+	},
+	{
+		"date": "08/04/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200408.png"
+	},
+	{
+		"date": "09/04/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200409.png"
+	},
+	{
+		"date": "10/04/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200410.png"
+	},
+	{
+		"date": "11/04/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200411.png"
+	},
+	{
+		"date": "12/04/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200412.png"
+	},
+	{
+		"date": "13/04/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200413.png"
+	},
+	{
+		"date": "14/04/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200414.png"
+	},
+	{
+		"date": "15/04/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200415.png"
+	},
+	{
+		"date": "16/04/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200416.png"
+	},
+	{
+		"date": "17/04/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200417.png"
+	},
+	{
+		"date": "18/04/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200418.png"
+	},
+	{
+		"date": "19/04/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200419.png"
+	},
+	{
+		"date": "20/04/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200420.png"
+	},
+	{
+		"date": "21/04/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200421.png"
+	},
+	{
+		"date": "22/04/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200422.png"
+	},
+	{
+		"date": "23/04/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200423.png"
+	},
+	{
+		"date": "24/04/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200424.png"
+	},
+	{
+		"date": "25/04/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200425.png"
+	},
+	{
+		"date": "26/04/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200426.png"
+	},
+	{
+		"date": "27/04/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200427.png"
+	},
+	{
+		"date": "28/04/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200428.png"
+	},
+	{
+		"date": "29/04/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200429.png"
+	},
+	{
+		"date": "30/04/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200430.png"
+	},
+	{
+		"date": "01/05/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200501.png"
+	},
+	{
+		"date": "02/05/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200502.png"
+	},
+	{
+		"date": "03/05/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200503.png"
+	},
+	{
+		"date": "04/05/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200504.png"
+	},
+	{
+		"date": "05/05/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200505.png"
+	},
+	{
+		"date": "06/05/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200506.png"
+	},
+	{
+		"date": "07/05/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200507.png"
+	},
+	{
+		"date": "08/05/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200508.png"
+	},
+	{
+		"date": "09/05/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200509.png"
+	},
+	{
+		"date": "10/05/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200510.png"
+	},
+	{
+		"date": "11/05/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200511.png"
+	},
+	{
+		"date": "12/05/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200512.png"
+	},
+	{
+		"date": "13/05/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200513.png"
+	},
+	{
+		"date": "14/05/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200514.png"
+	},
+	{
+		"date": "15/05/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200515.png"
+	},
+	{
+		"date": "16/05/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200516.png"
+	},
+	{
+		"date": "17/05/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200517.png"
+	},
+	{
+		"date": "18/05/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200518.png"
+	},
+	{
+		"date": "19/05/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200519.png"
+	},
+	{
+		"date": "20/05/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200520.png"
+	},
+	{
+		"date": "21/05/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200521.png"
+	},
+	{
+		"date": "22/05/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200522.png"
+	},
+	{
+		"date": "23/05/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200523.png"
+	},
+	{
+		"date": "24/05/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200524.png"
+	},
+	{
+		"date": "25/05/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200525.png"
+	},
+	{
+		"date": "26/05/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200526.png"
+	},
+	{
+		"date": "27/05/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200527.png"
+	},
+	{
+		"date": "28/05/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200528.png"
+	},
+	{
+		"date": "29/05/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200529.png"
+	},
+	{
+		"date": "30/05/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200530.png"
+	},
+	{
+		"date": "31/05/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200531.png"
+	},
+	{
+		"date": "01/06/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200601.png"
+	},
+	{
+		"date": "02/06/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200602.png"
+	},
+	{
+		"date": "03/06/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200603.png"
+	},
+	{
+		"date": "04/06/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200604.png"
+	},
+	{
+		"date": "05/06/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200605-3.png"
+	},
+	{
+		"date": "06/06/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200606.png"
+	},
+	{
+		"date": "07/06/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200607.png"
+	},
+	{
+		"date": "08/06/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200608.png"
+	}
+/** inject-images:end(brasil) */
+        ],
+        imagesRecovered: [
+            /** inject-images:start(brasil-recuperados) */
+            /** inject-images:end(brasil-recuperados) */
+        ],
+        imagesDeaths: [
+            /** inject-images:start(brasil-obitos) */
+            /** inject-images:end(brasil-obitos) */
+        ],
+        imagesActives: [
+            /** inject-images:start(brasil-ativos) */
+            /** inject-images:end(brasil-ativos) */
+        ],
+    },
+    {
+        id: 1,
+        titleHtml: `Distribuição Espaço-temporal dos casos do COVID-19 no <strong>Nordeste do Brasil</strong>`,
+        title: `Distribuição Espaço-temporal dos casos confirmados do COVID-19 no Nordeste do Brasil`,
+        titleRecovered: `Distribuição Espaço-temporal dos casos recuperados do COVID-19 no Nordeste do Brasil`,
+        titleDeaths: `Distribuição Espaço-temporal dos óbitos do COVID-19 no Nordeste do Brasil`,
+        titleActives: `Distribuição Espaço-temporal dos casos ativos do COVID-19 no Nordeste do Brasil`,
+        img: "img/thumbs/thumb-4.png",
+        updatedAt: null,
+        defaultPosition: 0.5,
+        captions:[],
+        images: [
+            /** inject-images:start(nordeste) */
+	{
+		"date": "06/03/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200306.png"
+	},
+	{
+		"date": "07/03/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200307.png"
+	},
+	{
+		"date": "08/03/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200308.png"
+	},
+	{
+		"date": "09/03/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200309.png"
+	},
+	{
+		"date": "10/03/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200310.png"
+	},
+	{
+		"date": "11/03/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200311.png"
+	},
+	{
+		"date": "12/03/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200312.png"
+	},
+	{
+		"date": "13/03/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200313.png"
+	},
+	{
+		"date": "14/03/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200314.png"
+	},
+	{
+		"date": "15/03/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200315.png"
+	},
+	{
+		"date": "16/03/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200316.png"
+	},
+	{
+		"date": "17/03/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200317.png"
+	},
+	{
+		"date": "18/03/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200318.png"
+	},
+	{
+		"date": "19/03/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200319.png"
+	},
+	{
+		"date": "20/03/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200320.png"
+	},
+	{
+		"date": "21/03/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200321.png"
+	},
+	{
+		"date": "22/03/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200322.png"
+	},
+	{
+		"date": "23/03/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200323.png"
+	},
+	{
+		"date": "24/03/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200324.png"
+	},
+	{
+		"date": "25/03/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200325.png"
+	},
+	{
+		"date": "26/03/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200326.png"
+	},
+	{
+		"date": "27/03/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200327.png"
+	},
+	{
+		"date": "28/03/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200328.png"
+	},
+	{
+		"date": "29/03/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200329.png"
+	},
+	{
+		"date": "30/03/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200330.png"
+	},
+	{
+		"date": "31/03/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200331.png"
+	},
+	{
+		"date": "01/04/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200401.png"
+	},
+	{
+		"date": "02/04/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200402.png"
+	},
+	{
+		"date": "03/04/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200403.png"
+	},
+	{
+		"date": "04/04/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200404.png"
+	},
+	{
+		"date": "05/04/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200405.png"
+	},
+	{
+		"date": "06/04/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200406.png"
+	},
+	{
+		"date": "07/04/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200407.png"
+	},
+	{
+		"date": "08/04/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200408.png"
+	},
+	{
+		"date": "09/04/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200409.png"
+	},
+	{
+		"date": "10/04/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200410.png"
+	},
+	{
+		"date": "11/04/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200411.png"
+	},
+	{
+		"date": "12/04/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200412.png"
+	},
+	{
+		"date": "13/04/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200413.png"
+	},
+	{
+		"date": "14/04/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200414.png"
+	},
+	{
+		"date": "15/04/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200415.png"
+	},
+	{
+		"date": "16/04/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200416.png"
+	},
+	{
+		"date": "17/04/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200417.png"
+	},
+	{
+		"date": "18/04/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200418.png"
+	},
+	{
+		"date": "19/04/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200419.png"
+	},
+	{
+		"date": "20/04/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200420.png"
+	},
+	{
+		"date": "21/04/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200421.png"
+	},
+	{
+		"date": "22/04/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200422.png"
+	},
+	{
+		"date": "23/04/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200423.png"
+	},
+	{
+		"date": "24/04/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200424.png"
+	},
+	{
+		"date": "25/04/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200425.png"
+	},
+	{
+		"date": "26/04/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200426.png"
+	},
+	{
+		"date": "27/04/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200427.png"
+	},
+	{
+		"date": "28/04/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200428.png"
+	},
+	{
+		"date": "29/04/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200429.png"
+	},
+	{
+		"date": "30/04/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200430.png"
+	},
+	{
+		"date": "01/05/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200501.png"
+	},
+	{
+		"date": "02/05/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200502.png"
+	},
+	{
+		"date": "03/05/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200503.png"
+	},
+	{
+		"date": "04/05/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200504.png"
+	},
+	{
+		"date": "05/05/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200505.png"
+	},
+	{
+		"date": "06/05/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200506.png"
+	},
+	{
+		"date": "07/05/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200507.png"
+	},
+	{
+		"date": "08/05/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200508.png"
+	},
+	{
+		"date": "09/05/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200509.png"
+	},
+	{
+		"date": "10/05/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200510.png"
+	},
+	{
+		"date": "11/05/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200511.png"
+	},
+	{
+		"date": "12/05/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200512.png"
+	},
+	{
+		"date": "13/05/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200513.png"
+	},
+	{
+		"date": "14/05/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200514.png"
+	},
+	{
+		"date": "15/05/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200515.png"
+	},
+	{
+		"date": "16/05/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200516.png"
+	},
+	{
+		"date": "17/05/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200517.png"
+	},
+	{
+		"date": "18/05/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200518.png"
+	},
+	{
+		"date": "19/05/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200519.png"
+	},
+	{
+		"date": "20/05/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200520.png"
+	},
+	{
+		"date": "21/05/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200521.png"
+	},
+	{
+		"date": "22/05/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200522.png"
+	},
+	{
+		"date": "23/05/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200523.png"
+	},
+	{
+		"date": "24/05/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200524.png"
+	},
+	{
+		"date": "25/05/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200525.png"
+	},
+	{
+		"date": "26/05/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200526.png"
+	},
+	{
+		"date": "27/05/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200527.png"
+	},
+	{
+		"date": "28/05/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200528.png"
+	},
+	{
+		"date": "29/05/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200529.png"
+	},
+	{
+		"date": "30/05/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200530.png"
+	},
+	{
+		"date": "31/05/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200531.png"
+	},
+	{
+		"date": "01/06/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200601.png"
+	},
+	{
+		"date": "02/06/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200602.png"
+	},
+	{
+		"date": "03/06/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200603.png"
+	},
+	{
+		"date": "04/06/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200604.png"
+	},
+	{
+		"date": "05/06/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200605.png"
+	},
+	{
+		"date": "06/06/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200606.png"
+	},
+	{
+		"date": "07/06/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200607.png"
+	},
+	{
+		"date": "08/06/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200608.png"
+	}
+/** inject-images:end(nordeste) */
+        ],
+        imagesRecovered: [
+            /** inject-images:start(nordeste-recuperados) */
+            /** inject-images:end(nordeste-recuperados) */
+        ],
+        imagesDeaths: [
+            /** inject-images:start(nordeste-obitos) */
+            /** inject-images:end(nordeste-obitos) */
+        ],
+        imagesActives: [
+            /** inject-images:start(nordeste-ativos) */
+            /** inject-images:end(nordeste-ativos) */
+        ],
+    },
+    {
+        id: 2,
+        titleHtml: "Distribuição Espaço-temporal dos casos do COVID-19 no <strong>Estado de Pernambuco</strong>",
+        title: `Distribuição Espaço-temporal dos casos confirmados do COVID-19 no Estado de Pernambuco`,
+        titleRecovered: `Distribuição Espaço-temporal dos casos recuperados do COVID-19 no Estado de Pernambuco`,
+        titleDeaths: `Distribuição Espaço-temporal dos óbitos do COVID-19 no Estado de Pernambuco`,
+        titleActives: `Distribuição Espaço-temporal dos casos ativos do COVID-19 no Estado de Pernambuco`,
+        img: "img/thumbs/thumb-3.png",
+        updatedAt: null,
+        defaultPosition: 0.5,
+        captions:[
+            {img_url: 'img/pernambuco/covid19-pe-tem-legenda-1.png', description: 'Legenda Distribuição Espaço-temporal dos casos do COVID-19 no Estado de Pernambuco'},
+            {img_url: 'img/pernambuco/covid19-pe-tem-legenda-2.png', description: 'Legenda Distribuição Espaço-temporal dos casos do COVID-19 no Estado de Pernambuco'},
+        ],
+        images: [
+            /** inject-images:start(pernambuco) */
+	{
+		"date": "31/03/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200401.png"
+	},
+	{
+		"date": "01/04/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200402.png"
+	},
+	{
+		"date": "02/04/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200403.png"
+	},
+	{
+		"date": "03/04/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200404.png"
+	},
+	{
+		"date": "04/04/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200405.png"
+	},
+	{
+		"date": "05/04/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200406.png"
+	},
+	{
+		"date": "06/04/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200407.png"
+	},
+	{
+		"date": "07/04/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200408.png"
+	},
+	{
+		"date": "08/04/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200409.png"
+	},
+	{
+		"date": "09/04/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200410.png"
+	},
+	{
+		"date": "10/04/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200411.png"
+	},
+	{
+		"date": "11/04/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200412.png"
+	},
+	{
+		"date": "12/04/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200413.png"
+	},
+	{
+		"date": "13/04/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200414.png"
+	},
+	{
+		"date": "14/04/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200415.png"
+	},
+	{
+		"date": "15/04/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200416.png"
+	},
+	{
+		"date": "16/04/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200417.png"
+	},
+	{
+		"date": "17/04/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200418.png"
+	},
+	{
+		"date": "18/04/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200419.png"
+	},
+	{
+		"date": "19/04/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200420.png"
+	},
+	{
+		"date": "20/04/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200421.png"
+	},
+	{
+		"date": "21/04/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200422.png"
+	},
+	{
+		"date": "22/04/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200423.png"
+	},
+	{
+		"date": "23/04/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200424.png"
+	},
+	{
+		"date": "24/04/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200425.png"
+	},
+	{
+		"date": "25/04/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200426.png"
+	},
+	{
+		"date": "26/04/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200427.png"
+	},
+	{
+		"date": "27/04/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200428.png"
+	},
+	{
+		"date": "28/04/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200429.png"
+	},
+	{
+		"date": "29/04/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200430.png"
+	},
+	{
+		"date": "30/04/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200501.png"
+	},
+	{
+		"date": "01/05/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200502.png"
+	},
+	{
+		"date": "02/05/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200503.png"
+	},
+	{
+		"date": "03/05/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200504.png"
+	},
+	{
+		"date": "04/05/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200505.png"
+	},
+	{
+		"date": "05/05/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200506.png"
+	},
+	{
+		"date": "06/05/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200507.png"
+	},
+	{
+		"date": "07/05/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200508.png"
+	},
+	{
+		"date": "08/05/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200509.png"
+	},
+	{
+		"date": "09/05/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200510.png"
+	},
+	{
+		"date": "10/05/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200511.png"
+	},
+	{
+		"date": "11/05/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200512.png"
+	},
+	{
+		"date": "12/05/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200513.png"
+	},
+	{
+		"date": "13/05/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200514.png"
+	},
+	{
+		"date": "14/05/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200515.png"
+	},
+	{
+		"date": "15/05/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200516.png"
+	},
+	{
+		"date": "16/05/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200517.png"
+	},
+	{
+		"date": "17/05/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200518.png"
+	},
+	{
+		"date": "18/05/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200519.png"
+	},
+	{
+		"date": "19/05/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200520.png"
+	},
+	{
+		"date": "20/05/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200521.png"
+	},
+	{
+		"date": "21/05/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200522.png"
+	},
+	{
+		"date": "22/05/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200523.png"
+	},
+	{
+		"date": "23/05/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200524.png"
+	},
+	{
+		"date": "24/05/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200525.png"
+	},
+	{
+		"date": "25/05/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200526.png"
+	},
+	{
+		"date": "26/05/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200527.png"
+	},
+	{
+		"date": "27/05/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200528.png"
+	},
+	{
+		"date": "28/05/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200529.png"
+	},
+	{
+		"date": "29/05/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200530.png"
+	},
+	{
+		"date": "30/05/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200531.png"
+	},
+	{
+		"date": "31/05/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200601.png"
+	},
+	{
+		"date": "01/06/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200602.png"
+	},
+	{
+		"date": "02/06/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200603.png"
+	},
+	{
+		"date": "03/06/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200604.png"
+	},
+	{
+		"date": "04/06/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200605.png"
+	},
+	{
+		"date": "05/06/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200606.png"
+	},
+	{
+		"date": "06/06/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200607.png"
+	},
+	{
+		"date": "07/06/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200608.png"
+	}
+/** inject-images:end(pernambuco) */
+        ],
+        imagesRecovered: [
+            /** inject-images:start(pernambuco-recuperados) */
+            /** inject-images:end(pernambuco-recuperados) */
+        ],
+        imagesDeaths: [
+            /** inject-images:start(pernambuco-obitos) */
+            /** inject-images:end(pernambuco-obitos) */
+        ],
+        imagesActives: [
+            /** inject-images:start(pernambuco-ativos) */
+            /** inject-images:end(pernambuco-ativos) */
+        ],
+    },
+    {
+        id: 3,
+        titleHtml: "Distribuição Espaço-temporal dos casos do COVID-19 na <strong>Região Metropolitana do Recife</strong>",
+        title: `Distribuição Espaço-temporal dos casos confirmados do COVID-19 na Região Metropolitana do Recife`,
+        titleRecovered: `Distribuição Espaço-temporal dos casos recuperados do COVID-19 na Região Metropolitana do Recife`,
+        titleDeaths: `Distribuição Espaço-temporal dos óbitos do COVID-19 na Região Metropolitana do Recife`,
+        titleActives: `Distribuição Espaço-temporal dos casos ativos do COVID-19 na Região Metropolitana do Recife`,
+        img: "img/thumbs/thumb-2.png",
+        updatedAt: null,
+        defaultPosition: 0.35,
+        captions:[],
+        images: [
+            /** inject-images:start(rmr) */
+	{
+		"date": "01/04/2020",
+		"img": "img/rmr/aglomerados-confirmados-01.04.png"
+	},
+	{
+		"date": "02/04/2020",
+		"img": "img/rmr/aglomerados-confirmados-02.04.png"
+	},
+	{
+		"date": "03/04/2020",
+		"img": "img/rmr/aglomerados-confirmados-03.04.png"
+	},
+	{
+		"date": "04/04/2020",
+		"img": "img/rmr/aglomerados-confirmados-04.04.png"
+	},
+	{
+		"date": "05/04/2020",
+		"img": "img/rmr/aglomerados-confirmados-05.04.png"
+	},
+	{
+		"date": "06/04/2020",
+		"img": "img/rmr/aglomerados-confirmados-06.04.png"
+	},
+	{
+		"date": "07/04/2020",
+		"img": "img/rmr/aglomerados-confirmados-07.04.png"
+	},
+	{
+		"date": "08/04/2020",
+		"img": "img/rmr/aglomerados-confirmados-08.04.png"
+	},
+	{
+		"date": "09/04/2020",
+		"img": "img/rmr/aglomerados-confirmados-09.04.png"
+	},
+	{
+		"date": "10/04/2020",
+		"img": "img/rmr/aglomerados-confirmados-10.04.png"
+	},
+	{
+		"date": "11/04/2020",
+		"img": "img/rmr/aglomerados-confirmados-11.04.png"
+	},
+	{
+		"date": "12/04/2020",
+		"img": "img/rmr/aglomerados-confirmados-12.04.png"
+	},
+	{
+		"date": "13/04/2020",
+		"img": "img/rmr/aglomerados-confirmados-13.04.png"
+	},
+	{
+		"date": "14/04/2020",
+		"img": "img/rmr/aglomerados-confirmados-14.04.png"
+	},
+	{
+		"date": "15/04/2020",
+		"img": "img/rmr/aglomerados-confirmados-15.04.png"
+	},
+	{
+		"date": "16/04/2020",
+		"img": "img/rmr/aglomerados-confirmados-16.04.png"
+	},
+	{
+		"date": "17/04/2020",
+		"img": "img/rmr/aglomerados-confirmados-17.04.png"
+	},
+	{
+		"date": "18/04/2020",
+		"img": "img/rmr/aglomerados-confirmados-18.04.png"
+	},
+	{
+		"date": "19/04/2020",
+		"img": "img/rmr/aglomerados-confirmados-19.04.png"
+	},
+	{
+		"date": "20/04/2020",
+		"img": "img/rmr/aglomerados-confirmados-20.04-.png"
+	},
+	{
+		"date": "21/04/2020",
+		"img": "img/rmr/aglomerados-confirmados-21.04.png"
+	},
+	{
+		"date": "22/04/2020",
+		"img": "img/rmr/aglomerados-confirmados-22.04.png"
+	},
+	{
+		"date": "23/04/2020",
+		"img": "img/rmr/aglomerados-confirmados-23.04.png"
+	},
+	{
+		"date": "24/04/2020",
+		"img": "img/rmr/aglomerados-confirmados-24.04.png"
+	},
+	{
+		"date": "25/04/2020",
+		"img": "img/rmr/aglomerados-confirmados-25.04.png"
+	},
+	{
+		"date": "26/04/2020",
+		"img": "img/rmr/aglomerados-confirmados-26.04.png"
+	},
+	{
+		"date": "27/04/2020",
+		"img": "img/rmr/aglomerados-confirmados-27.04.png"
+	},
+	{
+		"date": "28/04/2020",
+		"img": "img/rmr/aglomerados-confirmados-28.04.png"
+	},
+	{
+		"date": "29/04/2020",
+		"img": "img/rmr/aglomerados-confirmados-29.04.png"
+	},
+	{
+		"date": "30/04/2020",
+		"img": "img/rmr/aglomerados-confirmados-30.04.png"
+	},
+	{
+		"date": "01/05/2020",
+		"img": "img/rmr/aglomerados-confirmados-01.05.png"
+	},
+	{
+		"date": "02/05/2020",
+		"img": "img/rmr/aglomerados-confirmados-02.05.png"
+	},
+	{
+		"date": "03/05/2020",
+		"img": "img/rmr/aglomerados-confirmados-03.05.png"
+	},
+	{
+		"date": "04/05/2020",
+		"img": "img/rmr/aglomerados-confirmados-04.05.png"
+	},
+	{
+		"date": "05/05/2020",
+		"img": "img/rmr/aglomerados-confirmados-05.05-1-.png"
+	},
+	{
+		"date": "06/05/2020",
+		"img": "img/rmr/aglomerados-confirmados-06.05.png"
+	},
+	{
+		"date": "07/05/2020",
+		"img": "img/rmr/aglomerados-confirmados-07.05.png"
+	},
+	{
+		"date": "08/05/2020",
+		"img": "img/rmr/aglomerados-confirmados-08.05.png"
+	},
+	{
+		"date": "09/05/2020",
+		"img": "img/rmr/aglomerados-confirmados-09.05.png"
+	},
+	{
+		"date": "10/05/2020",
+		"img": "img/rmr/aglomerados-confirmados-10.05-1-.png"
+	},
+	{
+		"date": "11/05/2020",
+		"img": "img/rmr/aglomerados-confirmados-11.05.png"
+	},
+	{
+		"date": "12/05/2020",
+		"img": "img/rmr/aglomerados-confirmados-12.05.png"
+	},
+	{
+		"date": "13/05/2020",
+		"img": "img/rmr/aglomerados-confirmados-13.05.png"
+	},
+	{
+		"date": "14/05/2020",
+		"img": "img/rmr/aglomerados-confirmados-14.05.png"
+	},
+	{
+		"date": "15/05/2020",
+		"img": "img/rmr/aglomerados-confirmados-15.05-1-.png"
+	},
+	{
+		"date": "16/05/2020",
+		"img": "img/rmr/aglomerados-confirmados-16.05app.png"
+	},
+	{
+		"date": "17/05/2020",
+		"img": "img/rmr/aglomerados-confirmados-17.05app.png"
+	},
+	{
+		"date": "18/05/2020",
+		"img": "img/rmr/aglomerados-confirmados-18.05app.png"
+	},
+	{
+		"date": "19/05/2020",
+		"img": "img/rmr/aglomerados-confirmados-19.05app.png"
+	},
+	{
+		"date": "20/05/2020",
+		"img": "img/rmr/aglomerados-confirmados-20.05-1-.png"
+	},
+	{
+		"date": "21/05/2020",
+		"img": "img/rmr/aglomerados-confirmados-21.05app.png"
+	},
+	{
+		"date": "22/05/2020",
+		"img": "img/rmr/aglomerados-confirmados-22.05app.png"
+	},
+	{
+		"date": "23/05/2020",
+		"img": "img/rmr/aglomerados-confirmados-23.05app.png"
+	},
+	{
+		"date": "24/05/2020",
+		"img": "img/rmr/aglomerados-confirmados-24.05app.png"
+	},
+	{
+		"date": "25/05/2020",
+		"img": "img/rmr/aglomerados-confirmados-25.05app.png"
+	},
+	{
+		"date": "26/05/2020",
+		"img": "img/rmr/aglomerados-confirmados-26.05app.png"
+	},
+	{
+		"date": "27/05/2020",
+		"img": "img/rmr/aglomerados-confirmados-27.05app.png"
+	},
+	{
+		"date": "28/05/2020",
+		"img": "img/rmr/aglomerados-confirmados-28.05app.png"
+	},
+	{
+		"date": "29/05/2020",
+		"img": "img/rmr/aglomerados-confirmados-29.05app.png"
+	},
+	{
+		"date": "30/05/2020",
+		"img": "img/rmr/aglomerados-confirmados-30.05app.png"
+	},
+	{
+		"date": "31/05/2020",
+		"img": "img/rmr/aglomerados-confirmados-31.05app.png"
+	},
+	{
+		"date": "01/06/2020",
+		"img": "img/rmr/aglomerados-confirmados-01.06app.png"
+	},
+	{
+		"date": "02/06/2020",
+		"img": "img/rmr/aglomerados-confirmados-02.06app.png"
+	},
+	{
+		"date": "03/06/2020",
+		"img": "img/rmr/aglomerados-confirmados-03.06app.png"
+	},
+	{
+		"date": "04/06/2020",
+		"img": "img/rmr/aglomerados-confirmados-04.06app.png"
+	},
+	{
+		"date": "05/06/2020",
+		"img": "img/rmr/aglomerados-confirmados-05.06app.png"
+	},
+	{
+		"date": "06/06/2020",
+		"img": "img/rmr/aglomerados-confirmados-06.06app.png"
+	},
+	{
+		"date": "07/06/2020",
+		"img": "img/rmr/aglomerados-confirmados-07.06app.png"
+	},
+	{
+		"date": "08/06/2020",
+		"img": "img/rmr/aglomerados-confirmados-08.06app.png"
+	}
+/** inject-images:end(rmr) */
+        ],
+        imagesRecovered: [
+            /** inject-images:start(rmr-recuperados) */
+	{
+		"date": "01/04/2020",
+		"img": "img/rmr-recuperados/recuperados-totais-01.04.png"
+	},
+	{
+		"date": "01/05/2020",
+		"img": "img/rmr-recuperados/recuperados-totais-01.05.png"
+	},
+	{
+		"date": "01/06/2020",
+		"img": "img/rmr-recuperados/recuperados-totais-01.06.png"
+	},
+	{
+		"date": "02/06/2020",
+		"img": "img/rmr-recuperados/recuperados-totais-02.06.png"
+	},
+	{
+		"date": "03/06/2020",
+		"img": "img/rmr-recuperados/recuperados-totais-03.06.png"
+	},
+	{
+		"date": "04/06/2020",
+		"img": "img/rmr-recuperados/recuperados-totais-04.06.png"
+	},
+	{
+		"date": "05/06/2020",
+		"img": "img/rmr-recuperados/recuperados-totais-05.06.png"
+	},
+	{
+		"date": "06/06/2020",
+		"img": "img/rmr-recuperados/recuperados-totais-06.06.png"
+	},
+	{
+		"date": "07/06/2020",
+		"img": "img/rmr-recuperados/recuperados-totais-07.06.png"
+	},
+	{
+		"date": "08/06/2020",
+		"img": "img/rmr-recuperados/recuperados-totais-08.06.png"
+	}
+/** inject-images:end(rmr-recuperados) */
+        ],
+        imagesDeaths: [
+            /** inject-images:start(rmr-obitos) */
+            /** inject-images:end(rmr-obitos) */
+        ],
+        imagesActives: [
+            /** inject-images:start(rmr-ativos) *//** inject-images:end(rmr-ativos) */
+        ],
+    },
+    {
+        id: 4,
+        titleHtml: "Distribuição Espaço-temporal dos casos do COVID-19 na <strong>Cidade do Recife</strong>",
+        title: `Distribuição Espaço-temporal dos casos confirmados do COVID-19 na Cidade do Recife`,
+        titleRecovered: `Distribuição Espaço-temporal dos casos recuperados do COVID-19 na Cidade do Recife`,
+        titleDeaths: `Distribuição Espaço-temporal dos óbitos do COVID-19 na Cidade do Recife`,
+        titleActives: `Distribuição Espaço-temporal dos casos ativos do COVID-19 na Cidade do Recife`,
+        img: "img/thumbs/thumb-1.png",
+        updatedAt: null,
+        defaultPosition: 0.35,
+        captions:[],
+        images: [
+            /** inject-images:start(recife) */
+	{
+		"date": "01/04/2020",
+		"img": "img/recife/01.04.png"
+	},
+	{
+		"date": "02/04/2020",
+		"img": "img/recife/02.04.png"
+	},
+	{
+		"date": "04/04/2020",
+		"img": "img/recife/04.04.png"
+	},
+	{
+		"date": "05/04/2020",
+		"img": "img/recife/05.04.png"
+	},
+	{
+		"date": "06/04/2020",
+		"img": "img/recife/06.04.png"
+	},
+	{
+		"date": "07/04/2020",
+		"img": "img/recife/07.04.png"
+	},
+	{
+		"date": "08/04/2020",
+		"img": "img/recife/08.04.png"
+	},
+	{
+		"date": "09/04/2020",
+		"img": "img/recife/09.04.png"
+	},
+	{
+		"date": "10/04/2020",
+		"img": "img/recife/10.04.png"
+	},
+	{
+		"date": "11/04/2020",
+		"img": "img/recife/11.04.png"
+	},
+	{
+		"date": "12/04/2020",
+		"img": "img/recife/12.04.png"
+	},
+	{
+		"date": "13/04/2020",
+		"img": "img/recife/13.04.png"
+	},
+	{
+		"date": "14/04/2020",
+		"img": "img/recife/14.04.png"
+	},
+	{
+		"date": "15/04/2020",
+		"img": "img/recife/15.04.png"
+	},
+	{
+		"date": "16/04/2020",
+		"img": "img/recife/16.04.png"
+	},
+	{
+		"date": "17/04/2020",
+		"img": "img/recife/17.04.png"
+	},
+	{
+		"date": "18/04/2020",
+		"img": "img/recife/18.04.png"
+	},
+	{
+		"date": "19/04/2020",
+		"img": "img/recife/19.04.png"
+	},
+	{
+		"date": "20/04/2020",
+		"img": "img/recife/20.04.png"
+	},
+	{
+		"date": "21/04/2020",
+		"img": "img/recife/21.04.png"
+	},
+	{
+		"date": "22/04/2020",
+		"img": "img/recife/22.04.png"
+	},
+	{
+		"date": "23/04/2020",
+		"img": "img/recife/23.04.png"
+	},
+	{
+		"date": "24/04/2020",
+		"img": "img/recife/24.04.png"
+	},
+	{
+		"date": "25/04/2020",
+		"img": "img/recife/25.04.png"
+	},
+	{
+		"date": "26/04/2020",
+		"img": "img/recife/26.04.png"
+	},
+	{
+		"date": "27/04/2020",
+		"img": "img/recife/27.04.png"
+	},
+	{
+		"date": "28/04/2020",
+		"img": "img/recife/28.04.png"
+	},
+	{
+		"date": "29/04/2020",
+		"img": "img/recife/29.04.png"
+	},
+	{
+		"date": "30/04/2020",
+		"img": "img/recife/30.04.png"
+	},
+	{
+		"date": "01/05/2020",
+		"img": "img/recife/01.05.png"
+	},
+	{
+		"date": "02/05/2020",
+		"img": "img/recife/02.05.png"
+	},
+	{
+		"date": "03/05/2020",
+		"img": "img/recife/03.05.png"
+	},
+	{
+		"date": "04/05/2020",
+		"img": "img/recife/04.05.png"
+	},
+	{
+		"date": "05/05/2020",
+		"img": "img/recife/05.05.png"
+	},
+	{
+		"date": "06/05/2020",
+		"img": "img/recife/06.05.png"
+	},
+	{
+		"date": "07/05/2020",
+		"img": "img/recife/07.05.png"
+	},
+	{
+		"date": "08/05/2020",
+		"img": "img/recife/08.05.png"
+	},
+	{
+		"date": "09/05/2020",
+		"img": "img/recife/09.05.png"
+	},
+	{
+		"date": "10/05/2020",
+		"img": "img/recife/10.05.png"
+	},
+	{
+		"date": "11/05/2020",
+		"img": "img/recife/11.05.png"
+	},
+	{
+		"date": "12/05/2020",
+		"img": "img/recife/12.05.png"
+	},
+	{
+		"date": "13/05/2020",
+		"img": "img/recife/13.05.png"
+	},
+	{
+		"date": "14/05/2020",
+		"img": "img/recife/14.05.png"
+	},
+	{
+		"date": "15/05/2020",
+		"img": "img/recife/15.05.png"
+	},
+	{
+		"date": "16/05/2020",
+		"img": "img/recife/16.05.png"
+	},
+	{
+		"date": "17/05/2020",
+		"img": "img/recife/17.05.png"
+	},
+	{
+		"date": "18/05/2020",
+		"img": "img/recife/18.05.png"
+	},
+	{
+		"date": "19/05/2020",
+		"img": "img/recife/19.05.png"
+	},
+	{
+		"date": "20/05/2020",
+		"img": "img/recife/20.05.png"
+	},
+	{
+		"date": "21/05/2020",
+		"img": "img/recife/21.05.png"
+	},
+	{
+		"date": "22/05/2020",
+		"img": "img/recife/22.05.png"
+	},
+	{
+		"date": "23/05/2020",
+		"img": "img/recife/23.05.png"
+	},
+	{
+		"date": "24/05/2020",
+		"img": "img/recife/24.05.png"
+	},
+	{
+		"date": "25/05/2020",
+		"img": "img/recife/25.05b.png"
+	},
+	{
+		"date": "26/05/2020",
+		"img": "img/recife/26.05b.png"
+	},
+	{
+		"date": "27/05/2020",
+		"img": "img/recife/27.05b.png"
+	},
+	{
+		"date": "28/05/2020",
+		"img": "img/recife/28.05b.png"
+	},
+	{
+		"date": "29/05/2020",
+		"img": "img/recife/29.05.png"
+	},
+	{
+		"date": "30/05/2020",
+		"img": "img/recife/30.05b.png"
+	},
+	{
+		"date": "31/05/2020",
+		"img": "img/recife/31.05b.png"
+	},
+	{
+		"date": "01/06/2020",
+		"img": "img/recife/01.06b.png"
+	},
+	{
+		"date": "02/06/2020",
+		"img": "img/recife/02.06b.png"
+	},
+	{
+		"date": "03/06/2020",
+		"img": "img/recife/03.06b.png"
+	},
+	{
+		"date": "04/06/2020",
+		"img": "img/recife/04.06b.png"
+	},
+	{
+		"date": "05/06/2020",
+		"img": "img/recife/05.06b.png"
+	},
+	{
+		"date": "06/06/2020",
+		"img": "img/recife/06.06b.png"
+	},
+	{
+		"date": "07/06/2020",
+		"img": "img/recife/07.06b.png"
+	},
+	{
+		"date": "08/06/2020",
+		"img": "img/recife/08.06b.png"
+	}
+/** inject-images:end(recife) */
+        ],
+        imagesRecovered: [
+            /** inject-images:start(recife-recuperados) */
+	{
+		"date": "24/03/2020",
+		"img": "img/recife-recuperados/24.03-rectot.png"
+	},
+	{
+		"date": "25/03/2020",
+		"img": "img/recife-recuperados/25.03-rectot.png"
+	},
+	{
+		"date": "26/03/2020",
+		"img": "img/recife-recuperados/26.03-rectot.png"
+	},
+	{
+		"date": "27/03/2020",
+		"img": "img/recife-recuperados/27.03-rectot.png"
+	},
+	{
+		"date": "28/03/2020",
+		"img": "img/recife-recuperados/28.03-rectot.png"
+	},
+	{
+		"date": "29/03/2020",
+		"img": "img/recife-recuperados/29.03-rectot.png"
+	},
+	{
+		"date": "30/03/2020",
+		"img": "img/recife-recuperados/30.03-rectot.png"
+	},
+	{
+		"date": "31/03/2020",
+		"img": "img/recife-recuperados/31.03-rectot.png"
+	},
+	{
+		"date": "01/04/2020",
+		"img": "img/recife-recuperados/01.04-rectot.png"
+	},
+	{
+		"date": "02/04/2020",
+		"img": "img/recife-recuperados/02.04-rectot.png"
+	},
+	{
+		"date": "03/04/2020",
+		"img": "img/recife-recuperados/03.04-rectot.png"
+	},
+	{
+		"date": "04/04/2020",
+		"img": "img/recife-recuperados/04.04-rectot.png"
+	},
+	{
+		"date": "05/04/2020",
+		"img": "img/recife-recuperados/05.04-rectot.png"
+	},
+	{
+		"date": "06/04/2020",
+		"img": "img/recife-recuperados/06.04-rectot.png"
+	},
+	{
+		"date": "01/05/2020",
+		"img": "img/recife-recuperados/01.05-rectot.png"
+	},
+	{
+		"date": "29/05/2020",
+		"img": "img/recife-recuperados/29.05-rectot.png"
+	},
+	{
+		"date": "30/05/2020",
+		"img": "img/recife-recuperados/30.05-rectot.png"
+	},
+	{
+		"date": "31/05/2020",
+		"img": "img/recife-recuperados/31.05-rectot.png"
+	},
+	{
+		"date": "01/06/2020",
+		"img": "img/recife-recuperados/01.06-rectot.png"
+	},
+	{
+		"date": "02/06/2020",
+		"img": "img/recife-recuperados/02.06-rectot.png"
+	},
+	{
+		"date": "03/06/2020",
+		"img": "img/recife-recuperados/03.06-rectot.png"
+	},
+	{
+		"date": "04/06/2020",
+		"img": "img/recife-recuperados/04.06-rectot.png"
+	},
+	{
+		"date": "05/06/2020",
+		"img": "img/recife-recuperados/05.06-rectot.png"
+	},
+	{
+		"date": "06/06/2020",
+		"img": "img/recife-recuperados/06.06-rectot.png"
+	},
+	{
+		"date": "07/06/2020",
+		"img": "img/recife-recuperados/07.06-rectot.png"
+	},
+	{
+		"date": "08/06/2020",
+		"img": "img/recife-recuperados/08.06-rectot.png"
+	}
+/** inject-images:end(recife-recuperados) */
+        ],
+        imagesDeaths: [
+            /** inject-images:start(recife-obitos) */
+            /** inject-images:end(recife-obitos) */
+        ],
+        imagesActives: [
+            /** inject-images:start(recife-ativos) */
+	{
+		"date": "06/06/2020",
+		"img": "img/recife-ativos/06.06ativos-total.png"
+	},
+	{
+		"date": "07/06/2020",
+		"img": "img/recife-ativos/07.06ativos-total.png"
+	},
+	{
+		"date": "08/06/2020",
+		"img": "img/recife-ativos/08.06ativos-total.png"
+	}
+/** inject-images:end(recife-ativos) */
+        ],
+    },
+];

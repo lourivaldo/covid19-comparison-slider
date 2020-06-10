@@ -30,7 +30,7 @@ const inject = (config) => {
         sortBy((f) => parse(f.date, 'dd/MM/yyyy', new Date())),
     )(files);
 
-    const filePath = path.join(__dirname, 'src', 'App.js');
+    const filePath = path.join(__dirname, 'src', 'AppConfigMaps.js');
 
     let fileContent = fs.readFileSync(filePath).toString();
     const content = JSON.stringify(_.uniqBy(imageFiles, 'date'),null,"\t")
@@ -47,7 +47,10 @@ const configs = [
     {folder: 'brasil',     pattern: /(\d{6})/i,      patternDate: 'yyMMdd'},
     {folder: 'nordeste',   pattern: /(\d{6})/i,      patternDate: 'yyMMdd'},
     {folder: 'pernambuco', pattern: /(\d{6})/i,      patternDate: 'yyMMdd'},
-    {folder: 'rmr',        pattern: /(\d{2}\.\d{2})/i, patternDate: 'dd.MM'},
+
+    {folder: 'rmr',             pattern: /(\d{2}\.\d{2})/i, patternDate: 'dd.MM'},
+    {folder: 'rmr-recuperados', pattern: /(\d{2}\.\d{2})/i, patternDate: 'dd.MM'},
+    {folder: 'rmr-ativos',      pattern: /(\d{2}\.\d{2})/i, patternDate: 'dd.MM'},
 
     {folder: 'recife',             pattern: /(\d{2}\.\d{2})/i, patternDate: 'dd.MM'},
     {folder: 'recife-recuperados', pattern: /(\d{2}\.\d{2})/i, patternDate: 'dd.MM'},
