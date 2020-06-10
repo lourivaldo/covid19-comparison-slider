@@ -102,6 +102,7 @@ class App extends React.Component {
                 <Home config={this.getConfig(this.maps[1])}/>
                 <Home2 config={this.getConfig(this.maps[2])}/>
                 <Slider config={this.getConfig(this.maps[3])}/>
+                <Slider config={this.getConfig(this.maps[3],'recovered')}/>
                 <Slider config={this.getConfig(this.maps[4])}/>
                 <Slider config={this.getConfig(this.maps[4],'recovered')}/>
                 <Slider config={this.getConfig(this.maps[4],'actives')}/>
