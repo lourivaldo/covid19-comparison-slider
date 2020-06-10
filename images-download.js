@@ -213,15 +213,17 @@ function filterNew(files) {
 }
 
 function renameFileName(name) {
-    return slugify(name, {lower: true})
-        .replace(/_/g, '-')
-        .replace(/[\(\)]/g, '-')
-        .replace(/--/g, '-');
+    return name;
+    // return slugify(name, {lower: true})
+    //     .replace(/_/g, '-')
+    //     .replace(/[\(\)]/g, '-')
+    //     .replace(/--/g, '-');
 }
 
 const git = simpleGit();
 
 async function canDownload(file, filePath) {
+    return filePath == '/var/www/covid19-comparison-slider/public/img/rmr-recuperados/recuperados-totais-01.04.png';
     // console.log('canDownload');
     const minDate = subHours(new Date(), 28);
 

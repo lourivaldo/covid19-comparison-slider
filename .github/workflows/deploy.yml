@@ -1,11 +1,11 @@
 name: Deployment
 
-on:
-  push:
-    branches:
-      - master
-  schedule:
-    - cron: "0 7,8,9,10,12 * * *"
+#on:
+#  push:
+#    branches:
+#      - master
+#  schedule:
+#    - cron: "0 7,8,9,10,12 * * *"
 #    - cron: "*/5 * * * *"
 
 env:

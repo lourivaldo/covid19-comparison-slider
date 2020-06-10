@@ -1467,6 +1467,10 @@ class App extends React.Component {
 	{
 		"date": "07/06/2020",
 		"img": "img/rmr/aglomerados-confirmados-07.06app.png"
+	},
+	{
+		"date": "08/06/2020",
+		"img": "img/rmr/aglomerados-confirmados-08.06app.png"
 	}
 /** inject-images:end(rmr) */
             ],
@@ -1758,16 +1762,76 @@ class App extends React.Component {
 	},
 	{
 		"date": "06/06/2020",
-		"img": "img/recife/06.06ativos-total.png"
+		"img": "img/recife/06.06b.png"
 	},
 	{
 		"date": "07/06/2020",
-		"img": "img/recife/07.06-rectot.png"
+		"img": "img/recife/07.06b.png"
+	},
+	{
+		"date": "08/06/2020",
+		"img": "img/recife/08.06b.png"
 	}
 /** inject-images:end(recife) */
             ],
             imagesRecovered: [
                 /** inject-images:start(recife-recuperados) */
+	{
+		"date": "24/03/2020",
+		"img": "img/recife-recuperados/24.03-rectot.png"
+	},
+	{
+		"date": "25/03/2020",
+		"img": "img/recife-recuperados/25.03-rectot.png"
+	},
+	{
+		"date": "26/03/2020",
+		"img": "img/recife-recuperados/26.03-rectot.png"
+	},
+	{
+		"date": "27/03/2020",
+		"img": "img/recife-recuperados/27.03-rectot.png"
+	},
+	{
+		"date": "28/03/2020",
+		"img": "img/recife-recuperados/28.03-rectot.png"
+	},
+	{
+		"date": "29/03/2020",
+		"img": "img/recife-recuperados/29.03-rectot.png"
+	},
+	{
+		"date": "30/03/2020",
+		"img": "img/recife-recuperados/30.03-rectot.png"
+	},
+	{
+		"date": "31/03/2020",
+		"img": "img/recife-recuperados/31.03-rectot.png"
+	},
+	{
+		"date": "01/04/2020",
+		"img": "img/recife-recuperados/01.04-rectot.png"
+	},
+	{
+		"date": "02/04/2020",
+		"img": "img/recife-recuperados/02.04-rectot.png"
+	},
+	{
+		"date": "03/04/2020",
+		"img": "img/recife-recuperados/03.04-rectot.png"
+	},
+	{
+		"date": "04/04/2020",
+		"img": "img/recife-recuperados/04.04-rectot.png"
+	},
+	{
+		"date": "05/04/2020",
+		"img": "img/recife-recuperados/05.04-rectot.png"
+	},
+	{
+		"date": "06/04/2020",
+		"img": "img/recife-recuperados/06.04-rectot.png"
+	},
 	{
 		"date": "01/05/2020",
 		"img": "img/recife-recuperados/01.05-rectot.png"
@@ -1811,6 +1875,10 @@ class App extends React.Component {
 	{
 		"date": "07/06/2020",
 		"img": "img/recife-recuperados/07.06-rectot.png"
+	},
+	{
+		"date": "08/06/2020",
+		"img": "img/recife-recuperados/08.06-rectot.png"
 	}
 /** inject-images:end(recife-recuperados) */
             ],
@@ -1827,6 +1895,10 @@ class App extends React.Component {
 	{
 		"date": "07/06/2020",
 		"img": "img/recife-ativos/07.06ativos-total.png"
+	},
+	{
+		"date": "08/06/2020",
+		"img": "img/recife-ativos/08.06ativos-total.png"
 	}
 /** inject-images:end(recife-ativos) */
             ],
