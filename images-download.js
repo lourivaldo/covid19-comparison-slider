@@ -222,8 +222,6 @@ function renameFileName(name) {
 const git = simpleGit();
 
 async function canDownload(file, filePath) {
-    // return filePath == '/var/www/covid19-comparison-slider/public/img/rmr-recuperados/Recuperados_totais 01.04.png';
-    // console.log('canDownload');
     const minDate = subHours(new Date(), 28);
 
     let remoteModifiedTime = new Date(file.modifiedTime);
@@ -251,7 +249,6 @@ async function canDownload(file, filePath) {
     // } catch (e) {}
 
     return isAfter(remoteModifiedTime, minDate);
-    // return false;
 }
 
 async function downloadFiles(auth, files) {
