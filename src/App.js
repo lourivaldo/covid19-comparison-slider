@@ -1758,11 +1758,11 @@ class App extends React.Component {
 	},
 	{
 		"date": "06/06/2020",
-		"img": "img/recife/06.06b.png"
+		"img": "img/recife/06.06ativos-total.png"
 	},
 	{
 		"date": "07/06/2020",
-		"img": "img/recife/07.06b.png"
+		"img": "img/recife/07.06-rectot.png"
 	}
 /** inject-images:end(recife) */
             ],
