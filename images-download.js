@@ -222,6 +222,7 @@ function renameFileName(name) {
 const git = simpleGit();
 
 async function canDownload(file, filePath) {
+    // return filePath === '/var/www/covid19-comparison-slider/public/img/recife-recuperados/24.03-rectot.png';
     const minDate = subHours(new Date(), 28);
 
     let remoteModifiedTime = new Date(file.modifiedTime);
@@ -254,7 +255,7 @@ async function canDownload(file, filePath) {
 async function downloadFiles(auth, files) {
 
     for (const file of files) {
-        if (file.name !== '24.03-rectot.png') continue
+
         // console.log(file.fromFolder, ' | ', file.typeFolder, ' | ', file.name);
 
         const destinationFile = file.typeFolder === 'confirmados' ?
@@ -270,20 +271,19 @@ async function downloadFiles(auth, files) {
 
         console.log(`Downloading ${destinationFile}`);
 
-        const downloadedFile = await getFile(auth, file.id);
-
         if (!fs.existsSync(destinationFolder)){
             fs.mkdirSync(destinationFolder);
         }
 
-        fs.copyFileSync(downloadedFile, destinationFile);
+        await getFile(auth, file.id, {saveToPath: destinationFile});
+        // fs.copyFileSync(downloadedFile, destinationFile);
         console.log(`Downloaded ${destinationFile}`);
     }
 }
 
-async function getFile(auth, fileId) {
+async function getFile(auth, fileId, options) {
     return new Promise(async (resolve) => {
-
+        const {saveToPath} = options;
         const drive = google.drive({version: 'v3', auth});
 
         // For converting document formats, and for downloading template
@@ -291,15 +291,15 @@ async function getFile(auth, fileId) {
         // https://developers.google.com/drive/api/v3/manage-downloads
         const res = await drive.files.get({fileId, alt: 'media'}, {responseType: 'stream'}) ;
 
-        const filePath = path.join(os.tmpdir(), uuidv4());
+        const filePath = saveToPath || path.join(os.tmpdir(), uuidv4());
         // console.log(`writing to ${filePath}`);
 
         const dest = fs.createWriteStream(filePath);
-        let progress = 0;
+        let progress = 0; //912949
 
         res.data
             .on('end', () => {
-                // console.log('Done downloading file.');
+                console.log('Done downloading file.');
                 resolve(filePath);
             })
             .on('error', err => {
@@ -309,9 +309,9 @@ async function getFile(auth, fileId) {
             .on('data', d => {
                 progress += d.length;
                 if (process.stdout.isTTY) {
-                    // process.stdout.clearLine();
-                    // process.stdout.cursorTo(0);
-                    // process.stdout.write(`Downloaded ${progress} bytes`);
+                    process.stdout.clearLine();
+                    process.stdout.cursorTo(0);
+                    process.stdout.write(`Downloaded ${progress} bytes`);
                 }
             })
             .pipe(dest);
