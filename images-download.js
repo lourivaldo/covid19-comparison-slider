@@ -223,7 +223,6 @@ const git = simpleGit();
 
 async function canDownload(file, filePath) {
     // console.log('canDownload');
-
     const minDate = subHours(new Date(), 28);
 
     let remoteModifiedTime = new Date(file.modifiedTime);
