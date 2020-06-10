@@ -136,7 +136,7 @@ async function getFolderByMonth(auth, parentFolderId) {
 }
 
 function canEnterOnFolder(folderName) {
-    return ['confirmados', 'recuperados', 'ativos'].indexOf(folderName) !== -1;
+    return ['confirmados', 'recuperados', 'ativos'].indexOf(folderName.toLowerCase()) !== -1;
 }
 
 function canDownloadFolderFiles(folderName) {
