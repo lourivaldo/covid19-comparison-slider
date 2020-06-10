@@ -222,6 +222,8 @@ function renameFileName(name) {
 const git = simpleGit();
 
 async function canDownload(file, filePath) {
+    console.log('canDownload')
+
     const minDate = subHours(new Date(), 28);
 
     let remoteModifiedTime = new Date(file.modifiedTime);
@@ -231,25 +233,25 @@ async function canDownload(file, filePath) {
     try {
         fs.accessSync(filePath, fs.constants.F_OK);
     } catch (e) {
-        // return true;
+        return true;
     }
     // console.timeEnd("accessSync");
 
-    console.time("simpleGit");
-    try {
+    // try {
+    //
+    //     console.time("simpleGitaa");
+    //     const log = await git.log({file: filePath});
+    //     console.timeEnd("simpleGitaa");
+    //
+    //     localModifiedTime = parseISO(log.latest.date);
+    //
+    //     // console.log(remoteModifiedTime, localModifiedTime, isAfter(remoteModifiedTime, localModifiedTime))
+    //     return isAfter(remoteModifiedTime, localModifiedTime); // newer version
+    //
+    // } catch (e) {}
 
-        const log = await git.log({file: filePath});
-
-        localModifiedTime = parseISO(log.latest.date);
-
-        // console.log(remoteModifiedTime, localModifiedTime, isAfter(remoteModifiedTime, localModifiedTime))
-
-        // return isAfter(remoteModifiedTime, localModifiedTime); // newer version
-
-    } catch (e) {}
-    console.timeEnd("simpleGit");
-
-    return false;
+    return isAfter(remoteModifiedTime, minDate);
+    // return false;
 }
 
 async function downloadFiles(auth, files) {
