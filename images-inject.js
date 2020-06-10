@@ -8,7 +8,13 @@ const inject = (config) => {
 
     const {folder, pattern, patternDate} = config;
 
-    const files = fs.readdirSync(path.join(__dirname, 'public', 'img', folder));
+    let files = [];
+
+    try {
+        files = fs.readdirSync(path.join(__dirname, 'public', 'img', folder));
+    } catch (e) {
+        return;
+    }
 
     const mapFun = file => {
 
