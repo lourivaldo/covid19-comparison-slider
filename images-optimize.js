@@ -55,15 +55,19 @@ const optimizeImages = async (folder) => {
 
        console.log('Optimizing ' , image);
 
-       await imagemin([image], {
-           destination: `${folder}`,
-           plugins: [
-               imageminJpegtran(),
-               imageminPngquant({
-                   quality: [0.8, 0.9]
-               })
-           ]
-       });
+       try {
+           await imagemin([image], {
+               destination: `${folder}`,
+               plugins: [
+                   imageminJpegtran(),
+                   imageminPngquant({
+                       quality: [0.8, 0.9]
+                   })
+               ]
+           });
+       } catch (e) {
+           console.log(e);
+       }
    }
 };
 
