@@ -81,4 +81,6 @@ node_modules/.bin/imagemin public/img/recife/* --out-dir=public/img/recife
 node_modules/.bin/imagemin public/img/recife/* --out-dir=public/img/recife
 node_modules/.bin/imagemin public/img/recife-ativos/* --out-dir=public/img/recife-ativos
 node_modules/.bin/imagemin public/img/recife-recuperados/* --out-dir=public/img/recife-recuperados
+
+node_modules/.bin/imagemin public/img/rmr-recuperados/recuperados-totais-01.04.png --out-dir=public/img/rmr-recuperados
 ```

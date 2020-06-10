@@ -17,7 +17,8 @@ const getChangedFiles = async () => {
 };
 
 const filterByFolder = async (files, folder) => {
-    return files.filter((file) => file && file.toString().indexOf(folder) !== -1)
+    const sameFolderRegex = new RegExp(`^${folder}\/`);
+    return files.filter((file) => file && sameFolderRegex.test(file))
 };
 
 function renameFileName(name) {
@@ -29,19 +30,23 @@ function renameFileName(name) {
 
 const renameFiles = async (folder) => {
 
-    const files = fs.readdirSync(folder);
+    try {
+        const files = fs.readdirSync(folder);
 
-    for (const file of files) {
+        for (const file of files) {
 
-        const newFileName = renameFileName(file);
+            const newFileName = renameFileName(file);
 
-        const filePath = path.join(folder, file);
-        const newFilePath = path.join(folder, newFileName);
+            const filePath = path.join(folder, file);
+            const newFilePath = path.join(folder, newFileName);
 
-        if (filePath !== newFilePath) {
-            console.log('Renaming ', filePath, "\t --> ", newFilePath);
-            fs.renameSync(filePath, newFilePath);
+            if (filePath !== newFilePath) {
+                console.log('Renaming ', filePath, "\t --> ", newFilePath);
+                fs.renameSync(filePath, newFilePath);
+            }
         }
+    } catch (e) {
+        console.log(e.message)
     }
 
 };
@@ -51,24 +56,31 @@ const optimizeImages = async (folder) => {
     const changedFiles = await getChangedFiles();
     const changedFilesOnFolder = await filterByFolder(changedFiles, folder);
 
-   for (const image of changedFilesOnFolder) {
+    for (const image of changedFilesOnFolder) {
 
-       console.log('Optimizing ' , image);
+        console.log('Optimizing ' , image);
+        return;
 
-       try {
-           await imagemin([image], {
-               destination: `${folder}`,
-               plugins: [
-                   imageminJpegtran(),
-                   imageminPngquant({
-                       quality: [0.8, 0.9]
-                   })
-               ]
-           });
-       } catch (e) {
-           console.log(e);
-       }
-   }
+        try {
+            await imagemin([image], {
+                destination: `${folder}`,
+                plugins: [
+                    imageminJpegtran(),
+                    imageminPngquant({
+                        quality: [0.8, 0.9]
+                    })
+                ]
+            });
+        } catch (e) {
+            console.log('Error: Try again...')
+            try {
+                await imagemin([image], {destination: `${folder}`});
+            } catch (e) {
+                console.log(e.message);
+            }
+        }
+    }
+
 };
 
 const configs = [
@@ -76,7 +88,11 @@ const configs = [
     {path: path.join(__dirname, 'public', 'img', 'nordeste'),},
     {path: path.join(__dirname, 'public', 'img', 'pernambuco'),},
     {path: path.join(__dirname, 'public', 'img', 'rmr'),},
+    {path: path.join(__dirname, 'public', 'img', 'rmr-recuperados'),},
+    {path: path.join(__dirname, 'public', 'img', 'rmr-ativos'),},
     {path: path.join(__dirname, 'public', 'img', 'recife'),},
+    {path: path.join(__dirname, 'public', 'img', 'recife-ativos'),},
+    {path: path.join(__dirname, 'public', 'img', 'recife-recuperados'),},
 ];
 
 (async () => {
