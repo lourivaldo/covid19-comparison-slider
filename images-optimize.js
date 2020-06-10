@@ -59,7 +59,6 @@ const optimizeImages = async (folder) => {
     for (const image of changedFilesOnFolder) {
 
         console.log('Optimizing ' , image);
-        return;
 
         try {
             await imagemin([image], {
