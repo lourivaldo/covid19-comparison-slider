@@ -72,11 +72,17 @@ const optimizeImages = async (folder) => {
             });
         } catch (e) {
             console.log('Error: Try again...')
-            try {
-                await imagemin([image], {destination: `${folder}`});
-            } catch (e) {
-                console.log(e.message);
-            }
+            // try {
+            //     await imagemin([image], {
+            //         destination: `${folder}`,
+            //         plugins: [
+            //             imageminJpegtran(),
+            //             imageminPngquant()
+            //         ]
+            //     });
+            // } catch (e) {
+            //     console.log(e.message);
+            // }
         }
     }
 
