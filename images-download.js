@@ -222,7 +222,7 @@ function renameFileName(name) {
 const git = simpleGit();
 
 async function canDownload(file, filePath) {
-    console.log('canDownload')
+    // console.log('canDownload');
 
     const minDate = subHours(new Date(), 28);
 
