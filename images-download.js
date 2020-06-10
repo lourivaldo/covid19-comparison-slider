@@ -254,7 +254,7 @@ async function canDownload(file, filePath) {
 async function downloadFiles(auth, files) {
 
     for (const file of files) {
-
+        if (file.name !== '24.03-rectot.png') continue
         // console.log(file.fromFolder, ' | ', file.typeFolder, ' | ', file.name);
 
         const destinationFile = file.typeFolder === 'confirmados' ?
