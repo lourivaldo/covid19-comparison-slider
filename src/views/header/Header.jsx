@@ -94,7 +94,8 @@ export default class Header extends Component {
             <div className="header">
                 <nav className="navbar">
                     <div className="container">
-                        <a className="navbar-brand" href="https://www.irrd.org/covid-19">IRRD</a>
+                        <a className="navbar-brand" href="https://www.irrd.org/covid-19"
+                           title="INSTITUTO PARA REDUÇÃO DE RISCOS E DESASTRES DE PERNAMBUCO">IRRD</a>
 
                         <ul className="navbar-nav">
                             <li className="nav-item">
