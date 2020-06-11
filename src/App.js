@@ -93,7 +93,7 @@ class App extends React.Component {
             <div className="App">
                 <Header configs={this.maps}/>
 
-                <ChartRace id="2637633"></ChartRace>
+                <ChartRace id="2798489"></ChartRace>
                 <ChartRace id="2709431"></ChartRace>
 
                 <Geodinamica></Geodinamica>
