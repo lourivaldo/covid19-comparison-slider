@@ -85,3 +85,4 @@ node_modules/.bin/imagemin public/img/recife-recuperados/* --out-dir=public/img/
 node_modules/.bin/imagemin public/img/rmr-recuperados/recuperados-totais-01.04.png --out-dir=public/img/rmr-recuperados
 ```
 
+
