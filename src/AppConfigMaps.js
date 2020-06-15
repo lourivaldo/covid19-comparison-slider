@@ -1159,6 +1159,22 @@ export const mapsConfig = [
 		"img": "img/pernambuco/covid19-pe-tem-200608.png"
 	},
 	{
+		"date": "08/06/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200609.png"
+	},
+	{
+		"date": "09/06/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200610.png"
+	},
+	{
+		"date": "10/06/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200611.png"
+	},
+	{
+		"date": "12/06/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200612.png"
+	},
+	{
 		"date": "13/06/2020",
 		"img": "img/pernambuco/covid19-pe-tem-200613.png"
 	}

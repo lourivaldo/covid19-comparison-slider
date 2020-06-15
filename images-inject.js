@@ -22,7 +22,7 @@ const inject = (config) => {
 
         let date = parse(file.match(pattern)[1], patternDate, new Date());
 
-        if (folder === 'pernambuco' && isBefore(date, new Date(2020, 5, 12))) date = subDays(date, 1);
+        // if (folder === 'pernambuco' && isBefore(date, new Date(2020, 5, 12))) date = subDays(date, 1);
 
         return {
             date: format(date, 'dd/MM/yyyy'),
