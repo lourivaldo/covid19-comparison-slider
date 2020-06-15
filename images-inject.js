@@ -1,7 +1,7 @@
 const fs = require('fs');
 const _ = require('lodash');
 const path = require('path');
-const {parse, format, subDays} = require('date-fns');
+const {parse, format, subDays, isBefore} = require('date-fns');
 const {flow, map, sortBy, filter} = require('lodash/fp');
 
 const inject = (config) => {
@@ -22,7 +22,7 @@ const inject = (config) => {
 
         let date = parse(file.match(pattern)[1], patternDate, new Date());
 
-        if (folder === 'pernambuco') date = subDays(date, 1);
+        if (folder === 'pernambuco' && isBefore(date, new Date(2020, 5, 12))) date = subDays(date, 1);
 
         return {
             date: format(date, 'dd/MM/yyyy'),
