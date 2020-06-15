@@ -1159,7 +1159,7 @@ export const mapsConfig = [
 		"img": "img/pernambuco/covid19-pe-tem-200608.png"
 	},
 	{
-		"date": "12/06/2020",
+		"date": "13/06/2020",
 		"img": "img/pernambuco/covid19-pe-tem-200613.png"
 	}
 /** inject-images:end(pernambuco) */
