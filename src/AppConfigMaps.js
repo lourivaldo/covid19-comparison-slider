@@ -2158,6 +2158,46 @@ export const mapsConfig = [
 		"img": "img/recife-recuperados/18.05.png"
 	},
 	{
+		"date": "19/05/2020",
+		"img": "img/recife-recuperados/19.05.png"
+	},
+	{
+		"date": "20/05/2020",
+		"img": "img/recife-recuperados/20.05.png"
+	},
+	{
+		"date": "21/05/2020",
+		"img": "img/recife-recuperados/21.05.png"
+	},
+	{
+		"date": "22/05/2020",
+		"img": "img/recife-recuperados/22.05.png"
+	},
+	{
+		"date": "23/05/2020",
+		"img": "img/recife-recuperados/23.05.png"
+	},
+	{
+		"date": "24/05/2020",
+		"img": "img/recife-recuperados/24.05.png"
+	},
+	{
+		"date": "25/05/2020",
+		"img": "img/recife-recuperados/25.05.png"
+	},
+	{
+		"date": "26/05/2020",
+		"img": "img/recife-recuperados/26.05.png"
+	},
+	{
+		"date": "27/05/2020",
+		"img": "img/recife-recuperados/27.05.png"
+	},
+	{
+		"date": "28/05/2020",
+		"img": "img/recife-recuperados/28.05.png"
+	},
+	{
 		"date": "29/05/2020",
 		"img": "img/recife-recuperados/29.05-rectot.png"
 	},
