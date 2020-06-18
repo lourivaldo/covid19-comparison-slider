@@ -85,13 +85,14 @@ async function listMyFilesAndFolders(auth, folderId) {
         const drive = google.drive({version: 'v3', auth});
 
         drive.files.list({
-            pageSize: 1000,
+            pageSize: 500,
             q: `'${folderId}' in parents and trashed = false`,
             fields: 'nextPageToken, files(id, name, modifiedTime, mimeType, parents)',
         }, (err, res) => {
 
             const newFiles = [];
 
+            if (err && err === 'Error: Backend Error') throw new Error('Error: Backend Error');
             if (err) return console.log('The API returned an error: ' + err, folderId);
             const files = res.data.files;
 

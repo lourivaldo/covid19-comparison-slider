@@ -446,6 +446,10 @@ export const mapsConfig = [
 	{
 		"date": "15/06/2020",
 		"img": "img/brasil/covid19-brasil-municipios-200615.png"
+	},
+	{
+		"date": "16/06/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200616.png"
 	}
 /** inject-images:end(brasil) */
         ],
@@ -866,6 +870,10 @@ export const mapsConfig = [
 	{
 		"date": "15/06/2020",
 		"img": "img/nordeste/brasil-nordeste-temporal-200615.png"
+	},
+	{
+		"date": "16/06/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200616.png"
 	}
 /** inject-images:end(nordeste) */
         ],
@@ -1201,6 +1209,10 @@ export const mapsConfig = [
 	{
 		"date": "15/06/2020",
 		"img": "img/pernambuco/covid19-pe-tem-200615.png"
+	},
+	{
+		"date": "16/06/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200616.png"
 	}
 /** inject-images:end(pernambuco) */
         ],
@@ -1533,6 +1545,10 @@ export const mapsConfig = [
 	{
 		"date": "15/06/2020",
 		"img": "img/rmr/aglomerados-confirmados-15.06app.png"
+	},
+	{
+		"date": "16/06/2020",
+		"img": "img/rmr/aglomerados-confirmados-16.06app.png"
 	}
 /** inject-images:end(rmr) */
         ],
@@ -1613,7 +1629,20 @@ export const mapsConfig = [
             /** inject-images:end(rmr-obitos) */
         ],
         imagesActives: [
-            /** inject-images:start(rmr-ativos) *//** inject-images:end(rmr-ativos) */
+            /** inject-images:start(rmr-ativos) */
+	{
+		"date": "14/06/2020",
+		"img": "img/rmr-ativos/ativos-totais-14.06.png"
+	},
+	{
+		"date": "15/06/2020",
+		"img": "img/rmr-ativos/ativos-totais-15.06.png"
+	},
+	{
+		"date": "16/06/2020",
+		"img": "img/rmr-ativos/ativos-totais-16.06.png"
+	}
+/** inject-images:end(rmr-ativos) */
         ],
     },
     {
@@ -1928,6 +1957,10 @@ export const mapsConfig = [
 	{
 		"date": "15/06/2020",
 		"img": "img/recife/15.06b.png"
+	},
+	{
+		"date": "16/06/2020",
+		"img": "img/recife/16.06b.png"
 	}
 /** inject-images:end(recife) */
         ],
@@ -2268,6 +2301,10 @@ export const mapsConfig = [
 	{
 		"date": "15/06/2020",
 		"img": "img/recife-recuperados/15.06-rectot.png"
+	},
+	{
+		"date": "16/06/2020",
+		"img": "img/recife-recuperados/16.06-rectot.png"
 	}
 /** inject-images:end(recife-recuperados) */
         ],
@@ -2316,6 +2353,10 @@ export const mapsConfig = [
 	{
 		"date": "15/06/2020",
 		"img": "img/recife-ativos/15.06ativos-total.png"
+	},
+	{
+		"date": "16/06/2020",
+		"img": "img/recife-ativos/16.06ativos-total.png"
 	}
 /** inject-images:end(recife-ativos) */
         ],
