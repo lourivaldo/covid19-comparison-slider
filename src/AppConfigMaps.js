@@ -474,6 +474,10 @@ export const mapsConfig = [
 	{
 		"date": "22/06/2020",
 		"img": "img/brasil/covid19-brasil-municipios-200622.png"
+	},
+	{
+		"date": "23/06/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200623.png"
 	}
 /** inject-images:end(brasil) */
         ],
@@ -922,6 +926,10 @@ export const mapsConfig = [
 	{
 		"date": "22/06/2020",
 		"img": "img/nordeste/brasil-nordeste-temporal-200622.png"
+	},
+	{
+		"date": "23/06/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200623.png"
 	}
 /** inject-images:end(nordeste) */
         ],
@@ -1285,6 +1293,10 @@ export const mapsConfig = [
 	{
 		"date": "22/06/2020",
 		"img": "img/pernambuco/covid19-pe-tem-200622.png"
+	},
+	{
+		"date": "23/06/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200623.png"
 	}
 /** inject-images:end(pernambuco) */
         ],
@@ -1645,6 +1657,10 @@ export const mapsConfig = [
 	{
 		"date": "22/06/2020",
 		"img": "img/rmr/aglomerados-confirmados-22.06app.png"
+	},
+	{
+		"date": "23/06/2020",
+		"img": "img/rmr/aglomerados-confirmados-23.06app.png"
 	}
 /** inject-images:end(rmr) */
         ],
@@ -1745,6 +1761,10 @@ export const mapsConfig = [
 	{
 		"date": "22/06/2020",
 		"img": "img/rmr-recuperados/recuperados-totais-22.06.png"
+	},
+	{
+		"date": "23/06/2020",
+		"img": "img/rmr-recuperados/recuperados-totais-23.06.png"
 	}
 /** inject-images:end(rmr-recuperados) */
         ],
@@ -1785,6 +1805,10 @@ export const mapsConfig = [
 	{
 		"date": "21/06/2020",
 		"img": "img/rmr-ativos/ativos-totais-21.06.png"
+	},
+	{
+		"date": "23/06/2020",
+		"img": "img/rmr-ativos/ativos-totais-23.06.png"
 	}
 /** inject-images:end(rmr-ativos) */
         ],
@@ -1884,59 +1908,63 @@ export const mapsConfig = [
 	},
 	{
 		"date": "01/04/2020",
-		"img": "img/recife/01.04.png"
+		"img": "img/recife/01.04-confnew.png"
 	},
 	{
 		"date": "02/04/2020",
-		"img": "img/recife/02.04.png"
+		"img": "img/recife/02.04-confnew.png"
+	},
+	{
+		"date": "03/04/2020",
+		"img": "img/recife/03.04-confnew.png"
 	},
 	{
 		"date": "04/04/2020",
-		"img": "img/recife/04.04.png"
+		"img": "img/recife/04.04-confnew.png"
 	},
 	{
 		"date": "05/04/2020",
-		"img": "img/recife/05.04.png"
+		"img": "img/recife/05.04-confnew.png"
 	},
 	{
 		"date": "06/04/2020",
-		"img": "img/recife/06.04.png"
+		"img": "img/recife/06.04-confnew.png"
 	},
 	{
 		"date": "07/04/2020",
-		"img": "img/recife/07.04.png"
+		"img": "img/recife/07.04-confnew.png"
 	},
 	{
 		"date": "08/04/2020",
-		"img": "img/recife/08.04.png"
+		"img": "img/recife/08.04-confnew.png"
 	},
 	{
 		"date": "09/04/2020",
-		"img": "img/recife/09.04.png"
+		"img": "img/recife/09.04-confnew.png"
 	},
 	{
 		"date": "10/04/2020",
-		"img": "img/recife/10.04.png"
+		"img": "img/recife/10.04-confnew.png"
 	},
 	{
 		"date": "11/04/2020",
-		"img": "img/recife/11.04.png"
+		"img": "img/recife/11.04-confnew.png"
 	},
 	{
 		"date": "12/04/2020",
-		"img": "img/recife/12.04.png"
+		"img": "img/recife/12.04-confnew.png"
 	},
 	{
 		"date": "13/04/2020",
-		"img": "img/recife/13.04.png"
+		"img": "img/recife/13.04-confnew.png"
 	},
 	{
 		"date": "14/04/2020",
-		"img": "img/recife/14.04.png"
+		"img": "img/recife/14.04-confnew.png"
 	},
 	{
 		"date": "15/04/2020",
-		"img": "img/recife/15.04.png"
+		"img": "img/recife/15.04-confnew.png"
 	},
 	{
 		"date": "16/04/2020",
@@ -2209,6 +2237,10 @@ export const mapsConfig = [
 	{
 		"date": "22/06/2020",
 		"img": "img/recife/22.06b-n.png"
+	},
+	{
+		"date": "23/06/2020",
+		"img": "img/recife/23.06b-n.png"
 	}
 /** inject-images:end(recife) */
         ],
@@ -2577,6 +2609,10 @@ export const mapsConfig = [
 	{
 		"date": "22/06/2020",
 		"img": "img/recife-recuperados/22.06-rectot.png"
+	},
+	{
+		"date": "23/06/2020",
+		"img": "img/recife-recuperados/23.06-rectot.png"
 	}
 /** inject-images:end(recife-recuperados) */
         ],
@@ -2653,6 +2689,10 @@ export const mapsConfig = [
 	{
 		"date": "22/06/2020",
 		"img": "img/recife-ativos/22.06ativos-total.png"
+	},
+	{
+		"date": "23/06/2020",
+		"img": "img/recife-ativos/23.06ativos-total.png"
 	}
 /** inject-images:end(recife-ativos) */
         ],
