@@ -36,17 +36,14 @@ async function getPage() {
 
     return content;
 }
-const { listTimeZones } = require('timezone-support')
-const timeZones = listTimeZones()
-    for (let i of timeZones) {
-        // console.log(i)
-    }
+
 (async () => {
     const page = await getPage();
     const dates = await getInfo(page);
 
-    const targetDate = formatToTimeZone(subDays(setHours(new Date(), 12), 2), 'YYYY-MM-DD', {timeZone: 'America/Sao_Paulo'});
+    const targetDate = formatToTimeZone(subDays(new Date(), 2), 'YYYY-MM-DD', {timeZone: 'America/Sao_Paulo'});
     console.log(targetDate, 'targetDate')
+
     for (let {date, title} of dates) {
 
         if (format(date, 'yyyy-MM-dd') === targetDate) {
