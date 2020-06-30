@@ -39,7 +39,9 @@ async function getPage() {
     const page = await getPage();
     const dates = await getInfo(page);
 
-    const targetDate = subDays(setHours(new Date(), 6), 2);
+    const targetDate = subDays(setHours(new Date(), 12), 2);
+
+    console.log('targetDate', targetDate)
 
     for (let {date, title} of dates) {
         if (format(date, 'yyyy-MM-dd') === format(targetDate, 'yyyy-MM-dd')) {
