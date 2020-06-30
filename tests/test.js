@@ -48,7 +48,8 @@ async function getPage() {
             console.log(`Updated ${date} ${title}`);
         } else {
             console.log(`Out of date ${date} ${title}`);
-            throw new Error(`Out of date ${date} ${title}`)
+            // throw new Error(`Out of date ${date} ${title}`)
+            process.exit(1)
         }
     }
 })();
