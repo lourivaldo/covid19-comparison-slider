@@ -1,8 +1,7 @@
 const puppeteer = require("puppeteer");
 const cheerio = require("cheerio");
 const {parse, subDays, format, setHours} = require("date-fns");
-const { parseFromTimeZone, formatToTimeZone } = require('date-fns-timezone')
-
+const { parseFromTimeZone, formatToTimeZone } = require('date-fns-timezone');
 
 function getInfo(htmlContent) {
     const $ = cheerio.load(htmlContent);
@@ -42,7 +41,6 @@ async function getPage() {
     const dates = await getInfo(page);
 
     const targetDate = formatToTimeZone(subDays(new Date(), 2), 'YYYY-MM-DD', {timeZone: 'America/Sao_Paulo'});
-    console.log(targetDate, 'targetDate')
 
     for (let {date, title} of dates) {
 
