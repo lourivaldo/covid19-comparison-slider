@@ -37,11 +37,11 @@ jobs:
             ${{ runner.os }}-
       - name: Install Packages
         run: npm install
-      - name: Download Images
-        run: |
-          echo '${{ secrets.GOOGLE_TOKEN }}' > google-token.json
-          echo '${{ secrets.GOOGLE_CREDENTIALS }}' > google-credentials.json
-          npm run images
+#      - name: Download Images
+#        run: |
+#          echo '${{ secrets.GOOGLE_TOKEN }}' > google-token.json
+#          echo '${{ secrets.GOOGLE_CREDENTIALS }}' > google-credentials.json
+#          npm run images
 #      - name: Build page
 #        run: npm run build:prod
 #      - name: Generate zip
@@ -94,4 +94,4 @@ jobs:
             ${{ runner.os }}-build-
             ${{ runner.os }}-
       - name: Test Front-end
-        run: echo "Execute puppeteer"
+        run: node .github/workflows/test.js
