@@ -31,5 +31,4 @@ token.json
 google-token.json
 
 deploy.sh
-test.js
 *.zip
