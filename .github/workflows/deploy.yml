@@ -93,5 +93,7 @@ jobs:
             ${{ runner.os }}-build-${{ env.cache-name }}-
             ${{ runner.os }}-build-
             ${{ runner.os }}-
+      - name: Install Packages
+        run: npm install
       - name: Test Front-end
         run: npm run test:prod
