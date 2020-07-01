@@ -494,6 +494,14 @@ export const mapsConfig = [
 	{
 		"date": "27/06/2020",
 		"img": "img/brasil/covid19-brasil-municipios-200627.png"
+	},
+	{
+		"date": "28/06/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200628.png"
+	},
+	{
+		"date": "29/06/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200629.png"
 	}
 /** inject-images:end(brasil) */
         ],
@@ -962,6 +970,14 @@ export const mapsConfig = [
 	{
 		"date": "27/06/2020",
 		"img": "img/nordeste/brasil-nordeste-temporal-200627.png"
+	},
+	{
+		"date": "28/06/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200628.png"
+	},
+	{
+		"date": "29/06/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200629.png"
 	}
 /** inject-images:end(nordeste) */
         ],
@@ -1345,6 +1361,14 @@ export const mapsConfig = [
 	{
 		"date": "27/06/2020",
 		"img": "img/pernambuco/covid19-pe-tem-200627.png"
+	},
+	{
+		"date": "28/06/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200628.png"
+	},
+	{
+		"date": "29/06/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200629.png"
 	}
 /** inject-images:end(pernambuco) */
         ],
@@ -1725,6 +1749,14 @@ export const mapsConfig = [
 	{
 		"date": "27/06/2020",
 		"img": "img/rmr/aglomerados-confirmados-27.06app.png"
+	},
+	{
+		"date": "28/06/2020",
+		"img": "img/rmr/aglomerados-confirmados-28.06app.png"
+	},
+	{
+		"date": "29/06/2020",
+		"img": "img/rmr/aglomerados-confirmados-29.06app.png"
 	}
 /** inject-images:end(rmr) */
         ],
@@ -1845,6 +1877,14 @@ export const mapsConfig = [
 	{
 		"date": "27/06/2020",
 		"img": "img/rmr-recuperados/recuperados-totais-27.06.png"
+	},
+	{
+		"date": "28/06/2020",
+		"img": "img/rmr-recuperados/recuperados-totais-28.06.png"
+	},
+	{
+		"date": "29/06/2020",
+		"img": "img/rmr-recuperados/recuperados-totais-29.06.png"
 	}
 /** inject-images:end(rmr-recuperados) */
         ],
@@ -1905,6 +1945,14 @@ export const mapsConfig = [
 	{
 		"date": "27/06/2020",
 		"img": "img/rmr-ativos/ativos-totais-27.06.png"
+	},
+	{
+		"date": "28/06/2020",
+		"img": "img/rmr-ativos/ativos-totais-28.06.png"
+	},
+	{
+		"date": "29/06/2020",
+		"img": "img/rmr-ativos/ativos-totais-29.06.png"
 	}
 /** inject-images:end(rmr-ativos) */
         ],
@@ -2248,75 +2296,75 @@ export const mapsConfig = [
 	},
 	{
 		"date": "01/06/2020",
-		"img": "img/recife/01.06b.png"
+		"img": "img/recife/01.06-confnew.png"
 	},
 	{
 		"date": "02/06/2020",
-		"img": "img/recife/02.06b.png"
+		"img": "img/recife/02.06-confnew.png"
 	},
 	{
 		"date": "03/06/2020",
-		"img": "img/recife/03.06b.png"
+		"img": "img/recife/03.06-confnew.png"
 	},
 	{
 		"date": "04/06/2020",
-		"img": "img/recife/04.06b.png"
+		"img": "img/recife/04.06-confnew.png"
 	},
 	{
 		"date": "05/06/2020",
-		"img": "img/recife/05.06b.png"
+		"img": "img/recife/05.06-confnew.png"
 	},
 	{
 		"date": "06/06/2020",
-		"img": "img/recife/06.06b.png"
+		"img": "img/recife/06.06-confnew.png"
 	},
 	{
 		"date": "07/06/2020",
-		"img": "img/recife/07.06b.png"
+		"img": "img/recife/07.06-confnew.png"
 	},
 	{
 		"date": "08/06/2020",
-		"img": "img/recife/08.06b.png"
+		"img": "img/recife/08.06-confnew.png"
 	},
 	{
 		"date": "09/06/2020",
-		"img": "img/recife/09.06b.png"
+		"img": "img/recife/09.06-confnew.png"
 	},
 	{
 		"date": "10/06/2020",
-		"img": "img/recife/10.06b-1-.png"
+		"img": "img/recife/10.06-confnew.png"
 	},
 	{
 		"date": "11/06/2020",
-		"img": "img/recife/11.06b.png"
+		"img": "img/recife/11.06-confnew.png"
 	},
 	{
 		"date": "12/06/2020",
-		"img": "img/recife/12.06b.png"
+		"img": "img/recife/12.06-confnew.png"
 	},
 	{
 		"date": "13/06/2020",
-		"img": "img/recife/13.06b.png"
+		"img": "img/recife/13.06-confnew.png"
 	},
 	{
 		"date": "14/06/2020",
-		"img": "img/recife/14.06b.png"
+		"img": "img/recife/14.06-confnew.png"
 	},
 	{
 		"date": "15/06/2020",
-		"img": "img/recife/15.06b.png"
+		"img": "img/recife/15.06-confnew.png"
 	},
 	{
 		"date": "16/06/2020",
-		"img": "img/recife/16.06b.png"
+		"img": "img/recife/16.06-confnew.png"
 	},
 	{
 		"date": "17/06/2020",
-		"img": "img/recife/17.06b.png"
+		"img": "img/recife/17.06-confnew.png"
 	},
 	{
 		"date": "18/06/2020",
-		"img": "img/recife/18.06b.png"
+		"img": "img/recife/18.06-confnew.png"
 	},
 	{
 		"date": "19/06/2020",
@@ -2353,6 +2401,14 @@ export const mapsConfig = [
 	{
 		"date": "27/06/2020",
 		"img": "img/recife/27.06b-n.png"
+	},
+	{
+		"date": "28/06/2020",
+		"img": "img/recife/48-28.06b-n.png"
+	},
+	{
+		"date": "29/06/2020",
+		"img": "img/recife/48-29.06b-n.png"
 	}
 /** inject-images:end(recife) */
         ],
@@ -2741,6 +2797,14 @@ export const mapsConfig = [
 	{
 		"date": "27/06/2020",
 		"img": "img/recife-recuperados/27.06-rectot.png"
+	},
+	{
+		"date": "28/06/2020",
+		"img": "img/recife-recuperados/28.06-rectot.png"
+	},
+	{
+		"date": "29/06/2020",
+		"img": "img/recife-recuperados/52-29.06-rectot.png"
 	}
 /** inject-images:end(recife-recuperados) */
         ],
@@ -2837,6 +2901,14 @@ export const mapsConfig = [
 	{
 		"date": "27/06/2020",
 		"img": "img/recife-ativos/27.06ativos-total.png"
+	},
+	{
+		"date": "28/06/2020",
+		"img": "img/recife-ativos/28.06ativos-total.png"
+	},
+	{
+		"date": "29/06/2020",
+		"img": "img/recife-ativos/29.06ativos-total.png"
 	}
 /** inject-images:end(recife-ativos) */
         ],
