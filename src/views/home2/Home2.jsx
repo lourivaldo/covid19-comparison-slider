@@ -1,14 +1,41 @@
 import React, { Component } from 'react'
 import DatePicker from "react-date-picker";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faCalendarAlt, faUndoAlt} from "@fortawesome/free-solid-svg-icons";
+import {
+    faBackward,
+    faCalendarAlt,
+    faChevronRight,
+    faExpand,
+    faMinus,
+    faPlus,
+    faUndoAlt
+} from "@fortawesome/free-solid-svg-icons";
 import TwentyTwenty from "react-twentytwenty";
 import {compareAsc, compareDesc, format, parse} from "date-fns";
 import {toast} from "react-toastify";
 import "./Home2.scss";
+import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 
 export default class Home2 extends Component {
 
+    state = {
+        aPositionX: 0,
+            aPositionY: 0,
+            aScale: 1,
+
+        // b: {
+        //     positionX: 0,
+        //     positionY: 0,
+        //     scale: 1,
+        // }
+    };
+
+    currentMap = {
+        type: 'before',
+        positionX: null,
+        positionY: null,
+        scale: null,
+    };
     config = null;
 
     defaultBeforeDate = null;
@@ -16,6 +43,9 @@ export default class Home2 extends Component {
 
     timeout = 0;
     timeoutDateInterval = 0;
+
+    setTransformBefore = undefined;
+    setTransformAfter = undefined;
 
     constructor(props) {
         super(props);
@@ -125,10 +155,104 @@ export default class Home2 extends Component {
         });
     }
 
+    onZoomChange(type, args, setTransformFunc) {
+
+        let {positionX, positionY, scale} = args;
+        if (scale === 1 && positionX) {
+
+        }
+        setTransformFunc(positionX, positionY, scale, 1);
+
+        this.currentMap.type = type;
+        this.currentMap.positionX = positionX;
+        this.currentMap.positionY = positionY;
+        this.currentMap.scale = scale;
+    }
+
+    onZoomChangeA(type, args, setTransformFunc) {
+        this.currentType = type;
+        console.log('onZoomChangeA')
+        // console.log(args)
+        let {positionX, positionY, scale} = args;
+        console.log(positionX, positionY, scale)
+        // if (positionX > 0) positionX = 0;
+        // if (positionY > 0) positionY = 0;
+
+        setTransformFunc(positionX, positionY, scale, 1);
+    }
+
     render() {
 
         return (
             <div className="home-2 section" id={`section-${this.config.id}`}>
+
+                <div className=" d-none container-lg">
+                    <div className="w-100">
+                        <TransformWrapper
+                            options={{limitToBounds: true, limitToWrapper: true, minPositionX: 0, minPositionY: 0, centerContent: true}}
+                            zoomOut={{animation: false}}
+                            pan={{
+                                lockAxisX: true,
+                                lockAxisY: true,
+                            }}
+                            defaultScale={1}
+                            // onZoomChange={(args) => this.onZoomChange('before', args, this.setTransformAfter)}
+                            // onWheel={(args) => this.onZoomChange('before',args, this.setTransformAfter)}
+                            // onWheelStop={(args) => this.onZoomChange('before',args, this.setTransformAfter)}
+                            // onPanning={(args) => this.onZoomChange('before',args, this.setTransformAfter)}
+                            // onPanningStop={(args) => this.onZoomChangeA('before',args, this.setTransformAfter)}
+                            // onPinching={(args) => this.onZoomChange('before',args, this.setTransformAfter)}
+                            // onPinchingStop={(args) => this.onZoomChange('before',args, this.setTransformAfter)}
+                        >
+                            {({ zoomIn, zoomOut, resetTransform, setTransform, ...rest }) => {
+                                this.setTransformBefore = setTransform;
+                                return (
+                                    <React.Fragment>
+                                        <div className="tools">
+                                            <button onClick={zoomIn}>+</button>
+                                            <button onClick={zoomOut}>-</button>
+                                            <button onClick={resetTransform}>x</button>
+                                        </div>
+                                        <TransformComponent
+                                            limitToWrapper={true}
+                                            enablePadding={false}
+                                            enableVelocity={false}
+                                            velocityTimeBasedOnMove={false}
+                                            velocityAnimationSpeed={0}
+                                            minVelocity={0}
+                                            minVelocityScale={0}
+                                            velocitySensitivity={0}
+                                        >
+                                            <img src={this.getImage(this.state.beforeDateCurrent)} alt="test" className="w-100"/>
+                                            <div>Example text</div>
+                                        </TransformComponent>
+                                    </React.Fragment>
+                                )
+                            }}
+                        </TransformWrapper>
+
+                        <TransformWrapper
+                            defaultScale={1}
+                        >
+                            {({ zoomIn, zoomOut, resetTransform, setTransform, ...rest }) => {
+                                this.setTransformAfter = setTransform;
+                                return (
+                                    <React.Fragment>
+                                        <div className="tools">
+                                            <button onClick={zoomIn}>+</button>
+                                            <button onClick={zoomOut}>-</button>
+                                            <button onClick={resetTransform}>x</button>
+                                        </div>
+                                        <TransformComponent>
+                                            <img src={this.getImage(this.state.afterDateCurrent)} alt="test" className="w-100"/>
+                                        </TransformComponent>
+                                    </React.Fragment>
+                                )
+                            }}
+                        </TransformWrapper>
+                    </div>
+
+                </div>
 
                 <div className="container-lg">
                     <h4 className="my-4 text-center">{this.config.title}</h4>
@@ -186,7 +310,36 @@ export default class Home2 extends Component {
                             <div className="twentytwenty-wrapper">
                                 <TwentyTwenty
                                     defaultPosition={this.config.defaultPosition}
-                                    left={<img className="cvd-map-image" src={this.getImage(this.state.beforeDateCurrent)} alt="Imagem antes" />}
+                                    // left={<img className="cvd-map-image" src={this.getImage(this.state.beforeDateCurrent)} alt="Imagem antes" />}
+                                    left={(
+                                        <TransformWrapper
+                                            defaultScale={1}
+                                            pinch={{disabled: true}}
+                                            pan={{disabled: true}}
+                                        >
+                                            {({ zoomIn, zoomOut, resetTransform, setTransform, ...rest }) => {
+                                                this.setTransformAfter = setTransform;
+                                                return (
+                                                    <React.Fragment>
+                                                        <div className="flex tools">
+                                                            <button className="btn btn-primary btn-sm" onClick={(e) => { e.stopPropagation(); zoomOut(e)}}>
+                                                                <FontAwesomeIcon icon={faMinus} size={"sm"}/>
+                                                            </button>
+                                                            <button className="btn btn-primary btn-sm" onClick={(e) => { e.stopPropagation(); zoomIn(e)}}>
+                                                                <FontAwesomeIcon icon={faPlus} size={"sm"}/>
+                                                            </button>
+                                                            <button className="btn btn-primary btn-sm" onClick={resetTransform}>
+                                                                <FontAwesomeIcon icon={faExpand} size={"sm"}/>
+                                                            </button>
+                                                        </div>
+                                                        <TransformComponent>
+                                                            <div className="img-content"><img src={this.getImage(this.state.beforeDateCurrent)} alt="test" className="cvd-map-image w-100"/></div>
+                                                        </TransformComponent>
+                                                    </React.Fragment>
+                                                )
+                                            }}
+                                        </TransformWrapper>
+                                    )}
                                     right={<img className="cvd-map-image" src={this.getImage(this.state.afterDateCurrent)} alt="Imagem depois" />}
                                     slider={
                                         <div className="twentytwenty-bar">

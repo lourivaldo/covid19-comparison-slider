@@ -23,7 +23,7 @@ body {
   }
 
   .cvd-map-image {
-    max-width: 100%
+    max-width: 100%;
   }
 
   .twentytwenty-bar {
@@ -221,4 +221,25 @@ body {
     }
   }
 
+}
+
+.twentytwenty-wrapper {
+
+  .tools {
+    z-index: 99999;
+    padding-left: 15px;
+    align-content: start;
+    text-align: left;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    .btn {
+      margin: 2px;
+    }
+  }
+
+  .img-content {
+
+  }
 }

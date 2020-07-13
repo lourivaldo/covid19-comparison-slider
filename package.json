@@ -34,6 +34,7 @@
     "react-slick": "^0.26.1",
     "react-toastify": "^6.0.5",
     "react-twentytwenty": "^1.2.1",
+    "react-zoom-pan-pinch": "^1.6.1",
     "remove-accents": "^0.4.2",
     "simple-git": "^2.5.0",
     "slick-carousel": "^1.8.1",
