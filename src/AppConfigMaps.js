@@ -566,6 +566,22 @@ export const mapsConfig = [
 	{
 		"date": "15/07/2020",
 		"img": "img/brasil/covid19-brasil-municipios-200715.png"
+	},
+	{
+		"date": "16/07/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200716.png"
+	},
+	{
+		"date": "17/07/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200717.png"
+	},
+	{
+		"date": "18/07/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200718.png"
+	},
+	{
+		"date": "19/07/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200719.png"
 	}
 /** inject-images:end(brasil) */
         ],
@@ -1106,6 +1122,22 @@ export const mapsConfig = [
 	{
 		"date": "15/07/2020",
 		"img": "img/nordeste/brasil-nordeste-temporal-200715.png"
+	},
+	{
+		"date": "16/07/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200716.png"
+	},
+	{
+		"date": "17/07/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200717.png"
+	},
+	{
+		"date": "18/07/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200718.png"
+	},
+	{
+		"date": "19/07/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200719.png"
 	}
 /** inject-images:end(nordeste) */
         ],
@@ -1561,6 +1593,22 @@ export const mapsConfig = [
 	{
 		"date": "15/07/2020",
 		"img": "img/pernambuco/covid19-pe-tem-200715.png"
+	},
+	{
+		"date": "16/07/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200716.png"
+	},
+	{
+		"date": "17/07/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200717.png"
+	},
+	{
+		"date": "18/07/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200718.png"
+	},
+	{
+		"date": "19/07/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200719.png"
 	}
 /** inject-images:end(pernambuco) */
         ],
@@ -2013,6 +2061,22 @@ export const mapsConfig = [
 	{
 		"date": "15/07/2020",
 		"img": "img/rmr/aglomerados-confirmados-15.07.png"
+	},
+	{
+		"date": "16/07/2020",
+		"img": "img/rmr/aglomerados-confirmados-16.07.png"
+	},
+	{
+		"date": "17/07/2020",
+		"img": "img/rmr/aglomerados-confirmados-17.07.png"
+	},
+	{
+		"date": "18/07/2020",
+		"img": "img/rmr/aglomerados-confirmados-18.07.png"
+	},
+	{
+		"date": "19/07/2020",
+		"img": "img/rmr/aglomerados-confirmados-19.07.png"
 	}
 /** inject-images:end(rmr) */
         ],
@@ -2205,6 +2269,18 @@ export const mapsConfig = [
 	{
 		"date": "15/07/2020",
 		"img": "img/rmr-recuperados/35-recuperados-totais-15.07.png"
+	},
+	{
+		"date": "16/07/2020",
+		"img": "img/rmr-recuperados/35-recuperados-totais-16.07.png"
+	},
+	{
+		"date": "17/07/2020",
+		"img": "img/rmr-recuperados/35-recuperados-totais-17.07.png"
+	},
+	{
+		"date": "18/07/2020",
+		"img": "img/rmr-recuperados/35-recuperados-totais-18.07.png"
 	}
 /** inject-images:end(rmr-recuperados) */
         ],
@@ -2797,6 +2873,22 @@ export const mapsConfig = [
 	{
 		"date": "15/07/2020",
 		"img": "img/recife/15.07b-n.png"
+	},
+	{
+		"date": "16/07/2020",
+		"img": "img/recife/16.07b-n.png"
+	},
+	{
+		"date": "17/07/2020",
+		"img": "img/recife/17.07b-n.png"
+	},
+	{
+		"date": "18/07/2020",
+		"img": "img/recife/18.07b-n.png"
+	},
+	{
+		"date": "19/07/2020",
+		"img": "img/recife/19.07b-n.png"
 	}
 /** inject-images:end(recife) */
         ],
@@ -3257,6 +3349,22 @@ export const mapsConfig = [
 	{
 		"date": "15/07/2020",
 		"img": "img/recife-recuperados/15.07-rectot.png"
+	},
+	{
+		"date": "16/07/2020",
+		"img": "img/recife-recuperados/16.07-rectot.png"
+	},
+	{
+		"date": "17/07/2020",
+		"img": "img/recife-recuperados/17.07-rectot.png"
+	},
+	{
+		"date": "18/07/2020",
+		"img": "img/recife-recuperados/18.07-rectot.png"
+	},
+	{
+		"date": "19/07/2020",
+		"img": "img/recife-recuperados/60-19.07-rectot.png"
 	}
 /** inject-images:end(recife-recuperados) */
         ],
@@ -3425,6 +3533,22 @@ export const mapsConfig = [
 	{
 		"date": "15/07/2020",
 		"img": "img/recife-ativos/15.07ativos-total.png"
+	},
+	{
+		"date": "16/07/2020",
+		"img": "img/recife-ativos/16.07ativos-total.png"
+	},
+	{
+		"date": "17/07/2020",
+		"img": "img/recife-ativos/17.07ativos-total.png"
+	},
+	{
+		"date": "18/07/2020",
+		"img": "img/recife-ativos/18.07ativos-total.png"
+	},
+	{
+		"date": "19/07/2020",
+		"img": "img/recife-ativos/19.07ativos-total.png"
 	}
 /** inject-images:end(recife-ativos) */
         ],
