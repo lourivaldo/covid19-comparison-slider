@@ -161,10 +161,6 @@ async function listFiles(auth) {
         const folderName = slugify(folder.name.toLowerCase());
         console.log('------------- ', folderName)
 
-        // if (folderName === 'recife') continue;// teste
-        // if (['brasil-gauss'].indexOf(folderName) !== -1) continue;// skip folders
-        // if (['pernambuco'].indexOf(folderName) !== -1) continue;// skip folders
-
         const allContent = await listMyFilesAndFolders(auth, folderId);
 
         for (const c of allContent) {
@@ -208,11 +204,6 @@ async function listFiles(auth) {
     console.log('downloadFiles end')
 }
 
-function filterNew(files) {
-    const date = subHours(new Date(), 28);
-    return files.filter(f => isAfter(new Date(f.modifiedTime), date));
-}
-
 function renameFileName(name) {
     return slugify(name, {lower: true})
         .replace(/_/g, '-')
@@ -220,35 +211,17 @@ function renameFileName(name) {
         .replace(/--/g, '-');
 }
 
-const git = simpleGit();
-
 async function canDownload(file, filePath) {
-    // return filePath === '/var/www/covid19-comparison-slider/public/img/recife-recuperados/24.03-rectot.png';
     const minDate = subHours(new Date(), 28);
 
     let remoteModifiedTime = new Date(file.modifiedTime);
     let localModifiedTime = null;
 
-    // console.time("accessSync");
     try {
         fs.accessSync(filePath, fs.constants.F_OK);
     } catch (e) {
         return true;
     }
-    // console.timeEnd("accessSync");
-
-    // try {
-    //
-    //     console.time("simpleGitaa");
-    //     const log = await git.log({file: filePath});
-    //     console.timeEnd("simpleGitaa");
-    //
-    //     localModifiedTime = parseISO(log.latest.date);
-    //
-    //     // console.log(remoteModifiedTime, localModifiedTime, isAfter(remoteModifiedTime, localModifiedTime))
-    //     return isAfter(remoteModifiedTime, localModifiedTime); // newer version
-    //
-    // } catch (e) {}
 
     return isAfter(remoteModifiedTime, minDate);
 }
@@ -256,8 +229,6 @@ async function canDownload(file, filePath) {
 async function downloadFiles(auth, files) {
 
     for (const file of files) {
-
-        // console.log(file.fromFolder, ' | ', file.typeFolder, ' | ', file.name);
 
         const destinationFile = file.typeFolder === 'confirmados' ?
             path.join(__dirname, 'public', 'img', file.fromFolder, renameFileName(file.name)) :
@@ -267,7 +238,6 @@ async function downloadFiles(auth, files) {
             path.join(__dirname, 'public', 'img', file.fromFolder) :
             path.join(__dirname, 'public', 'img', `${file.fromFolder}-${file.typeFolder}`);
 
-        // console.log('destinationFile ', destinationFile)
         if (!await canDownload(file, destinationFile)) continue;
 
         console.log(`Downloading ${destinationFile}`);
