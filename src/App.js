@@ -64,17 +64,17 @@ class App extends React.Component {
         switch (type) {
             case 'recovered':
                 images = mapConfig.imagesRecovered;
-                captions = mapConfig.captionsRecovered;
+                captions = mapConfig.captionsRecovered || mapConfig.captions;
                 title = mapConfig.titleRecovered;
                 break;
             case 'deaths':
                 images = mapConfig.imagesDeaths;
-                captions = mapConfig.captionsDeaths;
+                captions = mapConfig.captionsDeaths || mapConfig.captions;
                 title = mapConfig.titleDeaths;
                 break;
             case 'actives':
                 images = mapConfig.imagesActives;
-                captions = mapConfig.captionsActives;
+                captions = mapConfig.captionsActives || mapConfig.captions;
                 title = mapConfig.titleActives;
                 break;
             default:
