@@ -137,7 +137,7 @@ async function getFolderByMonth(auth, parentFolderId) {
 }
 
 function canEnterOnFolder(folderName) {
-    return ['confirmados', 'recuperados', 'ativos'].indexOf(folderName.toLowerCase()) !== -1;
+    return ['confirmados', 'recuperados', 'ativos', 'obitos'].indexOf(folderName.toLowerCase()) !== -1;
 }
 
 function canDownloadFolderFiles(folderName) {
@@ -158,7 +158,7 @@ async function listFiles(auth) {
     for (const folder of mainFolders) {
 
         let folderId = folder.id;
-        const folderName = slugify(folder.name.toLowerCase());
+        const folderName = slugify(folder.name.toLowerCase()).replace(/[()]/g, '-');
         console.log('------------- ', folderName)
 
         const allContent = await listMyFilesAndFolders(auth, folderId);

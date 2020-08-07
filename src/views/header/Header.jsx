@@ -189,14 +189,14 @@ export default class Header extends Component {
                                                     ativos <FontAwesomeIcon icon={faChevronRight} size={"sm"}/>
                                                 </button>
                                             </div>
-                                            {/*<div className="col-12">*/}
-                                            {/*    <button onClick={(e) => this.scrollTo(e, `${map.id}-deaths`)} className={"btn btn-outline-danger btn-block btn-sm " + (map.imagesDeaths.length ? '' : 'btn-disabled')}>*/}
-                                            {/*        óbitos <FontAwesomeIcon icon={faChevronRight} size={"sm"}/>*/}
-                                            {/*    </button>*/}
-                                            {/*</div>*/}
+                                            <div className="col-12">
+                                                <button onClick={(e) => this.scrollTo(e, `${map.id}-deaths`)} className={"btn btn-outline-dark btn-block btn-sm " + (map.imagesDeaths.length ? '' : 'btn-disabled')}>
+                                                    óbitos <FontAwesomeIcon icon={faChevronRight} size={"sm"}/>
+                                                </button>
+                                            </div>
                                         </div>
                                         <div className="card-footer">
-                                            <small>Atualizado em <span>{format(map.updatedAt, 'dd/MM/yy')}</span></small>
+                                            { map.updatedAt && <small>Atualizado em <span>{format(map.updatedAt, 'dd/MM/yy')}</span></small>}
                                         </div>
                                     </div>
                                 </div>

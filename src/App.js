@@ -59,22 +59,27 @@ class App extends React.Component {
 
         let images;
         let title;
+        let captions;
 
         switch (type) {
             case 'recovered':
                 images = mapConfig.imagesRecovered;
+                captions = mapConfig.captionsRecovered;
                 title = mapConfig.titleRecovered;
                 break;
             case 'deaths':
                 images = mapConfig.imagesDeaths;
+                captions = mapConfig.captionsDeaths;
                 title = mapConfig.titleDeaths;
                 break;
             case 'actives':
                 images = mapConfig.imagesActives;
+                captions = mapConfig.captionsActives;
                 title = mapConfig.titleActives;
                 break;
             default:
                 images = mapConfig.images;
+                captions = mapConfig.captions;
                 title = mapConfig.title;
         }
 
@@ -82,7 +87,7 @@ class App extends React.Component {
             id: `${mapConfig.id}-${type}`,
             title,
             images,
-            captions: mapConfig.captions,
+            captions,
             defaultPosition: mapConfig.defaultPosition,
         };
     }
@@ -100,9 +105,15 @@ class App extends React.Component {
 
                 <Home2 config={this.getConfig(this.maps[0])}/>
                 <Home config={this.getConfig(this.maps[1])}/>
+
                 <Home2 config={this.getConfig(this.maps[2])}/>
+                <Home2 config={this.getConfig(this.maps[2],'recovered')}/>
+                <Home2 config={this.getConfig(this.maps[2],'actives')}/>
+                <Home2 config={this.getConfig(this.maps[2],'deaths')}/>
+
                 <Slider config={this.getConfig(this.maps[3])}/>
                 <Slider config={this.getConfig(this.maps[3],'recovered')}/>
+
                 <Slider config={this.getConfig(this.maps[4])}/>
                 <Slider config={this.getConfig(this.maps[4],'recovered')}/>
                 <Slider config={this.getConfig(this.maps[4],'actives')}/>
