@@ -658,6 +658,14 @@ export const mapsConfig = [
 	{
 		"date": "07/08/2020",
 		"img": "img/brasil/covid19-brasil-municipios-200807.png"
+	},
+	{
+		"date": "08/08/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200808.png"
+	},
+	{
+		"date": "09/08/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200809.png"
 	}
 /** inject-images:end(brasil) */
         ],
@@ -1290,6 +1298,14 @@ export const mapsConfig = [
 	{
 		"date": "07/08/2020",
 		"img": "img/nordeste/brasil-nordeste-temporal-200807.png"
+	},
+	{
+		"date": "08/08/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200808.png"
+	},
+	{
+		"date": "09/08/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200809.png"
 	}
 /** inject-images:end(nordeste) */
         ],
@@ -1849,6 +1865,14 @@ export const mapsConfig = [
 	{
 		"date": "07/08/2020",
 		"img": "img/pernambuco/covid19-pe-tem-200807.png"
+	},
+	{
+		"date": "08/08/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200808.png"
+	},
+	{
+		"date": "09/08/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200809.png"
 	}
 /** inject-images:end(pernambuco) */
         ],
@@ -2081,6 +2105,14 @@ export const mapsConfig = [
 	{
 		"date": "07/08/2020",
 		"img": "img/pernambuco-recuperados/covid19-pe-rec-200807.png"
+	},
+	{
+		"date": "08/08/2020",
+		"img": "img/pernambuco-recuperados/covid19-pe-rec-200808.png"
+	},
+	{
+		"date": "09/08/2020",
+		"img": "img/pernambuco-recuperados/covid19-pe-rec-200809.png"
 	}
 /** inject-images:end(pernambuco-recuperados) */
         ],
@@ -2313,6 +2345,14 @@ export const mapsConfig = [
 	{
 		"date": "07/08/2020",
 		"img": "img/pernambuco-obitos/covid19-pe-obt-200807.png"
+	},
+	{
+		"date": "08/08/2020",
+		"img": "img/pernambuco-obitos/covid19-pe-obt-200808.png"
+	},
+	{
+		"date": "09/08/2020",
+		"img": "img/pernambuco-obitos/covid19-pe-obt-200809.png"
 	}
 /** inject-images:end(pernambuco-obitos) */
         ],
@@ -2541,6 +2581,14 @@ export const mapsConfig = [
 	{
 		"date": "07/08/2020",
 		"img": "img/pernambuco-ativos/covid19-pe-atv-200807.png"
+	},
+	{
+		"date": "08/08/2020",
+		"img": "img/pernambuco-ativos/covid19-pe-atv-200808.png"
+	},
+	{
+		"date": "09/08/2020",
+		"img": "img/pernambuco-ativos/covid19-pe-atv-200809.png"
 	}
 /** inject-images:end(pernambuco-ativos) */
         ],
@@ -3073,6 +3121,14 @@ export const mapsConfig = [
 	{
 		"date": "07/08/2020",
 		"img": "img/rmr/aglomerados-confirmados-07.08.png"
+	},
+	{
+		"date": "08/08/2020",
+		"img": "img/rmr/aglomerados-confirmados-08.08.png"
+	},
+	{
+		"date": "09/08/2020",
+		"img": "img/rmr/aglomerados-confirmados-09.08.png"
 	}
 /** inject-images:end(rmr) */
         ],
@@ -3357,6 +3413,14 @@ export const mapsConfig = [
 	{
 		"date": "07/08/2020",
 		"img": "img/rmr-recuperados/35-recuperados-totais-07.08.png"
+	},
+	{
+		"date": "08/08/2020",
+		"img": "img/rmr-recuperados/35-recuperados-totais-08.08.png"
+	},
+	{
+		"date": "09/08/2020",
+		"img": "img/rmr-recuperados/35-recuperados-totais-09.08.png"
 	}
 /** inject-images:end(rmr-recuperados) */
         ],
@@ -4041,6 +4105,14 @@ export const mapsConfig = [
 	{
 		"date": "07/08/2020",
 		"img": "img/recife/07.08b-n.png"
+	},
+	{
+		"date": "08/08/2020",
+		"img": "img/recife/08.08b-n.png"
+	},
+	{
+		"date": "09/08/2020",
+		"img": "img/recife/09.08b-n.png"
 	}
 /** inject-images:end(recife) */
         ],
@@ -4593,6 +4665,14 @@ export const mapsConfig = [
 	{
 		"date": "07/08/2020",
 		"img": "img/recife-recuperados/07.08-rectot.png"
+	},
+	{
+		"date": "08/08/2020",
+		"img": "img/recife-recuperados/08.08-rectot.png"
+	},
+	{
+		"date": "09/08/2020",
+		"img": "img/recife-recuperados/09.08-rectot.png"
 	}
 /** inject-images:end(recife-recuperados) */
         ],
@@ -4849,6 +4929,14 @@ export const mapsConfig = [
 	{
 		"date": "07/08/2020",
 		"img": "img/recife-ativos/07.08ativos-total.png"
+	},
+	{
+		"date": "08/08/2020",
+		"img": "img/recife-ativos/08.08ativos-total.png"
+	},
+	{
+		"date": "09/08/2020",
+		"img": "img/recife-ativos/09.08ativos-total.png"
 	}
 /** inject-images:end(recife-ativos) */
         ],
