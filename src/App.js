@@ -68,6 +68,7 @@ class App extends React.Component {
                 title = mapConfig.titleRecovered;
                 break;
             case 'deaths':
+                console.log(mapConfig)
                 images = mapConfig.imagesDeaths;
                 captions = mapConfig.captionsDeaths || mapConfig.captions;
                 title = mapConfig.titleDeaths;
@@ -94,6 +95,8 @@ class App extends React.Component {
 
     render() {
 
+        console.log(this.getConfig(this.maps[4],'deaths'))
+
         return (
             <div className="App">
                 <Header configs={this.maps}/>
@@ -113,11 +116,12 @@ class App extends React.Component {
 
                 <Slider config={this.getConfig(this.maps[3])}/>
                 <Slider config={this.getConfig(this.maps[3],'recovered')}/>
+                <Slider config={this.getConfig(this.maps[3],'deaths')}/>
+
 
                 <Slider config={this.getConfig(this.maps[4])}/>
                 <Slider config={this.getConfig(this.maps[4],'recovered')}/>
                 <Slider config={this.getConfig(this.maps[4],'actives')}/>
-                <Slider config={this.getConfig(this.maps[4],'deaths')}/>
 
                 <button onClick={this.topFunction} id="toTopBtn" title="Go to top">
                     <FontAwesomeIcon icon={faChevronUp} size={"lg"}/>

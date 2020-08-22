@@ -3774,7 +3774,27 @@ export const mapsConfig = [
         ],
         imagesDeaths: [
             /** inject-images:start(rmr-obitos) */
-            /** inject-images:end(rmr-obitos) */
+	{
+		"date": "01/04/2020",
+		"img": "img/rmr-obitos/obitos-01.04.png"
+	},
+	{
+		"date": "15/05/2020",
+		"img": "img/rmr-obitos/obitos-15.05.png"
+	},
+	{
+		"date": "15/06/2020",
+		"img": "img/rmr-obitos/obitos-15.06.png"
+	},
+	{
+		"date": "15/07/2020",
+		"img": "img/rmr-obitos/obitos-15.07.png"
+	},
+	{
+		"date": "20/08/2020",
+		"img": "img/rmr-obitos/obitos-20.08.png"
+	}
+/** inject-images:end(rmr-obitos) */
         ],
         imagesActives: [
             /** inject-images:start(rmr-ativos) */
