@@ -61,6 +61,7 @@ const configs = [
     {folder: 'rmr',             pattern: /(\d{2}\.\d{2})/i, patternDate: 'dd.MM'},
     {folder: 'rmr-recuperados', pattern: /(\d{2}\.\d{2})/i, patternDate: 'dd.MM'},
     {folder: 'rmr-ativos',      pattern: /(\d{2}\.\d{2})/i, patternDate: 'dd.MM'},
+    {folder: 'rmr-obitos',      pattern: /(\d{2}\.\d{2})/i, patternDate: 'dd.MM'},
 
     {folder: 'recife',             pattern: /(\d{2}\.\d{2})/i, patternDate: 'dd.MM'},
     {folder: 'recife-recuperados', pattern: /(\d{2}\.\d{2})/i, patternDate: 'dd.MM'},
