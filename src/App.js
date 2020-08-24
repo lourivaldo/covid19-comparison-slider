@@ -116,6 +116,7 @@ class App extends React.Component {
 
                 <Slider config={this.getConfig(this.maps[3])}/>
                 <Slider config={this.getConfig(this.maps[3],'recovered')}/>
+                <Slider config={this.getConfig(this.maps[3],'actives')}/>
                 <Slider config={this.getConfig(this.maps[3],'deaths')}/>
 
 
