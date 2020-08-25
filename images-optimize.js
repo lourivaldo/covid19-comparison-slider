@@ -92,11 +92,16 @@ const configs = [
     {path: path.join(__dirname, 'public', 'img', 'brasil'),},
     {path: path.join(__dirname, 'public', 'img', 'nordeste'),},
     {path: path.join(__dirname, 'public', 'img', 'pernambuco'),},
+    {path: path.join(__dirname, 'public', 'img', 'pernambuco-ativos'),},
+    {path: path.join(__dirname, 'public', 'img', 'pernambuco-obitos'),},
+    {path: path.join(__dirname, 'public', 'img', 'pernambuco-recuperados'),},
     {path: path.join(__dirname, 'public', 'img', 'rmr'),},
-    {path: path.join(__dirname, 'public', 'img', 'rmr-recuperados'),},
     {path: path.join(__dirname, 'public', 'img', 'rmr-ativos'),},
+    {path: path.join(__dirname, 'public', 'img', 'rmr-obitos'),},
+    {path: path.join(__dirname, 'public', 'img', 'rmr-recuperados'),},
     {path: path.join(__dirname, 'public', 'img', 'recife'),},
     {path: path.join(__dirname, 'public', 'img', 'recife-ativos'),},
+    {path: path.join(__dirname, 'public', 'img', 'recife-obitos'),},
     {path: path.join(__dirname, 'public', 'img', 'recife-recuperados'),},
 ];
 

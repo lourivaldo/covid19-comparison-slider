@@ -66,6 +66,7 @@ const configs = [
     {folder: 'recife',             pattern: /(\d{2}\.\d{2})/i, patternDate: 'dd.MM'},
     {folder: 'recife-recuperados', pattern: /(\d{2}\.\d{2})/i, patternDate: 'dd.MM'},
     {folder: 'recife-ativos',      pattern: /(\d{2}\.\d{2})/i, patternDate: 'dd.MM'},
+    {folder: 'recife-obitos',      pattern: /(\d{2}\.\d{2})/i, patternDate: 'dd.MM'},
 ];
 
 configs.map(config => inject(config));

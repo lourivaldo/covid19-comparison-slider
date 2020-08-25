@@ -123,6 +123,7 @@ class App extends React.Component {
                 <Slider config={this.getConfig(this.maps[4])}/>
                 <Slider config={this.getConfig(this.maps[4],'recovered')}/>
                 <Slider config={this.getConfig(this.maps[4],'actives')}/>
+                <Slider config={this.getConfig(this.maps[4],'deaths')}/>
 
                 <button onClick={this.topFunction} id="toTopBtn" title="Go to top">
                     <FontAwesomeIcon icon={faChevronUp} size={"lg"}/>
