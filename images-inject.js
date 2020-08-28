@@ -69,4 +69,5 @@ const configs = [
     {folder: 'recife-obitos',      pattern: /(\d{2}\.\d{2})/i, patternDate: 'dd.MM'},
 ];
 
+
 configs.map(config => inject(config));
