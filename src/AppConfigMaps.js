@@ -778,6 +778,18 @@ export const mapsConfig = [
 	{
 		"date": "06/09/2020",
 		"img": "img/brasil/covid19-brasil-municipios-200906.png"
+	},
+	{
+		"date": "07/09/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200907.png"
+	},
+	{
+		"date": "08/09/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200908.png"
+	},
+	{
+		"date": "09/09/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200909.png"
 	}
 /** inject-images:end(brasil) */
         ],
@@ -1530,6 +1542,18 @@ export const mapsConfig = [
 	{
 		"date": "06/09/2020",
 		"img": "img/nordeste/brasil-nordeste-temporal-200906.png"
+	},
+	{
+		"date": "07/09/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200907.png"
+	},
+	{
+		"date": "08/09/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200908.png"
+	},
+	{
+		"date": "09/09/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200909.png"
 	}
 /** inject-images:end(nordeste) */
         ],
@@ -2209,6 +2233,18 @@ export const mapsConfig = [
 	{
 		"date": "06/09/2020",
 		"img": "img/pernambuco/covid19-pe-tem-200906.png"
+	},
+	{
+		"date": "07/09/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200907.png"
+	},
+	{
+		"date": "08/09/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200908.png"
+	},
+	{
+		"date": "09/09/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200909.png"
 	}
 /** inject-images:end(pernambuco) */
         ],
@@ -2561,6 +2597,18 @@ export const mapsConfig = [
 	{
 		"date": "06/09/2020",
 		"img": "img/pernambuco-recuperados/covid19-pe-rec-200906.png"
+	},
+	{
+		"date": "07/09/2020",
+		"img": "img/pernambuco-recuperados/covid19-pe-rec-200907.png"
+	},
+	{
+		"date": "08/09/2020",
+		"img": "img/pernambuco-recuperados/covid19-pe-rec-200908.png"
+	},
+	{
+		"date": "09/09/2020",
+		"img": "img/pernambuco-recuperados/covid19-pe-rec-200909.png"
 	}
 /** inject-images:end(pernambuco-recuperados) */
         ],
@@ -2913,6 +2961,18 @@ export const mapsConfig = [
 	{
 		"date": "06/09/2020",
 		"img": "img/pernambuco-obitos/covid19-pe-obt-200906.png"
+	},
+	{
+		"date": "07/09/2020",
+		"img": "img/pernambuco-obitos/covid19-pe-obt-200907.png"
+	},
+	{
+		"date": "08/09/2020",
+		"img": "img/pernambuco-obitos/covid19-pe-obt-200908.png"
+	},
+	{
+		"date": "09/09/2020",
+		"img": "img/pernambuco-obitos/covid19-pe-obt-200909.png"
 	}
 /** inject-images:end(pernambuco-obitos) */
         ],
@@ -3261,6 +3321,18 @@ export const mapsConfig = [
 	{
 		"date": "06/09/2020",
 		"img": "img/pernambuco-ativos/covid19-pe-atv-200906.png"
+	},
+	{
+		"date": "07/09/2020",
+		"img": "img/pernambuco-ativos/covid19-pe-atv-200907.png"
+	},
+	{
+		"date": "08/09/2020",
+		"img": "img/pernambuco-ativos/covid19-pe-atv-200908.png"
+	},
+	{
+		"date": "09/09/2020",
+		"img": "img/pernambuco-ativos/covid19-pe-atv-200909.png"
 	}
 /** inject-images:end(pernambuco-ativos) */
         ],
@@ -3917,6 +3989,14 @@ export const mapsConfig = [
 	{
 		"date": "07/09/2020",
 		"img": "img/rmr/aglomerados-confirmados-07.09.png"
+	},
+	{
+		"date": "08/09/2020",
+		"img": "img/rmr/aglomerados-confirmados-08.09.png"
+	},
+	{
+		"date": "09/09/2020",
+		"img": "img/rmr/aglomerados-confirmados-09.09.png"
 	}
 /** inject-images:end(rmr) */
         ],
@@ -4325,6 +4405,14 @@ export const mapsConfig = [
 	{
 		"date": "07/09/2020",
 		"img": "img/rmr-recuperados/35-recuperados-totais-07.09.png"
+	},
+	{
+		"date": "08/09/2020",
+		"img": "img/rmr-recuperados/35-recuperados-totais-08.09.png"
+	},
+	{
+		"date": "09/09/2020",
+		"img": "img/rmr-recuperados/35-recuperados-totais-09.09.png"
 	}
 /** inject-images:end(rmr-recuperados) */
         ],
@@ -4421,6 +4509,14 @@ export const mapsConfig = [
 	{
 		"date": "07/09/2020",
 		"img": "img/rmr-obitos/obitos-07.09.png"
+	},
+	{
+		"date": "08/09/2020",
+		"img": "img/rmr-obitos/obitos-08.09.png"
+	},
+	{
+		"date": "09/09/2020",
+		"img": "img/rmr-obitos/obitos-09.09.png"
 	}
 /** inject-images:end(rmr-obitos) */
         ],
@@ -4581,6 +4677,14 @@ export const mapsConfig = [
 	{
 		"date": "07/09/2020",
 		"img": "img/rmr-ativos/ativos-totais-07.09.png"
+	},
+	{
+		"date": "08/09/2020",
+		"img": "img/rmr-ativos/ativos-totais-08.09.png"
+	},
+	{
+		"date": "09/09/2020",
+		"img": "img/rmr-ativos/ativos-totais-09.09.png"
 	}
 /** inject-images:end(rmr-ativos) */
         ],
@@ -5317,6 +5421,14 @@ export const mapsConfig = [
 	{
 		"date": "07/09/2020",
 		"img": "img/recife/07.09b-n.png"
+	},
+	{
+		"date": "08/09/2020",
+		"img": "img/recife/08.09b-n.png"
+	},
+	{
+		"date": "09/09/2020",
+		"img": "img/recife/09.09b-n.png"
 	}
 /** inject-images:end(recife) */
         ],
@@ -5993,6 +6105,14 @@ export const mapsConfig = [
 	{
 		"date": "07/09/2020",
 		"img": "img/recife-recuperados/07.09-rectot.png"
+	},
+	{
+		"date": "08/09/2020",
+		"img": "img/recife-recuperados/08.09-rectot.png"
+	},
+	{
+		"date": "09/09/2020",
+		"img": "img/recife-recuperados/09.09-rectot.png"
 	}
 /** inject-images:end(recife-recuperados) */
         ],
@@ -6357,6 +6477,14 @@ export const mapsConfig = [
 	{
 		"date": "07/09/2020",
 		"img": "img/recife-obitos/obito-07.09-.png"
+	},
+	{
+		"date": "08/09/2020",
+		"img": "img/recife-obitos/obito-08.09-.png"
+	},
+	{
+		"date": "09/09/2020",
+		"img": "img/recife-obitos/obito-09.09-.png"
 	}
 /** inject-images:end(recife-obitos) */
         ],
@@ -6733,6 +6861,14 @@ export const mapsConfig = [
 	{
 		"date": "07/09/2020",
 		"img": "img/recife-ativos/07.09ativos-total.png"
+	},
+	{
+		"date": "08/09/2020",
+		"img": "img/recife-ativos/08.09ativos-total.png"
+	},
+	{
+		"date": "09/09/2020",
+		"img": "img/recife-ativos/09.09ativos-total.png"
 	}
 /** inject-images:end(recife-ativos) */
         ],
