@@ -3826,6 +3826,7 @@ export const mapsConfig = [
 		"date": "17/04/2020",
 		"img": "img/rmr/aglomerados-confirmados-17.04.png"
 	},
+
 	{
 		"date": "18/04/2020",
 		"img": "img/rmr/aglomerados-confirmados-18.04.png"
