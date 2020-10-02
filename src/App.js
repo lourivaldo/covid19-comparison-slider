@@ -107,7 +107,10 @@ class App extends React.Component {
                 <Geodinamica></Geodinamica>
 
                 <Home2 config={this.getConfig(this.maps[0])}/>
+                <Home2 config={this.getConfig(this.maps[0], 'deaths')}/>
+
                 <Home config={this.getConfig(this.maps[1])}/>
+                <Home config={this.getConfig(this.maps[1], 'deaths')}/>
 
                 <Home2 config={this.getConfig(this.maps[2])}/>
                 <Home2 config={this.getConfig(this.maps[2],'recovered')}/>

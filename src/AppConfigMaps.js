@@ -856,8 +856,24 @@ export const mapsConfig = [
 		"img": "img/brasil/covid19-brasil-municipios-200925.png"
 	},
 	{
+		"date": "26/09/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200926.png"
+	},
+	{
 		"date": "27/09/2020",
 		"img": "img/brasil/covid19-brasil-municipios-200927.png"
+	},
+	{
+		"date": "28/09/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200928.png"
+	},
+	{
+		"date": "29/09/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200929.png"
+	},
+	{
+		"date": "30/09/2020",
+		"img": "img/brasil/covid19-brasil-municipios-200930.png"
 	}
 /** inject-images:end(brasil) */
         ],
@@ -867,7 +883,863 @@ export const mapsConfig = [
         ],
         imagesDeaths: [
             /** inject-images:start(brasil-obitos) */
-            /** inject-images:end(brasil-obitos) */
+	{
+		"date": "01/03/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200301.png"
+	},
+	{
+		"date": "02/03/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200302.png"
+	},
+	{
+		"date": "03/03/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200303.png"
+	},
+	{
+		"date": "04/03/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200304.png"
+	},
+	{
+		"date": "05/03/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200305.png"
+	},
+	{
+		"date": "06/03/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200306.png"
+	},
+	{
+		"date": "07/03/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200307.png"
+	},
+	{
+		"date": "08/03/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200308.png"
+	},
+	{
+		"date": "09/03/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200309.png"
+	},
+	{
+		"date": "10/03/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200310.png"
+	},
+	{
+		"date": "11/03/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200311.png"
+	},
+	{
+		"date": "12/03/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200312.png"
+	},
+	{
+		"date": "13/03/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200313.png"
+	},
+	{
+		"date": "14/03/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200314.png"
+	},
+	{
+		"date": "15/03/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200315.png"
+	},
+	{
+		"date": "16/03/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200316.png"
+	},
+	{
+		"date": "17/03/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200317.png"
+	},
+	{
+		"date": "18/03/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200318.png"
+	},
+	{
+		"date": "19/03/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200319.png"
+	},
+	{
+		"date": "20/03/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200320.png"
+	},
+	{
+		"date": "21/03/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200321.png"
+	},
+	{
+		"date": "22/03/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200322.png"
+	},
+	{
+		"date": "23/03/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200323.png"
+	},
+	{
+		"date": "24/03/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200324.png"
+	},
+	{
+		"date": "25/03/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200325.png"
+	},
+	{
+		"date": "26/03/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200326.png"
+	},
+	{
+		"date": "27/03/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200327.png"
+	},
+	{
+		"date": "28/03/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200328.png"
+	},
+	{
+		"date": "29/03/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200329.png"
+	},
+	{
+		"date": "30/03/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200330.png"
+	},
+	{
+		"date": "31/03/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200331.png"
+	},
+	{
+		"date": "01/04/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200401.png"
+	},
+	{
+		"date": "02/04/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200402.png"
+	},
+	{
+		"date": "03/04/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200403.png"
+	},
+	{
+		"date": "04/04/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200404.png"
+	},
+	{
+		"date": "05/04/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200405.png"
+	},
+	{
+		"date": "06/04/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200406.png"
+	},
+	{
+		"date": "07/04/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200407.png"
+	},
+	{
+		"date": "08/04/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200408.png"
+	},
+	{
+		"date": "09/04/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200409.png"
+	},
+	{
+		"date": "10/04/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200410.png"
+	},
+	{
+		"date": "11/04/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200411.png"
+	},
+	{
+		"date": "12/04/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200412.png"
+	},
+	{
+		"date": "13/04/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200413.png"
+	},
+	{
+		"date": "14/04/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200414.png"
+	},
+	{
+		"date": "15/04/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200415.png"
+	},
+	{
+		"date": "16/04/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200416.png"
+	},
+	{
+		"date": "17/04/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200417.png"
+	},
+	{
+		"date": "18/04/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200418.png"
+	},
+	{
+		"date": "19/04/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200419.png"
+	},
+	{
+		"date": "20/04/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200420.png"
+	},
+	{
+		"date": "21/04/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200421.png"
+	},
+	{
+		"date": "22/04/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200422.png"
+	},
+	{
+		"date": "23/04/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200423.png"
+	},
+	{
+		"date": "24/04/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200424.png"
+	},
+	{
+		"date": "25/04/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200425.png"
+	},
+	{
+		"date": "26/04/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200426.png"
+	},
+	{
+		"date": "27/04/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200427.png"
+	},
+	{
+		"date": "28/04/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200428.png"
+	},
+	{
+		"date": "29/04/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200429.png"
+	},
+	{
+		"date": "30/04/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200430.png"
+	},
+	{
+		"date": "01/05/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200501.png"
+	},
+	{
+		"date": "02/05/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200502.png"
+	},
+	{
+		"date": "03/05/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200503.png"
+	},
+	{
+		"date": "04/05/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200504.png"
+	},
+	{
+		"date": "05/05/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200505.png"
+	},
+	{
+		"date": "06/05/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200506.png"
+	},
+	{
+		"date": "07/05/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200507.png"
+	},
+	{
+		"date": "08/05/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200508.png"
+	},
+	{
+		"date": "09/05/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200509.png"
+	},
+	{
+		"date": "10/05/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200510.png"
+	},
+	{
+		"date": "11/05/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200511.png"
+	},
+	{
+		"date": "12/05/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200512.png"
+	},
+	{
+		"date": "13/05/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200513.png"
+	},
+	{
+		"date": "14/05/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200514.png"
+	},
+	{
+		"date": "15/05/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200515.png"
+	},
+	{
+		"date": "16/05/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200516.png"
+	},
+	{
+		"date": "17/05/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200517.png"
+	},
+	{
+		"date": "18/05/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200518.png"
+	},
+	{
+		"date": "19/05/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200519.png"
+	},
+	{
+		"date": "20/05/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200520.png"
+	},
+	{
+		"date": "21/05/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200521.png"
+	},
+	{
+		"date": "22/05/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200522.png"
+	},
+	{
+		"date": "23/05/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200523.png"
+	},
+	{
+		"date": "24/05/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200524.png"
+	},
+	{
+		"date": "25/05/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200525.png"
+	},
+	{
+		"date": "26/05/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200526.png"
+	},
+	{
+		"date": "27/05/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200527.png"
+	},
+	{
+		"date": "28/05/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200528.png"
+	},
+	{
+		"date": "29/05/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200529.png"
+	},
+	{
+		"date": "30/05/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200530.png"
+	},
+	{
+		"date": "31/05/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200531.png"
+	},
+	{
+		"date": "01/06/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200601.png"
+	},
+	{
+		"date": "02/06/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200602.png"
+	},
+	{
+		"date": "03/06/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200603.png"
+	},
+	{
+		"date": "04/06/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200604.png"
+	},
+	{
+		"date": "05/06/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200605.png"
+	},
+	{
+		"date": "06/06/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200606.png"
+	},
+	{
+		"date": "07/06/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200607.png"
+	},
+	{
+		"date": "08/06/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200608.png"
+	},
+	{
+		"date": "09/06/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200609.png"
+	},
+	{
+		"date": "10/06/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200610.png"
+	},
+	{
+		"date": "11/06/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200611.png"
+	},
+	{
+		"date": "12/06/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200612.png"
+	},
+	{
+		"date": "13/06/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200613.png"
+	},
+	{
+		"date": "14/06/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200614.png"
+	},
+	{
+		"date": "15/06/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200615.png"
+	},
+	{
+		"date": "16/06/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200616.png"
+	},
+	{
+		"date": "17/06/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200617.png"
+	},
+	{
+		"date": "18/06/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200618.png"
+	},
+	{
+		"date": "19/06/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200619.png"
+	},
+	{
+		"date": "20/06/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200620.png"
+	},
+	{
+		"date": "21/06/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200621.png"
+	},
+	{
+		"date": "22/06/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200622.png"
+	},
+	{
+		"date": "23/06/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200623.png"
+	},
+	{
+		"date": "24/06/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200624.png"
+	},
+	{
+		"date": "25/06/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200625.png"
+	},
+	{
+		"date": "26/06/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200626.png"
+	},
+	{
+		"date": "27/06/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200627.png"
+	},
+	{
+		"date": "28/06/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200628.png"
+	},
+	{
+		"date": "29/06/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200629.png"
+	},
+	{
+		"date": "30/06/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200630.png"
+	},
+	{
+		"date": "01/07/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200701.png"
+	},
+	{
+		"date": "02/07/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200702.png"
+	},
+	{
+		"date": "03/07/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200703.png"
+	},
+	{
+		"date": "04/07/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200704.png"
+	},
+	{
+		"date": "05/07/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200705.png"
+	},
+	{
+		"date": "06/07/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200706.png"
+	},
+	{
+		"date": "07/07/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200707.png"
+	},
+	{
+		"date": "08/07/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200708.png"
+	},
+	{
+		"date": "09/07/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200709.png"
+	},
+	{
+		"date": "10/07/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200710.png"
+	},
+	{
+		"date": "11/07/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200711.png"
+	},
+	{
+		"date": "12/07/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200712.png"
+	},
+	{
+		"date": "13/07/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200713.png"
+	},
+	{
+		"date": "14/07/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200714.png"
+	},
+	{
+		"date": "15/07/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200715.png"
+	},
+	{
+		"date": "16/07/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200716.png"
+	},
+	{
+		"date": "17/07/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200717.png"
+	},
+	{
+		"date": "18/07/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200718.png"
+	},
+	{
+		"date": "19/07/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200719.png"
+	},
+	{
+		"date": "20/07/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200720.png"
+	},
+	{
+		"date": "21/07/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200721.png"
+	},
+	{
+		"date": "22/07/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200722.png"
+	},
+	{
+		"date": "23/07/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200723.png"
+	},
+	{
+		"date": "24/07/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200724.png"
+	},
+	{
+		"date": "25/07/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200725.png"
+	},
+	{
+		"date": "26/07/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200726.png"
+	},
+	{
+		"date": "27/07/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200727.png"
+	},
+	{
+		"date": "28/07/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200728.png"
+	},
+	{
+		"date": "29/07/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200729.png"
+	},
+	{
+		"date": "30/07/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200730.png"
+	},
+	{
+		"date": "31/07/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200731.png"
+	},
+	{
+		"date": "01/08/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200801.png"
+	},
+	{
+		"date": "02/08/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200802.png"
+	},
+	{
+		"date": "03/08/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200803.png"
+	},
+	{
+		"date": "04/08/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200804.png"
+	},
+	{
+		"date": "05/08/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200805.png"
+	},
+	{
+		"date": "06/08/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200806.png"
+	},
+	{
+		"date": "07/08/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200807.png"
+	},
+	{
+		"date": "08/08/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200808.png"
+	},
+	{
+		"date": "09/08/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200809.png"
+	},
+	{
+		"date": "10/08/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200810.png"
+	},
+	{
+		"date": "11/08/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200811.png"
+	},
+	{
+		"date": "12/08/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200812.png"
+	},
+	{
+		"date": "13/08/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200813.png"
+	},
+	{
+		"date": "14/08/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200814.png"
+	},
+	{
+		"date": "15/08/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200815.png"
+	},
+	{
+		"date": "16/08/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200816.png"
+	},
+	{
+		"date": "17/08/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200817.png"
+	},
+	{
+		"date": "18/08/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200818.png"
+	},
+	{
+		"date": "19/08/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200819.png"
+	},
+	{
+		"date": "20/08/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200820.png"
+	},
+	{
+		"date": "21/08/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200821.png"
+	},
+	{
+		"date": "22/08/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200822.png"
+	},
+	{
+		"date": "23/08/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200823.png"
+	},
+	{
+		"date": "24/08/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200824.png"
+	},
+	{
+		"date": "25/08/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200825.png"
+	},
+	{
+		"date": "26/08/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200826.png"
+	},
+	{
+		"date": "27/08/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200827.png"
+	},
+	{
+		"date": "28/08/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200828.png"
+	},
+	{
+		"date": "29/08/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200829.png"
+	},
+	{
+		"date": "30/08/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200830.png"
+	},
+	{
+		"date": "31/08/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200831.png"
+	},
+	{
+		"date": "01/09/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200901.png"
+	},
+	{
+		"date": "02/09/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200902.png"
+	},
+	{
+		"date": "03/09/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200903.png"
+	},
+	{
+		"date": "04/09/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200904.png"
+	},
+	{
+		"date": "05/09/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200905.png"
+	},
+	{
+		"date": "06/09/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200906.png"
+	},
+	{
+		"date": "07/09/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200907.png"
+	},
+	{
+		"date": "08/09/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200908.png"
+	},
+	{
+		"date": "09/09/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200909.png"
+	},
+	{
+		"date": "10/09/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200910.png"
+	},
+	{
+		"date": "11/09/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200911.png"
+	},
+	{
+		"date": "12/09/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200912.png"
+	},
+	{
+		"date": "13/09/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200913.png"
+	},
+	{
+		"date": "14/09/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200914.png"
+	},
+	{
+		"date": "15/09/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200915.png"
+	},
+	{
+		"date": "16/09/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200916.png"
+	},
+	{
+		"date": "17/09/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200917.png"
+	},
+	{
+		"date": "18/09/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200918.png"
+	},
+	{
+		"date": "19/09/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200919.png"
+	},
+	{
+		"date": "20/09/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200920.png"
+	},
+	{
+		"date": "21/09/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200921.png"
+	},
+	{
+		"date": "22/09/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200922.png"
+	},
+	{
+		"date": "23/09/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200923.png"
+	},
+	{
+		"date": "24/09/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200924.png"
+	},
+	{
+		"date": "25/09/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200925.png"
+	},
+	{
+		"date": "26/09/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200926.png"
+	},
+	{
+		"date": "27/09/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200927.png"
+	},
+	{
+		"date": "28/09/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200928.png"
+	},
+	{
+		"date": "29/09/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200929.png"
+	},
+	{
+		"date": "30/09/2020",
+		"img": "img/brasil-obitos/covid19-brasil-municipios-obt-200930.png"
+	}
+/** inject-images:end(brasil-obitos) */
         ],
         imagesActives: [
             /** inject-images:start(brasil-ativos) */
@@ -1690,6 +2562,22 @@ export const mapsConfig = [
 	{
 		"date": "26/09/2020",
 		"img": "img/nordeste/brasil-nordeste-temporal-200926.png"
+	},
+	{
+		"date": "27/09/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200927.png"
+	},
+	{
+		"date": "28/09/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200928.png"
+	},
+	{
+		"date": "29/09/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200929.png"
+	},
+	{
+		"date": "30/09/2020",
+		"img": "img/nordeste/brasil-nordeste-temporal-200930.png"
 	}
 /** inject-images:end(nordeste) */
         ],
@@ -1699,7 +2587,863 @@ export const mapsConfig = [
         ],
         imagesDeaths: [
             /** inject-images:start(nordeste-obitos) */
-            /** inject-images:end(nordeste-obitos) */
+	{
+		"date": "01/03/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200301.png"
+	},
+	{
+		"date": "02/03/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200302.png"
+	},
+	{
+		"date": "03/03/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200303.png"
+	},
+	{
+		"date": "04/03/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200304.png"
+	},
+	{
+		"date": "05/03/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200305.png"
+	},
+	{
+		"date": "06/03/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200306.png"
+	},
+	{
+		"date": "07/03/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200307.png"
+	},
+	{
+		"date": "08/03/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200308.png"
+	},
+	{
+		"date": "09/03/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200309.png"
+	},
+	{
+		"date": "10/03/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200310.png"
+	},
+	{
+		"date": "11/03/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200311.png"
+	},
+	{
+		"date": "12/03/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200312.png"
+	},
+	{
+		"date": "13/03/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200313.png"
+	},
+	{
+		"date": "14/03/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200314.png"
+	},
+	{
+		"date": "15/03/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200315.png"
+	},
+	{
+		"date": "16/03/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200316.png"
+	},
+	{
+		"date": "17/03/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200317.png"
+	},
+	{
+		"date": "18/03/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200318.png"
+	},
+	{
+		"date": "19/03/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200319.png"
+	},
+	{
+		"date": "20/03/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200320.png"
+	},
+	{
+		"date": "21/03/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200321.png"
+	},
+	{
+		"date": "22/03/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200322.png"
+	},
+	{
+		"date": "23/03/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200323.png"
+	},
+	{
+		"date": "24/03/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200324.png"
+	},
+	{
+		"date": "25/03/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200325.png"
+	},
+	{
+		"date": "26/03/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200326.png"
+	},
+	{
+		"date": "27/03/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200327.png"
+	},
+	{
+		"date": "28/03/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200328.png"
+	},
+	{
+		"date": "29/03/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200329.png"
+	},
+	{
+		"date": "30/03/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200330.png"
+	},
+	{
+		"date": "31/03/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200331.png"
+	},
+	{
+		"date": "01/04/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200401.png"
+	},
+	{
+		"date": "02/04/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200402.png"
+	},
+	{
+		"date": "03/04/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200403.png"
+	},
+	{
+		"date": "04/04/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200404.png"
+	},
+	{
+		"date": "05/04/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200405.png"
+	},
+	{
+		"date": "06/04/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200406.png"
+	},
+	{
+		"date": "07/04/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200407.png"
+	},
+	{
+		"date": "08/04/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200408.png"
+	},
+	{
+		"date": "09/04/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200409.png"
+	},
+	{
+		"date": "10/04/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200410.png"
+	},
+	{
+		"date": "11/04/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200411.png"
+	},
+	{
+		"date": "12/04/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200412.png"
+	},
+	{
+		"date": "13/04/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200413.png"
+	},
+	{
+		"date": "14/04/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200414.png"
+	},
+	{
+		"date": "15/04/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200415.png"
+	},
+	{
+		"date": "16/04/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200416.png"
+	},
+	{
+		"date": "17/04/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200417.png"
+	},
+	{
+		"date": "18/04/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200418.png"
+	},
+	{
+		"date": "19/04/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200419.png"
+	},
+	{
+		"date": "20/04/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200420.png"
+	},
+	{
+		"date": "21/04/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200421.png"
+	},
+	{
+		"date": "22/04/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200422.png"
+	},
+	{
+		"date": "23/04/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200423.png"
+	},
+	{
+		"date": "24/04/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200424.png"
+	},
+	{
+		"date": "25/04/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200425.png"
+	},
+	{
+		"date": "26/04/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200426.png"
+	},
+	{
+		"date": "27/04/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200427.png"
+	},
+	{
+		"date": "28/04/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200428.png"
+	},
+	{
+		"date": "29/04/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200429.png"
+	},
+	{
+		"date": "30/04/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200430.png"
+	},
+	{
+		"date": "01/05/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200501.png"
+	},
+	{
+		"date": "02/05/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200502.png"
+	},
+	{
+		"date": "03/05/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200503.png"
+	},
+	{
+		"date": "04/05/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200504.png"
+	},
+	{
+		"date": "05/05/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200505.png"
+	},
+	{
+		"date": "06/05/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200506.png"
+	},
+	{
+		"date": "07/05/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200507.png"
+	},
+	{
+		"date": "08/05/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200508.png"
+	},
+	{
+		"date": "09/05/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200509.png"
+	},
+	{
+		"date": "10/05/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200510.png"
+	},
+	{
+		"date": "11/05/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200511.png"
+	},
+	{
+		"date": "12/05/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200512.png"
+	},
+	{
+		"date": "13/05/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200513.png"
+	},
+	{
+		"date": "14/05/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200514.png"
+	},
+	{
+		"date": "15/05/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200515.png"
+	},
+	{
+		"date": "16/05/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200516.png"
+	},
+	{
+		"date": "17/05/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200517.png"
+	},
+	{
+		"date": "18/05/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200518.png"
+	},
+	{
+		"date": "19/05/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200519.png"
+	},
+	{
+		"date": "20/05/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200520.png"
+	},
+	{
+		"date": "21/05/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200521.png"
+	},
+	{
+		"date": "22/05/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200522.png"
+	},
+	{
+		"date": "23/05/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200523.png"
+	},
+	{
+		"date": "24/05/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200524.png"
+	},
+	{
+		"date": "25/05/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200525.png"
+	},
+	{
+		"date": "26/05/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200526.png"
+	},
+	{
+		"date": "27/05/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200527.png"
+	},
+	{
+		"date": "28/05/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200528.png"
+	},
+	{
+		"date": "29/05/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200529.png"
+	},
+	{
+		"date": "30/05/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200530.png"
+	},
+	{
+		"date": "31/05/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200531.png"
+	},
+	{
+		"date": "01/06/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200601.png"
+	},
+	{
+		"date": "02/06/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200602.png"
+	},
+	{
+		"date": "03/06/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200603.png"
+	},
+	{
+		"date": "04/06/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200604.png"
+	},
+	{
+		"date": "05/06/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200605.png"
+	},
+	{
+		"date": "06/06/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200606.png"
+	},
+	{
+		"date": "07/06/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200607.png"
+	},
+	{
+		"date": "08/06/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200608.png"
+	},
+	{
+		"date": "09/06/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200609.png"
+	},
+	{
+		"date": "10/06/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200610.png"
+	},
+	{
+		"date": "11/06/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200611.png"
+	},
+	{
+		"date": "12/06/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200612.png"
+	},
+	{
+		"date": "13/06/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200613.png"
+	},
+	{
+		"date": "14/06/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200614.png"
+	},
+	{
+		"date": "15/06/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200615.png"
+	},
+	{
+		"date": "16/06/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200616.png"
+	},
+	{
+		"date": "17/06/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200617.png"
+	},
+	{
+		"date": "18/06/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200618.png"
+	},
+	{
+		"date": "19/06/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200619.png"
+	},
+	{
+		"date": "20/06/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200620.png"
+	},
+	{
+		"date": "21/06/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200621.png"
+	},
+	{
+		"date": "22/06/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200622.png"
+	},
+	{
+		"date": "23/06/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200623.png"
+	},
+	{
+		"date": "24/06/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200624.png"
+	},
+	{
+		"date": "25/06/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200625.png"
+	},
+	{
+		"date": "26/06/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200626.png"
+	},
+	{
+		"date": "27/06/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200627.png"
+	},
+	{
+		"date": "28/06/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200628.png"
+	},
+	{
+		"date": "29/06/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200629.png"
+	},
+	{
+		"date": "30/06/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200630.png"
+	},
+	{
+		"date": "01/07/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200701.png"
+	},
+	{
+		"date": "02/07/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200702.png"
+	},
+	{
+		"date": "03/07/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200703.png"
+	},
+	{
+		"date": "04/07/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200704.png"
+	},
+	{
+		"date": "05/07/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200705.png"
+	},
+	{
+		"date": "06/07/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200706.png"
+	},
+	{
+		"date": "07/07/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200707.png"
+	},
+	{
+		"date": "08/07/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200708.png"
+	},
+	{
+		"date": "09/07/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200709.png"
+	},
+	{
+		"date": "10/07/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200710.png"
+	},
+	{
+		"date": "11/07/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200711.png"
+	},
+	{
+		"date": "12/07/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200712.png"
+	},
+	{
+		"date": "13/07/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200713.png"
+	},
+	{
+		"date": "14/07/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200714.png"
+	},
+	{
+		"date": "15/07/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200715.png"
+	},
+	{
+		"date": "16/07/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200716.png"
+	},
+	{
+		"date": "17/07/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200717.png"
+	},
+	{
+		"date": "18/07/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200718.png"
+	},
+	{
+		"date": "19/07/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200719.png"
+	},
+	{
+		"date": "20/07/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200720.png"
+	},
+	{
+		"date": "21/07/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200721.png"
+	},
+	{
+		"date": "22/07/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200722.png"
+	},
+	{
+		"date": "23/07/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200723.png"
+	},
+	{
+		"date": "24/07/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200724.png"
+	},
+	{
+		"date": "25/07/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200725.png"
+	},
+	{
+		"date": "26/07/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200726.png"
+	},
+	{
+		"date": "27/07/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200727.png"
+	},
+	{
+		"date": "28/07/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200728.png"
+	},
+	{
+		"date": "29/07/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200729.png"
+	},
+	{
+		"date": "30/07/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200730.png"
+	},
+	{
+		"date": "31/07/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200731.png"
+	},
+	{
+		"date": "01/08/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200801.png"
+	},
+	{
+		"date": "02/08/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200802.png"
+	},
+	{
+		"date": "03/08/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200803.png"
+	},
+	{
+		"date": "04/08/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200804.png"
+	},
+	{
+		"date": "05/08/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200805.png"
+	},
+	{
+		"date": "06/08/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200806.png"
+	},
+	{
+		"date": "07/08/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200807.png"
+	},
+	{
+		"date": "08/08/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200808.png"
+	},
+	{
+		"date": "09/08/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200809.png"
+	},
+	{
+		"date": "10/08/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200810.png"
+	},
+	{
+		"date": "11/08/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200811.png"
+	},
+	{
+		"date": "12/08/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200812.png"
+	},
+	{
+		"date": "13/08/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200813.png"
+	},
+	{
+		"date": "14/08/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200814.png"
+	},
+	{
+		"date": "15/08/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200815.png"
+	},
+	{
+		"date": "16/08/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200816.png"
+	},
+	{
+		"date": "17/08/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200817.png"
+	},
+	{
+		"date": "18/08/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200818.png"
+	},
+	{
+		"date": "19/08/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200819.png"
+	},
+	{
+		"date": "20/08/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200820.png"
+	},
+	{
+		"date": "21/08/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200821.png"
+	},
+	{
+		"date": "22/08/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200822.png"
+	},
+	{
+		"date": "23/08/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200823.png"
+	},
+	{
+		"date": "24/08/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200824.png"
+	},
+	{
+		"date": "25/08/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200825.png"
+	},
+	{
+		"date": "26/08/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200826.png"
+	},
+	{
+		"date": "27/08/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200827.png"
+	},
+	{
+		"date": "28/08/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200828.png"
+	},
+	{
+		"date": "29/08/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200829-2.png"
+	},
+	{
+		"date": "30/08/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200830-2.png"
+	},
+	{
+		"date": "31/08/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200831-2.png"
+	},
+	{
+		"date": "01/09/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200901.png"
+	},
+	{
+		"date": "02/09/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200902.png"
+	},
+	{
+		"date": "03/09/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200903.png"
+	},
+	{
+		"date": "04/09/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200904.png"
+	},
+	{
+		"date": "05/09/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200905.png"
+	},
+	{
+		"date": "06/09/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200906.png"
+	},
+	{
+		"date": "07/09/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200907.png"
+	},
+	{
+		"date": "08/09/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200908.png"
+	},
+	{
+		"date": "09/09/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200909.png"
+	},
+	{
+		"date": "10/09/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200910.png"
+	},
+	{
+		"date": "11/09/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200911.png"
+	},
+	{
+		"date": "12/09/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200912.png"
+	},
+	{
+		"date": "13/09/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200913.png"
+	},
+	{
+		"date": "14/09/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200914.png"
+	},
+	{
+		"date": "15/09/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200915.png"
+	},
+	{
+		"date": "16/09/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200916.png"
+	},
+	{
+		"date": "17/09/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200917.png"
+	},
+	{
+		"date": "18/09/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200918.png"
+	},
+	{
+		"date": "19/09/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200919.png"
+	},
+	{
+		"date": "20/09/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200920.png"
+	},
+	{
+		"date": "21/09/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200921.png"
+	},
+	{
+		"date": "22/09/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200922.png"
+	},
+	{
+		"date": "23/09/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200923.png"
+	},
+	{
+		"date": "24/09/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200924.png"
+	},
+	{
+		"date": "25/09/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200925.png"
+	},
+	{
+		"date": "26/09/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200926.png"
+	},
+	{
+		"date": "27/09/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200927.png"
+	},
+	{
+		"date": "28/09/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200928.png"
+	},
+	{
+		"date": "29/09/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200929.png"
+	},
+	{
+		"date": "30/09/2020",
+		"img": "img/nordeste-obitos/brasil-nordeste-temporal-obt-200930.png"
+	}
+/** inject-images:end(nordeste-obitos) */
         ],
         imagesActives: [
             /** inject-images:start(nordeste-ativos) */
@@ -2449,6 +4193,22 @@ export const mapsConfig = [
 	{
 		"date": "26/09/2020",
 		"img": "img/pernambuco/covid19-pe-tem-200926.png"
+	},
+	{
+		"date": "27/09/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200927.png"
+	},
+	{
+		"date": "28/09/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200928.png"
+	},
+	{
+		"date": "29/09/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200929.png"
+	},
+	{
+		"date": "30/09/2020",
+		"img": "img/pernambuco/covid19-pe-tem-200930.png"
 	}
 /** inject-images:end(pernambuco) */
         ],
@@ -2881,6 +4641,22 @@ export const mapsConfig = [
 	{
 		"date": "26/09/2020",
 		"img": "img/pernambuco-recuperados/covid19-pe-rec-200926.png"
+	},
+	{
+		"date": "27/09/2020",
+		"img": "img/pernambuco-recuperados/covid19-pe-rec-200927.png"
+	},
+	{
+		"date": "28/09/2020",
+		"img": "img/pernambuco-recuperados/covid19-pe-rec-200928.png"
+	},
+	{
+		"date": "29/09/2020",
+		"img": "img/pernambuco-recuperados/covid19-pe-rec-200929.png"
+	},
+	{
+		"date": "30/09/2020",
+		"img": "img/pernambuco-recuperados/covid19-pe-rec-200930.png"
 	}
 /** inject-images:end(pernambuco-recuperados) */
         ],
@@ -3313,6 +5089,22 @@ export const mapsConfig = [
 	{
 		"date": "26/09/2020",
 		"img": "img/pernambuco-obitos/covid19-pe-obt-200926.png"
+	},
+	{
+		"date": "27/09/2020",
+		"img": "img/pernambuco-obitos/covid19-pe-obt-200927.png"
+	},
+	{
+		"date": "28/09/2020",
+		"img": "img/pernambuco-obitos/covid19-pe-obt-200928.png"
+	},
+	{
+		"date": "29/09/2020",
+		"img": "img/pernambuco-obitos/covid19-pe-obt-200929.png"
+	},
+	{
+		"date": "30/09/2020",
+		"img": "img/pernambuco-obitos/covid19-pe-obt-200930.png"
 	}
 /** inject-images:end(pernambuco-obitos) */
         ],
@@ -3741,6 +5533,22 @@ export const mapsConfig = [
 	{
 		"date": "26/09/2020",
 		"img": "img/pernambuco-ativos/covid19-pe-atv-200926.png"
+	},
+	{
+		"date": "27/09/2020",
+		"img": "img/pernambuco-ativos/covid19-pe-atv-200927.png"
+	},
+	{
+		"date": "28/09/2020",
+		"img": "img/pernambuco-ativos/covid19-pe-atv-200928.png"
+	},
+	{
+		"date": "29/09/2020",
+		"img": "img/pernambuco-ativos/covid19-pe-atv-200929.png"
+	},
+	{
+		"date": "30/09/2020",
+		"img": "img/pernambuco-ativos/covid19-pe-atv-200930.png"
 	}
 /** inject-images:end(pernambuco-ativos) */
         ],
@@ -3826,7 +5634,6 @@ export const mapsConfig = [
 		"date": "17/04/2020",
 		"img": "img/rmr/aglomerados-confirmados-17.04.png"
 	},
-
 	{
 		"date": "18/04/2020",
 		"img": "img/rmr/aglomerados-confirmados-18.04.png"
@@ -4474,6 +6281,22 @@ export const mapsConfig = [
 	{
 		"date": "26/09/2020",
 		"img": "img/rmr/aglomerados-confirmados-26.09.png"
+	},
+	{
+		"date": "27/09/2020",
+		"img": "img/rmr/aglomerados-confirmados-27.09.png"
+	},
+	{
+		"date": "28/09/2020",
+		"img": "img/rmr/aglomerados-confirmados-28.09.png"
+	},
+	{
+		"date": "29/09/2020",
+		"img": "img/rmr/aglomerados-confirmados-29.09.png"
+	},
+	{
+		"date": "30/09/2020",
+		"img": "img/rmr/aglomerados-confirmados-30.09.png"
 	}
 /** inject-images:end(rmr) */
         ],
@@ -4958,6 +6781,22 @@ export const mapsConfig = [
 	{
 		"date": "26/09/2020",
 		"img": "img/rmr-recuperados/37-recuperados-totais-26.09.png"
+	},
+	{
+		"date": "27/09/2020",
+		"img": "img/rmr-recuperados/37-recuperados-totais-27.09.png"
+	},
+	{
+		"date": "28/09/2020",
+		"img": "img/rmr-recuperados/37-recuperados-totais-28.09.png"
+	},
+	{
+		"date": "29/09/2020",
+		"img": "img/rmr-recuperados/37-recuperados-totais-29.09.png"
+	},
+	{
+		"date": "30/09/2020",
+		"img": "img/rmr-recuperados/37-recuperados-totais-30.09.png"
 	}
 /** inject-images:end(rmr-recuperados) */
         ],
@@ -5130,6 +6969,22 @@ export const mapsConfig = [
 	{
 		"date": "26/09/2020",
 		"img": "img/rmr-obitos/obitos-26.09.png"
+	},
+	{
+		"date": "27/09/2020",
+		"img": "img/rmr-obitos/obitos-27.09.png"
+	},
+	{
+		"date": "28/09/2020",
+		"img": "img/rmr-obitos/obitos-28.09.png"
+	},
+	{
+		"date": "29/09/2020",
+		"img": "img/rmr-obitos/obitos-29.09.png"
+	},
+	{
+		"date": "30/09/2020",
+		"img": "img/rmr-obitos/obitos-30.09.png"
 	}
 /** inject-images:end(rmr-obitos) */
         ],
@@ -5366,6 +7221,22 @@ export const mapsConfig = [
 	{
 		"date": "26/09/2020",
 		"img": "img/rmr-ativos/ativos-totais-26.09.png"
+	},
+	{
+		"date": "27/09/2020",
+		"img": "img/rmr-ativos/ativos-totais-27.09.png"
+	},
+	{
+		"date": "28/09/2020",
+		"img": "img/rmr-ativos/ativos-totais-28.09.png"
+	},
+	{
+		"date": "29/09/2020",
+		"img": "img/rmr-ativos/ativos-totais-29.09.png"
+	},
+	{
+		"date": "30/09/2020",
+		"img": "img/rmr-ativos/ativos-totais-30.09.png"
 	}
 /** inject-images:end(rmr-ativos) */
         ],
@@ -6178,6 +8049,22 @@ export const mapsConfig = [
 	{
 		"date": "26/09/2020",
 		"img": "img/recife/26.09b-n.png"
+	},
+	{
+		"date": "27/09/2020",
+		"img": "img/recife/27.09b-n.png"
+	},
+	{
+		"date": "28/09/2020",
+		"img": "img/recife/28.09b-n.png"
+	},
+	{
+		"date": "29/09/2020",
+		"img": "img/recife/29.09b-n.png"
+	},
+	{
+		"date": "30/09/2020",
+		"img": "img/recife/30.09b-n.png"
 	}
 /** inject-images:end(recife) */
         ],
@@ -6930,6 +8817,22 @@ export const mapsConfig = [
 	{
 		"date": "26/09/2020",
 		"img": "img/recife-recuperados/26.09-rectot.png"
+	},
+	{
+		"date": "27/09/2020",
+		"img": "img/recife-recuperados/27.09-rectot.png"
+	},
+	{
+		"date": "28/09/2020",
+		"img": "img/recife-recuperados/28.09-rectot.png"
+	},
+	{
+		"date": "29/09/2020",
+		"img": "img/recife-recuperados/29.09-rectot.png"
+	},
+	{
+		"date": "30/09/2020",
+		"img": "img/recife-recuperados/30.09-rectot.png"
 	}
 /** inject-images:end(recife-recuperados) */
         ],
@@ -7370,6 +9273,22 @@ export const mapsConfig = [
 	{
 		"date": "26/09/2020",
 		"img": "img/recife-obitos/obito-26.09-.png"
+	},
+	{
+		"date": "27/09/2020",
+		"img": "img/recife-obitos/obito-27.09-.png"
+	},
+	{
+		"date": "28/09/2020",
+		"img": "img/recife-obitos/obito-28.09-.png"
+	},
+	{
+		"date": "29/09/2020",
+		"img": "img/recife-obitos/obito-29.09-.png"
+	},
+	{
+		"date": "30/09/2020",
+		"img": "img/recife-obitos/obito-30.09-.png"
 	}
 /** inject-images:end(recife-obitos) */
         ],
@@ -7822,6 +9741,22 @@ export const mapsConfig = [
 	{
 		"date": "26/09/2020",
 		"img": "img/recife-ativos/26.09ativos-total.png"
+	},
+	{
+		"date": "27/09/2020",
+		"img": "img/recife-ativos/27.09ativos-total.png"
+	},
+	{
+		"date": "28/09/2020",
+		"img": "img/recife-ativos/28.09ativos-total.png"
+	},
+	{
+		"date": "29/09/2020",
+		"img": "img/recife-ativos/29.09ativos-total.png"
+	},
+	{
+		"date": "30/09/2020",
+		"img": "img/recife-ativos/30.09ativos-total.png"
 	}
 /** inject-images:end(recife-ativos) */
         ],

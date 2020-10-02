@@ -90,7 +90,9 @@ const optimizeImages = async (folder) => {
 
 const configs = [
     {path: path.join(__dirname, 'public', 'img', 'brasil'),},
+    {path: path.join(__dirname, 'public', 'img', 'brasil-obitos'),},
     {path: path.join(__dirname, 'public', 'img', 'nordeste'),},
+    {path: path.join(__dirname, 'public', 'img', 'nordeste-obitos'),},
     {path: path.join(__dirname, 'public', 'img', 'pernambuco'),},
     {path: path.join(__dirname, 'public', 'img', 'pernambuco-ativos'),},
     {path: path.join(__dirname, 'public', 'img', 'pernambuco-obitos'),},

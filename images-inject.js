@@ -50,8 +50,11 @@ const inject = (config) => {
 };
 
 const configs = [
-    {folder: 'brasil',     pattern: /(\d{6})/i,      patternDate: 'yyMMdd'},
-    {folder: 'nordeste',   pattern: /(\d{6})/i,      patternDate: 'yyMMdd'},
+    {folder: 'brasil',        pattern: /(\d{6})/i, patternDate: 'yyMMdd'},
+    {folder: 'brasil-obitos', pattern: /(\d{6})/i, patternDate: 'yyMMdd'},
+
+    {folder: 'nordeste',        pattern: /(\d{6})/i, patternDate: 'yyMMdd'},
+    {folder: 'nordeste-obitos', pattern: /(\d{6})/i, patternDate: 'yyMMdd'},
 
     {folder: 'pernambuco',             pattern: /(\d{6})/i, patternDate: 'yyMMdd'},
     {folder: 'pernambuco-obitos',      pattern: /(\d{6})/i, patternDate: 'yyMMdd'},
