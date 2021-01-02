@@ -12777,10 +12777,6 @@ export const mapsConfig = [
 	{
 		"date": "31/12/2020",
 		"img": "img/recife/2020/31.12b-n.png"
-	},
-	{
-		"date": "01/01/2021",
-		"img": "img/recife/2021/01.01b-n.png"
 	}
 /** inject-images:end(recife) */
         ],

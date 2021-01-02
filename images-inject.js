@@ -1,17 +1,20 @@
 const fs = require('fs');
 const _ = require('lodash');
 const path = require('path');
-const {parse, format, subDays, isBefore, setYear} = require('date-fns');
+const {parse, format, setYear} = require('date-fns');
 const {flow, map, sortBy, filter} = require('lodash/fp');
 
 const inject = (config) => {
 
-    const {folder, pattern, patternDate, year} = config;
+    const {folder, pattern, patternDate} = config;
 
     let files = [];
 
     try {
-        const yearFolders = fs.readdirSync(path.join(__dirname, 'public', 'img', folder));
+        let yearFolders = fs.readdirSync(path.join(__dirname, 'public', 'img', folder));
+
+        yearFolders = yearFolders.filter(f => Number.parseInt(f) > 0);
+
         for (const yearFolder of yearFolders) {
             let newFiles = fs.readdirSync(path.join(__dirname, 'public', 'img', folder, yearFolder));
             newFiles = newFiles.map(file => ({
@@ -20,7 +23,7 @@ const inject = (config) => {
             }));
             files = [...files, ...newFiles];
         }
-        // console.log(files);
+
     } catch (e) {
         console.log(e);
         return;
