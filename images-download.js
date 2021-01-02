@@ -229,14 +229,14 @@ async function canDownload(file, filePath) {
 async function downloadFiles(auth, files) {
 
     for (const file of files) {
-
+        const yearFolder = '2021';
         const destinationFile = file.typeFolder === 'confirmados' ?
-            path.join(__dirname, 'public', 'img', file.fromFolder, renameFileName(file.name)) :
-            path.join(__dirname, 'public', 'img', `${file.fromFolder}-${file.typeFolder}`, renameFileName(file.name));
+            path.join(__dirname, 'public', 'img', file.fromFolder, yearFolder, renameFileName(file.name)) :
+            path.join(__dirname, 'public', 'img', `${file.fromFolder}-${file.typeFolder}`, yearFolder, renameFileName(file.name));
 
         const destinationFolder = file.typeFolder === 'confirmados' ?
-            path.join(__dirname, 'public', 'img', file.fromFolder) :
-            path.join(__dirname, 'public', 'img', `${file.fromFolder}-${file.typeFolder}`);
+            path.join(__dirname, 'public', 'img', file.fromFolder, yearFolder) :
+            path.join(__dirname, 'public', 'img', `${file.fromFolder}-${file.typeFolder}`, yearFolder);
 
         if (!await canDownload(file, destinationFile)) continue;
 

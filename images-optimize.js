@@ -88,23 +88,24 @@ const optimizeImages = async (folder) => {
 
 };
 
+const yearFolder = '2021';
 const configs = [
-    {path: path.join(__dirname, 'public', 'img', 'brasil'),},
-    {path: path.join(__dirname, 'public', 'img', 'brasil-obitos'),},
-    {path: path.join(__dirname, 'public', 'img', 'nordeste'),},
-    {path: path.join(__dirname, 'public', 'img', 'nordeste-obitos'),},
-    {path: path.join(__dirname, 'public', 'img', 'pernambuco'),},
-    {path: path.join(__dirname, 'public', 'img', 'pernambuco-ativos'),},
-    {path: path.join(__dirname, 'public', 'img', 'pernambuco-obitos'),},
-    {path: path.join(__dirname, 'public', 'img', 'pernambuco-recuperados'),},
-    {path: path.join(__dirname, 'public', 'img', 'rmr'),},
-    {path: path.join(__dirname, 'public', 'img', 'rmr-ativos'),},
-    {path: path.join(__dirname, 'public', 'img', 'rmr-obitos'),},
-    {path: path.join(__dirname, 'public', 'img', 'rmr-recuperados'),},
-    {path: path.join(__dirname, 'public', 'img', 'recife'),},
-    {path: path.join(__dirname, 'public', 'img', 'recife-ativos'),},
-    {path: path.join(__dirname, 'public', 'img', 'recife-obitos'),},
-    {path: path.join(__dirname, 'public', 'img', 'recife-recuperados'),},
+    {path: path.join(__dirname, 'public', 'img', 'brasil', yearFolder),},
+    {path: path.join(__dirname, 'public', 'img', 'brasil-obitos', yearFolder),},
+    {path: path.join(__dirname, 'public', 'img', 'nordeste', yearFolder),},
+    {path: path.join(__dirname, 'public', 'img', 'nordeste-obitos', yearFolder),},
+    {path: path.join(__dirname, 'public', 'img', 'pernambuco', yearFolder),},
+    {path: path.join(__dirname, 'public', 'img', 'pernambuco-ativos', yearFolder),},
+    {path: path.join(__dirname, 'public', 'img', 'pernambuco-obitos', yearFolder),},
+    {path: path.join(__dirname, 'public', 'img', 'pernambuco-recuperados', yearFolder),},
+    {path: path.join(__dirname, 'public', 'img', 'rmr', yearFolder),},
+    {path: path.join(__dirname, 'public', 'img', 'rmr-ativos', yearFolder),},
+    {path: path.join(__dirname, 'public', 'img', 'rmr-obitos', yearFolder),},
+    {path: path.join(__dirname, 'public', 'img', 'rmr-recuperados', yearFolder),},
+    {path: path.join(__dirname, 'public', 'img', 'recife', yearFolder),},
+    {path: path.join(__dirname, 'public', 'img', 'recife-ativos', yearFolder),},
+    {path: path.join(__dirname, 'public', 'img', 'recife-obitos', yearFolder),},
+    {path: path.join(__dirname, 'public', 'img', 'recife-recuperados', yearFolder),},
 ];
 
 (async () => {
