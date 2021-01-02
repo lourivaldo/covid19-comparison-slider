@@ -18,9 +18,9 @@ const inject = (config) => {
                 file,
                 year: yearFolder,
             }));
-            files = [...files, newFiles];
+            files = [...files, ...newFiles];
         }
-        console.log(files);
+        // console.log(files);
     } catch (e) {
         console.log(e);
         return;
@@ -61,26 +61,26 @@ const inject = (config) => {
 };
 
 const configs = [
-    // {folder: 'brasil',        pattern: /(\d{6})/i, patternDate: 'yyMMdd'},
-    // {folder: 'brasil-obitos', pattern: /(\d{6})/i, patternDate: 'yyMMdd'},
-    //
-    // {folder: 'nordeste',        pattern: /(\d{6})/i, patternDate: 'yyMMdd'},
-    // {folder: 'nordeste-obitos', pattern: /(\d{6})/i, patternDate: 'yyMMdd'},
-    //
-    // {folder: 'pernambuco',             pattern: /(\d{6})/i, patternDate: 'yyMMdd'},
-    // {folder: 'pernambuco-obitos',      pattern: /(\d{6})/i, patternDate: 'yyMMdd'},
-    // {folder: 'pernambuco-recuperados', pattern: /(\d{6})/i, patternDate: 'yyMMdd'},
-    // {folder: 'pernambuco-ativos',      pattern: /(\d{6})/i, patternDate: 'yyMMdd'},
-    //
-    // {folder: 'rmr',             pattern: /(\d{2}\.\d{2})/i, patternDate: 'dd.MM'},
-    // {folder: 'rmr-recuperados', pattern: /(\d{2}\.\d{2})/i, patternDate: 'dd.MM'},
-    // {folder: 'rmr-ativos',      pattern: /(\d{2}\.\d{2})/i, patternDate: 'dd.MM'},
-    // {folder: 'rmr-obitos',      pattern: /(\d{2}\.\d{2})/i, patternDate: 'dd.MM'},
+    {folder: 'brasil',        pattern: /(\d{6})/i, patternDate: 'yyMMdd'},
+    {folder: 'brasil-obitos', pattern: /(\d{6})/i, patternDate: 'yyMMdd'},
+
+    {folder: 'nordeste',        pattern: /(\d{6})/i, patternDate: 'yyMMdd'},
+    {folder: 'nordeste-obitos', pattern: /(\d{6})/i, patternDate: 'yyMMdd'},
+
+    {folder: 'pernambuco',             pattern: /(\d{6})/i, patternDate: 'yyMMdd'},
+    {folder: 'pernambuco-obitos',      pattern: /(\d{6})/i, patternDate: 'yyMMdd'},
+    {folder: 'pernambuco-recuperados', pattern: /(\d{6})/i, patternDate: 'yyMMdd'},
+    {folder: 'pernambuco-ativos',      pattern: /(\d{6})/i, patternDate: 'yyMMdd'},
+
+    {folder: 'rmr',             pattern: /(\d{2}\.\d{2})/i, patternDate: 'dd.MM'},
+    {folder: 'rmr-recuperados', pattern: /(\d{2}\.\d{2})/i, patternDate: 'dd.MM'},
+    {folder: 'rmr-ativos',      pattern: /(\d{2}\.\d{2})/i, patternDate: 'dd.MM'},
+    {folder: 'rmr-obitos',      pattern: /(\d{2}\.\d{2})/i, patternDate: 'dd.MM'},
 
     {folder: 'recife',             pattern: /(\d{2}\.\d{2})/i, patternDate: 'dd.MM'},
-    // {folder: 'recife-recuperados', pattern: /(\d{2}\.\d{2})/i, patternDate: 'dd.MM'},
-    // {folder: 'recife-ativos',      pattern: /(\d{2}\.\d{2})/i, patternDate: 'dd.MM'},
-    // {folder: 'recife-obitos',      pattern: /(\d{2}\.\d{2})/i, patternDate: 'dd.MM'},
+    {folder: 'recife-recuperados', pattern: /(\d{2}\.\d{2})/i, patternDate: 'dd.MM'},
+    {folder: 'recife-ativos',      pattern: /(\d{2}\.\d{2})/i, patternDate: 'dd.MM'},
+    {folder: 'recife-obitos',      pattern: /(\d{2}\.\d{2})/i, patternDate: 'dd.MM'},
 ];
 
 
