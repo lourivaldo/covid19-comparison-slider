@@ -229,6 +229,7 @@ async function canDownload(file, filePath) {
 async function downloadFiles(auth, files) {
 
     for (const file of files) {
+        // console.log('file.name', file.name);
         const yearFolder = '2021';
         const destinationFile = file.typeFolder === 'confirmados' ?
             path.join(__dirname, 'public', 'img', file.fromFolder, yearFolder, renameFileName(file.name)) :
@@ -253,39 +254,46 @@ async function downloadFiles(auth, files) {
 }
 
 async function getFile(auth, fileId, options) {
-    return new Promise(async (resolve) => {
-        const {saveToPath} = options;
-        const drive = google.drive({version: 'v3', auth});
+    return new Promise(async (resolve, reject) => {
+        try {
+            const {saveToPath} = options;
+            const drive = google.drive({version: 'v3', auth});
 
-        // For converting document formats, and for downloading template
-        // documents, see the method drive.files.export():
-        // https://developers.google.com/drive/api/v3/manage-downloads
-        const res = await drive.files.get({fileId, alt: 'media'}, {responseType: 'stream'}) ;
+            // For converting document formats, and for downloading template
+            // documents, see the method drive.files.export():
+            // https://developers.google.com/drive/api/v3/manage-downloads
+            const res = await drive.files.get({fileId, alt: 'media'}, {responseType: 'stream'}) ;
 
-        const filePath = saveToPath || path.join(os.tmpdir(), uuidv4());
-        // console.log(`writing to ${filePath}`);
+            const filePath = saveToPath || path.join(os.tmpdir(), uuidv4());
+            // console.log(`writing to ${filePath}`);
 
-        const dest = fs.createWriteStream(filePath);
-        let progress = 0; //912949
+            const dest = fs.createWriteStream(filePath);
+            let progress = 0; //912949
 
-        res.data
-            .on('end', () => {
-                console.log('Done downloading file.');
-                resolve(filePath);
-            })
-            .on('error', err => {
-                console.error('Error downloading file.');
-                reject(err);
-            })
-            .on('data', d => {
-                progress += d.length;
-                if (process.stdout.isTTY) {
-                    process.stdout.clearLine();
-                    process.stdout.cursorTo(0);
-                    process.stdout.write(`Downloaded ${progress} bytes`);
-                }
-            })
-            .pipe(dest);
+            res.data
+                .on('end', () => {
+                    console.log('Done downloading file.');
+                    resolve(filePath);
+                })
+                .on('error', err => {
+                    console.error('Error downloading file.');
+                    reject(err);
+                })
+                .on('data', d => {
+                    progress += d.length;
+                    if (process.stdout.isTTY) {
+                        process.stdout.clearLine();
+                        process.stdout.cursorTo(0);
+                        process.stdout.write(`Downloaded ${progress} bytes`);
+                    }
+                })
+                .pipe(dest);
+        } catch (e) {
+            // const {saveToPath} = options;
+            // console.log('>>>>>>> ', saveToPath);
+            // console.log(e);
+            resolve();
+        }
     })
 }
 
