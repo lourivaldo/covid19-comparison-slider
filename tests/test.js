@@ -44,7 +44,7 @@ async function getPage() {
 
     for (let {date, title} of dates) {
 
-        if (format(date, 'yyyy-MM-dd') === targetDate) {
+        if (format(date, 'yyyy-MM-dd') >= targetDate) {
             console.log(`Updated ${date} ${title}`);
         } else {
             console.log(`Out of date ${date} ${title}`);
