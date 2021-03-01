@@ -40,11 +40,11 @@ async function getPage() {
     const page = await getPage();
     const dates = await getInfo(page);
 
-    const targetDate = formatToTimeZone(subDays(new Date(), 2), 'YYYY-MM-DD', {timeZone: 'America/Sao_Paulo'});
+    const targetDate = formatToTimeZone(subDays(new Date(), 3), 'YYYY-MM-DD', {timeZone: 'America/Sao_Paulo'});
 
     for (let {date, title} of dates) {
 
-        if (format(date, 'yyyy-MM-dd') === targetDate) {
+        if (format(date, 'yyyy-MM-dd') >= targetDate) {
             console.log(`Updated ${date} ${title}`);
         } else {
             console.log(`Out of date ${date} ${title}`);
