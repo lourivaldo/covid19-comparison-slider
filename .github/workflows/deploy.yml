@@ -5,7 +5,7 @@ on:
     branches:
       - master
   schedule:
-    - cron: "0 13,14,16,20 * * *"
+    - cron: "0 13,16,21 * * 0,1,2,6"
 
 env:
   BUILD_FILE: temporal-build-${{ github.sha }}-${{ github.run_id }}.zip

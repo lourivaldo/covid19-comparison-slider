@@ -1686,6 +1686,34 @@ export const mapsConfig = [
 	{
 		"date": "25/04/2021",
 		"img": "img/brasil/2021/covid19-brasil-municipios-210425.png"
+	},
+	{
+		"date": "26/04/2021",
+		"img": "img/brasil/2021/covid19-brasil-municipios-210426.png"
+	},
+	{
+		"date": "27/04/2021",
+		"img": "img/brasil/2021/covid19-brasil-municipios-210427.png"
+	},
+	{
+		"date": "28/04/2021",
+		"img": "img/brasil/2021/covid19-brasil-municipios-210428.png"
+	},
+	{
+		"date": "29/04/2021",
+		"img": "img/brasil/2021/covid19-brasil-municipios-210429.png"
+	},
+	{
+		"date": "30/04/2021",
+		"img": "img/brasil/2021/covid19-brasil-municipios-210430.png"
+	},
+	{
+		"date": "01/05/2021",
+		"img": "img/brasil/2021/covid19-brasil-municipios-210501.png"
+	},
+	{
+		"date": "08/05/2021",
+		"img": "img/brasil/2021/covid19-brasil-municipios-210508.png"
 	}
 /** inject-images:end(brasil) */
         ],
@@ -3362,6 +3390,34 @@ export const mapsConfig = [
 	{
 		"date": "25/04/2021",
 		"img": "img/brasil-obitos/2021/covid19-brasil-municipios-obt-210425.png"
+	},
+	{
+		"date": "26/04/2021",
+		"img": "img/brasil-obitos/2021/covid19-brasil-municipios-obt-210426.png"
+	},
+	{
+		"date": "27/04/2021",
+		"img": "img/brasil-obitos/2021/covid19-brasil-municipios-obt-210427.png"
+	},
+	{
+		"date": "28/04/2021",
+		"img": "img/brasil-obitos/2021/covid19-brasil-municipios-obt-210428.png"
+	},
+	{
+		"date": "29/04/2021",
+		"img": "img/brasil-obitos/2021/covid19-brasil-municipios-obt-210429.png"
+	},
+	{
+		"date": "30/04/2021",
+		"img": "img/brasil-obitos/2021/covid19-brasil-municipios-obt-210430.png"
+	},
+	{
+		"date": "01/05/2021",
+		"img": "img/brasil-obitos/2021/covid19-brasil-municipios-obt-210501.png"
+	},
+	{
+		"date": "08/05/2021",
+		"img": "img/brasil-obitos/2021/covid19-brasil-municipios-obt-210508.png"
 	}
 /** inject-images:end(brasil-obitos) */
         ],
@@ -5010,6 +5066,34 @@ export const mapsConfig = [
 	{
 		"date": "25/04/2021",
 		"img": "img/nordeste/2021/brasil-nordeste-temporal-210425.png"
+	},
+	{
+		"date": "26/04/2021",
+		"img": "img/nordeste/2021/brasil-nordeste-temporal-210426.png"
+	},
+	{
+		"date": "27/04/2021",
+		"img": "img/nordeste/2021/brasil-nordeste-temporal-210427.png"
+	},
+	{
+		"date": "28/04/2021",
+		"img": "img/nordeste/2021/brasil-nordeste-temporal-210428.png"
+	},
+	{
+		"date": "29/04/2021",
+		"img": "img/nordeste/2021/brasil-nordeste-temporal-210429.png"
+	},
+	{
+		"date": "30/04/2021",
+		"img": "img/nordeste/2021/brasil-nordeste-temporal-210430.png"
+	},
+	{
+		"date": "01/05/2021",
+		"img": "img/nordeste/2021/brasil-nordeste-temporal-210501.png"
+	},
+	{
+		"date": "08/05/2021",
+		"img": "img/nordeste/2021/brasil-nordeste-temporal-210508.png"
 	}
 /** inject-images:end(nordeste) */
         ],
@@ -6682,6 +6766,34 @@ export const mapsConfig = [
 	{
 		"date": "25/04/2021",
 		"img": "img/nordeste-obitos/2021/brasil-nordeste-temporal-obt-210425.png"
+	},
+	{
+		"date": "26/04/2021",
+		"img": "img/nordeste-obitos/2021/brasil-nordeste-temporal-obt-210426.png"
+	},
+	{
+		"date": "27/04/2021",
+		"img": "img/nordeste-obitos/2021/brasil-nordeste-temporal-obt-210427.png"
+	},
+	{
+		"date": "28/04/2021",
+		"img": "img/nordeste-obitos/2021/brasil-nordeste-temporal-obt-210428.png"
+	},
+	{
+		"date": "29/04/2021",
+		"img": "img/nordeste-obitos/2021/brasil-nordeste-temporal-obt-210429.png"
+	},
+	{
+		"date": "30/04/2021",
+		"img": "img/nordeste-obitos/2021/brasil-nordeste-temporal-obt-210430.png"
+	},
+	{
+		"date": "01/05/2021",
+		"img": "img/nordeste-obitos/2021/brasil-nordeste-temporal-obt-210501.png"
+	},
+	{
+		"date": "08/05/2021",
+		"img": "img/nordeste-obitos/2021/brasil-nordeste-temporal-obt-210508.png"
 	}
 /** inject-images:end(nordeste-obitos) */
         ],
@@ -8257,6 +8369,34 @@ export const mapsConfig = [
 	{
 		"date": "25/04/2021",
 		"img": "img/pernambuco/2021/covid19-pe-tem-210425.png"
+	},
+	{
+		"date": "26/04/2021",
+		"img": "img/pernambuco/2021/covid19-pe-tem-210426.png"
+	},
+	{
+		"date": "27/04/2021",
+		"img": "img/pernambuco/2021/covid19-pe-tem-210427.png"
+	},
+	{
+		"date": "28/04/2021",
+		"img": "img/pernambuco/2021/covid19-pe-tem-210428.png"
+	},
+	{
+		"date": "29/04/2021",
+		"img": "img/pernambuco/2021/covid19-pe-tem-210429.png"
+	},
+	{
+		"date": "30/04/2021",
+		"img": "img/pernambuco/2021/covid19-pe-tem-210430.png"
+	},
+	{
+		"date": "01/05/2021",
+		"img": "img/pernambuco/2021/covid19-pe-tem-210501.png"
+	},
+	{
+		"date": "08/05/2021",
+		"img": "img/pernambuco/2021/covid19-pe-tem-210508.png"
 	}
 /** inject-images:end(pernambuco) */
         ],
@@ -9513,6 +9653,34 @@ export const mapsConfig = [
 	{
 		"date": "25/04/2021",
 		"img": "img/pernambuco-recuperados/2021/covid19-pe-rec-210425.png"
+	},
+	{
+		"date": "26/04/2021",
+		"img": "img/pernambuco-recuperados/2021/covid19-pe-rec-210426.png"
+	},
+	{
+		"date": "27/04/2021",
+		"img": "img/pernambuco-recuperados/2021/covid19-pe-rec-210427.png"
+	},
+	{
+		"date": "28/04/2021",
+		"img": "img/pernambuco-recuperados/2021/covid19-pe-rec-210428.png"
+	},
+	{
+		"date": "29/04/2021",
+		"img": "img/pernambuco-recuperados/2021/covid19-pe-rec-210429.png"
+	},
+	{
+		"date": "30/04/2021",
+		"img": "img/pernambuco-recuperados/2021/covid19-pe-rec-210430.png"
+	},
+	{
+		"date": "01/05/2021",
+		"img": "img/pernambuco-recuperados/2021/covid19-pe-rec-210501.png"
+	},
+	{
+		"date": "08/05/2021",
+		"img": "img/pernambuco-recuperados/2021/covid19-pe-rec-210508.png"
 	}
 /** inject-images:end(pernambuco-recuperados) */
         ],
@@ -10769,6 +10937,34 @@ export const mapsConfig = [
 	{
 		"date": "25/04/2021",
 		"img": "img/pernambuco-obitos/2021/covid19-pe-obt-210425.png"
+	},
+	{
+		"date": "26/04/2021",
+		"img": "img/pernambuco-obitos/2021/covid19-pe-obt-210426.png"
+	},
+	{
+		"date": "27/04/2021",
+		"img": "img/pernambuco-obitos/2021/covid19-pe-obt-210427.png"
+	},
+	{
+		"date": "28/04/2021",
+		"img": "img/pernambuco-obitos/2021/covid19-pe-obt-210428.png"
+	},
+	{
+		"date": "29/04/2021",
+		"img": "img/pernambuco-obitos/2021/covid19-pe-obt-210429.png"
+	},
+	{
+		"date": "30/04/2021",
+		"img": "img/pernambuco-obitos/2021/covid19-pe-obt-210430.png"
+	},
+	{
+		"date": "01/05/2021",
+		"img": "img/pernambuco-obitos/2021/covid19-pe-obt-210501.png"
+	},
+	{
+		"date": "08/05/2021",
+		"img": "img/pernambuco-obitos/2021/covid19-pe-obt-210508.png"
 	}
 /** inject-images:end(pernambuco-obitos) */
         ],
@@ -12021,6 +12217,34 @@ export const mapsConfig = [
 	{
 		"date": "25/04/2021",
 		"img": "img/pernambuco-ativos/2021/covid19-pe-atv-210425.png"
+	},
+	{
+		"date": "26/04/2021",
+		"img": "img/pernambuco-ativos/2021/covid19-pe-atv-210426.png"
+	},
+	{
+		"date": "27/04/2021",
+		"img": "img/pernambuco-ativos/2021/covid19-pe-atv-210427.png"
+	},
+	{
+		"date": "28/04/2021",
+		"img": "img/pernambuco-ativos/2021/covid19-pe-atv-210428.png"
+	},
+	{
+		"date": "29/04/2021",
+		"img": "img/pernambuco-ativos/2021/covid19-pe-atv-210429.png"
+	},
+	{
+		"date": "30/04/2021",
+		"img": "img/pernambuco-ativos/2021/covid19-pe-atv-210430.png"
+	},
+	{
+		"date": "01/05/2021",
+		"img": "img/pernambuco-ativos/2021/covid19-pe-atv-210501.png"
+	},
+	{
+		"date": "08/05/2021",
+		"img": "img/pernambuco-ativos/2021/covid19-pe-atv-210508.png"
 	}
 /** inject-images:end(pernambuco-ativos) */
         ],
@@ -13565,6 +13789,18 @@ export const mapsConfig = [
 	{
 		"date": "25/04/2021",
 		"img": "img/rmr/2021/ag-conf-25.04.2021.png"
+	},
+	{
+		"date": "26/04/2021",
+		"img": "img/rmr/2021/ag-conf-26.04.2021.png"
+	},
+	{
+		"date": "27/04/2021",
+		"img": "img/rmr/2021/ag-conf-27.04.2021.png"
+	},
+	{
+		"date": "28/04/2021",
+		"img": "img/rmr/2021/ag-conf-28.04.2021.png"
 	}
 /** inject-images:end(rmr) */
         ],
@@ -14861,6 +15097,18 @@ export const mapsConfig = [
 	{
 		"date": "25/04/2021",
 		"img": "img/rmr-recuperados/2021/rec-tot-25.04.2021.png"
+	},
+	{
+		"date": "26/04/2021",
+		"img": "img/rmr-recuperados/2021/rec-tot-26.04.2021.png"
+	},
+	{
+		"date": "27/04/2021",
+		"img": "img/rmr-recuperados/2021/rec-tot-27.04.2021.png"
+	},
+	{
+		"date": "28/04/2021",
+		"img": "img/rmr-recuperados/2021/rec-tot-28.04.2021.png"
 	}
 /** inject-images:end(rmr-recuperados) */
         ],
@@ -15845,6 +16093,18 @@ export const mapsConfig = [
 	{
 		"date": "25/04/2021",
 		"img": "img/rmr-obitos/2021/obit-25.04.2021.png"
+	},
+	{
+		"date": "26/04/2021",
+		"img": "img/rmr-obitos/2021/obit-26.04.2021.png"
+	},
+	{
+		"date": "27/04/2021",
+		"img": "img/rmr-obitos/2021/obit-27.04.2021.png"
+	},
+	{
+		"date": "28/04/2021",
+		"img": "img/rmr-obitos/2021/obit-28.04.2021.png"
 	}
 /** inject-images:end(rmr-obitos) */
         ],
@@ -16893,6 +17153,18 @@ export const mapsConfig = [
 	{
 		"date": "25/04/2021",
 		"img": "img/rmr-ativos/2021/ativ-tot-25.04.2021.png"
+	},
+	{
+		"date": "26/04/2021",
+		"img": "img/rmr-ativos/2021/ativ-tot-26.04.2021.png"
+	},
+	{
+		"date": "27/04/2021",
+		"img": "img/rmr-ativos/2021/ativ-tot-27.04.2021.png"
+	},
+	{
+		"date": "28/04/2021",
+		"img": "img/rmr-ativos/2021/ativ-tot-28.04.2021.png"
 	}
 /** inject-images:end(rmr-ativos) */
         ],
@@ -18549,6 +18821,26 @@ export const mapsConfig = [
 	{
 		"date": "25/04/2021",
 		"img": "img/recife/2021/25.04b-n.png"
+	},
+	{
+		"date": "26/04/2021",
+		"img": "img/recife/2021/26.04b-n.png"
+	},
+	{
+		"date": "27/04/2021",
+		"img": "img/recife/2021/27.04b-n.png"
+	},
+	{
+		"date": "28/04/2021",
+		"img": "img/recife/2021/28.04b-n.png"
+	},
+	{
+		"date": "29/04/2021",
+		"img": "img/recife/2021/29.04b-n.png"
+	},
+	{
+		"date": "30/04/2021",
+		"img": "img/recife/2021/30.04b-n.png"
 	}
 /** inject-images:end(recife) */
         ],
@@ -20141,6 +20433,26 @@ export const mapsConfig = [
 	{
 		"date": "25/04/2021",
 		"img": "img/recife-recuperados/2021/25.04-rectot.png"
+	},
+	{
+		"date": "26/04/2021",
+		"img": "img/recife-recuperados/2021/26.04-rectot.png"
+	},
+	{
+		"date": "27/04/2021",
+		"img": "img/recife-recuperados/2021/27.04-rectot.png"
+	},
+	{
+		"date": "28/04/2021",
+		"img": "img/recife-recuperados/2021/28.04-rectot.png"
+	},
+	{
+		"date": "29/04/2021",
+		"img": "img/recife-recuperados/2021/105-29.04-rectot.png"
+	},
+	{
+		"date": "30/04/2021",
+		"img": "img/recife-recuperados/2021/30.04-rectot.png"
 	}
 /** inject-images:end(recife-recuperados) */
         ],
@@ -21425,6 +21737,26 @@ export const mapsConfig = [
 	{
 		"date": "25/04/2021",
 		"img": "img/recife-obitos/2021/obito-25.04-.png"
+	},
+	{
+		"date": "26/04/2021",
+		"img": "img/recife-obitos/2021/obito-26.04-.png"
+	},
+	{
+		"date": "27/04/2021",
+		"img": "img/recife-obitos/2021/obito-27.04-.png"
+	},
+	{
+		"date": "28/04/2021",
+		"img": "img/recife-obitos/2021/obito-28.04-.png"
+	},
+	{
+		"date": "29/04/2021",
+		"img": "img/recife-obitos/2021/obito-29.04-.png"
+	},
+	{
+		"date": "30/04/2021",
+		"img": "img/recife-obitos/2021/obito-30.04-.png"
 	}
 /** inject-images:end(recife-obitos) */
         ],
@@ -22721,6 +23053,26 @@ export const mapsConfig = [
 	{
 		"date": "25/04/2021",
 		"img": "img/recife-ativos/2021/25.04ativos-total.png"
+	},
+	{
+		"date": "26/04/2021",
+		"img": "img/recife-ativos/2021/26.04ativos-total.png"
+	},
+	{
+		"date": "27/04/2021",
+		"img": "img/recife-ativos/2021/27.04ativos-total.png"
+	},
+	{
+		"date": "28/04/2021",
+		"img": "img/recife-ativos/2021/28.04ativos-total.png"
+	},
+	{
+		"date": "29/04/2021",
+		"img": "img/recife-ativos/2021/29.04ativos-total.png"
+	},
+	{
+		"date": "30/04/2021",
+		"img": "img/recife-ativos/2021/30.04ativos-total.png"
 	}
 /** inject-images:end(recife-ativos) */
         ],
