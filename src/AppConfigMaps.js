@@ -18992,7 +18992,11 @@ export const mapsConfig = [
 	},
 	{
 		"date": "12/06/2021",
-		"img": "img/recife/2021/127-12.06b-n.png"
+		"img": "img/recife/2021/12.06b-n.png"
+	},
+	{
+		"date": "19/06/2021",
+		"img": "img/recife/2021/19.06b-n.png"
 	}
 /** inject-images:end(recife) */
         ],
@@ -20629,6 +20633,10 @@ export const mapsConfig = [
 	{
 		"date": "12/06/2021",
 		"img": "img/recife-recuperados/2021/12.06-rectot.png"
+	},
+	{
+		"date": "19/06/2021",
+		"img": "img/recife-recuperados/2021/19.06-rectot.png"
 	}
 /** inject-images:end(recife-recuperados) */
         ],
@@ -21957,6 +21965,10 @@ export const mapsConfig = [
 	{
 		"date": "12/06/2021",
 		"img": "img/recife-obitos/2021/obito-12.06-.png"
+	},
+	{
+		"date": "19/06/2021",
+		"img": "img/recife-obitos/2021/obito-19.06-.png"
 	}
 /** inject-images:end(recife-obitos) */
         ],
@@ -23297,6 +23309,10 @@ export const mapsConfig = [
 	{
 		"date": "12/06/2021",
 		"img": "img/recife-ativos/2021/12.06ativos-total.png"
+	},
+	{
+		"date": "19/06/2021",
+		"img": "img/recife-ativos/2021/19.06ativos-total.png"
 	}
 /** inject-images:end(recife-ativos) */
         ],
