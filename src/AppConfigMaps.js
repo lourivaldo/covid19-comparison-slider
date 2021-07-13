@@ -13905,6 +13905,30 @@ export const mapsConfig = [
 	{
 		"date": "22/05/2021",
 		"img": "img/rmr/2021/ag-conf-22.05.2021.png"
+	},
+	{
+		"date": "05/06/2021",
+		"img": "img/rmr/2021/ag-conf-05.06.2021.png"
+	},
+	{
+		"date": "12/06/2021",
+		"img": "img/rmr/2021/ag-conf-12.06.2021.png"
+	},
+	{
+		"date": "19/06/2021",
+		"img": "img/rmr/2021/ag-conf-19.06.2021.png"
+	},
+	{
+		"date": "26/06/2021",
+		"img": "img/rmr/2021/ag-conf-26.06.2021.png"
+	},
+	{
+		"date": "03/07/2021",
+		"img": "img/rmr/2021/ag-conf-03.07.2021.png"
+	},
+	{
+		"date": "10/07/2021",
+		"img": "img/rmr/2021/ag-conf-10.07.2021.png"
 	}
 /** inject-images:end(rmr) */
         ],
@@ -15221,6 +15245,26 @@ export const mapsConfig = [
 	{
 		"date": "22/05/2021",
 		"img": "img/rmr-recuperados/2021/rec-tot-22.05.2021.png"
+	},
+	{
+		"date": "05/06/2021",
+		"img": "img/rmr-recuperados/2021/rec-tot-05.06.2021.png"
+	},
+	{
+		"date": "12/06/2021",
+		"img": "img/rmr-recuperados/2021/rec-tot-12.06.2021.png"
+	},
+	{
+		"date": "19/06/2021",
+		"img": "img/rmr-recuperados/2021/rec-tot-19.06.2021.png"
+	},
+	{
+		"date": "26/06/2021",
+		"img": "img/rmr-recuperados/2021/rec-tot-26.06.2021.png"
+	},
+	{
+		"date": "03/07/2021",
+		"img": "img/rmr-recuperados/2021/rec-tot-03.07.2021.png"
 	}
 /** inject-images:end(rmr-recuperados) */
         ],
@@ -16225,6 +16269,30 @@ export const mapsConfig = [
 	{
 		"date": "22/05/2021",
 		"img": "img/rmr-obitos/2021/obit-22.05.2021.png"
+	},
+	{
+		"date": "05/06/2021",
+		"img": "img/rmr-obitos/2021/obit-05.06.2021.png"
+	},
+	{
+		"date": "12/06/2021",
+		"img": "img/rmr-obitos/2021/obit-12.06.2021.png"
+	},
+	{
+		"date": "19/06/2021",
+		"img": "img/rmr-obitos/2021/obit-19.06.2021.png"
+	},
+	{
+		"date": "26/06/2021",
+		"img": "img/rmr-obitos/2021/obit-26.06.2021.png"
+	},
+	{
+		"date": "03/07/2021",
+		"img": "img/rmr-obitos/2021/obit-03.07.2021.png"
+	},
+	{
+		"date": "10/07/2021",
+		"img": "img/rmr-obitos/2021/obit-10.07.2021.png"
 	}
 /** inject-images:end(rmr-obitos) */
         ],
@@ -17293,6 +17361,30 @@ export const mapsConfig = [
 	{
 		"date": "22/05/2021",
 		"img": "img/rmr-ativos/2021/ativ-tot-22.05.2021.png"
+	},
+	{
+		"date": "05/06/2021",
+		"img": "img/rmr-ativos/2021/ativ-tot-05.06.2021.png"
+	},
+	{
+		"date": "12/06/2021",
+		"img": "img/rmr-ativos/2021/ativ-tot-12.06.2021.png"
+	},
+	{
+		"date": "19/06/2021",
+		"img": "img/rmr-ativos/2021/ativ-tot-19.06.2021.png"
+	},
+	{
+		"date": "26/06/2021",
+		"img": "img/rmr-ativos/2021/ativ-tot-26.06.2021.png"
+	},
+	{
+		"date": "03/07/2021",
+		"img": "img/rmr-ativos/2021/ativ-tot-03.07.2021.png"
+	},
+	{
+		"date": "10/07/2021",
+		"img": "img/rmr-ativos/2021/ativ-tot-10.07.2021.png"
 	}
 /** inject-images:end(rmr-ativos) */
         ],
@@ -18997,6 +19089,18 @@ export const mapsConfig = [
 	{
 		"date": "19/06/2021",
 		"img": "img/recife/2021/19.06b-n.png"
+	},
+	{
+		"date": "26/06/2021",
+		"img": "img/recife/2021/26.06b-n.png"
+	},
+	{
+		"date": "03/07/2021",
+		"img": "img/recife/2021/03.07b-n.png"
+	},
+	{
+		"date": "10/07/2021",
+		"img": "img/recife/2021/10.07b-n.png"
 	}
 /** inject-images:end(recife) */
         ],
@@ -20637,6 +20741,18 @@ export const mapsConfig = [
 	{
 		"date": "19/06/2021",
 		"img": "img/recife-recuperados/2021/19.06-rectot.png"
+	},
+	{
+		"date": "26/06/2021",
+		"img": "img/recife-recuperados/2021/26.06-rectot.png"
+	},
+	{
+		"date": "03/07/2021",
+		"img": "img/recife-recuperados/2021/03.07-rectot.png"
+	},
+	{
+		"date": "10/07/2021",
+		"img": "img/recife-recuperados/2021/10.07-rectot.png"
 	}
 /** inject-images:end(recife-recuperados) */
         ],
@@ -21969,6 +22085,18 @@ export const mapsConfig = [
 	{
 		"date": "19/06/2021",
 		"img": "img/recife-obitos/2021/obito-19.06-.png"
+	},
+	{
+		"date": "26/06/2021",
+		"img": "img/recife-obitos/2021/obito-26.06-.png"
+	},
+	{
+		"date": "03/07/2021",
+		"img": "img/recife-obitos/2021/obito-03.07-.png"
+	},
+	{
+		"date": "10/07/2021",
+		"img": "img/recife-obitos/2021/obito-10.07-.png"
 	}
 /** inject-images:end(recife-obitos) */
         ],
@@ -23313,6 +23441,18 @@ export const mapsConfig = [
 	{
 		"date": "19/06/2021",
 		"img": "img/recife-ativos/2021/19.06ativos-total.png"
+	},
+	{
+		"date": "26/06/2021",
+		"img": "img/recife-ativos/2021/26.06ativos-total.png"
+	},
+	{
+		"date": "03/07/2021",
+		"img": "img/recife-ativos/2021/03.07ativos-total.png"
+	},
+	{
+		"date": "10/07/2021",
+		"img": "img/recife-ativos/2021/10.07ativos-total.png"
 	}
 /** inject-images:end(recife-ativos) */
         ],
