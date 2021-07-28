@@ -19101,6 +19101,14 @@ export const mapsConfig = [
 	{
 		"date": "10/07/2021",
 		"img": "img/recife/2021/10.07b-n.png"
+	},
+	{
+		"date": "17/07/2021",
+		"img": "img/recife/2021/17.07b-n.png"
+	},
+	{
+		"date": "24/07/2021",
+		"img": "img/recife/2021/24.07b-n.png"
 	}
 /** inject-images:end(recife) */
         ],
@@ -20753,6 +20761,14 @@ export const mapsConfig = [
 	{
 		"date": "10/07/2021",
 		"img": "img/recife-recuperados/2021/10.07-rectot.png"
+	},
+	{
+		"date": "17/07/2021",
+		"img": "img/recife-recuperados/2021/17.07-rectot.png"
+	},
+	{
+		"date": "24/07/2021",
+		"img": "img/recife-recuperados/2021/24.07-rectot.png"
 	}
 /** inject-images:end(recife-recuperados) */
         ],
@@ -22097,6 +22113,14 @@ export const mapsConfig = [
 	{
 		"date": "10/07/2021",
 		"img": "img/recife-obitos/2021/obito-10.07-.png"
+	},
+	{
+		"date": "17/07/2021",
+		"img": "img/recife-obitos/2021/obito-17.07-.png"
+	},
+	{
+		"date": "24/07/2021",
+		"img": "img/recife-obitos/2021/obito-24.07-.png"
 	}
 /** inject-images:end(recife-obitos) */
         ],
@@ -23453,6 +23477,14 @@ export const mapsConfig = [
 	{
 		"date": "10/07/2021",
 		"img": "img/recife-ativos/2021/10.07ativos-total.png"
+	},
+	{
+		"date": "17/07/2021",
+		"img": "img/recife-ativos/2021/17.07ativos-total.png"
+	},
+	{
+		"date": "24/07/2021",
+		"img": "img/recife-ativos/2021/24.07ativos-total.png"
 	}
 /** inject-images:end(recife-ativos) */
         ],
